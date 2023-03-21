@@ -179,8 +179,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.02209385, y: 0.006467296, z: 0.01400446}
-  m_Center: {x: -0.027263857, y: 0.009624664, z: 0.0015056508}
+  m_Size: {x: 0.02209385, y: 0.006467296, z: 0.0017544075}
+  m_Center: {x: -0.027263857, y: 0.009624664, z: 0.0009791732}
 --- !u!1001 &221598510
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -190,7 +190,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8705928046783414311, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8705928046783414311, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3569954960561350608, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
       propertyPath: m_RootOrder
@@ -252,6 +256,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Japan
       objectReference: {fileID: 0}
+    - target: {fileID: 4233620817064721770, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
+      propertyPath: m_TagString
+      value: MainCountryBall
+      objectReference: {fileID: 0}
     - target: {fileID: 6573506913651649497, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
       propertyPath: m_IsKinematic
       value: 1
@@ -262,7 +270,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
-    - {fileID: -8705928046783414311, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
 --- !u!4 &254800253 stripped
 Transform:
@@ -330,8 +337,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.010993816, y: 0.0057767723, z: 0.0109562995}
-  m_Center: {x: -0.044260953, y: 0.0018794829, z: 0.00048952125}
+  m_Size: {x: 0.010993816, y: 0.0057767676, z: 0.0014344408}
+  m_Center: {x: -0.044260953, y: 0.0018794981, z: 0.00057620334}
 --- !u!1 &400011841
 GameObject:
   m_ObjectHideFlags: 0
@@ -522,7 +529,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8705928046783414311, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8705928046783414311, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3569954960561350608, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
       propertyPath: m_RootOrder
@@ -584,6 +595,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Japan
       objectReference: {fileID: 0}
+    - target: {fileID: 4233620817064721770, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
+      propertyPath: m_TagString
+      value: MainCountryBall
+      objectReference: {fileID: 0}
     - target: {fileID: 6573506913651649497, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
       propertyPath: m_IsKinematic
       value: 1
@@ -594,7 +609,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
-    - {fileID: -8705928046783414311, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
 --- !u!4 &673479542 stripped
 Transform:
@@ -738,7 +752,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &718736153
 GameObject:
@@ -796,8 +810,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.02209385, y: 0.0074684448, z: 0.01603571}
-  m_Center: {x: -0.027263857, y: 0.010125246, z: 0.002521275}
+  m_Size: {x: 0.022093853, y: 0.007468445, z: 0.0018503669}
+  m_Center: {x: -0.027263843, y: 0.010125238, z: 0.0030303153}
 --- !u!1 &749440729
 GameObject:
   m_ObjectHideFlags: 0
@@ -811,7 +825,7 @@ GameObject:
   - component: {fileID: 749440732}
   - component: {fileID: 749440731}
   - component: {fileID: 749440734}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Region
   m_TagString: Kazakhstan
   m_Icon: {fileID: 0}
@@ -894,7 +908,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7b1d387eb524cfb83f750affe076ff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _uiAttack: {fileID: 1499687441}
 --- !u!1 &893852350
 GameObject:
   m_ObjectHideFlags: 0
@@ -908,7 +921,7 @@ GameObject:
   - component: {fileID: 893852354}
   - component: {fileID: 893852353}
   - component: {fileID: 893852352}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Region
   m_TagString: Russia
   m_Icon: {fileID: 0}
@@ -947,7 +960,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7b1d387eb524cfb83f750affe076ff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _uiAttack: {fileID: 1499687441}
 --- !u!114 &893852353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1074,7 +1086,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &972748887
 GameObject:
@@ -1132,8 +1144,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.014636065, y: 0.0039731585, z: 0.026127214}
-  m_Center: {x: -0.011394102, y: 0.004041454, z: 0.0025214343}
+  m_Size: {x: 0.014636065, y: 0.003973158, z: 0.0023039875}
+  m_Center: {x: -0.011394097, y: 0.0040414366, z: 0.002351746}
 --- !u!1 &1011953581
 GameObject:
   m_ObjectHideFlags: 0
@@ -1336,8 +1348,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.010993816, y: 0.005776777, z: 0.01603571}
-  m_Center: {x: -0.044260953, y: 0.0018794802, z: 0.0025212842}
+  m_Size: {x: 0.010993814, y: 0.005776777, z: 0.0022325811}
+  m_Center: {x: -0.044260953, y: 0.0018794801, z: 0.0029604686}
 --- !u!1 &1185606297
 GameObject:
   m_ObjectHideFlags: 0
@@ -1384,7 +1396,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1186519832
 PrefabInstance:
@@ -1395,7 +1407,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8705928046783414311, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8705928046783414311, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3569954960561350608, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
       propertyPath: m_RootOrder
@@ -1457,6 +1473,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Japan
       objectReference: {fileID: 0}
+    - target: {fileID: 4233620817064721770, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
+      propertyPath: m_TagString
+      value: MainCountryBall
+      objectReference: {fileID: 0}
     - target: {fileID: 6573506913651649497, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
       propertyPath: m_IsKinematic
       value: 1
@@ -1467,7 +1487,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
-    - {fileID: -8705928046783414311, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
 --- !u!1 &1214035989
 GameObject:
@@ -1613,7 +1632,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2442674918348418595, guid: bbeb1d902b8153c4789a562a9a7706dd, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2442674918348418595, guid: bbeb1d902b8153c4789a562a9a7706dd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1626,6 +1645,10 @@ PrefabInstance:
     - target: {fileID: 2442674918348418595, guid: bbeb1d902b8153c4789a562a9a7706dd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2581708632555244085, guid: bbeb1d902b8153c4789a562a9a7706dd, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2581708632555244085, guid: bbeb1d902b8153c4789a562a9a7706dd, type: 3}
       propertyPath: m_TagString
@@ -1732,6 +1755,10 @@ PrefabInstance:
       value: 0.3801775
       objectReference: {fileID: 0}
     - target: {fileID: 8427592537898964027, guid: bbeb1d902b8153c4789a562a9a7706dd, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8427592537898964027, guid: bbeb1d902b8153c4789a562a9a7706dd, type: 3}
       propertyPath: m_TagString
       value: Russia
       objectReference: {fileID: 0}
@@ -1803,7 +1830,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1346313375
 GameObject:
@@ -1861,8 +1888,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.0050692563, y: 0.010368625, z: 0.018557161}
-  m_Center: {x: -0.0010712674, y: -0.0008746062, z: 0.001260809}
+  m_Size: {x: 0.0050692563, y: 0.010368625, z: 0.0011101001}
+  m_Center: {x: -0.0010712674, y: -0.00087460614, z: 0.00075444207}
 --- !u!1 &1359003758
 GameObject:
   m_ObjectHideFlags: 0
@@ -1876,7 +1903,7 @@ GameObject:
   - component: {fileID: 1359003760}
   - component: {fileID: 1359003762}
   - component: {fileID: 1359003763}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Region3
   m_TagString: Russia
   m_Icon: {fileID: 0}
@@ -1955,7 +1982,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7b1d387eb524cfb83f750affe076ff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _uiAttack: {fileID: 1499687441}
 --- !u!1 &1378168274
 GameObject:
   m_ObjectHideFlags: 0
@@ -2012,8 +2038,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.014636065, y: 0.004020267, z: 0.012920392}
-  m_Center: {x: -0.011394102, y: 0.004065018, z: 0.002013498}
+  m_Size: {x: 0.014636065, y: 0.004020267, z: 0.0011445229}
+  m_Center: {x: -0.011394102, y: 0.0040651066, z: 0.0010123982}
 --- !u!1 &1427506292
 GameObject:
   m_ObjectHideFlags: 0
@@ -2027,7 +2053,7 @@ GameObject:
   - component: {fileID: 1427506294}
   - component: {fileID: 1427506296}
   - component: {fileID: 1427506297}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Region2
   m_TagString: Russia
   m_Icon: {fileID: 0}
@@ -2106,7 +2132,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7b1d387eb524cfb83f750affe076ff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _uiAttack: {fileID: 1499687441}
 --- !u!1 &1499687441
 GameObject:
   m_ObjectHideFlags: 0
@@ -2145,6 +2170,51 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1553490264
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1553490266}
+  - component: {fileID: 1553490265}
+  m_Layer: 0
+  m_Name: Assets
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1553490265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553490264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 249da51a7bd24c5aacbc981592c2989e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 963194227}
+--- !u!4 &1553490266
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553490264}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -89.98974, y: 4.1172447, z: -26.099157}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1658920386 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3569954960561350608, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
@@ -2244,7 +2314,7 @@ RectTransform:
   m_Children:
   - {fileID: 1499687442}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2260,7 +2330,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8705928046783414311, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8705928046783414311, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3569954960561350608, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
       propertyPath: m_RootOrder
@@ -2322,6 +2396,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Japan
       objectReference: {fileID: 0}
+    - target: {fileID: 4233620817064721770, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
+      propertyPath: m_TagString
+      value: MainCountryBall
+      objectReference: {fileID: 0}
     - target: {fileID: 6573506913651649497, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
       propertyPath: m_IsKinematic
       value: 1
@@ -2330,8 +2408,7 @@ PrefabInstance:
       propertyPath: _isMainCountryBall
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: -8705928046783414311, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
 --- !u!1 &2087762888
 GameObject:
@@ -2524,8 +2601,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.0050991564, y: 0.010368625, z: 0.018557163}
-  m_Center: {x: -0.0010563169, y: -0.0008746061, z: 0.0012608094}
+  m_Size: {x: 0.0050991564, y: 0.010368625, z: 0.0021999057}
+  m_Center: {x: -0.0010563168, y: -0.0008746063, z: 0.0023128304}
 --- !u!1001 &8027662021578614149
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2535,7 +2612,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6601178765798633932, guid: 970689cf10d181b47aaa8082904f867e, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6601178765798633932, guid: 970689cf10d181b47aaa8082904f867e, type: 3}
       propertyPath: m_LocalPosition.x

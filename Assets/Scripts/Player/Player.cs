@@ -5,28 +5,30 @@ namespace Player
 {
     public class Player : MonoBehaviour
     {
-        private Country.Country _country;
         private PlayerAttack _playerAttack;
         private Country.Country _countryForAttack;
+
+        private Region _ownRegion;
+        private Region _enemyRegion;
 
         private void Awake()
         {
             TryGetComponent(out _playerAttack);
-            TryGetComponent(out _country);
         }
         
         public void Attack()
         {
-            _country.GetRegionsForAttack(out var thisEnemyRegion, out var enemyRegion);
-            
-            _playerAttack.Attack(_countryForAttack, thisEnemyRegion, enemyRegion);
+            _playerAttack.Attack(_countryForAttack, _ownRegion, _enemyRegion);
 
             _countryForAttack = null;
         }
 
-        public void SelectRegionForAttack(Region enemyRegion)
+        public void SetOwnRegionForAttack(Region ownRegion) => _ownRegion = ownRegion;
+
+        public void SetEnemyRegionForAttack(Region enemyRegion)
         {
-            _country.SelectRegionsForAttack(enemyRegion.tag, enemyRegion);
+            _enemyRegion = enemyRegion;
+            Attack();
         }
     }
 }

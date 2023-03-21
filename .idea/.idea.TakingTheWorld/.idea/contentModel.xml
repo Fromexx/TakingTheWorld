@@ -12,6 +12,9 @@
         </e>
         <e p="Scenes" t="Include" />
         <e p="Scripts" t="Include">
+          <e p="Assets" t="Include">
+            <e p="GeneralAsset.cs" t="Include" />
+          </e>
           <e p="Country" t="Include">
             <e p="Country.cs" t="Include" />
             <e p="CountryBall.cs" t="Include" />

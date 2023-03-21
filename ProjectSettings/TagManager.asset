@@ -7,11 +7,12 @@ TagManager:
   - USA
   - Russia
   - Kazakhstan
+  - MainCountryBall
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Country
   - Water
   - UI
   - 

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using Vector3 = UnityEngine.Vector3;
 
 namespace Country
@@ -14,6 +15,8 @@ namespace Country
         private Country _ownCountry;
         private bool _isInit;
 
+        private const string MainCountryBallTag = "MainCountryBall";
+
         private void Update()
         {
             if (_atTargetPosition)
@@ -24,18 +27,6 @@ namespace Country
             
             if(_isInit && !_isMainCountryBall) Move();
         }
-
-        private void Move()
-        {
-            if (Round(transform.position) == Round(_target))
-            {
-                _atTargetPosition = true;
-                _target = Vector3.zero;
-                return;
-            }
-            
-            transform.position = Vector3.MoveTowards(transform.position, _target, _speed * Time.deltaTime);
-        }
         
         public void Init(Vector3 target, Region enemyRegion, Country ownCountry)
         {
@@ -45,20 +36,28 @@ namespace Country
             _enemyRegion = enemyRegion;
             _ownCountry = ownCountry;
         }
-        
-        private Vector3 Round(Vector3 vector3, int decimalPlaces = 0)
+
+        private void Move()
         {
-            float multiplier = 1;
-            
-            for (int i = 0; i < decimalPlaces; i++)
+            transform.position = Vector3.MoveTowards(transform.position, _target, _speed * Time.deltaTime);
+        }
+
+        private void StopMove()
+        {
+            _atTargetPosition = true;
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.CompareTag(MainCountryBallTag))
             {
-                multiplier *= 10f;
+                other.transform.parent.TryGetComponent(out Region region);
+                print(region);
+                if (region == _enemyRegion)
+                {
+                    StopMove();
+                }
             }
-            
-            return new Vector3(
-                Mathf.Round(vector3.x * multiplier) / multiplier,
-                Mathf.Round(vector3.y * multiplier) / multiplier,
-                Mathf.Round(vector3.z * multiplier) / multiplier);
         }
     }
 }

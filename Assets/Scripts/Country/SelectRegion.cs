@@ -1,35 +1,41 @@
-﻿using UnityEngine;
+﻿using System;
+using Singleton;
+using UnityEngine;
 
 namespace Country
 {
     public class SelectRegion : MonoBehaviour
     {
-        [SerializeField] private GameObject _uiAttack;
-
         private Player.Player _player;
         private Region _region;
 
         private void Awake()
         {
-            transform.parent.TryGetComponent(out Enemy.Enemy enemy);
-            _player = enemy?.Player;
+            transform.parent.TryGetComponent(out _player);
+
+            if (_player is null)
+            {
+                transform.parent.TryGetComponent(out Enemy.Enemy enemy);
+                _player = enemy.Player;
+            }
+            
             TryGetComponent(out _region);
         }
 
         private void OnMouseDown()
         {
-            _uiAttack.SetActive(true);
-            _player.SelectRegionForAttack(_region);
+            _player.SetOwnRegionForAttack(_region);
         }
 
-        private void OnMouseEnter()
+        private void OnMouseUp()
         {
-            
-        }
-
-        private void OnMouseExit()
-        {
-            
+            Ray ray = GeneralAsset.Instance.Camera.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit, Int32.MaxValue))
+            {
+                hit.collider.TryGetComponent(out Region region);
+                _player.SetEnemyRegionForAttack(region);
+            }
         }
     }
 }
