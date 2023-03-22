@@ -18,9 +18,9 @@ namespace Enemy
             TryGetComponent(out _country);
             TryGetComponent(out _enemyAttack);
 
-            // SelectCountryForAttack();
-            // _country.RegionsSets += Attack;
-            // AttackPrepare();
+            SelectCountryForAttack();
+            _country.RegionsSets += Attack;
+            AttackPrepare();
         }
 
         private void SelectCountryForAttack()

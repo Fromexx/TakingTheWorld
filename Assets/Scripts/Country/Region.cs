@@ -48,8 +48,6 @@ namespace Country
             _currentCountryBallCount = 1;
             enemyCountryComponent.AddRegion(this, transform);
         }
-        
-        private IEnumerator Increase
 
         private IEnumerator SpawnCountryBall(Region enemyRegion)
         {
