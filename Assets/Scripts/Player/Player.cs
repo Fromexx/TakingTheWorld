@@ -6,8 +6,6 @@ namespace Player
     public class Player : MonoBehaviour
     {
         private PlayerAttack _playerAttack;
-        private Country.Country _countryForAttack;
-
         private Region _ownRegion;
         private Region _enemyRegion;
 
@@ -18,15 +16,18 @@ namespace Player
         
         public void Attack()
         {
-            _playerAttack.Attack(_countryForAttack, _ownRegion, _enemyRegion);
-
-            _countryForAttack = null;
+            _playerAttack.Attack(_ownRegion, _enemyRegion);
+            
+            _ownRegion = null;
+            _enemyRegion = null;
         }
 
         public void SetOwnRegionForAttack(Region ownRegion) => _ownRegion = ownRegion;
 
         public void SetEnemyRegionForAttack(Region enemyRegion)
         {
+            if (_ownRegion == enemyRegion) return;
+            
             _enemyRegion = enemyRegion;
             Attack();
         }

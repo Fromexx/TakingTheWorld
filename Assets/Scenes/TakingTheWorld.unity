@@ -270,6 +270,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
+    - {fileID: 6763861232423228946, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
 --- !u!4 &254800253 stripped
 Transform:
@@ -281,6 +282,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3569954960561350608, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
   m_PrefabInstance: {fileID: 1186519832}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &361540170 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4233620817064721770, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
+  m_PrefabInstance: {fileID: 221598510}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &361540176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361540170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5281d1d428224bbb8b364b5ae6ec58be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &397244593
 GameObject:
   m_ObjectHideFlags: 0
@@ -520,6 +538,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _countryContainer: {fileID: 1185606298}
   <Player>k__BackingField: {fileID: 696607683}
+--- !u!1 &473261759 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4233620817064721770, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
+  m_PrefabInstance: {fileID: 1994886413}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &648043453
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -609,12 +632,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
+    - {fileID: 6763861232423228946, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
 --- !u!4 &673479542 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3569954960561350608, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
   m_PrefabInstance: {fileID: 1994886413}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &673479548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473261759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5281d1d428224bbb8b364b5ae6ec58be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &696607674 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8427592537898964027, guid: bbeb1d902b8153c4789a562a9a7706dd, type: 3}
@@ -824,7 +860,6 @@ GameObject:
   - component: {fileID: 749440733}
   - component: {fileID: 749440732}
   - component: {fileID: 749440731}
-  - component: {fileID: 749440734}
   m_Layer: 3
   m_Name: Region
   m_TagString: Kazakhstan
@@ -866,7 +901,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 1658920386}
   _startCountryBallCount: 10
-  _currentCountryBallCount: 0
 --- !u!54 &749440732
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -896,18 +930,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.05185545, y: 0.02811677, z: 0.004998108}
   m_Center: {x: 0.004673697, y: 0.005762776, z: 0.00064269797}
---- !u!114 &749440734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 749440729}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7b1d387eb524cfb83f750affe076ff3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &893852350
 GameObject:
   m_ObjectHideFlags: 0
@@ -920,7 +942,6 @@ GameObject:
   - component: {fileID: 893852355}
   - component: {fileID: 893852354}
   - component: {fileID: 893852353}
-  - component: {fileID: 893852352}
   m_Layer: 3
   m_Name: Region
   m_TagString: Russia
@@ -948,18 +969,6 @@ Transform:
   m_Father: {fileID: 696607675}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &893852352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 893852350}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7b1d387eb524cfb83f750affe076ff3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &893852353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -974,7 +983,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 673479542}
   _startCountryBallCount: 11
-  _currentCountryBallCount: 0
 --- !u!54 &893852354
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1146,6 +1154,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.014636065, y: 0.003973158, z: 0.0023039875}
   m_Center: {x: -0.011394097, y: 0.0040414366, z: 0.002351746}
+--- !u!1 &993334881 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4233620817064721770, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
+  m_PrefabInstance: {fileID: 1186519832}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &993334887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993334881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5281d1d428224bbb8b364b5ae6ec58be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1011953581
 GameObject:
   m_ObjectHideFlags: 0
@@ -1350,6 +1375,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.010993814, y: 0.005776777, z: 0.0022325811}
   m_Center: {x: -0.044260953, y: 0.0018794801, z: 0.0029604686}
+--- !u!1 &1146264854 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4233620817064721770, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
+  m_PrefabInstance: {fileID: 648043453}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1185606297
 GameObject:
   m_ObjectHideFlags: 0
@@ -1487,6 +1517,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
+    - {fileID: 6763861232423228946, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
 --- !u!1 &1214035989
 GameObject:
@@ -1902,7 +1933,6 @@ GameObject:
   - component: {fileID: 1359003761}
   - component: {fileID: 1359003760}
   - component: {fileID: 1359003762}
-  - component: {fileID: 1359003763}
   m_Layer: 3
   m_Name: Region3
   m_TagString: Russia
@@ -1969,19 +1999,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 254800253}
   _startCountryBallCount: 10
-  _currentCountryBallCount: 0
---- !u!114 &1359003763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1359003758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7b1d387eb524cfb83f750affe076ff3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1378168274
 GameObject:
   m_ObjectHideFlags: 0
@@ -2052,7 +2069,6 @@ GameObject:
   - component: {fileID: 1427506295}
   - component: {fileID: 1427506294}
   - component: {fileID: 1427506296}
-  - component: {fileID: 1427506297}
   m_Layer: 3
   m_Name: Region2
   m_TagString: Russia
@@ -2119,19 +2135,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 265264027}
   _startCountryBallCount: 10
-  _currentCountryBallCount: 0
---- !u!114 &1427506297
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1427506292}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7b1d387eb524cfb83f750affe076ff3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1499687441
 GameObject:
   m_ObjectHideFlags: 0
@@ -2220,6 +2223,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3569954960561350608, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
   m_PrefabInstance: {fileID: 648043453}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1658920392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146264854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5281d1d428224bbb8b364b5ae6ec58be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1769189723
 GameObject:
   m_ObjectHideFlags: 0
@@ -2408,7 +2423,8 @@ PrefabInstance:
       propertyPath: _isMainCountryBall
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6763861232423228946, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
 --- !u!1 &2087762888
 GameObject:

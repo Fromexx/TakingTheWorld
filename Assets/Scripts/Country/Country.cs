@@ -11,7 +11,6 @@ namespace Country
         
         [SerializeField] private List<GameObject> _borders;
         [field: SerializeField] public GameObject CountryBallPrefab { get; private set; }
-        [field: SerializeField] public CountryContainer CountryContainer { get; private set; }
         
         private Region _ourRegionForAttack;
         private Region _enemyRegionForAttack;
@@ -44,7 +43,16 @@ namespace Country
             _enemyRegionForAttack = null;
         }
 
-        public void AddBorders(Region region) => _borders.AddRange(region.GetComponentsInChildren<RegionBorder>());
+        public void AddRegion(Region regionComponent, Transform region)
+        {
+            gameObject.tag = tag;
+            region.SetParent(transform);
+            _borders.AddRange(regionComponent.GetComponentsInChildren<RegionBorder>());
+
+            TryGetComponent(out Player.Player player);
+            if (player is null) return;
+            regionComponent.Init(player);
+        }
 
         private void EnableAllRegionBorders(string enemyCountryTag, Region enemyRegion)
         {

@@ -1,7 +1,6 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Singleton
+namespace Assets
 {
     public class GeneralAsset : MonoBehaviour
     {
@@ -9,11 +8,13 @@ namespace Singleton
 
         private static GeneralAsset _instance;
 
-        [field: SerializeField] public Camera Camera;
+        [field: SerializeField] public Camera Camera { get; private set; }
+        [field: SerializeField] public float MainCountryBallIncreaseFactor { get; private set; }
+        [field: SerializeField] public int MaxFactorCount { get; private set; }
+        [field: SerializeField] public float TimeBetweenCountryBallSpawn { get; private set; }
+        [field: SerializeField] public int MaxCountryBallCount { get; private set; }
+        [field: SerializeField] public float TimeBetweenIncreaseCountryBall { get; private set; }
 
-        private void Awake()
-        {
-            if (_instance is null) _instance = this;
-        }
+        private void Awake() => _instance ??= this;
     }
 }

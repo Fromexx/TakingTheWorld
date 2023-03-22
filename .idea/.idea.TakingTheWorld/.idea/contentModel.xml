@@ -19,13 +19,16 @@
             <e p="Country.cs" t="Include" />
             <e p="CountryBall.cs" t="Include" />
             <e p="CountryContainer.cs" t="Include" />
+            <e p="MainCountryBall.cs" t="Include" />
             <e p="Region.cs" t="Include" />
             <e p="RegionBorder.cs" t="Include" />
-            <e p="SelectRegion.cs" t="Include" />
           </e>
           <e p="Enemy" t="Include">
             <e p="Enemy.cs" t="Include" />
             <e p="EnemyAttack.cs" t="Include" />
+          </e>
+          <e p="Interfaces" t="Include">
+            <e p="IAttack.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
             <e p="Player.cs" t="Include" />

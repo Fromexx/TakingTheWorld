@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using Vector3 = UnityEngine.Vector3;
 
 namespace Country
@@ -7,12 +6,11 @@ namespace Country
     public class CountryBall : MonoBehaviour
     {
         [SerializeField] private float _speed;
-        [SerializeField] private bool _isMainCountryBall;
 
         private Vector3 _target;
         private bool _atTargetPosition;
         private Region _enemyRegion;
-        private Country _ownCountry;
+        private Transform _ownCountry;
         private bool _isInit;
 
         private const string MainCountryBallTag = "MainCountryBall";
@@ -25,10 +23,10 @@ namespace Country
                 Destroy(gameObject);
             }
             
-            if(_isInit && !_isMainCountryBall) Move();
+            if(_isInit) Move();
         }
         
-        public void Init(Vector3 target, Region enemyRegion, Country ownCountry)
+        public void Init(Vector3 target, Region enemyRegion, Transform ownCountry)
         {
             _isInit = true;
             _atTargetPosition = false;
@@ -52,7 +50,6 @@ namespace Country
             if (other.CompareTag(MainCountryBallTag))
             {
                 other.transform.parent.TryGetComponent(out Region region);
-                print(region);
                 if (region == _enemyRegion)
                 {
                     StopMove();

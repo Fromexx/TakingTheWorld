@@ -44,7 +44,7 @@ namespace Enemy
         {
             _country.GetRegionsForAttack(out var thisEnemyRegion, out var enemyRegion);
             
-            _enemyAttack.Attack(_countryForAttack, thisEnemyRegion, enemyRegion);
+            _enemyAttack.Attack(thisEnemyRegion, enemyRegion);
         }
     }
 }
