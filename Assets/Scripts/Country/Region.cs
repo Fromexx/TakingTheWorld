@@ -8,10 +8,11 @@ namespace Country
     {
         [field: SerializeField] public Transform MainCountryBall { get; private set; }
         [SerializeField] private int _startCountryBallCount;
+        [SerializeField] private int _maxCountryBallCount;
         
-        private int _currentCountryBallCount;
+        [SerializeField] private int _currentCountryBallCount;
         private Vector3 _startMainCountryBallScale;
-        [SerializeField] private int _currentIncreaseCount;
+        private int _currentIncreaseCount;
         private MainCountryBall _mainCountryBall;
 
         private void Awake()
@@ -30,10 +31,16 @@ namespace Country
 
         public void Init(Player.Player player) => _mainCountryBall.Init(player);
 
-        public void AttackEnemyRegion(Region enemyRegion) => StartCoroutine(SpawnCountryBall(enemyRegion));
+        public void AttackEnemyRegion(Region enemyRegion)
+        {
+            StopCoroutine(IncreaseCountryBallCount());
+            StartCoroutine(SpawnCountryBall(enemyRegion));
+        }
 
         public void ProtectRegion(Transform enemyCountry)
         {
+            StopCoroutine(IncreaseCountryBallCount());
+            
             transform.parent.TryGetComponent(out Country ownCountry);
             enemyCountry.TryGetComponent(out Country enemyCountryComponent);
             
@@ -49,25 +56,21 @@ namespace Country
             
             _currentCountryBallCount = 1;
             enemyCountryComponent.AddRegion(this, transform);
-        }
-
-        private IEnumerator IncreaseCountryBallCount()
-        {
-            yield return new WaitForSeconds(GeneralAsset.Instance.TimeBetweenIncreaseCountryBall);
-
-            IncrementCurrentCountryBallCount();
-
+            
             StartCoroutine(IncreaseCountryBallCount());
         }
-
+        
         private IEnumerator SpawnCountryBall(Region enemyRegion)
         {
             transform.parent.TryGetComponent(out Country country);
             var countryBallSpawnerPosition = MainCountryBall.position;
-            var countryBallCountToSpawn = _currentCountryBallCount - 1;
-            
+            var countryBallCountToSpawn = enemyRegion.CompareTag(tag) ? enemyRegion._maxCountryBallCount - enemyRegion._currentCountryBallCount
+                : enemyRegion._currentCountryBallCount + enemyRegion._maxCountryBallCount;
+
             for (int i = 0; i < countryBallCountToSpawn; i++)
             {
+                if (_currentCountryBallCount == 1) break;
+                
                 _currentCountryBallCount -= 1;
 
                 var countryBall = Instantiate(country.CountryBallPrefab, new Vector3(countryBallSpawnerPosition.x, countryBallSpawnerPosition.y, countryBallSpawnerPosition.z),
@@ -81,11 +84,22 @@ namespace Country
                 
                 yield return new WaitForSeconds(GeneralAsset.Instance.TimeBetweenCountryBallSpawn);
             }
+
+            StartCoroutine(IncreaseCountryBallCount());
+        }
+
+        private IEnumerator IncreaseCountryBallCount()
+        {
+            yield return new WaitForSeconds(GeneralAsset.Instance.TimeBetweenIncreaseCountryBall);
+
+            IncrementCurrentCountryBallCount();
+
+            StartCoroutine(IncreaseCountryBallCount());
         }
 
         private void IncrementCurrentCountryBallCount()
         {
-            if (_currentCountryBallCount == GeneralAsset.Instance.MaxCountryBallCount) return;
+            if (_currentCountryBallCount == _maxCountryBallCount) return;
             
             _currentCountryBallCount += 1;
 
