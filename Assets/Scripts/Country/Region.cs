@@ -11,7 +11,7 @@ namespace Country
         
         private int _currentCountryBallCount;
         private Vector3 _startMainCountryBallScale;
-        private int _currentIncreaseCount;
+        [SerializeField] private int _currentIncreaseCount;
         private MainCountryBall _mainCountryBall;
 
         private void Awake()
@@ -24,6 +24,8 @@ namespace Country
             {
                 _mainCountryBall.IncreaseScale();
             }
+
+            StartCoroutine(IncreaseCountryBallCount());
         }
 
         public void Init(Player.Player player) => _mainCountryBall.Init(player);
@@ -47,6 +49,15 @@ namespace Country
             
             _currentCountryBallCount = 1;
             enemyCountryComponent.AddRegion(this, transform);
+        }
+
+        private IEnumerator IncreaseCountryBallCount()
+        {
+            yield return new WaitForSeconds(GeneralAsset.Instance.TimeBetweenIncreaseCountryBall);
+
+            IncrementCurrentCountryBallCount();
+
+            StartCoroutine(IncreaseCountryBallCount());
         }
 
         private IEnumerator SpawnCountryBall(Region enemyRegion)
@@ -74,6 +85,8 @@ namespace Country
 
         private void IncrementCurrentCountryBallCount()
         {
+            if (_currentCountryBallCount == GeneralAsset.Instance.MaxCountryBallCount) return;
+            
             _currentCountryBallCount += 1;
 
             var mainCountryBallPosition = MainCountryBall.position;

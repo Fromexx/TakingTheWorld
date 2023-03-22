@@ -7,7 +7,6 @@ namespace Enemy
     public class Enemy : MonoBehaviour
     {
         [SerializeField] private CountryContainer _countryContainer;
-        [field: SerializeField] public Player.Player Player { get; private set; }
         
         private EnemyAttack _enemyAttack;
         private Country.Country _countryForAttack;
@@ -18,9 +17,9 @@ namespace Enemy
             TryGetComponent(out _country);
             TryGetComponent(out _enemyAttack);
 
-            SelectCountryForAttack();
-            _country.RegionsSets += Attack;
-            AttackPrepare();
+            // SelectCountryForAttack();
+            // _country.RegionsSets += Attack;
+            // AttackPrepare();
         }
 
         private void SelectCountryForAttack()
