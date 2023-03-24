@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using Country;
+using UnityEngine;
+using UnityEngine.UI;
 
 namespace Assets
 {
@@ -13,6 +15,8 @@ namespace Assets
         [field: SerializeField] public int MaxFactorCount { get; private set; }
         [field: SerializeField] public float TimeBetweenCountryBallSpawn { get; private set; }
         [field: SerializeField] public float TimeBetweenIncreaseCountryBall { get; private set; }
+        [field: SerializeField] public Country.Country PlayerCountry { get; private set; }
+        [field: SerializeField] public RegionTuneView RegionTuneView { get; private set; }
 
         private void Awake() => _instance ??= this;
     }

@@ -22,6 +22,12 @@
             <e p="MainCountryBall.cs" t="Include" />
             <e p="Region.cs" t="Include" />
             <e p="RegionBorder.cs" t="Include" />
+            <e p="RegionTuneView.cs" t="Include" />
+          </e>
+          <e p="Economy" t="Include">
+            <e p="Economy.cs" t="Include" />
+            <e p="EconomyView.cs" t="Include" />
+            <e p="TuneLevel.cs" t="Include" />
           </e>
           <e p="Enemy" t="Include">
             <e p="Enemy.cs" t="Include" />

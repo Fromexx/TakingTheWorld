@@ -12,6 +12,7 @@ namespace Country
         private Region _enemyRegion;
         private Transform _ownCountry;
         private bool _isInit;
+        private Region _ownRegion;
 
         private const string MainCountryBallTag = "MainCountryBall";
 
@@ -19,20 +20,21 @@ namespace Country
         {
             if (_atTargetPosition)
             {
-                _enemyRegion.ProtectRegion(_ownCountry);
+                _enemyRegion.ProtectRegion(_ownCountry, _ownRegion);
                 Destroy(gameObject);
             }
             
             if(_isInit) Move();
         }
         
-        public void Init(Vector3 target, Region enemyRegion, Transform ownCountry)
+        public void Init(Vector3 target, Region enemyRegion, Transform ownCountry, Region ownRegion)
         {
             _isInit = true;
             _atTargetPosition = false;
             _target = target;
             _enemyRegion = enemyRegion;
             _ownCountry = ownCountry;
+            _ownRegion = ownRegion;
         }
 
         private void Move()
