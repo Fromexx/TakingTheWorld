@@ -20,6 +20,7 @@ namespace Country
         private Country _country;
         private List<Region> _regionsForAttack;
         private TuneLevel _tuneLevel;
+        private Region _playerRegion;
 
         private void Awake()
         {
@@ -163,15 +164,22 @@ namespace Country
             
             _mainCountryBall.DecreaseScale();
         }
-
+        
         private void AttackPrepare()
         {
             foreach (var border in _borders) border.gameObject.SetActive(false);
-            
-            foreach (var region in _regionsForAttack)
+
+            foreach (var country in GeneralAsset.Instance.AllCountries)
             {
-                print(region.name);
+                if (country == _country || country == GeneralAsset.Instance.PlayerCountry) continue;
+
+                country.gameObject.SetActive(false);
             }
+            
+            _country.DisableNotInvolvedRegions(_regionsForAttack);
+            GeneralAsset.Instance.PlayerCountry.DisableNotInvolvedRegions(_regionsForAttack);
+
+            GeneralAsset.Instance.AttackStarted = true;
         }
 
         private void OnRegionsSets()
@@ -180,17 +188,14 @@ namespace Country
             
             _country.RegionsSets -= OnRegionsSets;
             
-            _country.GetRegionsForAttack(out var ourRegion, out var playerRegion);
+            _country.GetRegionsForAttack(out var ourRegion, out _playerRegion);
             _regionsForAttack.Add(ourRegion);
-            _regionsForAttack.Add(playerRegion);
-            
-            playerRegion.transform.parent.TryGetComponent(out Country playerCountry);
+            _regionsForAttack.Add(_playerRegion);
 
-            _country.UnionRegionsSets += OnOurUnionRegionsSets;
-            playerCountry.UnionRegionsSets += OnPlayerUnionRegionsSets;
+            foreach (var border in _borders) border.NotFoundUnionRegions += OnOurUnionRegionsSets;
             
+            _country.UnionRegionsSets += OnOurUnionRegionsSets;
             _country.SelectUnionRegions(ourRegion, _borders);
-            playerCountry.SelectUnionRegions(playerRegion, playerRegion._borders);
         }
 
         private void OnOurUnionRegionsSets(List<RegionBorder> borders)
@@ -198,22 +203,28 @@ namespace Country
             DisableBorders(borders);
 
             _country.UnionRegionsSets -= OnOurUnionRegionsSets;
-            
-            _regionsForAttack.AddRange(_country.GetUnionRegions());
+            foreach (var border in borders) border.NotFoundUnionRegions -= OnOurUnionRegionsSets;
 
-            foreach (var border in _borders) border.gameObject.SetActive(false);
+            var unionRegions = _country.GetUnionRegions();
+            if(!(unionRegions is null)) _regionsForAttack.AddRange(unionRegions);
+            
+            _playerRegion.transform.parent.TryGetComponent(out Country playerCountry);
+
+            playerCountry.UnionRegionsSets += OnPlayerUnionRegionsSets;
+            foreach (var border in borders) border.NotFoundUnionRegions += OnPlayerUnionRegionsSets;
+
+            playerCountry.SelectUnionRegions(_playerRegion, _playerRegion._borders);
         }
 
         private void OnPlayerUnionRegionsSets(List<RegionBorder> borders)
         {
-            print("yjith");
             DisableBorders(borders);
 
             _country.UnionRegionsSets -= OnOurUnionRegionsSets;
-            
-            _regionsForAttack.AddRange(_country.GetUnionRegions());
-            foreach (var border in _borders) border.gameObject.SetActive(false);
-            print(_country.GetUnionRegions());
+            foreach (var border in borders) border.NotFoundUnionRegions -= OnOurUnionRegionsSets;
+
+            var unionRegions = _country.GetUnionRegions();
+            if(!(unionRegions is null)) _regionsForAttack.AddRange(unionRegions);
 
             AttackPrepare();
         }
@@ -223,13 +234,13 @@ namespace Country
             if (_country.IsPlayerCountry)
             {
                 GeneralAsset.Instance.RegionTuneView.Render(_tuneLevel, this);
-                
                 return;
             }
-            
+
             _regionsForAttack = new List<Region>();
             _country.SelectRegionForAttack(GeneralAsset.Instance.PlayerCountry.tag, this, _borders);
 
+            print("tkh");
             _country.RegionsSets += OnRegionsSets;
         }
 

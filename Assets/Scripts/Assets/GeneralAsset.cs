@@ -1,6 +1,6 @@
-﻿using Country;
+﻿using System.Collections.Generic;
+using Country;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Assets
 {
@@ -17,6 +17,11 @@ namespace Assets
         [field: SerializeField] public float TimeBetweenIncreaseCountryBall { get; private set; }
         [field: SerializeField] public Country.Country PlayerCountry { get; private set; }
         [field: SerializeField] public RegionTuneView RegionTuneView { get; private set; }
+        [field: SerializeField] public List<Country.Country> AllCountries;
+
+        [HideInInspector] public List<Region> UnionRegions;
+        [HideInInspector] public int IterationCount;
+        [HideInInspector] public bool AttackStarted;
 
         private void Awake() => _instance ??= this;
     }

@@ -1,4 +1,5 @@
-﻿using Country;
+﻿using Assets;
+using Country;
 using UnityEngine;
 
 namespace Player
@@ -16,6 +17,8 @@ namespace Player
         
         public void Attack()
         {
+            if (!GeneralAsset.Instance.AttackStarted) return;
+            
             _playerAttack.Attack(_ownRegion, _enemyRegion);
             
             _ownRegion = null;

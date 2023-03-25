@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Country
@@ -50,8 +49,6 @@ namespace Country
 
         public void SetUnionRegions(List<Region> regions, List<RegionBorder> borders)
         {
-            print("tjhij");
-            
             _unionRegions = regions;
             UnionRegionsSets?.Invoke(borders);
         }
@@ -61,7 +58,6 @@ namespace Country
             ourRegion = _ourRegionForAttack;
             enemyRegion = _enemyRegionForAttack;
             
-            DisableAllRegionBorders();
             _ourRegionForAttack = null;
             _enemyRegionForAttack = null;
         }
@@ -81,11 +77,37 @@ namespace Country
             Economy.Economy.IncreaseMoney(invaderRegion.CurrentMoney);
         }
 
+        public void DisableNotInvolvedRegions(List<Region> regions)
+        {
+            int iteration = 0;
+            
+            foreach (var countryRegion in _regions)
+            {
+                foreach (var involvedRegion in regions)
+                {
+                    iteration++;
+
+                    if (countryRegion == involvedRegion)
+                    {
+                        iteration = 0;
+                        break;
+                    }
+                    if (iteration == regions.Count)
+                    {
+                        countryRegion.gameObject.SetActive(false);
+                        iteration = 0;
+                    }
+                }
+            }
+        }
+
         private void EnableAllRegionBorders(string enemyCountryTag, Region enemyRegion, Region ownRegion = null)
         {
-            foreach (var border in _regions.SelectMany(region => region.GetComponentsInChildren<RegionBorder>()))
+            var borders = _regions.SelectMany(region => region.GetComponentsInChildren<RegionBorder>()).ToList();
+            
+            foreach (var border in borders)
             {
-                border.Init(enemyCountryTag, enemyRegion);
+                border.Init(enemyCountryTag, enemyRegion, borders);
                 border.gameObject.SetActive(true);
             }
         }
@@ -94,7 +116,7 @@ namespace Country
         {
             foreach (var border in borders)
             {
-                border.InitWithOurRegion(enemyTag, ourRegion);
+                border.InitWithOurRegion(enemyTag, ourRegion, borders);
                 border.gameObject.SetActive(true);
             }
         }
@@ -105,14 +127,6 @@ namespace Country
             {
                 border.InitWithRegion(region, borders);
                 border.gameObject.SetActive(true);
-            }
-        }
-
-        private void DisableAllRegionBorders()
-        {
-            foreach (var border in _regions.SelectMany(region => region.GetComponentsInChildren<RegionBorder>()))
-            {
-                border.gameObject.SetActive(false);
             }
         }
     }

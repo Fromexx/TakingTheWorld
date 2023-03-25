@@ -1,13 +1,11 @@
 ﻿using ArtificialIntelligence;
-using Country;
+using Assets;
 using UnityEngine;
 
 namespace Enemy
 {
     public class Enemy : MonoBehaviour
     {
-        [SerializeField] private CountryContainer _countryContainer;
-        
         private EnemyAttack _enemyAttack;
         private Country.Country _countryForAttack;
         private Country.Country _country;
@@ -28,7 +26,7 @@ namespace Enemy
             {
                 System.Random random = new System.Random();
 
-                _countryForAttack = _countryContainer.Countries[random.Next(0, _countryContainer.Countries.Count)];
+                _countryForAttack = GeneralAsset.Instance.AllCountries[random.Next(0, GeneralAsset.Instance.AllCountries.Count)];
                 
                 if(_countryForAttack == _country) _countryForAttack = null;
             }

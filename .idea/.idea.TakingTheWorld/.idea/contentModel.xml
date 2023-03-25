@@ -15,10 +15,13 @@
           <e p="Assets" t="Include">
             <e p="GeneralAsset.cs" t="Include" />
           </e>
+          <e p="CameraLogic" t="Include">
+            <e p="CameraLogic.cs" t="Include" />
+            <e p="CameraMovement.cs" t="Include" />
+          </e>
           <e p="Country" t="Include">
             <e p="Country.cs" t="Include" />
             <e p="CountryBall.cs" t="Include" />
-            <e p="CountryContainer.cs" t="Include" />
             <e p="MainCountryBall.cs" t="Include" />
             <e p="Region.cs" t="Include" />
             <e p="RegionBorder.cs" t="Include" />
@@ -32,6 +35,9 @@
           <e p="Enemy" t="Include">
             <e p="Enemy.cs" t="Include" />
             <e p="EnemyAttack.cs" t="Include" />
+          </e>
+          <e p="General&amp;Other" t="Include">
+            <e p="KeyboardInput.cs" t="Include" />
           </e>
           <e p="Interfaces" t="Include">
             <e p="IAttack.cs" t="Include" />
