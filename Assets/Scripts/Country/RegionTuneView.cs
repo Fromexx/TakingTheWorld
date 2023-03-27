@@ -24,11 +24,11 @@ namespace Country
             
             _regionTune.SetActive(true);
 
-            if (tuneLevel.CurrentCountryBallLevel == tuneLevel.MaxLevel) _tuneCountryBall.text = _startTuneCountryBallText + tuneLevel.GetCountryBallTuneCount() + "Max Level";
+            if (tuneLevel.CurrentCountryBallLevel == tuneLevel.MaxLevel) _tuneCountryBall.text = _startTuneCountryBallText + tuneLevel.GetCountryBallTuneCount() + "\nMax Level";
             else if (tuneLevel.CurrentCountryBallLevel != tuneLevel.MaxLevel) _tuneCountryBall.text = _startTuneCountryBallText + tuneLevel.GetCountryBallTuneCount();
 
-            if (tuneLevel.CurrentMoneyLevel == tuneLevel.MaxLevel) _tuneMoney.text = _startTuneMoneyText + tuneLevel.GetMoneyTune() + "Max Level";
-            else if (tuneLevel.CurrentMoneyLevel != tuneLevel.MaxLevel) _tuneMoney.text = _startTuneMoneyText + tuneLevel.GetMoneyTune();
+            if (tuneLevel.CurrentMoneyLevel == tuneLevel.MaxLevel) _tuneMoney.text = _startTuneMoneyText + tuneLevel.GetMoneyTune() + "%" + "\nMax Level";
+            else if (tuneLevel.CurrentMoneyLevel != tuneLevel.MaxLevel) _tuneMoney.text = _startTuneMoneyText + tuneLevel.GetMoneyTune() + "%";
 
             if (_listenersAlreadyAdded) return;
             

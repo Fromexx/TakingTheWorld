@@ -42,19 +42,15 @@ namespace Country
             transform.position = Vector3.MoveTowards(transform.position, _target, _speed * Time.deltaTime);
         }
 
-        private void StopMove()
-        {
-            _atTargetPosition = true;
-        }
-
         private void OnTriggerEnter(Collider other)
         {
             if (other.CompareTag(MainCountryBallTag))
             {
                 other.transform.parent.TryGetComponent(out Region region);
+
                 if (region == _enemyRegion)
                 {
-                    StopMove();
+                    _atTargetPosition = true;
                 }
             }
         }

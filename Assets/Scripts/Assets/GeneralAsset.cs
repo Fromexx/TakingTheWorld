@@ -22,6 +22,9 @@ namespace Assets
         [HideInInspector] public List<Region> UnionRegions;
         [HideInInspector] public int IterationCount;
         [HideInInspector] public bool AttackStarted;
+        [HideInInspector] public List<Collider> VerifedColliders;
+        [HideInInspector] public List<Region> RegionsForAttack;
+        [HideInInspector] public int EnemyRegionForAttackCount;
 
         private void Awake() => _instance ??= this;
     }

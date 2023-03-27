@@ -4,9 +4,9 @@ namespace Economy
 {
     public class Economy : MonoBehaviour
     {
-        [SerializeField] private int _startMoneyCount;
+        [SerializeField] private float _startMoneyCount;
 
-        private static int _currentMoneyCount;
+        private static float _currentMoneyCount;
         private static EconomyView _economyView;
 
         private void Awake()
@@ -17,13 +17,13 @@ namespace Economy
             _economyView.Render(_currentMoneyCount);
         }
 
-        public static void IncreaseMoney(int money)
+        public static void IncreaseMoney(float money)
         {
             _currentMoneyCount += money;
             _economyView.Render(_currentMoneyCount);
         }
 
-        public static bool DecreaseMoney(int money)
+        public static bool DecreaseMoney(float money)
         {
             if (money > _currentMoneyCount) return false;
             

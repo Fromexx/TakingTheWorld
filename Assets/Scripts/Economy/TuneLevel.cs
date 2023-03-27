@@ -59,15 +59,15 @@
             };
         }
         
-        public int GetMoneyTune()
+        public float GetMoneyTune()
         {
             return CurrentMoneyLevel switch
             {
-                1 => 5,
-                2 => 10,
-                3 => 15,
-                4 => 20,
-                5 => 30,
+                1 => 1.1f,
+                2 => 1.2f,
+                3 => 1.3f,
+                4 => 1.4f,
+                5 => 1.5f,
                 _ => -1
             };
         }

@@ -8,10 +8,18 @@ namespace Country
     {
         private Player.Player _player;
         private int _currentIncreaseCount;
+        private Country _country;
 
         private void Awake()
         {
-            transform.parent.parent.TryGetComponent(out _player);
+            try
+            {
+                transform.parent.parent.TryGetComponent(out _player);
+                transform.parent.parent.TryGetComponent(out _country);
+            }
+            catch (Exception e)
+            {
+            }
         }
 
         public void Init(Player.Player player) => _player = player;
@@ -32,6 +40,9 @@ namespace Country
         
         private void OnMouseDown()
         {
+            if (_player is null) return;
+            if (!_country.IsPlayerCountry) return;
+            
             transform.parent.TryGetComponent(out Region ownRegion);
             _player?.SetOwnRegionForAttack(ownRegion);
         }

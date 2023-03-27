@@ -54,6 +54,7 @@ namespace Country
             GeneralAsset.Instance.IterationCount = 0;
             _isFindEnemyRegion = false;
             _isFindUnionRegions = true;
+            GeneralAsset.Instance.VerifedColliders = new List<Collider>();
         }
 
         private void OnTriggerEnter(Collider other)
@@ -104,10 +105,11 @@ namespace Country
 
         private void SelectUnionRegion(Collider other)
         {
-            if (!_isFindUnionRegions || !other.TryGetComponent(out Region region)) return;
+            if (!_isFindUnionRegions || !other.TryGetComponent(out Region region) || GeneralAsset.Instance.VerifedColliders.Contains(other)) return;
 
             GeneralAsset.Instance.IterationCount++;
-            
+            GeneralAsset.Instance.VerifedColliders.Add(other);
+
             if (!other.CompareTag(_ourRegion.tag))
             {
                 if (IterationCountEqualsBorderCount())
@@ -123,7 +125,7 @@ namespace Country
 
             GeneralAsset.Instance.UnionRegions.Add(region);
             
-            if (!IterationCountEqualsBorderCount() || GeneralAsset.Instance.UnionRegions.Count != _borders.Count) return;
+            if (!IterationCountEqualsBorderCount() && GeneralAsset.Instance.UnionRegions.Count != _borders.Count) return;
             
             DisableBorders();
             _country.SetUnionRegions(GeneralAsset.Instance.UnionRegions, _borders);

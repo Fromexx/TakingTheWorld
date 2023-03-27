@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using System;
+using TMPro;
 using UnityEngine;
 
 namespace Economy
@@ -7,9 +8,9 @@ namespace Economy
     {
         [SerializeField] private TMP_Text _text;
         
-        public void Render(int money)
+        public void Render(float money)
         {
-            _text.text = money.ToString();
+            _text.text = Math.Round(money).ToString();
         }
     }
 }

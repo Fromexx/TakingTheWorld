@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Assets;
 using UnityEngine;
 
 namespace Country
@@ -18,7 +19,14 @@ namespace Country
         private Region _ourRegionForAttack;
         private Region _enemyRegionForAttack;
         private List<Region> _unionRegions;
-        
+        private Material _material;
+
+        private void Awake()
+        {
+            TryGetComponent(out Renderer renderer);
+            _material = renderer.material;
+        }
+
         public void SelectRegionsForAttack(string enemyCountryTag, Region enemyRegion = null)
         {
             EnableAllRegionBorders(enemyCountryTag, enemyRegion);
@@ -64,9 +72,11 @@ namespace Country
 
         public List<Region> GetUnionRegions() => _unionRegions;
 
-        public void AddRegion(Region region, Region invaderRegion)
+        public void AddRegion(Region region, Region invaderRegion, List<Region> regionsForAttack)
         {
-            gameObject.tag = tag;
+            region.transform.parent.TryGetComponent(out Renderer renderer);
+            renderer.material = _material;
+            region.tag = tag;
             region.transform.SetParent(transform);
             _regions.Add(region);
 
@@ -74,12 +84,31 @@ namespace Country
             if (player is null) return;
             region.Init(player);
 
-            Economy.Economy.IncreaseMoney(invaderRegion.CurrentMoney);
+            var regionTag = invaderRegion.tag;
+            var isEnemyRegionRemained = false;
+            
+            foreach (var regionForAttack in regionsForAttack.Where(regionForAttack => !regionForAttack.CompareTag(regionTag)))
+            {
+                print(regionForAttack);
+                isEnemyRegionRemained = true;
+            }
+
+            if (isEnemyRegionRemained) return;
+            
+            print("Win!");
+                
+            GeneralAsset.Instance.AttackStarted = false;
+                
+            if (!IsPlayerCountry) return;
+
+            float money = GeneralAsset.Instance.EnemyRegionForAttackCount * 100 * invaderRegion.CurrentMoney;
+            
+            Economy.Economy.IncreaseMoney(money);
         }
 
         public void DisableNotInvolvedRegions(List<Region> regions)
         {
-            int iteration = 0;
+            var iteration = 0;
             
             foreach (var countryRegion in _regions)
             {
