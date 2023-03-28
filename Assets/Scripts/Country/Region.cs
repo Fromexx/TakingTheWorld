@@ -39,7 +39,11 @@ namespace Country
             StartCoroutine(IncreaseCountryBallCount());
         }
 
-        public void Init(Player.Player player) => _mainCountryBall.Init(player);
+        public void Init(Player.Player player)
+        {
+            transform.parent.TryGetComponent(out _country);
+            _mainCountryBall.Init(player);
+        }
 
         public void AttackEnemyRegion(Region enemyRegion)
         {
@@ -65,6 +69,7 @@ namespace Country
             if (_currentCountryBallCount != 0) return;
             
             _currentCountryBallCount = 1;
+            _country.RemoveRegion(this);
             enemyCountryComponent.AddRegion(this, enemyRegion, GeneralAsset.Instance.RegionsForAttack);
 
             StartCoroutine(IncreaseCountryBallCount());
@@ -190,7 +195,7 @@ namespace Country
             _country.GetRegionsForAttack(out var ourRegion, out _playerRegion);
             GeneralAsset.Instance.RegionsForAttack.Add(ourRegion);
             GeneralAsset.Instance.RegionsForAttack.Add(_playerRegion);
-
+            
             GeneralAsset.Instance.EnemyRegionForAttackCount = 1;
 
             foreach (var border in _borders) border.NotFoundUnionRegions += OnOurUnionRegionsSets;

@@ -20,10 +20,11 @@ namespace Country
         private Region _enemyRegionForAttack;
         private List<Region> _unionRegions;
         private Material _material;
+        private Country _enemyCountry;
 
         private void Awake()
         {
-            TryGetComponent(out Renderer renderer);
+            _regions[0].TryGetComponent(out Renderer renderer);
             _material = renderer.material;
         }
 
@@ -72,19 +73,21 @@ namespace Country
 
         public List<Region> GetUnionRegions() => _unionRegions;
 
-        public void AddRegion(Region region, Region invaderRegion, List<Region> regionsForAttack)
+        public void AddRegion(Region capturedRegion, Region invaderRegion, List<Region> regionsForAttack)
         {
-            region.transform.parent.TryGetComponent(out Renderer renderer);
+            var capturedRegionParent = capturedRegion.transform.parent;
+            capturedRegionParent.TryGetComponent(out Renderer renderer);
             renderer.material = _material;
-            region.tag = tag;
-            region.transform.SetParent(transform);
-            _regions.Add(region);
+            capturedRegionParent.TryGetComponent(out _enemyCountry);
+            capturedRegion.tag = tag;
+            capturedRegion.transform.SetParent(transform);
+            _regions.Add(capturedRegion);
+            var regionTag = invaderRegion.tag;
 
             TryGetComponent(out Player.Player player);
             if (player is null) return;
-            region.Init(player);
+            capturedRegion.Init(player);
 
-            var regionTag = invaderRegion.tag;
             var isEnemyRegionRemained = false;
             
             foreach (var regionForAttack in regionsForAttack.Where(regionForAttack => !regionForAttack.CompareTag(regionTag)))
@@ -95,14 +98,24 @@ namespace Country
 
             if (isEnemyRegionRemained) return;
             
+            AttackFinish(_enemyCountry, invaderRegion);
+        }
+
+        public void RemoveRegion(Region region) => _regions.Remove(region);
+
+        private void AttackFinish(Country enemyCountry, Region invaderRegion)
+        {
             print("Win!");
                 
             GeneralAsset.Instance.AttackStarted = false;
-                
-            if (!IsPlayerCountry) return;
-
-            float money = GeneralAsset.Instance.EnemyRegionForAttackCount * 100 * invaderRegion.CurrentMoney;
             
+            foreach (var country in GeneralAsset.Instance.AllCountries) country.gameObject.SetActive(true);
+            
+            EnableAllRegions();
+            enemyCountry.EnableAllRegions();
+            
+            if (!IsPlayerCountry) return;
+            float money = GeneralAsset.Instance.EnemyRegionForAttackCount * 100 * invaderRegion.CurrentMoney;
             Economy.Economy.IncreaseMoney(money);
         }
 
@@ -128,6 +141,11 @@ namespace Country
                     }
                 }
             }
+        }
+
+        private void EnableAllRegions()
+        {
+            foreach (var region in _regions) region.gameObject.SetActive(true);
         }
 
         private void EnableAllRegionBorders(string enemyCountryTag, Region enemyRegion, Region ownRegion = null)

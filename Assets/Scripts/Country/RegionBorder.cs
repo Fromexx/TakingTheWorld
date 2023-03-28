@@ -98,8 +98,6 @@ namespace Country
             }
 
             _country.SetAttackRegions(_ourRegion, enemyRegion);
-            
-            if (!IterationCountEqualsBorderCount()) return;
             DisableBorders();
         }
 

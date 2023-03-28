@@ -7,7 +7,9 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Materials" t="Include" />
-        <e p="Models" t="Include" />
+        <e p="Models" t="Include">
+          <e p="Map" t="Include" />
+        </e>
         <e p="Prefabs" t="Include">
           <e p="CountryBalls" t="Include" />
         </e>
