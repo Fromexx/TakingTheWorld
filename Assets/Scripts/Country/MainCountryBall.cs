@@ -1,5 +1,6 @@
 ﻿using System;
 using Assets;
+using TMPro;
 using UnityEngine;
 
 namespace Country
@@ -7,22 +8,35 @@ namespace Country
     public class MainCountryBall : MonoBehaviour
     {
         private Player.Player _player;
-        private int _currentIncreaseCount;
         private Country _country;
+        private Region _region;
+        private int _currentCountryBallCount;
+        private TMP_Text _text;
 
         private void Awake()
         {
             try
             {
-                transform.parent.parent.TryGetComponent(out _player);
-                transform.parent.parent.TryGetComponent(out _country);
+                var regionTransform = transform.parent;
+                var countryTransform = regionTransform.parent;
+
+                countryTransform.TryGetComponent(out _player);
+                countryTransform.TryGetComponent(out _country);
+                regionTransform.TryGetComponent(out _region);
+                _text = GetComponentInChildren<TMP_Text>();
             }
-            catch (Exception e)
+            catch (Exception)
             {
             }
         }
 
-        public void Init(Player.Player player) => _player = player;
+        public void Init(int currentCountryBallCount)
+        {
+            _currentCountryBallCount = currentCountryBallCount;
+            UpdateText();
+        }
+
+        private void UpdateText() => _text.text = _currentCountryBallCount.ToString();
         
         private void OnMouseDown()
         {

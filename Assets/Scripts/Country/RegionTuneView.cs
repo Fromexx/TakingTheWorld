@@ -27,8 +27,6 @@ namespace Country
 
         public void Render(TuneLevel tuneLevel, Region region)
         {
-            print(tuneLevel.CurrentMoneyLevel);
-            
             _region = region;
             
             _regionTune.SetActive(true);

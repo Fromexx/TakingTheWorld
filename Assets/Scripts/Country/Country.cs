@@ -29,7 +29,7 @@ namespace Country
                 _regions[0].TryGetComponent(out Renderer renderer);
                 _material = renderer.material;
             }
-            catch (Exception e)
+            catch(Exception)
             {
             }
         }
@@ -90,7 +90,7 @@ namespace Country
             var regionTag = invaderRegion.tag;
 
             TryGetComponent(out Player.Player player);
-            capturedRegion.Init(player);
+            capturedRegion.InitCountry(this);
 
             var isEnemyRegionRemained = GeneralAsset.Instance.RegionsForAttack.Any(regionForAttack => !regionForAttack.CompareTag(regionTag));
 
@@ -123,7 +123,7 @@ namespace Country
             
             foreach (var region in GeneralAsset.Instance.RegionsForAttack)
             {
-                region.StopIncreaseCountryBallCountCoroutine();
+                region.StopAllRegionCoroutines();
                 region.RecoverCountryBall();
             }
 
