@@ -14,13 +14,11 @@ namespace Country
         [field: SerializeField] public List<RegionBorder> Borders { get; private set; }
 
         [SerializeField] private int _currentCountryBallCount;
-        private Vector3 _startMainCountryBallScale;
-        private int _currentIncreaseCount;
-        private MainCountryBall _mainCountryBall;
         private Country _country;
         private TuneLevel _tuneLevel;
         private Region _playerRegion;
         private Country _playerCountry;
+        private MainCountryBall _mainCountryBall;
 
         private void Awake()
         {
@@ -31,25 +29,24 @@ namespace Country
                 CurrentMoney = _tuneLevel.GetMoneyTune();
 
                 transform.parent.TryGetComponent(out _country);
-
                 MainCountryBall.TryGetComponent(out _mainCountryBall);
+
+                _mainCountryBall.Init(_currentCountryBallCount);
             }
-            catch (Exception e)
+            catch(Exception)
             {
             }
         }
 
-        public void Init(Player.Player player)
-        {
-            transform.parent.TryGetComponent(out _country);
-            _mainCountryBall.Init(player);
-        }
+        public void InitCountry(Country country) => _country = country;
 
         public void Init()
         {
             _tuneLevel = new TuneLevel(1, 1);
             _currentCountryBallCount = _tuneLevel.GetCountryBallTuneCount();
             CurrentMoney = _tuneLevel.GetMoneyTune();
+
+            _mainCountryBall.Init(_currentCountryBallCount);
         }
 
         public void AttackEnemyRegion(Region enemyRegion)
@@ -77,6 +74,7 @@ namespace Country
             if (_currentCountryBallCount != 0) return;
             
             _currentCountryBallCount = 1;
+            _mainCountryBall.Init(_currentCountryBallCount);
             _country.RemoveRegion(this);
             
             enemyCountryComponent.AddRegion(this, enemyRegion);
@@ -96,7 +94,8 @@ namespace Country
             if (!Economy.Economy.DecreaseMoney(cost)) return;
             
             _currentCountryBallCount = _tuneLevel.GetCountryBallTuneCount();
-            
+            _mainCountryBall.Init(_currentCountryBallCount);
+
             GeneralAsset.Instance.RegionTuneView.Render(_tuneLevel, this);
         }
 
@@ -118,10 +117,15 @@ namespace Country
             GeneralAsset.Instance.RegionTuneView.Render(_tuneLevel, this);
         }
 
-        public void RecoverCountryBall() => _currentCountryBallCount = _tuneLevel.GetCountryBallTuneCount();
+        public void RecoverCountryBall()
+        {
+            _currentCountryBallCount = _tuneLevel.GetCountryBallTuneCount();
+            _mainCountryBall.Init(_currentCountryBallCount);
+        }
 
         private void StartIncreaseCountryBallCountCoroutine() => StartCoroutine(IncreaseCountryBallCount());
         public void StopIncreaseCountryBallCountCoroutine() => StopCoroutine(IncreaseCountryBallCount());
+        public void StopAllRegionCoroutines() => StopAllCoroutines();
 
         private IEnumerator SpawnCountryBall(Region enemyRegion)
         {
@@ -138,6 +142,7 @@ namespace Country
             for (int i = 0; i < countryBallCountToSpawn; i++)
             {
                 _currentCountryBallCount -= 1;
+                _mainCountryBall.Init(_currentCountryBallCount);
 
                 var countryBall = Instantiate(country.CountryBallPrefab, new Vector3(countryBallSpawnerPosition.x, countryBallSpawnerPosition.y, countryBallSpawnerPosition.z),
                     Quaternion.identity);
@@ -166,6 +171,7 @@ namespace Country
             if (_currentCountryBallCount >= _tuneLevel.GetCountryBallTuneCount()) return;
             
             _currentCountryBallCount += 1;
+            _mainCountryBall.Init(_currentCountryBallCount);
 
             var mainCountryBallPosition = MainCountryBall.position;
 
@@ -174,7 +180,11 @@ namespace Country
             MainCountryBall.position = new Vector3(mainCountryBallPosition.x, mainCountryBallPosition.y + (MainCountryBall.localScale.y - startYScale), mainCountryBallPosition.z);
         }
 
-        private void DecrementCurrentCountryBallCount() => _currentCountryBallCount -= 1;
+        private void DecrementCurrentCountryBallCount()
+        {
+            _currentCountryBallCount -= 1;
+            _mainCountryBall.Init(_currentCountryBallCount);
+        }
         
         private void AttackPrepare()
         {
