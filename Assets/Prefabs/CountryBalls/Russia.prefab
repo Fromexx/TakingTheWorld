@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: -9201178935323899875}
   m_Layer: 0
   m_Name: Russia
-  m_TagString: MainCountryBall
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

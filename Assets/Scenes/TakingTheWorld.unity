@@ -239,7 +239,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5216489
 Transform:
   m_ObjectHideFlags: 0
@@ -406,11 +406,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1111097082138909699, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_Size.y
-      value: 0.00002766914
+      value: 0.000027669143
       objectReference: {fileID: 0}
     - target: {fileID: 1111097082138909699, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_Size.z
-      value: 0.001568442
+      value: 0.0013478617
       objectReference: {fileID: 0}
     - target: {fileID: 1111097082138909699, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_Center.x
@@ -418,15 +418,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1111097082138909699, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_Center.y
-      value: -0.000031500025
+      value: -0.00003150002
       objectReference: {fileID: 0}
     - target: {fileID: 1111097082138909699, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_Center.z
-      value: -0.0023550307
+      value: -0.0022447393
       objectReference: {fileID: 0}
     - target: {fileID: 1111097082138909756, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_Name
       value: Border (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1111097082138909756, guid: c82fdec0333741e48a320760ce428490, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1111097082138909757, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_RootOrder
@@ -607,7 +611,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &87055384
 Transform:
   m_ObjectHideFlags: 0
@@ -681,7 +685,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &167812329
 Transform:
   m_ObjectHideFlags: 0
@@ -755,7 +759,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &168793376
 Transform:
   m_ObjectHideFlags: 0
@@ -829,7 +833,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &175787930
 Transform:
   m_ObjectHideFlags: 0
@@ -903,7 +907,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &192758696
 Transform:
   m_ObjectHideFlags: 0
@@ -977,7 +981,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &198818273
 Transform:
   m_ObjectHideFlags: 0
@@ -1136,17 +1140,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1111097082138909757, guid: c82fdec0333741e48a320760ce428490, type: 3}
   m_PrefabInstance: {fileID: 1111097082066492322}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &207030176 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1111097082138909698, guid: c82fdec0333741e48a320760ce428490, type: 3}
-  m_PrefabInstance: {fileID: 1111097082066492322}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cdef5cfa1ec4228b8c932bafd297b14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &247415655
 GameObject:
   m_ObjectHideFlags: 0
@@ -1220,9 +1213,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 366ba726262a4dbcb005ff61a93f4d27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <CountryBallPrefab>k__BackingField: {fileID: 0}
+  <CountryBallPrefab>k__BackingField: {fileID: 4233620817064721770, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
   IsPlayerCountry: 0
-  _regions: []
+  _regions:
+  - {fileID: 6403351114854258491}
+  - {fileID: 8851470857880793786}
+  - {fileID: 7079611499818357278}
 --- !u!1 &251987120
 GameObject:
   m_ObjectHideFlags: 0
@@ -1241,7 +1237,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &251987121
 Transform:
   m_ObjectHideFlags: 0
@@ -1315,7 +1311,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &272228099
 Transform:
   m_ObjectHideFlags: 0
@@ -1389,7 +1385,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &274989209
 Transform:
   m_ObjectHideFlags: 0
@@ -1561,7 +1557,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &307124590
 Transform:
   m_ObjectHideFlags: 0
@@ -1735,7 +1731,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &419703334
 Transform:
   m_ObjectHideFlags: 0
@@ -1907,7 +1903,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &464187921
 Transform:
   m_ObjectHideFlags: 0
@@ -1981,7 +1977,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &468743058
 Transform:
   m_ObjectHideFlags: 0
@@ -2190,7 +2186,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &498624775
 Transform:
   m_ObjectHideFlags: 0
@@ -2264,7 +2260,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &502326675
 Transform:
   m_ObjectHideFlags: 0
@@ -2340,7 +2336,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &512571518
 Transform:
   m_ObjectHideFlags: 0
@@ -2414,7 +2410,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &565899415
 Transform:
   m_ObjectHideFlags: 0
@@ -2568,6 +2564,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1111097082138909757, guid: c82fdec0333741e48a320760ce428490, type: 3}
   m_PrefabInstance: {fileID: 570080934}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &570080936 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1111097082138909698, guid: c82fdec0333741e48a320760ce428490, type: 3}
+  m_PrefabInstance: {fileID: 570080934}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cdef5cfa1ec4228b8c932bafd297b14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &571370992
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2684,7 +2691,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &584645598
 Transform:
   m_ObjectHideFlags: 0
@@ -2914,7 +2921,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &611013799
 Transform:
   m_ObjectHideFlags: 0
@@ -2970,6 +2977,75 @@ MonoBehaviour:
   <CountryBallPrefab>k__BackingField: {fileID: 0}
   IsPlayerCountry: 0
   _regions: []
+--- !u!1001 &623834090
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1529539526127864337}
+    m_Modifications:
+    - target: {fileID: 418462770464328092, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_Name
+      value: Russia (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.049999993
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.049999993
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.049999993
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.03318
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0126
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.00106
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.49999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.49999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
 --- !u!1001 &642588591
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3004,6 +3080,10 @@ PrefabInstance:
     - target: {fileID: 1111097082138909756, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_Name
       value: Border (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1111097082138909756, guid: c82fdec0333741e48a320760ce428490, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1111097082138909757, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_RootOrder
@@ -3086,7 +3166,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &643186013
 Transform:
   m_ObjectHideFlags: 0
@@ -3251,7 +3331,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &654093423
 Transform:
   m_ObjectHideFlags: 0
@@ -3401,6 +3481,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &706289158 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1111097082138909698, guid: c82fdec0333741e48a320760ce428490, type: 3}
+  m_PrefabInstance: {fileID: 596849689}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cdef5cfa1ec4228b8c932bafd297b14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &714411126
 GameObject:
   m_ObjectHideFlags: 0
@@ -3419,7 +3510,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &714411127
 Transform:
   m_ObjectHideFlags: 0
@@ -3533,6 +3624,75 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.022093853, y: 0.007468445, z: 0.0018503669}
   m_Center: {x: -0.027263843, y: 0.010125238, z: 0.0030303153}
+--- !u!1001 &725249015
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5089471200194017953}
+    m_Modifications:
+    - target: {fileID: 418462770464328092, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_Name
+      value: Russia (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.049999993
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.049999993
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.049999993
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.03233
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0095
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.00106
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.49999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.49999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
 --- !u!1 &729951493
 GameObject:
   m_ObjectHideFlags: 0
@@ -3551,7 +3711,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &729951494
 Transform:
   m_ObjectHideFlags: 0
@@ -3625,7 +3785,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &737826616
 Transform:
   m_ObjectHideFlags: 0
@@ -3731,8 +3891,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 1658920386}
   <CurrentMoney>k__BackingField: 0
-  _borders:
-  - {fileID: 207030176}
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &749440732
 Rigidbody:
@@ -3763,6 +3922,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.05185545, y: 0.02811677, z: 0.004998108}
   m_Center: {x: 0.004673697, y: 0.005762776, z: 0.00064269797}
+--- !u!114 &750735306 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1111097082138909698, guid: c82fdec0333741e48a320760ce428490, type: 3}
+  m_PrefabInstance: {fileID: 642588591}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cdef5cfa1ec4228b8c932bafd297b14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &762193885
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3863,7 +4033,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &763226851
 Transform:
   m_ObjectHideFlags: 0
@@ -3937,7 +4107,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &777516195
 Transform:
   m_ObjectHideFlags: 0
@@ -4011,7 +4181,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &777795641
 Transform:
   m_ObjectHideFlags: 0
@@ -4185,7 +4355,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &789783536
 Transform:
   m_ObjectHideFlags: 0
@@ -4259,7 +4429,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &813123893
 Transform:
   m_ObjectHideFlags: 0
@@ -4620,6 +4790,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Border (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1111097082138909756, guid: c82fdec0333741e48a320760ce428490, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1111097082138909757, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -4903,6 +5077,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1111097082138909757, guid: c82fdec0333741e48a320760ce428490, type: 3}
   m_PrefabInstance: {fileID: 887418705}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &887418707 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1111097082138909698, guid: c82fdec0333741e48a320760ce428490, type: 3}
+  m_PrefabInstance: {fileID: 887418705}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cdef5cfa1ec4228b8c932bafd297b14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &891590038 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1111097082138909698, guid: c82fdec0333741e48a320760ce428490, type: 3}
+  m_PrefabInstance: {fileID: 82483659}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cdef5cfa1ec4228b8c932bafd297b14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &893852350
 GameObject:
   m_ObjectHideFlags: 0
@@ -4954,9 +5150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 7598120029899559300}
   <CurrentMoney>k__BackingField: 0
-  _borders:
-  - {fileID: 718736155}
-  - {fileID: 593762164}
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &893852354
 Rigidbody:
@@ -5005,7 +5199,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &898950718
 Transform:
   m_ObjectHideFlags: 0
@@ -5095,6 +5289,10 @@ PrefabInstance:
     - target: {fileID: 1111097082138909756, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_Name
       value: Border (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1111097082138909756, guid: c82fdec0333741e48a320760ce428490, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1111097082138909757, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_RootOrder
@@ -5285,6 +5483,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _keyboardInput: {fileID: 1780779217}
+--- !u!4 &964229345 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+  m_PrefabInstance: {fileID: 725249015}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &968217295
 GameObject:
   m_ObjectHideFlags: 0
@@ -5425,7 +5628,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &993653069
 Transform:
   m_ObjectHideFlags: 0
@@ -5558,7 +5761,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1047140984
 Transform:
   m_ObjectHideFlags: 0
@@ -5632,7 +5835,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1048593874
 Transform:
   m_ObjectHideFlags: 0
@@ -5940,6 +6143,75 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1111097082138909757, guid: c82fdec0333741e48a320760ce428490, type: 3}
   m_PrefabInstance: {fileID: 1055982691}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1066455205
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7891071872934704874}
+    m_Modifications:
+    - target: {fileID: 418462770464328092, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_Name
+      value: Russia (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.24968901
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.24968898
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.24968901
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.00051511737
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.004902758
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0044376375
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.49999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.49999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
 --- !u!1001 &1074190056
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6032,7 +6304,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1074807870
 Transform:
   m_ObjectHideFlags: 0
@@ -6106,7 +6378,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1075689457
 Transform:
   m_ObjectHideFlags: 0
@@ -6162,6 +6434,11 @@ MonoBehaviour:
   <CountryBallPrefab>k__BackingField: {fileID: 0}
   IsPlayerCountry: 0
   _regions: []
+--- !u!4 &1097157100 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+  m_PrefabInstance: {fileID: 1104010713}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1099094401
 GameObject:
   m_ObjectHideFlags: 0
@@ -6224,6 +6501,75 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
   m_PrefabInstance: {fileID: 762193885}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1104010713
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1156413798716653207}
+    m_Modifications:
+    - target: {fileID: 418462770464328092, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_Name
+      value: Russia (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.049999993
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.049999993
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.049999993
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.02855
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.00888
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.00106
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.49999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.49999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
 --- !u!1 &1111153190
 GameObject:
   m_ObjectHideFlags: 0
@@ -6242,7 +6588,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1111153191
 Transform:
   m_ObjectHideFlags: 0
@@ -6312,7 +6658,7 @@ GameObject:
   - component: {fileID: 1120471764}
   m_Layer: 0
   m_Name: "\u0420\u043E\u0441\u0441\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Russia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6373,7 +6719,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <CountryBallPrefab>k__BackingField: {fileID: 418462770464328092, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
   IsPlayerCountry: 1
-  _regions: []
+  _regions:
+  - {fileID: 7547490594393431852}
+  - {fileID: 8809740455702583947}
+  - {fileID: 8401763687991008753}
 --- !u!1 &1144555253
 GameObject:
   m_ObjectHideFlags: 0
@@ -6392,7 +6741,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1144555254
 Transform:
   m_ObjectHideFlags: 0
@@ -6453,6 +6802,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4233620817064721770, guid: 349d3d6b180b4b54998cb7a24f52a9c2, type: 3}
   m_PrefabInstance: {fileID: 648043453}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1195203447 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1111097082138909698, guid: c82fdec0333741e48a320760ce428490, type: 3}
+  m_PrefabInstance: {fileID: 945183170}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cdef5cfa1ec4228b8c932bafd297b14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1223121947
 GameObject:
   m_ObjectHideFlags: 0
@@ -6471,7 +6831,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1223121948
 Transform:
   m_ObjectHideFlags: 0
@@ -6545,7 +6905,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1223877129
 Transform:
   m_ObjectHideFlags: 0
@@ -6601,6 +6961,11 @@ MonoBehaviour:
   <CountryBallPrefab>k__BackingField: {fileID: 0}
   IsPlayerCountry: 0
   _regions: []
+--- !u!4 &1243406652 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+  m_PrefabInstance: {fileID: 1066455205}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1262228004
 GameObject:
   m_ObjectHideFlags: 0
@@ -6687,7 +7052,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1280324338
 Transform:
   m_ObjectHideFlags: 0
@@ -6761,7 +7126,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1321727481
 Transform:
   m_ObjectHideFlags: 0
@@ -6835,7 +7200,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1345158170
 Transform:
   m_ObjectHideFlags: 0
@@ -7068,7 +7433,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 1495222940}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!1 &1366510201
 GameObject:
@@ -7088,7 +7453,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1366510202
 Transform:
   m_ObjectHideFlags: 0
@@ -7162,7 +7527,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1370205200
 Transform:
   m_ObjectHideFlags: 0
@@ -7387,7 +7752,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1111097082138909699, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_Size.z
-      value: 0.0004801857
+      value: 0.00052532536
       objectReference: {fileID: 0}
     - target: {fileID: 1111097082138909699, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_Center.x
@@ -7399,11 +7764,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1111097082138909699, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_Center.z
-      value: -0.0037110874
+      value: -0.003733657
       objectReference: {fileID: 0}
     - target: {fileID: 1111097082138909756, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_Name
       value: Border (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1111097082138909756, guid: c82fdec0333741e48a320760ce428490, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1111097082138909757, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_RootOrder
@@ -7547,8 +7916,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 1099382903}
   <CurrentMoney>k__BackingField: 0
-  _borders:
-  - {fileID: 2016674835}
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!1001 &1455176600
 PrefabInstance:
@@ -7887,7 +8255,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1543199483
 Transform:
   m_ObjectHideFlags: 0
@@ -7977,11 +8345,12 @@ MonoBehaviour:
   <MaxFactorCount>k__BackingField: 5
   <TimeBetweenCountryBallSpawn>k__BackingField: 0.08
   <TimeBetweenIncreaseCountryBall>k__BackingField: 1
-  <PlayerCountry>k__BackingField: {fileID: 2666933327956711712}
+  <PlayerCountry>k__BackingField: {fileID: 1120471766}
   <RegionTuneView>k__BackingField: {fileID: 1099094403}
   AllCountries:
-  - {fileID: 2666933327956711712}
-  - {fileID: 2845890664256918424}
+  - {fileID: 1120471766}
+  - {fileID: 1886663354}
+  - {fileID: 247415659}
   UnionRegions: []
   IterationCount: 0
   AttackStarted: 0
@@ -8021,7 +8390,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1556333059
 Transform:
   m_ObjectHideFlags: 0
@@ -8095,7 +8464,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1567522784
 Transform:
   m_ObjectHideFlags: 0
@@ -8169,7 +8538,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1619625855
 Transform:
   m_ObjectHideFlags: 0
@@ -8358,7 +8727,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1694012663
 Transform:
   m_ObjectHideFlags: 0
@@ -8432,7 +8801,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1705804180
 Transform:
   m_ObjectHideFlags: 0
@@ -8522,6 +8891,10 @@ PrefabInstance:
     - target: {fileID: 1111097082138909756, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_Name
       value: Border (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1111097082138909756, guid: c82fdec0333741e48a320760ce428490, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1111097082138909757, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_RootOrder
@@ -8732,6 +9105,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1805379547 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
+  m_PrefabInstance: {fileID: 623834090}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1811630394
 GameObject:
   m_ObjectHideFlags: 0
@@ -8750,7 +9128,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1811630395
 Transform:
   m_ObjectHideFlags: 0
@@ -8826,7 +9204,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1835049939
 Transform:
   m_ObjectHideFlags: 0
@@ -8896,7 +9274,7 @@ GameObject:
   - component: {fileID: 1886663352}
   m_Layer: 0
   m_Name: "\u041A\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043D"
-  m_TagString: Untagged
+  m_TagString: Kazakhstan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8953,9 +9331,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 366ba726262a4dbcb005ff61a93f4d27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <CountryBallPrefab>k__BackingField: {fileID: 0}
+  <CountryBallPrefab>k__BackingField: {fileID: 418462770464328092, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
   IsPlayerCountry: 0
-  _regions: []
+  _regions:
+  - {fileID: 7891071872934704876}
 --- !u!1001 &1892297890
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9072,7 +9451,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1903652461
 Transform:
   m_ObjectHideFlags: 0
@@ -9146,7 +9525,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1937793362
 Transform:
   m_ObjectHideFlags: 0
@@ -9222,7 +9601,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1965578639
 Transform:
   m_ObjectHideFlags: 0
@@ -9296,7 +9675,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1965959747
 Transform:
   m_ObjectHideFlags: 0
@@ -9370,7 +9749,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1973905137
 Transform:
   m_ObjectHideFlags: 0
@@ -9444,7 +9823,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1996878176
 Transform:
   m_ObjectHideFlags: 0
@@ -9599,6 +9978,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1111097082138909757, guid: c82fdec0333741e48a320760ce428490, type: 3}
   m_PrefabInstance: {fileID: 1997130959}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1997130961 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1111097082138909698, guid: c82fdec0333741e48a320760ce428490, type: 3}
+  m_PrefabInstance: {fileID: 1997130959}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cdef5cfa1ec4228b8c932bafd297b14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2003192482
 GameObject:
   m_ObjectHideFlags: 0
@@ -9617,7 +10007,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2003192483
 Transform:
   m_ObjectHideFlags: 0
@@ -9899,7 +10289,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2028320154
 Transform:
   m_ObjectHideFlags: 0
@@ -9973,7 +10363,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2029853702
 Transform:
   m_ObjectHideFlags: 0
@@ -10121,7 +10511,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2034500368
 Transform:
   m_ObjectHideFlags: 0
@@ -10195,7 +10585,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2051074918
 Transform:
   m_ObjectHideFlags: 0
@@ -10269,7 +10659,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2058963970
 Transform:
   m_ObjectHideFlags: 0
@@ -10343,7 +10733,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2093476489
 Transform:
   m_ObjectHideFlags: 0
@@ -10417,7 +10807,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2104391520
 Transform:
   m_ObjectHideFlags: 0
@@ -10571,6 +10961,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1111097082138909757, guid: c82fdec0333741e48a320760ce428490, type: 3}
   m_PrefabInstance: {fileID: 2107314935}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2107314937 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1111097082138909698, guid: c82fdec0333741e48a320760ce428490, type: 3}
+  m_PrefabInstance: {fileID: 2107314935}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cdef5cfa1ec4228b8c932bafd297b14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2112718174
 GameObject:
   m_ObjectHideFlags: 0
@@ -10589,7 +10990,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2112718175
 Transform:
   m_ObjectHideFlags: 0
@@ -10723,7 +11124,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &83517680536756802
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10816,7 +11217,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &150345524849275608
 GameObject:
   m_ObjectHideFlags: 0
@@ -10837,7 +11238,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &223132665928241988
 Transform:
   m_ObjectHideFlags: 0
@@ -10953,7 +11354,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &338107444657685683
 GameObject:
   m_ObjectHideFlags: 0
@@ -10974,7 +11375,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &352752932717286372
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11079,7 +11480,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &412278149153613739
 GameObject:
   m_ObjectHideFlags: 0
@@ -11096,7 +11497,7 @@ GameObject:
   - component: {fileID: 7891071872934704876}
   m_Layer: 0
   m_Name: "\u041A\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043D"
-  m_TagString: Untagged
+  m_TagString: Kazakhstan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11121,7 +11522,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &455561640925216650
 Transform:
   m_ObjectHideFlags: 0
@@ -11165,7 +11566,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!33 &509799719456482252
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -11197,7 +11598,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919132147790289159}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -181.1, y: 0, z: -158.8}
+  m_LocalPosition: {x: -71, y: 0, z: -194}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11295,7 +11696,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &635054243313272149
 Transform:
   m_ObjectHideFlags: 0
@@ -11419,7 +11820,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &756139657049981897
 Transform:
   m_ObjectHideFlags: 0
@@ -11623,7 +12024,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1084003262252960502
 Transform:
   m_ObjectHideFlags: 0
@@ -11776,6 +12177,7 @@ Transform:
   - {fileID: 1455176601}
   - {fileID: 758019}
   - {fileID: 841026411}
+  - {fileID: 1097157100}
   m_Father: {fileID: 247415656}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11814,7 +12216,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1235838531065253047
 Transform:
   m_ObjectHideFlags: 0
@@ -11949,7 +12351,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!33 &1393186361864625822
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -11978,7 +12380,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!33 &1464862592226703515
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -12003,7 +12405,7 @@ GameObject:
   - component: {fileID: 7547490594393431852}
   m_Layer: 0
   m_Name: "\u0412\u043E\u0441\u0442\u043E\u0447\u043D\u0430\u044F \u0420\u043E\u0441\u0441\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Russia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12034,7 +12436,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1805379547}
   m_Father: {fileID: 247415656}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12227,7 +12630,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &1844295585833557670
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12340,7 +12743,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &1846898604382501100
 Rigidbody:
@@ -12423,7 +12826,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &2075048258343137550
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12486,7 +12889,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &2108672111984286018
 GameObject:
   m_ObjectHideFlags: 0
@@ -12507,7 +12910,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &2110152389021766877
 GameObject:
   m_ObjectHideFlags: 0
@@ -12524,7 +12927,7 @@ GameObject:
   - component: {fileID: 8809740455702583947}
   m_Layer: 0
   m_Name: "\u0417\u0430\u043F\u0430\u0434\u043D\u0430\u044F \u0420\u043E\u0441\u0441\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Russia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12549,7 +12952,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2139145097422213359
 Transform:
   m_ObjectHideFlags: 0
@@ -12627,7 +13030,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!33 &2182961056385350830
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -12698,7 +13101,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2232635174471403240
 Transform:
   m_ObjectHideFlags: 0
@@ -12740,7 +13143,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!33 &2295900015783415416
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -12769,7 +13172,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!33 &2360663696852988576
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -12840,7 +13243,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2442674917137159942
 Transform:
   m_ObjectHideFlags: 0
@@ -12878,7 +13281,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &2509071692387447368
 GameObject:
   m_ObjectHideFlags: 0
@@ -12899,7 +13302,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &2522896805099154872
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13019,7 +13422,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &2581708633769095952
 GameObject:
   m_ObjectHideFlags: 0
@@ -13348,7 +13751,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &2836280732954155677
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13502,7 +13905,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2952582539789105111
 Transform:
   m_ObjectHideFlags: 0
@@ -13651,7 +14054,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3202173956585079432
 Transform:
   m_ObjectHideFlags: 0
@@ -13840,7 +14243,7 @@ GameObject:
   - component: {fileID: 8401763687991008753}
   m_Layer: 0
   m_Name: "\u0426\u0435\u043D\u0442\u0440\u0430\u043B\u044C\u043D\u0430\u044F \u0420\u043E\u0441\u0441\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Russia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13865,7 +14268,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &3423301093470416402
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13936,7 +14339,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!33 &3555901146477609813
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -14026,7 +14429,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!33 &3718712706283113944
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -14097,7 +14500,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!33 &3798282192239672113
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -14149,7 +14552,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &3828278965395690603
 Rigidbody:
@@ -14195,7 +14598,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &3856777018032161646
 GameObject:
   m_ObjectHideFlags: 0
@@ -14216,7 +14619,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3861146636548139617
 Transform:
   m_ObjectHideFlags: 0
@@ -14294,7 +14697,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3909771560897864842
 Transform:
   m_ObjectHideFlags: 0
@@ -14330,7 +14733,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &3945961370264404798
 GameObject:
   m_ObjectHideFlags: 0
@@ -14351,7 +14754,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3955024922499126752
 Transform:
   m_ObjectHideFlags: 0
@@ -14387,7 +14790,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!33 &3972824970908084950
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -14458,7 +14861,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!33 &4035528215982758083
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -14586,7 +14989,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!33 &4146677239693410649
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -14615,7 +15018,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4189970963945617304
 Transform:
   m_ObjectHideFlags: 0
@@ -14812,7 +15215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &4351505158090498310
 Rigidbody:
@@ -14858,7 +15261,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &4490139269055155215
 GameObject:
   m_ObjectHideFlags: 0
@@ -14879,7 +15282,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &4490139269055155216
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14908,7 +15311,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &4490139269055155218
 Rigidbody:
@@ -15038,7 +15441,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &4513799442094318070
 Rigidbody:
@@ -15126,7 +15529,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &4575009517198672916
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15155,7 +15558,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &4575009517198672918
 Rigidbody:
@@ -15193,7 +15596,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!33 &4673429485452051082
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -15230,7 +15633,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &4673429485452051085
 Rigidbody:
@@ -15268,7 +15671,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &4717956421788379765
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15297,7 +15700,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &4717956421788379767
 Rigidbody:
@@ -15419,7 +15822,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!33 &4779893335612597562
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -15662,7 +16065,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &4944169222539494261
 GameObject:
   m_ObjectHideFlags: 0
@@ -15683,7 +16086,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!33 &5071152609908506803
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -15720,7 +16123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &5071152609908506806
 Rigidbody:
@@ -15752,6 +16155,7 @@ Transform:
   m_Children:
   - {fileID: 1348111242}
   - {fileID: 205212497}
+  - {fileID: 964229345}
   m_Father: {fileID: 247415656}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -15775,7 +16179,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &5157751325818966387
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15856,7 +16260,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5240910526975766556
 Transform:
   m_ObjectHideFlags: 0
@@ -15942,7 +16346,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &5330825698733154623
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16112,7 +16516,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &5451821226582096578
 GameObject:
   m_ObjectHideFlags: 0
@@ -16133,7 +16537,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5471344233118966353
 Transform:
   m_ObjectHideFlags: 0
@@ -16358,7 +16762,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &5599586889872370616
 Rigidbody:
@@ -16419,7 +16823,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &5610714474926399672
 Rigidbody:
@@ -16473,7 +16877,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &5615218544736522371
 Rigidbody:
@@ -16569,7 +16973,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5686589873095528941
 Transform:
   m_ObjectHideFlags: 0
@@ -16665,7 +17069,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!33 &5800032753379368899
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -16725,7 +17129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &5841968696238955149
 Rigidbody:
@@ -16813,7 +17217,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &5854256883467367974
 Rigidbody:
@@ -16882,7 +17286,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &5957992182428386725
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16911,7 +17315,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &5957992182428386727
 Rigidbody:
@@ -17029,7 +17433,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &6180743458496247196
 Rigidbody:
@@ -17162,7 +17566,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &6250686206715694253
 Rigidbody:
@@ -17257,7 +17661,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &6375658062161356616
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17328,7 +17732,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &6375658062161356619
 Rigidbody:
@@ -17382,7 +17786,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &6383877656926024897
 Rigidbody:
@@ -17442,9 +17846,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <MainCountryBall>k__BackingField: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 1097157100}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &6403351114854258492
 Rigidbody:
@@ -17532,7 +17936,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &6408361117013870437
 Rigidbody:
@@ -17620,7 +18024,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &6432694340646741195
 Rigidbody:
@@ -17658,7 +18062,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6473397989150481971
 Transform:
   m_ObjectHideFlags: 0
@@ -17702,7 +18106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &6473397989150481974
 Rigidbody:
@@ -17790,7 +18194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &6493614303508010361
 Rigidbody:
@@ -17902,7 +18306,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &6528646303029941941
 Rigidbody:
@@ -17940,7 +18344,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &6656732115803776440
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17969,7 +18373,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &6656732115803776442
 Rigidbody:
@@ -18007,7 +18411,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &6700064072041881521
 GameObject:
   m_ObjectHideFlags: 0
@@ -18028,7 +18432,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &6700064072041881522
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18057,7 +18461,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &6700064072041881524
 Rigidbody:
@@ -18118,7 +18522,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &6771429615711132689
 Rigidbody:
@@ -18179,7 +18583,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &6807914065780924855
 Rigidbody:
@@ -18233,7 +18637,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &6835267425804158100
 Rigidbody:
@@ -18295,7 +18699,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &6928188151656763979
 Rigidbody:
@@ -18333,7 +18737,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &6932588197251288151
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18362,7 +18766,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &6932588197251288153
 Rigidbody:
@@ -18438,7 +18842,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &6964973068803948899
 Rigidbody:
@@ -18476,7 +18880,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &7044590539082313279
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18505,7 +18909,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &7044590539082313281
 Rigidbody:
@@ -18591,9 +18995,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <MainCountryBall>k__BackingField: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 1805379547}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &7079611499818357279
 Rigidbody:
@@ -18738,7 +19142,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &7160553754853366731
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18767,7 +19171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &7160553754853366733
 Rigidbody:
@@ -18805,7 +19209,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!33 &7243277515848392091
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -18834,7 +19238,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &7343763303628893544
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18863,7 +19267,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &7343763303628893546
 Rigidbody:
@@ -18901,7 +19305,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &7356574347617153481
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18930,7 +19334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &7356574347617153483
 Rigidbody:
@@ -18968,7 +19372,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &7389501683236387871
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18997,7 +19401,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &7389501683236387873
 Rigidbody:
@@ -19035,7 +19439,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &7412441856024055008
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19148,7 +19552,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &7458197861660651025
 Rigidbody:
@@ -19276,7 +19680,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7514543173408365370
 Transform:
   m_ObjectHideFlags: 0
@@ -19320,7 +19724,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &7514543173408365373
 Rigidbody:
@@ -19358,7 +19762,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &7527415244169224655
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19387,7 +19791,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &7527415244169224657
 Rigidbody:
@@ -19475,7 +19879,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &7527947904876746794
 Rigidbody:
@@ -19565,7 +19969,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8392954423400536603, guid: d0f5312f6ddf80c42b69f6ebb5e94c86, type: 3}
 --- !u!114 &7547490594393431852
@@ -19580,9 +19984,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <MainCountryBall>k__BackingField: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 828702799}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField:
+  - {fileID: 887418707}
   _currentCountryBallCount: 0
 --- !u!54 &7547490594393431853
 Rigidbody:
@@ -19670,7 +20075,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &7567529281323201829
 Rigidbody:
@@ -19739,7 +20144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &7590802624971251966
 Rigidbody:
@@ -19777,7 +20182,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7598120029899559300 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
@@ -19853,7 +20258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &7598989950591634222
 Rigidbody:
@@ -19907,7 +20312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &7611362417635984043
 Rigidbody:
@@ -19976,7 +20381,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &7649076903396433815
 Rigidbody:
@@ -20064,7 +20469,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &7659182959864218300
 Rigidbody:
@@ -20102,7 +20507,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &7670351644244550858
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20131,7 +20536,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &7670351644244550860
 Rigidbody:
@@ -20219,7 +20624,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &7691290595242144679
 Rigidbody:
@@ -20307,7 +20712,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &7695075374126834466
 Rigidbody:
@@ -20437,7 +20842,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &7772525673451902383
 Rigidbody:
@@ -20525,7 +20930,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &7796569859851200373
 Rigidbody:
@@ -20563,7 +20968,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &7874264715098489587
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20592,7 +20997,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &7874264715098489589
 Rigidbody:
@@ -20628,6 +21033,7 @@ Transform:
   - {fileID: 883020016}
   - {fileID: 1753145188}
   - {fileID: 1388241926}
+  - {fileID: 1243406652}
   m_Father: {fileID: 1886663351}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20642,7 +21048,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2911109461312181071, guid: d0f5312f6ddf80c42b69f6ebb5e94c86, type: 3}
 --- !u!114 &7891071872934704876
@@ -20657,9 +21063,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <MainCountryBall>k__BackingField: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 1243406652}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField:
+  - {fileID: 1195203447}
+  - {fileID: 750735306}
   _currentCountryBallCount: 0
 --- !u!54 &7891071872934704877
 Rigidbody:
@@ -20747,7 +21155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &7925887875682798255
 Rigidbody:
@@ -20801,7 +21209,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &7934855123980902593
 Rigidbody:
@@ -20904,7 +21312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &8015425183592121879
 Rigidbody:
@@ -20973,7 +21381,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &8101017873331033053
 Rigidbody:
@@ -21061,7 +21469,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &8140508597061438172
 Rigidbody:
@@ -21191,7 +21599,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &8208135984743594197
 Rigidbody:
@@ -21267,7 +21675,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &8270880472127673627
 Rigidbody:
@@ -21321,7 +21729,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &8299776847086281312
 Rigidbody:
@@ -21382,7 +21790,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &8336853243583351544
 Rigidbody:
@@ -21443,7 +21851,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &8360929896787493737
 Rigidbody:
@@ -21481,7 +21889,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &8377948437703524848
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21510,7 +21918,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &8377948437703524850
 Rigidbody:
@@ -21547,7 +21955,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8759022385072812540, guid: d0f5312f6ddf80c42b69f6ebb5e94c86, type: 3}
 --- !u!114 &8401763687991008753
@@ -21562,9 +21970,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <MainCountryBall>k__BackingField: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 2033879937}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField:
+  - {fileID: 706289158}
+  - {fileID: 1997130961}
+  - {fileID: 2107314937}
   _currentCountryBallCount: 0
 --- !u!54 &8401763687991008754
 Rigidbody:
@@ -21652,7 +22063,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &8409257740355226889
 Rigidbody:
@@ -21751,7 +22162,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &8444562341716758058
 Rigidbody:
@@ -21847,7 +22258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &8519284953763513908
 Rigidbody:
@@ -21977,7 +22388,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &8565611561922456929
 Rigidbody:
@@ -22015,7 +22426,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &8608445831833301677
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22044,7 +22455,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &8608445831833301679
 Rigidbody:
@@ -22105,7 +22516,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &8619761470454409407
 Rigidbody:
@@ -22166,7 +22577,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &8720192259400245173
 Rigidbody:
@@ -22203,7 +22614,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2009607535067279323, guid: d0f5312f6ddf80c42b69f6ebb5e94c86, type: 3}
 --- !u!114 &8809740455702583947
@@ -22218,9 +22629,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <MainCountryBall>k__BackingField: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 1074190057}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField:
+  - {fileID: 891590038}
+  - {fileID: 570080936}
   _currentCountryBallCount: 0
 --- !u!54 &8809740455702583948
 Rigidbody:
@@ -22274,7 +22687,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &8831832994335785991
 Rigidbody:
@@ -22339,9 +22752,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <MainCountryBall>k__BackingField: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 964229345}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &8851470857880793787
 Rigidbody:
@@ -22379,7 +22792,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &8858292751801848056
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22408,7 +22821,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &8858292751801848058
 Rigidbody:
@@ -22446,7 +22859,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &8868206607931046322
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22475,7 +22888,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &8868206607931046324
 Rigidbody:
@@ -22537,7 +22950,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &8904706159933217310
 Rigidbody:
@@ -22598,7 +23011,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &8904744801217256395
 Rigidbody:
@@ -22652,7 +23065,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &8971662373137969873
 Rigidbody:
@@ -22706,7 +23119,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &8972298842088499048
 Rigidbody:
@@ -22767,7 +23180,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &9010932499806892095
 Rigidbody:
@@ -22805,7 +23218,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &9141200736522874134
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22834,7 +23247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &9141200736522874136
 Rigidbody:
@@ -22888,7 +23301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &9151728734459353215
 Rigidbody:
@@ -22942,7 +23355,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 0}
   <CurrentMoney>k__BackingField: 0
-  _borders: []
+  <Borders>k__BackingField: []
   _currentCountryBallCount: 0
 --- !u!54 &9154334772177794975
 Rigidbody:

@@ -8,7 +8,6 @@ namespace Player
     {
         public void Attack(Region ownRegion, Region enemyRegion)
         {
-            print("Attack");
             ownRegion.AttackEnemyRegion(enemyRegion);
         }
     }

@@ -9,7 +9,7 @@ namespace Country
     public class Country : MonoBehaviour
     {
         public event Action RegionsSets;
-        public event Action<List<RegionBorder>> UnionRegionsSets;
+        public event Action UnionRegionsSets;
         
         [field: SerializeField] public GameObject CountryBallPrefab { get; private set; }
         [field: SerializeField] public bool IsPlayerCountry;
@@ -24,8 +24,14 @@ namespace Country
 
         private void Awake()
         {
-            _regions[0].TryGetComponent(out Renderer renderer);
-            _material = renderer.material;
+            try
+            {
+                _regions[0].TryGetComponent(out Renderer renderer);
+                _material = renderer.material;
+            }
+            catch (Exception e)
+            {
+            }
         }
 
         public void SelectRegionsForAttack(string enemyCountryTag, Region enemyRegion = null)
@@ -33,14 +39,14 @@ namespace Country
             EnableAllRegionBorders(enemyCountryTag, enemyRegion);
         }
 
-        public void SelectRegionForAttack(string enemyRegionTag, Region ourRegion, List<RegionBorder> borders)
+        public void SelectRegionForAttack(string enemyRegionTag, List<RegionBorder> borders)
         {
-            EnableRegionBordersForFindEnemyRegion(enemyRegionTag, ourRegion, borders);
+            EnableRegionBordersForFindEnemyRegion(enemyRegionTag, borders);
         }
 
-        public void SelectUnionRegions(Region region, List<RegionBorder> borders)
+        public void SelectUnionRegions(List<RegionBorder> borders)
         {
-            EnableRegionBorders(region, borders);
+            EnableRegionBorders(borders);
         }
 
         public void SetAttackRegions(Region ourRegion, Region enemyRegion)
@@ -56,10 +62,10 @@ namespace Country
             RegionsSets?.Invoke();
         }
 
-        public void SetUnionRegions(List<Region> regions, List<RegionBorder> borders)
+        public void SetUnionRegions(List<Region> regions)
         {
             _unionRegions = regions;
-            UnionRegionsSets?.Invoke(borders);
+            UnionRegionsSets?.Invoke();
         }
 
         public void GetRegionsForAttack(out Region ourRegion, out Region enemyRegion)
@@ -73,12 +79,11 @@ namespace Country
 
         public List<Region> GetUnionRegions() => _unionRegions;
 
-        public void AddRegion(Region capturedRegion, Region invaderRegion, List<Region> regionsForAttack)
+        public void AddRegion(Region capturedRegion, Region invaderRegion)
         {
-            var capturedRegionParent = capturedRegion.transform.parent;
-            capturedRegionParent.TryGetComponent(out Renderer renderer);
+            capturedRegion.TryGetComponent(out Renderer renderer);
             renderer.material = _material;
-            capturedRegionParent.TryGetComponent(out _enemyCountry);
+            capturedRegion.transform.parent.TryGetComponent(out _enemyCountry);
             capturedRegion.tag = tag;
             capturedRegion.transform.SetParent(transform);
             _regions.Add(capturedRegion);
@@ -88,13 +93,7 @@ namespace Country
             if (player is null) return;
             capturedRegion.Init(player);
 
-            var isEnemyRegionRemained = false;
-            
-            foreach (var regionForAttack in regionsForAttack.Where(regionForAttack => !regionForAttack.CompareTag(regionTag)))
-            {
-                print(regionForAttack);
-                isEnemyRegionRemained = true;
-            }
+            var isEnemyRegionRemained = GeneralAsset.Instance.RegionsForAttack.Any(regionForAttack => !regionForAttack.CompareTag(regionTag));
 
             if (isEnemyRegionRemained) return;
             
@@ -152,29 +151,17 @@ namespace Country
         {
             var borders = _regions.SelectMany(region => region.GetComponentsInChildren<RegionBorder>()).ToList();
             
-            foreach (var border in borders)
-            {
-                border.Init(enemyCountryTag, enemyRegion, borders);
-                border.gameObject.SetActive(true);
-            }
+            foreach (var border in borders) border.Init(enemyCountryTag, enemyRegion, borders, _regions);
         }
 
-        private void EnableRegionBordersForFindEnemyRegion(string enemyTag, Region ourRegion, List<RegionBorder> borders)
+        private void EnableRegionBordersForFindEnemyRegion(string enemyTag, List<RegionBorder> borders)
         {
-            foreach (var border in borders)
-            {
-                border.InitWithOurRegion(enemyTag, ourRegion, borders);
-                border.gameObject.SetActive(true);
-            }
+            foreach (var border in borders) border.InitWithOurRegion(enemyTag, borders, _regions);
         }
 
-        private void EnableRegionBorders(Region region, List<RegionBorder> borders)
+        private void EnableRegionBorders(List<RegionBorder> borders)
         {
-            foreach (var border in borders)
-            {
-                border.InitWithRegion(region, borders);
-                border.gameObject.SetActive(true);
-            }
+            foreach (var border in borders) border.InitWithRegion(borders, _regions);
         }
     }
 }
