@@ -90,7 +90,6 @@ namespace Country
             var regionTag = invaderRegion.tag;
 
             TryGetComponent(out Player.Player player);
-            if (player is null) return;
             capturedRegion.Init(player);
 
             var isEnemyRegionRemained = GeneralAsset.Instance.RegionsForAttack.Any(regionForAttack => !regionForAttack.CompareTag(regionTag));
@@ -110,12 +109,26 @@ namespace Country
             
             foreach (var country in GeneralAsset.Instance.AllCountries) country.gameObject.SetActive(true);
             
+            if (!IsPlayerCountry)
+            {
+                float money = GeneralAsset.Instance.EnemyRegionForAttackCount * 100 * invaderRegion.CurrentMoney;
+                Economy.Economy.IncreaseMoney(money);
+
+                foreach (var region in GeneralAsset.Instance.PlayerRegionsForAttack) region.Init();
+            }
+            else if (IsPlayerCountry)
+            {
+                foreach (var region in GeneralAsset.Instance.EnemyRegionsForAttack) region.Init();
+            }
+            
+            foreach (var region in GeneralAsset.Instance.RegionsForAttack)
+            {
+                region.StopIncreaseCountryBallCountCoroutine();
+                region.RecoverCountryBall();
+            }
+
             EnableAllRegions();
             enemyCountry.EnableAllRegions();
-            
-            if (!IsPlayerCountry) return;
-            float money = GeneralAsset.Instance.EnemyRegionForAttackCount * 100 * invaderRegion.CurrentMoney;
-            Economy.Economy.IncreaseMoney(money);
         }
 
         public void DisableNotInvolvedRegions(List<Region> regions)

@@ -3023,7 +3023,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
       propertyPath: m_LocalScale.x
@@ -7855,7 +7855,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1111097082138909699, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_Size.x
-      value: 0.000026742855
+      value: 0.00001674835
       objectReference: {fileID: 0}
     - target: {fileID: 1111097082138909699, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_Size.y
@@ -7863,11 +7863,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1111097082138909699, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_Size.z
-      value: 0.00052532536
+      value: 0.000525325
       objectReference: {fileID: 0}
     - target: {fileID: 1111097082138909699, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_Center.x
-      value: -0.0015677351
+      value: -0.0015727489
       objectReference: {fileID: 0}
     - target: {fileID: 1111097082138909699, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_Center.y
@@ -13494,7 +13494,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 97f5630456906db4f818966320ca262d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18145,7 +18145,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: c6f22466f44dca44cb540aa9234333a7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19168,7 +19168,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MainCountryBall>k__BackingField: {fileID: 1805379547}
   <CurrentMoney>k__BackingField: 0
-  <Borders>k__BackingField: []
+  <Borders>k__BackingField:
+  - {fileID: 0}
   _currentCountryBallCount: 0
 --- !u!54 &7079611499818357279
 Rigidbody:

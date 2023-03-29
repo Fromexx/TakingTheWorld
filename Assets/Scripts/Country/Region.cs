@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Assets;
 using Economy;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 namespace Country
 {
@@ -38,8 +39,6 @@ namespace Country
                 {
                     _mainCountryBall.IncreaseScale();
                 }
-                
-                StartCoroutine(IncreaseCountryBallCount());
             }
             catch (Exception e)
             {
@@ -61,14 +60,13 @@ namespace Country
 
         public void AttackEnemyRegion(Region enemyRegion)
         {
-            StopCoroutine(IncreaseCountryBallCount());
+            StopIncreaseCountryBallCountCoroutine();
+            enemyRegion.StopIncreaseCountryBallCountCoroutine();
             StartCoroutine(SpawnCountryBall(enemyRegion));
         }
 
-        public void ProtectRegion(Transform enemyCountry, Region enemyRegion)
+        public void ProtectRegion(Transform enemyCountry, Region enemyRegion, bool isLastCountryBall)
         {
-            StopCoroutine(IncreaseCountryBallCount());
-            
             transform.parent.TryGetComponent(out Country ownCountry);
             enemyCountry.TryGetComponent(out Country enemyCountryComponent);
             
@@ -80,14 +78,14 @@ namespace Country
 
             DecrementCurrentCountryBallCount();
 
+            if (isLastCountryBall) StartIncreaseCountryBallCountCoroutine();
+
             if (_currentCountryBallCount != 0) return;
             
             _currentCountryBallCount = 1;
             _country.RemoveRegion(this);
             
             enemyCountryComponent.AddRegion(this, enemyRegion);
-            
-            StartCoroutine(IncreaseCountryBallCount());
         }
 
         public void TuneCountryBallCount()
@@ -126,17 +124,33 @@ namespace Country
             GeneralAsset.Instance.RegionTuneView.Render(_tuneLevel, this);
         }
 
+        public void RecoverCountryBall()
+        {
+            _currentCountryBallCount = _tuneLevel.GetCountryBallTuneCount();
+
+            for (int i = 0; i < _currentCountryBallCount; i++)
+            {
+                _mainCountryBall.IncreaseScale();
+            }
+        }
+
+        private void StartIncreaseCountryBallCountCoroutine() => StartCoroutine(IncreaseCountryBallCount());
+        public void StopIncreaseCountryBallCountCoroutine() => StopCoroutine(IncreaseCountryBallCount());
+
         private IEnumerator SpawnCountryBall(Region enemyRegion)
         {
             transform.parent.TryGetComponent(out Country country);
             var countryBallSpawnerPosition = MainCountryBall.position;
-            var countryBallCountToSpawn = enemyRegion.CompareTag(tag) ? enemyRegion._tuneLevel.GetCountryBallTuneCount() - enemyRegion._currentCountryBallCount
+            var needCountryBallCountToSpawn = enemyRegion.CompareTag(tag) ? enemyRegion._tuneLevel.GetCountryBallTuneCount() - enemyRegion._currentCountryBallCount
                 : enemyRegion._currentCountryBallCount + enemyRegion._tuneLevel.GetCountryBallTuneCount();
+            var countryBallCountToSpawn = _currentCountryBallCount - 1 - needCountryBallCountToSpawn < 0
+                ? _currentCountryBallCount
+                : needCountryBallCountToSpawn;
+            
+            enemyRegion.StopIncreaseCountryBallCountCoroutine();
 
             for (int i = 0; i < countryBallCountToSpawn; i++)
             {
-                if (_currentCountryBallCount == 1) break;
-                
                 _currentCountryBallCount -= 1;
 
                 var countryBall = Instantiate(country.CountryBallPrefab, new Vector3(countryBallSpawnerPosition.x, countryBallSpawnerPosition.y, countryBallSpawnerPosition.z),
@@ -144,20 +158,20 @@ namespace Country
             
                 countryBall.TryGetComponent(out CountryBall countryBallComponent);
                 
-                countryBallComponent.Init(enemyRegion.MainCountryBall.position, enemyRegion, transform.parent, this);
+                countryBallComponent.Init(enemyRegion.MainCountryBall.position, enemyRegion, transform.parent, this, countryBallCountToSpawn, i+1);
             
                 _mainCountryBall.DecreaseScale();
                 
                 yield return new WaitForSeconds(GeneralAsset.Instance.TimeBetweenCountryBallSpawn);
             }
             
-            StartCoroutine(IncreaseCountryBallCount());
+            StartIncreaseCountryBallCountCoroutine();
         }
 
         private IEnumerator IncreaseCountryBallCount()
         {
             yield return new WaitForSeconds(GeneralAsset.Instance.TimeBetweenIncreaseCountryBall);
-
+            
             IncrementCurrentCountryBallCount();
 
             StartCoroutine(IncreaseCountryBallCount());
@@ -165,7 +179,7 @@ namespace Country
 
         private void IncrementCurrentCountryBallCount()
         {
-            if (_currentCountryBallCount == _tuneLevel.GetCountryBallTuneCount()) return;
+            if (_currentCountryBallCount >= _tuneLevel.GetCountryBallTuneCount()) return;
             
             _currentCountryBallCount += 1;
 
@@ -198,7 +212,7 @@ namespace Country
             _country.DisableNotInvolvedRegions(GeneralAsset.Instance.RegionsForAttack);
             GeneralAsset.Instance.PlayerCountry.DisableNotInvolvedRegions(GeneralAsset.Instance.RegionsForAttack);
 
-            StartCoroutine(IncreaseCountryBallCount());
+            foreach (var region in GeneralAsset.Instance.RegionsForAttack) region.StartIncreaseCountryBallCountCoroutine();
 
             GeneralAsset.Instance.AttackStarted = true;
         }
@@ -209,8 +223,9 @@ namespace Country
             
             _country.GetRegionsForAttack(out var ourRegion, out _playerRegion);
             GeneralAsset.Instance.RegionsForAttack.Add(ourRegion);
-            GeneralAsset.Instance.RegionsForAttack.Add(_playerRegion);
             GeneralAsset.Instance.EnemyRegionsForAttack.Add(ourRegion);
+            GeneralAsset.Instance.RegionsForAttack.Add(_playerRegion);
+            GeneralAsset.Instance.PlayerRegionsForAttack.Add(_playerRegion);
             
             GeneralAsset.Instance.EnemyRegionForAttackCount = 1;
 
@@ -227,10 +242,13 @@ namespace Country
             var unionRegions = _country.GetUnionRegions();
             if (!(unionRegions is null))
             {
-                GeneralAsset.Instance.RegionsForAttack.AddRange(unionRegions);
                 GeneralAsset.Instance.EnemyRegionForAttackCount += unionRegions.Count;
                 
-                GeneralAsset.Instance.EnemyRegionsForAttack.AddRange(unionRegions);
+                foreach (var region in unionRegions)
+                {
+                    GeneralAsset.Instance.RegionsForAttack.Add(region);
+                    GeneralAsset.Instance.EnemyRegionsForAttack.Add(region);
+                }
             }
             
             _playerRegion.transform.parent.TryGetComponent(out _playerCountry);
@@ -246,7 +264,14 @@ namespace Country
             _country.UnionRegionsSets -= OnOurUnionRegionsSets;
 
             var unionRegions = _playerCountry.GetUnionRegions();
-            if (!(unionRegions is null)) GeneralAsset.Instance.RegionsForAttack.AddRange(unionRegions);
+            if (!(unionRegions is null))
+            {
+                foreach (var region in unionRegions)
+                {
+                    GeneralAsset.Instance.RegionsForAttack.Add(region);
+                    GeneralAsset.Instance.PlayerRegionsForAttack.Add(region);
+                }
+            }
 
             AttackPrepare();
         }
@@ -262,6 +287,8 @@ namespace Country
             if (GeneralAsset.Instance.AttackStarted) return;
 
             GeneralAsset.Instance.RegionsForAttack = new List<Region>();
+            GeneralAsset.Instance.PlayerRegionsForAttack = new List<Region>();
+            GeneralAsset.Instance.EnemyRegionsForAttack = new List<Region>();
             _country.SelectRegionForAttack(GeneralAsset.Instance.PlayerCountry.tag, Borders);
             
             _country.RegionsSets += OnRegionsSets;

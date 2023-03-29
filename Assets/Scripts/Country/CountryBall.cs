@@ -13,6 +13,8 @@ namespace Country
         private Transform _ownCountry;
         private bool _isInit;
         private Region _ownRegion;
+        private int _countryBallCount;
+        private int _countryBallNumber;
 
         private const string MainCountryBallTag = "MainCountryBall";
 
@@ -20,14 +22,14 @@ namespace Country
         {
             if (_atTargetPosition)
             {
-                _enemyRegion.ProtectRegion(_ownCountry, _ownRegion);
+                _enemyRegion.ProtectRegion(_ownCountry, _ownRegion, _countryBallNumber == _countryBallCount);
                 Destroy(gameObject);
             }
             
             if(_isInit) Move();
         }
         
-        public void Init(Vector3 target, Region enemyRegion, Transform ownCountry, Region ownRegion)
+        public void Init(Vector3 target, Region enemyRegion, Transform ownCountry, Region ownRegion, int countryBallCount, int countryBallNumber)
         {
             _isInit = true;
             _atTargetPosition = false;
@@ -35,6 +37,8 @@ namespace Country
             _enemyRegion = enemyRegion;
             _ownCountry = ownCountry;
             _ownRegion = ownRegion;
+            _countryBallCount = countryBallCount;
+            _countryBallNumber = countryBallNumber;
         }
 
         private void Move()

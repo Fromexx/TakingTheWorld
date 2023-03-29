@@ -25,6 +25,7 @@ namespace Assets
         [HideInInspector] public List<Collider> VerifedColliders;
         [HideInInspector] public List<Region> RegionsForAttack;
         [HideInInspector] public int EnemyRegionForAttackCount;
+        [HideInInspector] public List<Region> PlayerRegionsForAttack;
         [HideInInspector] public List<Region> EnemyRegionsForAttack;
 
         private void Awake() => _instance ??= this;
