@@ -1,4 +1,5 @@
-﻿using Economy;
+﻿using System;
+using Economy;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -17,44 +18,42 @@ namespace Country
         private Button _moneyButton;
         private Region _region;
         private bool _listenersAlreadyAdded;
-        
+
+        private void Awake()
+        {
+            _tuneCountryBall.transform.parent.TryGetComponent(out _countryBallButton);
+            _tuneMoney.transform.parent.TryGetComponent(out _moneyButton);
+        }
+
         public void Render(TuneLevel tuneLevel, Region region)
         {
+            print(tuneLevel.CurrentMoneyLevel);
+            
             _region = region;
             
             _regionTune.SetActive(true);
-
+            
             if (tuneLevel.CurrentCountryBallLevel == tuneLevel.MaxLevel) _tuneCountryBall.text = _startTuneCountryBallText + tuneLevel.GetCountryBallTuneCount() + "\nMax Level";
             else if (tuneLevel.CurrentCountryBallLevel != tuneLevel.MaxLevel) _tuneCountryBall.text = _startTuneCountryBallText + tuneLevel.GetCountryBallTuneCount();
 
             if (tuneLevel.CurrentMoneyLevel == tuneLevel.MaxLevel) _tuneMoney.text = _startTuneMoneyText + tuneLevel.GetMoneyTune() + "%" + "\nMax Level";
             else if (tuneLevel.CurrentMoneyLevel != tuneLevel.MaxLevel) _tuneMoney.text = _startTuneMoneyText + tuneLevel.GetMoneyTune() + "%";
-
-            if (_listenersAlreadyAdded) return;
-            
-            AddButtonsListeners();
-            _listenersAlreadyAdded = true;
         }
 
         public void OnClose()
         {
-            RemoveButtonsListeners();
             _regionTune.SetActive(false);
             _listenersAlreadyAdded = false;
         }
 
-        private void AddButtonsListeners()
+        public void OnCountryBallTuneClick()
         {
-            _tuneCountryBall.transform.parent.TryGetComponent(out _countryBallButton);
-            _tuneMoney.transform.parent.TryGetComponent(out _moneyButton);
-
-            _countryBallButton.onClick.AddListener(_region.TuneCountryBallCount);
-            _moneyButton.onClick.AddListener(_region.TuneMoney);
+            _region.TuneCountryBallCount();
         }
 
-        private void RemoveButtonsListeners()
+        public void OnMoneyTuneClick()
         {
-            _countryBallButton.onClick.RemoveAllListeners();
+            _region.TuneMoney();
         }
     }
 }

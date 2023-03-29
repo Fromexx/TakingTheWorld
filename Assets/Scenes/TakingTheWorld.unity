@@ -5032,7 +5032,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 883349612}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1099094403}
+        m_TargetAssemblyTypeName: Country.RegionTuneView, Assembly-CSharp
+        m_MethodName: OnMoneyTuneClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &883349612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5674,7 +5686,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 968217298}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1099094403}
+        m_TargetAssemblyTypeName: Country.RegionTuneView, Assembly-CSharp
+        m_MethodName: OnCountryBallTuneClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &968217298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8479,6 +8503,7 @@ MonoBehaviour:
   VerifedColliders: []
   RegionsForAttack: []
   EnemyRegionForAttackCount: 0
+  PlayerRegionsForAttack: []
   EnemyRegionsForAttack: []
 --- !u!4 &1553490266
 Transform:
