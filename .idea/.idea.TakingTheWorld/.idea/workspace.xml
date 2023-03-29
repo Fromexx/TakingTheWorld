@@ -21,9 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="09e4658a-ee63-4078-abfc-977d12232f9d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TakingTheWorld.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TakingTheWorld.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Assets/GeneralAsset.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/GeneralAsset.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Country/MainCountryBall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Country/MainCountryBall.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Country/RegionTuneView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Country/RegionTuneView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,15 +96,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Economy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Economy/EconomyView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Economy/TuneLevel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Country/MainCountryBall.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Country/RegionBorder.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAttack.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Assets/GeneralAsset.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Country/CountryBall.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Country/Country.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Country/RegionTuneView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CameraLogic/InCameraDetector.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Assets/GeneralAsset.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Country/MainCountryBall.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" />
       </list>
     </option>
   </component>
@@ -174,7 +176,8 @@
       <workItem from="1679958409141" duration="3980000" />
       <workItem from="1679986268419" duration="11649000" />
       <workItem from="1680061365464" duration="15920000" />
-      <workItem from="1680083184840" duration="5735000" />
+      <workItem from="1680083184840" duration="10135000" />
+      <workItem from="1680107340036" duration="1365000" />
     </task>
     <servers />
   </component>

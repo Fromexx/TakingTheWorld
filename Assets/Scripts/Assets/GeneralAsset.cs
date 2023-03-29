@@ -11,8 +11,6 @@ namespace Assets
         private static GeneralAsset _instance;
 
         [field: SerializeField] public Camera Camera { get; private set; }
-        [field: SerializeField] public float MainCountryBallIncreaseFactor { get; private set; }
-        [field: SerializeField] public int MaxFactorCount { get; private set; }
         [field: SerializeField] public float TimeBetweenCountryBallSpawn { get; private set; }
         [field: SerializeField] public float TimeBetweenIncreaseCountryBall { get; private set; }
         [field: SerializeField] public Country.Country PlayerCountry { get; private set; }

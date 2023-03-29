@@ -33,11 +33,6 @@ namespace Country
                 transform.parent.TryGetComponent(out _country);
 
                 MainCountryBall.TryGetComponent(out _mainCountryBall);
-    
-                for (int i = 0; i < _currentCountryBallCount; i++)
-                {
-                    _mainCountryBall.IncreaseScale();
-                }
             }
             catch (Exception e)
             {
@@ -123,15 +118,7 @@ namespace Country
             GeneralAsset.Instance.RegionTuneView.Render(_tuneLevel, this);
         }
 
-        public void RecoverCountryBall()
-        {
-            _currentCountryBallCount = _tuneLevel.GetCountryBallTuneCount();
-
-            for (int i = 0; i < _currentCountryBallCount; i++)
-            {
-                _mainCountryBall.IncreaseScale();
-            }
-        }
+        public void RecoverCountryBall() => _currentCountryBallCount = _tuneLevel.GetCountryBallTuneCount();
 
         private void StartIncreaseCountryBallCountCoroutine() => StartCoroutine(IncreaseCountryBallCount());
         public void StopIncreaseCountryBallCountCoroutine() => StopCoroutine(IncreaseCountryBallCount());
@@ -158,8 +145,6 @@ namespace Country
                 countryBall.TryGetComponent(out CountryBall countryBallComponent);
                 
                 countryBallComponent.Init(enemyRegion.MainCountryBall.position, enemyRegion, transform.parent, this, countryBallCountToSpawn, i+1);
-            
-                _mainCountryBall.DecreaseScale();
                 
                 yield return new WaitForSeconds(GeneralAsset.Instance.TimeBetweenCountryBallSpawn);
             }
@@ -186,16 +171,10 @@ namespace Country
 
             var startYScale = MainCountryBall.localScale.y;
             
-            _mainCountryBall.IncreaseScale();
             MainCountryBall.position = new Vector3(mainCountryBallPosition.x, mainCountryBallPosition.y + (MainCountryBall.localScale.y - startYScale), mainCountryBallPosition.z);
         }
 
-        private void DecrementCurrentCountryBallCount()
-        {
-            _currentCountryBallCount -= 1;
-            
-            _mainCountryBall.DecreaseScale();
-        }
+        private void DecrementCurrentCountryBallCount() => _currentCountryBallCount -= 1;
         
         private void AttackPrepare()
         {

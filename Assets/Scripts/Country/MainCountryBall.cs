@@ -23,20 +23,6 @@ namespace Country
         }
 
         public void Init(Player.Player player) => _player = player;
-
-        public void IncreaseScale()
-        {
-            if (_currentIncreaseCount == GeneralAsset.Instance.MaxFactorCount) return;
-            transform.localScale *= GeneralAsset.Instance.MainCountryBallIncreaseFactor;
-            _currentIncreaseCount += 1;
-        }
-
-        public void DecreaseScale()
-        {
-            if (_currentIncreaseCount == 0) return;
-            transform.localScale /= GeneralAsset.Instance.MainCountryBallIncreaseFactor;
-            _currentIncreaseCount -= 1;
-        }
         
         private void OnMouseDown()
         {
