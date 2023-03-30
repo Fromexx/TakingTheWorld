@@ -4,16 +4,81 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - USA
   - Russia
+  - Aserbaydgan
+  - Armenia
+  - Afganistan
+  - Bangladesh
+  - Belarus
+  - Belis
+  - Butan
+  - Velicobritania
+  - Africa
+  - Grenlandia
+  - Europa
+  - Canada
+  - USA
+  - Australia
+  - China
+  - Vetnam
+  - Gaity
+  - Gvatemela
+  - Gondyras
+  - Grusia
+  - Dominicanscaya
+  - India
+  - Iordania
+  - Irak
+  - Iran
+  - Irlandia
+  - Islandia
+  - Yemen
+  - CNDR
+  - Cambodga
+  - Catar
+  - Kirgizia
+  - Costa-Rika
+  - Cuba
+  - Kyveyt
+  - Laos
+  - Madagaskar
+  - Malasia
+  - Mayanma
+  - Meksika
+  - Mongolia
+  - Nepal
+  - Nikaragya
+  - New Gvinea
+  - New Zelandia
+  - Norvegia
+  - OEA
   - Kazakhstan
-  - MainCountryBall
-  - "\u0410\u0437\u0435\u0440\u0431\u0430\u0439\u0434\u0436\u0430\u043D"
+  - Oman
+  - Pakistan
+  - Panma
+  - Salvador
+  - Saudovskaya Aravia
+  - South America
+  - Siria
+  - Tadgikistan
+  - Tayvan
+  - Tayland
+  - Tyrkmenia
+  - Typcia
+  - Ysbekistan
+  - Ukraine
+  - Filipin
+  - Finlandia
+  - Shvechia
+  - Shri-Lanka
+  - South Korea
+  - Yamayka
+  - Japan
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Country
+  - 
   - Water
   - UI
   - 

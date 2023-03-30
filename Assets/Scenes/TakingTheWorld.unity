@@ -309,7 +309,7 @@ GameObject:
   - component: {fileID: 10566228}
   m_Layer: 0
   m_Name: "\u0415\u0432\u0440\u043E\u043F\u0430"
-  m_TagString: Untagged
+  m_TagString: Europa
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -385,7 +385,7 @@ GameObject:
   - component: {fileID: 30981890}
   m_Layer: 0
   m_Name: "\u041A\u0443\u0432\u0435\u0439\u0442"
-  m_TagString: Untagged
+  m_TagString: Kyveyt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -557,7 +557,7 @@ GameObject:
   - component: {fileID: 46229722}
   m_Layer: 0
   m_Name: "\u042F\u043F\u043E\u043D\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Japan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -905,7 +905,7 @@ GameObject:
   - component: {fileID: 87651556}
   m_Layer: 0
   m_Name: "\u041C\u0430\u044F\u043D\u043C\u0430"
-  m_TagString: Untagged
+  m_TagString: Mayanma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -979,7 +979,7 @@ GameObject:
   - component: {fileID: 115380568}
   m_Layer: 0
   m_Name: "\u0428\u0440\u0438-\u041B\u0430\u043D\u043A\u0430"
-  m_TagString: Untagged
+  m_TagString: Shri-Lanka
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1299,7 +1299,7 @@ GameObject:
   - component: {fileID: 172051648}
   m_Layer: 0
   m_Name: "\u041A\u0430\u0442\u0430\u0440"
-  m_TagString: Untagged
+  m_TagString: Catar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1772,7 +1772,7 @@ GameObject:
   - component: {fileID: 251977686}
   m_Layer: 0
   m_Name: "\u041D\u0435\u043F\u0430\u043B"
-  m_TagString: Untagged
+  m_TagString: Nepal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1920,7 +1920,7 @@ GameObject:
   - component: {fileID: 256692950}
   m_Layer: 0
   m_Name: "\u0410\u0437\u0435\u0440\u0431\u0430\u0439\u0434\u0436\u0430\u043D"
-  m_TagString: "\u0410\u0437\u0435\u0440\u0431\u0430\u0439\u0434\u0436\u0430\u043D"
+  m_TagString: Aserbaydgan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2005,7 +2005,7 @@ GameObject:
   - component: {fileID: 267304700}
   m_Layer: 0
   m_Name: "\u0428\u0432\u0435\u0446\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Shvechia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2401,7 +2401,7 @@ GameObject:
   - component: {fileID: 330499624}
   m_Layer: 0
   m_Name: "\u041F\u0430\u043D\u043C\u0430"
-  m_TagString: Untagged
+  m_TagString: Panma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2475,7 +2475,7 @@ GameObject:
   - component: {fileID: 355822275}
   m_Layer: 0
   m_Name: "\u042F\u043C\u0430\u0439\u043A\u0430"
-  m_TagString: Untagged
+  m_TagString: Yamayka
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2549,7 +2549,7 @@ GameObject:
   - component: {fileID: 381012103}
   m_Layer: 0
   m_Name: "\u0410\u0444\u0440\u0438\u043A\u0430"
-  m_TagString: Untagged
+  m_TagString: Africa
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2808,7 +2808,7 @@ GameObject:
   - component: {fileID: 447136070}
   m_Layer: 0
   m_Name: "\u0418\u0440\u0430\u043A"
-  m_TagString: Untagged
+  m_TagString: Irak
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2882,7 +2882,7 @@ GameObject:
   - component: {fileID: 454966668}
   m_Layer: 0
   m_Name: "\u041E\u043C\u0430\u043D"
-  m_TagString: Untagged
+  m_TagString: Oman
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3337,7 +3337,7 @@ GameObject:
   - component: {fileID: 496409241}
   m_Layer: 0
   m_Name: "\u0412\u044C\u0435\u0442\u043D\u0430\u043C"
-  m_TagString: Untagged
+  m_TagString: Vetnam
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3485,7 +3485,7 @@ GameObject:
   - component: {fileID: 500469017}
   m_Layer: 0
   m_Name: "\u041C\u0430\u0434\u0430\u0433\u0430\u0441\u043A\u0430\u0440"
-  m_TagString: Untagged
+  m_TagString: Madagaskar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3709,7 +3709,7 @@ GameObject:
   - component: {fileID: 526525722}
   m_Layer: 0
   m_Name: "\u041A\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043D"
-  m_TagString: Untagged
+  m_TagString: Kazakhstan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3783,7 +3783,7 @@ GameObject:
   - component: {fileID: 555777279}
   m_Layer: 0
   m_Name: "\u0422\u0430\u0439\u0432\u0430\u043D\u044C"
-  m_TagString: Untagged
+  m_TagString: Tayvan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3931,7 +3931,7 @@ GameObject:
   - component: {fileID: 569277464}
   m_Layer: 0
   m_Name: "\u041C\u0435\u043A\u0441\u0438\u043A\u0430"
-  m_TagString: Untagged
+  m_TagString: Meksika
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4212,7 +4212,7 @@ GameObject:
   - component: {fileID: 571880527}
   m_Layer: 0
   m_Name: "\u0422\u0430\u0439\u043B\u0430\u043D\u0434"
-  m_TagString: Untagged
+  m_TagString: Tayland
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4360,7 +4360,7 @@ GameObject:
   - component: {fileID: 591970886}
   m_Layer: 0
   m_Name: "\u041D\u043E\u0432\u0430\u044F \u0417\u0435\u043B\u0430\u043D\u0434\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: New Zelandia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4617,7 +4617,7 @@ GameObject:
   - component: {fileID: 619617995}
   m_Layer: 0
   m_Name: "\u0413\u0430\u0438\u0442\u0438"
-  m_TagString: Untagged
+  m_TagString: Gaity
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5417,7 +5417,7 @@ GameObject:
   - component: {fileID: 745206256}
   m_Layer: 0
   m_Name: "\u041C\u0430\u043B\u0430\u0439\u0437\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Malasia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5925,7 +5925,7 @@ GameObject:
   - component: {fileID: 809451654}
   m_Layer: 0
   m_Name: "\u0410\u0444\u0433\u0430\u043D\u0438\u0441\u0442\u0430\u043D"
-  m_TagString: Untagged
+  m_TagString: Afganistan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5999,7 +5999,7 @@ GameObject:
   - component: {fileID: 811403888}
   m_Layer: 0
   m_Name: "\u0418\u0441\u043B\u0430\u043D\u0434\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Islandia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6147,7 +6147,7 @@ GameObject:
   - component: {fileID: 817445340}
   m_Layer: 0
   m_Name: "\u041D\u043E\u0440\u0432\u0435\u0433\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Norvegia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6221,7 +6221,7 @@ GameObject:
   - component: {fileID: 822528179}
   m_Layer: 0
   m_Name: "\u0418\u043D\u0434\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: India
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6294,7 +6294,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 418462770464328092, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
       propertyPath: m_TagString
-      value: MainCountryBall
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
       propertyPath: m_RootOrder
@@ -6386,7 +6386,7 @@ GameObject:
   - component: {fileID: 833859238}
   m_Layer: 0
   m_Name: "\u0424\u0438\u043D\u043B\u044F\u043D\u0434\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Finlandia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6558,7 +6558,7 @@ GameObject:
   - component: {fileID: 856296595}
   m_Layer: 0
   m_Name: "\u0413\u0432\u0430\u0442\u0435\u043C\u0430\u043B\u0430"
-  m_TagString: Untagged
+  m_TagString: Gvatemela
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6746,7 +6746,7 @@ GameObject:
   - component: {fileID: 877533675}
   m_Layer: 0
   m_Name: "\u0413\u043E\u043D\u0434\u0443\u0440\u0430\u0441"
-  m_TagString: Untagged
+  m_TagString: Gondyras
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6820,7 +6820,7 @@ GameObject:
   - component: {fileID: 878362758}
   m_Layer: 0
   m_Name: "\u0423\u043A\u0440\u0430\u0438\u043D\u0430"
-  m_TagString: Untagged
+  m_TagString: Ukraine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6894,7 +6894,7 @@ GameObject:
   - component: {fileID: 880352528}
   m_Layer: 0
   m_Name: "\u0411\u0443\u0442\u0430\u043D"
-  m_TagString: Untagged
+  m_TagString: Butan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7420,7 +7420,7 @@ GameObject:
   - component: {fileID: 909282615}
   m_Layer: 0
   m_Name: "\u0424\u0438\u043B\u0438\u043F\u043F\u0438\u043D\u044B"
-  m_TagString: Untagged
+  m_TagString: Filipin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7867,7 +7867,7 @@ GameObject:
   - component: {fileID: 979286196}
   m_Layer: 0
   m_Name: "\u0410\u0432\u0441\u0442\u0440\u0430\u043B\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Australia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8017,7 +8017,7 @@ GameObject:
   - component: {fileID: 1001429694}
   m_Layer: 0
   m_Name: "\u041E\u042D\u0410"
-  m_TagString: Untagged
+  m_TagString: OEA
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8150,7 +8150,7 @@ GameObject:
   - component: {fileID: 1023656792}
   m_Layer: 0
   m_Name: "\u0412\u0435\u043B\u0438\u043A\u043E\u0431\u0440\u0438\u0442\u0430\u043D\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Velicobritania
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8374,7 +8374,7 @@ GameObject:
   - component: {fileID: 1050260378}
   m_Layer: 0
   m_Name: "\u0418\u0440\u043B\u0430\u043D\u0434\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Irlandia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8697,7 +8697,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 418462770464328092, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
       propertyPath: m_TagString
-      value: MainCountryBall
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
       propertyPath: m_RootOrder
@@ -8771,7 +8771,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 418462770464328092, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
       propertyPath: m_TagString
-      value: MainCountryBall
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
       propertyPath: m_RootOrder
@@ -9011,7 +9011,7 @@ GameObject:
   - component: {fileID: 1079692722}
   m_Layer: 0
   m_Name: "\u0420\u043E\u0441\u0441\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Russia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9087,7 +9087,7 @@ GameObject:
   - component: {fileID: 1084916286}
   m_Layer: 0
   m_Name: "\u0422\u0443\u0440\u043A\u043C\u0435\u043D\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Tyrkmenia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9366,7 +9366,7 @@ GameObject:
   - component: {fileID: 1120471764}
   m_Layer: 0
   m_Name: "\u0420\u043E\u0441\u0441\u0438\u044F"
-  m_TagString: Russia
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9445,7 +9445,7 @@ GameObject:
   - component: {fileID: 1123067398}
   m_Layer: 0
   m_Name: "\u0418\u043E\u0440\u0434\u0430\u043D\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Iordania
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9519,7 +9519,7 @@ GameObject:
   - component: {fileID: 1128484144}
   m_Layer: 0
   m_Name: "\u041A\u043E\u0441\u0442\u0430-\u0420\u0438\u043A\u0430"
-  m_TagString: Untagged
+  m_TagString: Costa-Rika
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9593,7 +9593,7 @@ GameObject:
   - component: {fileID: 1132268547}
   m_Layer: 0
   m_Name: "\u041A\u0430\u043D\u0430\u0434\u0430"
-  m_TagString: Untagged
+  m_TagString: Canada
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9743,7 +9743,7 @@ GameObject:
   - component: {fileID: 1183922907}
   m_Layer: 0
   m_Name: "\u041A\u0430\u043C\u0431\u043E\u0434\u0436\u0430"
-  m_TagString: Untagged
+  m_TagString: Cambodga
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9828,7 +9828,7 @@ GameObject:
   - component: {fileID: 1210372281}
   m_Layer: 0
   m_Name: "\u0418\u0440\u0430\u043D"
-  m_TagString: Untagged
+  m_TagString: Iran
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9902,7 +9902,7 @@ GameObject:
   - component: {fileID: 1218587314}
   m_Layer: 0
   m_Name: "\u0421\u0438\u0440\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Siria
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10124,7 +10124,7 @@ GameObject:
   - component: {fileID: 1238391244}
   m_Layer: 0
   m_Name: "\u041D\u043E\u0432\u0430\u044F \u0413\u0432\u0438\u043D\u0435\u044F"
-  m_TagString: Untagged
+  m_TagString: New Gvinea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10204,7 +10204,7 @@ GameObject:
   - component: {fileID: 1251820145}
   m_Layer: 0
   m_Name: "\u0421\u0430\u043B\u044C\u0432\u0430\u0434\u043E\u0440"
-  m_TagString: Untagged
+  m_TagString: Salvador
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10420,7 +10420,7 @@ GameObject:
   - component: {fileID: 1280488815}
   m_Layer: 0
   m_Name: "\u0411\u0430\u043D\u0433\u043B\u0430\u0434\u0435\u0448"
-  m_TagString: Untagged
+  m_TagString: Bangladesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10511,7 +10511,7 @@ GameObject:
   - component: {fileID: 1319492311}
   m_Layer: 0
   m_Name: "\u041A\u0438\u0440\u0433\u0438\u0437\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Kirgizia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10585,7 +10585,7 @@ GameObject:
   - component: {fileID: 1320792477}
   m_Layer: 0
   m_Name: "\u0423\u0437\u0431\u0435\u043A\u0438\u0441\u0442\u0430\u043D"
-  m_TagString: Untagged
+  m_TagString: Ysbekistan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10733,7 +10733,7 @@ GameObject:
   - component: {fileID: 1334336633}
   m_Layer: 0
   m_Name: "\u041B\u0430\u043E\u0441"
-  m_TagString: Untagged
+  m_TagString: Laos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10807,7 +10807,7 @@ GameObject:
   - component: {fileID: 1341491678}
   m_Layer: 0
   m_Name: "\u0413\u0440\u0435\u043D\u043B\u0430\u043D\u0434\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Grenlandia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11469,7 +11469,7 @@ GameObject:
   - component: {fileID: 1402639254}
   m_Layer: 0
   m_Name: "\u042E\u0436\u043D\u0430\u044F \u041A\u043E\u0440\u0435\u044F"
-  m_TagString: Untagged
+  m_TagString: South Korea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11641,7 +11641,7 @@ GameObject:
   - component: {fileID: 1470220598}
   m_Layer: 0
   m_Name: "\u0411\u0435\u043B\u0438\u0437"
-  m_TagString: Untagged
+  m_TagString: Belis
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11849,7 +11849,7 @@ GameObject:
   - component: {fileID: 1507019167}
   m_Layer: 0
   m_Name: "\u041A\u0438\u0442\u0430\u0439"
-  m_TagString: Untagged
+  m_TagString: China
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11925,7 +11925,7 @@ GameObject:
   - component: {fileID: 1527110583}
   m_Layer: 0
   m_Name: "\u042E\u0436\u043D\u0430\u044F \u0410\u043C\u0435\u0440\u043A\u0430"
-  m_TagString: Untagged
+  m_TagString: South America
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12075,7 +12075,7 @@ GameObject:
   - component: {fileID: 1544415345}
   m_Layer: 0
   m_Name: "\u0422\u0430\u0434\u0436\u0438\u043A\u0438\u0441\u0442\u0430\u043D"
-  m_TagString: Untagged
+  m_TagString: Tadgikistan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12358,7 +12358,7 @@ GameObject:
   - component: {fileID: 1607010128}
   m_Layer: 0
   m_Name: "\u0414\u043E\u043C\u0438\u043D\u0438\u043A\u0430\u043D\u0441\u043A\u0430\u044F"
-  m_TagString: Untagged
+  m_TagString: Dominicanscaya
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12506,7 +12506,7 @@ GameObject:
   - component: {fileID: 1649664104}
   m_Layer: 0
   m_Name: "\u0422\u0443\u0440\u0446\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Typcia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12842,7 +12842,7 @@ GameObject:
   - component: {fileID: 1721675672}
   m_Layer: 0
   m_Name: "\u041F\u0430\u043A\u0438\u0441\u0442\u0430\u043D"
-  m_TagString: Untagged
+  m_TagString: Pakistan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13131,7 +13131,7 @@ GameObject:
   - component: {fileID: 1770969056}
   m_Layer: 0
   m_Name: "\u0410\u0440\u043C\u0435\u043D\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Armenia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13249,7 +13249,7 @@ GameObject:
   - component: {fileID: 1782281876}
   m_Layer: 0
   m_Name: "\u041C\u043E\u043D\u0433\u043E\u043B\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Mongolia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13323,7 +13323,7 @@ GameObject:
   - component: {fileID: 1788244456}
   m_Layer: 0
   m_Name: "\u0421\u0428\u0410"
-  m_TagString: Untagged
+  m_TagString: USA
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13565,7 +13565,7 @@ GameObject:
   - component: {fileID: 1869140647}
   m_Layer: 0
   m_Name: "\u0411\u0435\u043B\u0430\u0440\u0443\u0441\u044C"
-  m_TagString: Untagged
+  m_TagString: Belarus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13639,7 +13639,7 @@ GameObject:
   - component: {fileID: 1886663352}
   m_Layer: 0
   m_Name: "\u041A\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043D"
-  m_TagString: Kazakhstan
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13973,7 +13973,7 @@ GameObject:
   - component: {fileID: 1942569236}
   m_Layer: 0
   m_Name: "\u0413\u0440\u0443\u0437\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Grusia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14269,7 +14269,7 @@ GameObject:
   - component: {fileID: 1988775736}
   m_Layer: 0
   m_Name: "\u041D\u0438\u043A\u0430\u0440\u0430\u0433\u0443\u0430"
-  m_TagString: Untagged
+  m_TagString: Nikaragya
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14898,7 +14898,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 418462770464328092, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
       propertyPath: m_TagString
-      value: MainCountryBall
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 1046379930271666982, guid: 39957db8bca05714cb10ca5add0a20b2, type: 3}
       propertyPath: m_RootOrder
@@ -15064,7 +15064,7 @@ GameObject:
   - component: {fileID: 2036372414}
   m_Layer: 0
   m_Name: "\u0421\u0430\u0443\u0434\u043E\u0432\u0441\u043A\u0430\u044F \u0410\u0440\u0430\u0432\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Saudovskaya Aravia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15286,7 +15286,7 @@ GameObject:
   - component: {fileID: 2059852630}
   m_Layer: 0
   m_Name: "\u041A\u0443\u0431\u0430"
-  m_TagString: Untagged
+  m_TagString: Cuba
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15737,7 +15737,7 @@ GameObject:
   - component: {fileID: 2138126165}
   m_Layer: 0
   m_Name: "\u041A\u041D\u0414\u0420"
-  m_TagString: Untagged
+  m_TagString: CNDR
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15811,7 +15811,7 @@ GameObject:
   - component: {fileID: 2144710849}
   m_Layer: 0
   m_Name: "\u0419\u0435\u043C\u0435\u043D"
-  m_TagString: Untagged
+  m_TagString: Yemen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16003,7 +16003,7 @@ GameObject:
   - component: {fileID: 6375658061067923413}
   m_Layer: 0
   m_Name: "\u0417\u0430\u043F\u0430\u0434\u043D\u0430\u044F \u041A\u0430\u043D\u0430\u0434\u0430"
-  m_TagString: Untagged
+  m_TagString: Canada
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16189,7 +16189,7 @@ GameObject:
   - component: {fileID: 7567529280366083519}
   m_Layer: 0
   m_Name: "\u0410\u0437\u0435\u0440\u0431\u0430\u0439\u0434\u0436\u0430\u043D"
-  m_TagString: "\u0410\u0437\u0435\u0440\u0431\u0430\u0439\u0434\u0436\u0430\u043D"
+  m_TagString: Aserbaydgan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16231,7 +16231,7 @@ GameObject:
   - component: {fileID: 8270880471170555269}
   m_Layer: 0
   m_Name: "\u0412\u043E\u0441\u0442\u043E\u0447\u043D\u0430\u044F \u0410\u0444\u0440\u0438\u043A\u0430"
-  m_TagString: Untagged
+  m_TagString: Africa
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16484,7 +16484,7 @@ GameObject:
   - component: {fileID: 4673429486539131415}
   m_Layer: 0
   m_Name: "\u041C\u043E\u043D\u0433\u043E\u043B\u0438\u044F "
-  m_TagString: Untagged
+  m_TagString: Mongolia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16505,7 +16505,7 @@ GameObject:
   - component: {fileID: 7590802625998039144}
   m_Layer: 0
   m_Name: "\u0421\u0438\u0440\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Siria
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16652,7 +16652,7 @@ GameObject:
   - component: {fileID: 6432694339622579285}
   m_Layer: 0
   m_Name: "\u041C\u0430\u043B\u0430\u0439\u0437\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Malasia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16673,7 +16673,7 @@ GameObject:
   - component: {fileID: 7891071871879085687}
   m_Layer: 0
   m_Name: "\u041A\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043D"
-  m_TagString: Untagged
+  m_TagString: Kazakhstan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16715,7 +16715,7 @@ GameObject:
   - component: {fileID: 8208135985730072655}
   m_Layer: 0
   m_Name: "\u041D\u043E\u0440\u0432\u0435\u0433\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Norvegia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16824,7 +16824,7 @@ GameObject:
   - component: {fileID: 4351505157070465440}
   m_Layer: 0
   m_Name: "\u041A\u0443\u0431\u0430"
-  m_TagString: Untagged
+  m_TagString: Cuba
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17062,7 +17062,7 @@ GameObject:
   - component: {fileID: 8101017874451667783}
   m_Layer: 0
   m_Name: "\u0412\u044C\u0435\u0442\u043D\u0430\u043C"
-  m_TagString: Untagged
+  m_TagString: Vetnam
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17310,7 +17310,7 @@ GameObject:
   - component: {fileID: 1846898603358335094}
   m_Layer: 0
   m_Name: "\u0428\u0432\u0435\u0446\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Shvechia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17581,7 +17581,7 @@ GameObject:
   - component: {fileID: 6403351115907850150}
   m_Layer: 0
   m_Name: "\u0412\u043E\u0441\u0442\u043E\u0447\u043D\u0430\u044F\u0410\u0432\u0441\u0442\u0440\u0430\u043B\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Australia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17723,7 +17723,7 @@ GameObject:
   - component: {fileID: 8409257739198875035}
   m_Layer: 0
   m_Name: "\u0419\u0435\u043C\u0435\u043D"
-  m_TagString: Untagged
+  m_TagString: Yemen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17989,7 +17989,7 @@ GameObject:
   - component: {fileID: 7611362416441887285}
   m_Layer: 0
   m_Name: "\u0422\u0430\u0434\u0436\u0438\u043A\u0438\u0441\u0442\u0430\u043D"
-  m_TagString: Untagged
+  m_TagString: Tadgikistan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18238,7 +18238,7 @@ GameObject:
   - component: {fileID: 3828278966556695797}
   m_Layer: 0
   m_Name: "\u0418\u0440\u043B\u0430\u043D\u0434\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Irlandia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18317,7 +18317,7 @@ GameObject:
   - component: {fileID: 8972298840965246970}
   m_Layer: 0
   m_Name: "\u0417\u0430\u043F\u0430\u0434\u043D\u044B\u0439 \u041A\u0438\u0442\u0430\u0439"
-  m_TagString: Untagged
+  m_TagString: China
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18375,7 +18375,7 @@ GameObject:
   - component: {fileID: 7547490595583334332}
   m_Layer: 0
   m_Name: "\u0412\u043E\u0441\u0442\u043E\u0447\u043D\u0430\u044F \u0420\u043E\u0441\u0441\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Russia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18795,7 +18795,7 @@ GameObject:
   - component: {fileID: 7772525672324455729}
   m_Layer: 0
   m_Name: "\u0424\u0438\u043D\u043B\u044F\u0434\u043D\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Finlandia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19187,7 +19187,7 @@ GameObject:
   - component: {fileID: 5841968695285568023}
   m_Layer: 0
   m_Name: "\u041A\u0438\u0440\u0433\u0438\u0437\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Kirgizia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19313,7 +19313,7 @@ GameObject:
   - component: {fileID: 7925887876637819441}
   m_Layer: 0
   m_Name: "\u0418\u043E\u0440\u0434\u0430\u043D\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Iordania
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19376,7 +19376,7 @@ GameObject:
   - component: {fileID: 7934855122992326691}
   m_Layer: 0
   m_Name: "\u041C\u0430\u044F\u043D\u043C\u0430"
-  m_TagString: Untagged
+  m_TagString: Mayanma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19397,7 +19397,7 @@ GameObject:
   - component: {fileID: 8809740456863650326}
   m_Layer: 0
   m_Name: "\u0417\u0430\u043F\u0430\u0434\u043D\u0430\u044F \u0420\u043E\u0441\u0441\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Russia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19439,7 +19439,7 @@ GameObject:
   - component: {fileID: 8904744802277069653}
   m_Layer: 0
   m_Name: "\u041B\u0430\u043E\u0441"
-  m_TagString: Untagged
+  m_TagString: Laos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19595,7 +19595,7 @@ GameObject:
   - component: {fileID: 7796569858824876015}
   m_Layer: 0
   m_Name: "\u041D\u0438\u043A\u0430\u0440\u0430\u0433\u0443\u0430"
-  m_TagString: Untagged
+  m_TagString: Nikaragya
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19758,7 +19758,7 @@ GameObject:
   - component: {fileID: 8015425184545509001}
   m_Layer: 0
   m_Name: "\u0421\u0435\u0432\u0435\u0440\u043D\u0430\u044F \u0421\u0428\u0410"
-  m_TagString: Untagged
+  m_TagString: USA
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19815,7 +19815,7 @@ GameObject:
   - component: {fileID: 8565611560966907331}
   m_Layer: 0
   m_Name: "\u0411\u0435\u043B\u0430\u0440\u0443\u0441\u044C"
-  m_TagString: Untagged
+  m_TagString: Belarus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19894,7 +19894,7 @@ GameObject:
   - component: {fileID: 6408361118074212351}
   m_Layer: 0
   m_Name: "\u0412\u043E\u0441\u0442\u043E\u0447\u043D\u0430\u044F \u041A\u0430\u043D\u0430\u0434\u0430"
-  m_TagString: Untagged
+  m_TagString: Canada
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20036,7 +20036,7 @@ GameObject:
   - component: {fileID: 5599586888818254634}
   m_Layer: 0
   m_Name: "\u0422\u0430\u0439\u0432\u0430\u043D\u044C"
-  m_TagString: Untagged
+  m_TagString: Tayvan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20057,7 +20057,7 @@ GameObject:
   - component: {fileID: 6473397988163999408}
   m_Layer: 0
   m_Name: "\u041A\u041D\u0414\u0420"
-  m_TagString: Untagged
+  m_TagString: CNDR
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20120,7 +20120,7 @@ GameObject:
   - component: {fileID: 8299776845962963650}
   m_Layer: 0
   m_Name: "\u041A\u0430\u043C\u0431\u043E\u0434\u0436\u0430"
-  m_TagString: Untagged
+  m_TagString: Cambodga
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20339,7 +20339,7 @@ GameObject:
   - component: {fileID: 9010932498786924705}
   m_Layer: 0
   m_Name: "\u0421\u0430\u0443\u0434\u043E\u0432\u0441\u043A\u0430\u044F \u0410\u0440\u0430\u0432\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Saudovskaya Aravia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20944,7 +20944,7 @@ GameObject:
   - component: {fileID: 5610714475915503658}
   m_Layer: 0
   m_Name: "\u0411\u0443\u0442\u0430\u043D"
-  m_TagString: Untagged
+  m_TagString: Butan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21195,7 +21195,7 @@ GameObject:
   - component: {fileID: 7695075373102082948}
   m_Layer: 0
   m_Name: "\u042E\u0436\u043D\u0430\u044F \u041A\u0430\u043D\u0430\u0434\u0430"
-  m_TagString: Untagged
+  m_TagString: Canada
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21482,7 +21482,7 @@ GameObject:
   - component: {fileID: 5854256882440584896}
   m_Layer: 0
   m_Name: "\u041D\u043E\u0432\u0430\u044F \u0413\u0432\u0438\u043D\u0435\u044F"
-  m_TagString: Untagged
+  m_TagString: New Gvinea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21847,7 +21847,7 @@ GameObject:
   - component: {fileID: 8401763686864016756}
   m_Layer: 0
   m_Name: "\u0426\u0435\u043D\u0442\u0440\u0430\u043B\u044C\u043D\u0430\u044F \u0420\u043E\u0441\u0441\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Russia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21910,7 +21910,7 @@ GameObject:
   - component: {fileID: 8444562340591929020}
   m_Layer: 0
   m_Name: "\u042E\u0436\u043D\u044B\u0439 \u041A\u0438\u0442\u0430\u0439"
-  m_TagString: Untagged
+  m_TagString: China
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22031,7 +22031,7 @@ GameObject:
   - component: {fileID: 8904706158845612680}
   m_Layer: 0
   m_Name: "\u0411\u0430\u043D\u0433\u043B\u0430\u0434\u0435\u0448"
-  m_TagString: Untagged
+  m_TagString: Bangladesh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22232,7 +22232,7 @@ GameObject:
   - component: {fileID: 8720192260523497263}
   m_Layer: 0
   m_Name: "\u0413\u0432\u0430\u0442\u0435\u043C\u0430\u043B\u0430"
-  m_TagString: Untagged
+  m_TagString: Gvatemela
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22353,7 +22353,7 @@ GameObject:
   - component: {fileID: 6250686205722985527}
   m_Layer: 0
   m_Name: "\u0413\u043E\u043D\u0434\u0443\u0440\u0430\u0441"
-  m_TagString: Untagged
+  m_TagString: Gondyras
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22549,7 +22549,7 @@ GameObject:
   - component: {fileID: 6383877655767579683}
   m_Layer: 0
   m_Name: "\u041A\u0443\u0432\u0435\u0439\u0442"
-  m_TagString: Untagged
+  m_TagString: Kyveyt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22612,7 +22612,7 @@ GameObject:
   - component: {fileID: 7458197862852650643}
   m_Layer: 0
   m_Name: "\u042E\u0433 \u042E\u0436\u043D\u043E\u0439 \u0410\u043C\u0435\u0440\u0438\u043A\u0438"
-  m_TagString: Untagged
+  m_TagString: South America
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22747,7 +22747,7 @@ GameObject:
   - component: {fileID: 6180743459583327494}
   m_Layer: 0
   m_Name: "\u0412\u043E\u0441\u0442\u043E\u0447\u043D\u0430\u044F \u0413\u0440\u0435\u043D\u043B\u0430\u043D\u0434\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Grenlandia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22819,7 +22819,7 @@ GameObject:
   - component: {fileID: 5615218545689384989}
   m_Layer: 0
   m_Name: "\u042E\u0436\u043D\u0430\u044F \u041A\u043E\u0440\u0435\u044F"
-  m_TagString: Untagged
+  m_TagString: South Korea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22882,7 +22882,7 @@ GameObject:
   - component: {fileID: 7514543172318598055}
   m_Layer: 0
   m_Name: "\u0412\u043E\u0441\u0442\u043E\u0447\u043D\u0430\u044F \u0421\u0428\u0410"
-  m_TagString: Untagged
+  m_TagString: USA
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22933,7 +22933,7 @@ GameObject:
   - component: {fileID: 4513799440969492848}
   m_Layer: 0
   m_Name: "\u041F\u0430\u043A\u0438\u0441\u0442\u0430\u043D"
-  m_TagString: Untagged
+  m_TagString: Pakistan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23075,7 +23075,7 @@ GameObject:
   - component: {fileID: 8519284952772316846}
   m_Layer: 0
   m_Name: "\u0417\u0430\u043F\u0430\u0434\u043D\u0430\u044F \u0410\u0444\u0440\u0438\u043A\u0430"
-  m_TagString: Untagged
+  m_TagString: Africa
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23352,7 +23352,7 @@ GameObject:
   - component: {fileID: 7691290594248850233}
   m_Layer: 0
   m_Name: "\u041D\u0435\u043F\u0430\u043B"
-  m_TagString: Untagged
+  m_TagString: Nepal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23410,7 +23410,7 @@ GameObject:
   - component: {fileID: 5071152610997749808}
   m_Layer: 0
   m_Name: "\u0422\u0443\u0440\u0446\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Typcia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23875,7 +23875,7 @@ GameObject:
   - component: {fileID: 8140508596038844998}
   m_Layer: 0
   m_Name: "\u041A\u0430\u0442\u0430\u0440"
-  m_TagString: Untagged
+  m_TagString: Catar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23984,7 +23984,7 @@ GameObject:
   - component: {fileID: 4490139270113395860}
   m_Layer: 0
   m_Name: "\u0418\u0441\u043B\u0430\u043D\u0434\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Islandia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24478,7 +24478,7 @@ GameObject:
   - component: {fileID: 4575009518254820496}
   m_Layer: 0
   m_Name: "\u0422\u0430\u0439\u043B\u0430\u043D\u0434"
-  m_TagString: Untagged
+  m_TagString: Tayland
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24566,7 +24566,7 @@ GameObject:
   - component: {fileID: 6807914064828000553}
   m_Layer: 0
   m_Name: "\u0421\u0430\u043B\u044C\u0432\u0430\u0434\u043E\u0440"
-  m_TagString: Untagged
+  m_TagString: Salvador
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24695,7 +24695,7 @@ GameObject:
   - component: {fileID: 4717956420762116841}
   m_Layer: 0
   m_Name: "\u0418\u043D\u0434\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: India
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25018,7 +25018,7 @@ GameObject:
   - component: {fileID: 7649076902239557385}
   m_Layer: 0
   m_Name: "\u041C\u0435\u043A\u0441\u0438\u043A\u0430"
-  m_TagString: Untagged
+  m_TagString: Meksika
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25420,7 +25420,7 @@ GameObject:
   - component: {fileID: 6528646301942341167}
   m_Layer: 0
   m_Name: "\u0412\u043E\u0441\u0442\u043E\u0447\u043D\u0430\u044F \u0415\u0432\u0440\u043E\u043F\u0430"
-  m_TagString: Untagged
+  m_TagString: Europa
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25441,7 +25441,7 @@ GameObject:
   - component: {fileID: 7659182958906575398}
   m_Layer: 0
   m_Name: "\u041F\u0430\u043D\u0430\u043C\u0430"
-  m_TagString: Untagged
+  m_TagString: Panma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25624,7 +25624,7 @@ GameObject:
   - component: {fileID: 6835267424748538894}
   m_Layer: 0
   m_Name: "\u0421\u0435\u0432\u0435\u0440 \u042E\u0436\u043D\u043E\u0439 \u0410\u043C\u0435\u0440\u0438\u043A\u0438"
-  m_TagString: Untagged
+  m_TagString: South America
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25750,7 +25750,7 @@ GameObject:
   - component: {fileID: 9151728733434663137}
   m_Layer: 0
   m_Name: "\u042E\u0433 \u0413\u0440\u0435\u043D\u043B\u0430\u043D\u0434\u0438\u0438"
-  m_TagString: Untagged
+  m_TagString: Grenlandia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25943,7 +25943,7 @@ GameObject:
   - component: {fileID: 7598989949638247352}
   m_Layer: 0
   m_Name: "\u0424\u0438\u043B\u0438\u043F\u043F\u0438\u043D\u044B"
-  m_TagString: Untagged
+  m_TagString: Filipin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26283,7 +26283,7 @@ GameObject:
   - component: {fileID: 6928188152715074261}
   m_Layer: 0
   m_Name: "\u041A\u043E\u0441\u0442\u0430-\u0420\u0438\u043A\u0430"
-  m_TagString: Untagged
+  m_TagString: Costa-Rika
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26304,7 +26304,7 @@ GameObject:
   - component: {fileID: 6771429614690571411}
   m_Layer: 0
   m_Name: "\u0428\u0440\u0438-\u041B\u0430\u043D\u043A\u0430"
-  m_TagString: Untagged
+  m_TagString: Shri-Lanka
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27096,7 +27096,7 @@ GameObject:
   - component: {fileID: 6493614302414052843}
   m_Layer: 0
   m_Name: "\u042F\u043F\u043E\u043D\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Japan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27168,7 +27168,7 @@ GameObject:
   - component: {fileID: 7079611498792032897}
   m_Layer: 0
   m_Name: "\u042E\u0436\u043D\u0430\u044F \u0410\u0432\u0441\u0442\u0440\u0430\u043B\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Australia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27288,7 +27288,7 @@ GameObject:
   - component: {fileID: 8831832995322203289}
   m_Layer: 0
   m_Name: "\u0414\u043E\u043C\u0438\u043D\u0438\u043A\u0430\u043D\u0441\u043A\u0430\u044F"
-  m_TagString: Untagged
+  m_TagString: Dominicanscaya
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27773,7 +27773,7 @@ GameObject:
   - component: {fileID: 5957992183616654649}
   m_Layer: 0
   m_Name: "\u0417\u0430\u043F\u0430\u0434\u043D\u0430\u044F \u0413\u0440\u0435\u043D\u043B\u0430\u043D\u0434\u0438\u044F "
-  m_TagString: Untagged
+  m_TagString: Grenlandia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28457,7 +28457,7 @@ GameObject:
   - component: {fileID: 6964973069857999357}
   m_Layer: 0
   m_Name: "\u0418\u0440\u0430\u043A"
-  m_TagString: Untagged
+  m_TagString: Irak
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29259,7 +29259,7 @@ GameObject:
   - component: {fileID: 7527947905901498556}
   m_Layer: 0
   m_Name: "\u0412\u0435\u043B\u0438\u043A\u043E\u0431\u0440\u0438\u0442\u0430\u043D\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Velicobritania
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29881,7 +29881,7 @@ GameObject:
   - component: {fileID: 6656732116759325996}
   m_Layer: 0
   m_Name: "\u0410\u0444\u0433\u0430\u043D\u0438\u0441\u0442\u0430\u043D"
-  m_TagString: Untagged
+  m_TagString: Afganistan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29948,7 +29948,7 @@ GameObject:
   - component: {fileID: 8619761469266599969}
   m_Layer: 0
   m_Name: "\u0418\u0440\u0430\u043D"
-  m_TagString: Untagged
+  m_TagString: Iran
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29990,7 +29990,7 @@ GameObject:
   - component: {fileID: 6700064071017649966}
   m_Layer: 0
   m_Name: "\u0417\u0430\u043F\u0430\u0434\u043D\u0430\u044F \u0415\u0432\u0440\u043E\u043F\u0430"
-  m_TagString: Untagged
+  m_TagString: Europa
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30667,7 +30667,7 @@ GameObject:
   - component: {fileID: 6932588198204671179}
   m_Layer: 0
   m_Name: "\u042E\u0436\u043D\u0430\u044F \u0410\u0444\u0440\u0438\u043A\u0430"
-  m_TagString: Untagged
+  m_TagString: Africa
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30886,7 +30886,7 @@ GameObject:
   - component: {fileID: 7044590537925502627}
   m_Layer: 0
   m_Name: "\u041C\u0430\u0434\u0430\u0433\u0430\u0441\u043A\u0430\u0440"
-  m_TagString: Untagged
+  m_TagString: Madagaskar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31478,7 +31478,7 @@ GameObject:
   - component: {fileID: 7160553756011746135}
   m_Layer: 0
   m_Name: "\u0411\u0435\u043B\u0438\u0437"
-  m_TagString: Untagged
+  m_TagString: Belis
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31566,7 +31566,7 @@ GameObject:
   - component: {fileID: 8360929895794265083}
   m_Layer: 0
   m_Name: "\u0410\u0440\u043C\u0435\u043D\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Armenia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31603,7 +31603,7 @@ GameObject:
   - component: {fileID: 7343763302573270524}
   m_Layer: 0
   m_Name: "\u0423\u0437\u0431\u0435\u043A\u0438\u0441\u0442\u0430\u043D"
-  m_TagString: Untagged
+  m_TagString: Ysbekistan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31737,7 +31737,7 @@ GameObject:
   - component: {fileID: 7356574346624383317}
   m_Layer: 0
   m_Name: "\u0413\u0430\u0438\u0442\u0438"
-  m_TagString: Untagged
+  m_TagString: Gaity
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31938,7 +31938,7 @@ GameObject:
   - component: {fileID: 7389501684424127619}
   m_Layer: 0
   m_Name: "\u0422\u0443\u0440\u043A\u043C\u0435\u043D\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Tyrkmenia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32005,7 +32005,7 @@ GameObject:
   - component: {fileID: 8971662372080253523}
   m_Layer: 0
   m_Name: "\u041E\u0410\u042D"
-  m_TagString: Untagged
+  m_TagString: OEA
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32344,7 +32344,7 @@ GameObject:
   - component: {fileID: 8336853242628391530}
   m_Layer: 0
   m_Name: "\u042E\u0436\u043D\u0430\u044F \u0415\u0432\u0440\u043E\u043F\u0430"
-  m_TagString: Untagged
+  m_TagString: Europa
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32487,7 +32487,7 @@ GameObject:
   - component: {fileID: 7527415243180714323}
   m_Layer: 0
   m_Name: "\u0423\u043A\u0440\u0430\u0438\u043D\u0430"
-  m_TagString: Untagged
+  m_TagString: Ukraine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33324,7 +33324,7 @@ GameObject:
   - component: {fileID: 9154334773301051137}
   m_Layer: 0
   m_Name: "\u041D\u043E\u0432\u0430\u044F \u0417\u0435\u043B\u0430\u043D\u0434\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: New Zelandia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33964,7 +33964,7 @@ GameObject:
   - component: {fileID: 7670351643257547862}
   m_Layer: 0
   m_Name: "\u0412\u043E\u0441\u0442\u043E\u0447\u043D\u044B\u0439 \u041A\u0438\u0442\u0430\u0439"
-  m_TagString: Untagged
+  m_TagString: China
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34886,7 +34886,7 @@ GameObject:
   - component: {fileID: 7874264714075834991}
   m_Layer: 0
   m_Name: "\u0426\u0435\u043D\u0442\u0440 \u042E\u0436\u043D\u043E\u0439 \u0410\u043C\u0435\u0440\u0438\u043A\u0438"
-  m_TagString: Untagged
+  m_TagString: South America
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36790,7 +36790,7 @@ GameObject:
   - component: {fileID: 8377948438661106036}
   m_Layer: 0
   m_Name: "\u042F\u043C\u0430\u0439\u043A\u0430"
-  m_TagString: Untagged
+  m_TagString: Yamayka
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37706,7 +37706,7 @@ GameObject:
   - component: {fileID: 8608445830810647089}
   m_Layer: 0
   m_Name: "\u0417\u0430\u043F\u0430\u0434\u043D\u0430\u044F \u0421\u0428\u0410"
-  m_TagString: Untagged
+  m_TagString: USA
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38375,7 +38375,7 @@ GameObject:
   - component: {fileID: 8851470858833656357}
   m_Layer: 0
   m_Name: "\u0417\u0430\u043F\u0430\u0434\u043D\u0430\u044F \u0410\u0432\u0441\u0442\u0440\u0430\u043B\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Australia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38509,7 +38509,7 @@ GameObject:
   - component: {fileID: 8858292752893712492}
   m_Layer: 0
   m_Name: "\u041E\u043C\u0430\u043D"
-  m_TagString: Untagged
+  m_TagString: Oman
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38643,7 +38643,7 @@ GameObject:
   - component: {fileID: 8868206608991449390}
   m_Layer: 0
   m_Name: "\u0413\u0440\u0443\u0437\u0438\u044F"
-  m_TagString: Untagged
+  m_TagString: Grusia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39294,7 +39294,7 @@ GameObject:
   - component: {fileID: 9141200735563195786}
   m_Layer: 0
   m_Name: "\u041D\u043E\u0432\u0430\u044F \u0413\u0432\u0438\u043D\u0435\u044F.001"
-  m_TagString: Untagged
+  m_TagString: New Gvinea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
