@@ -21,9 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="09e4658a-ee63-4078-abfc-977d12232f9d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Assets/ProgressAsset.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/ProgressAsset.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Assets/ProgressCountry.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/ProgressCountry.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Assets/ProgressRegion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/ProgressRegion.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TakingTheWorld.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TakingTheWorld.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraLogic/CameraLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraLogic/CameraLogic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +33,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/Fromexx/TakingTheWorld.git" />
+      </set>
+    </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5A41D6B7-1898-42EC-A409-FD0B1C3E3DCF/0/System.Collections.Generic.cs" root0="SKIP_HIGHLIGHTING" />
@@ -109,13 +116,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraLogic/InCameraDetector.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Assets/GeneralAsset.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Country/MainCountryBall.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraLogic/CameraZoom.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Assets/CountryList.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Assets/CountryRegionsList.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Assets/ProgressRegion.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Assets/ProgressCountry.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Assets/ProgressAsset.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CameraLogic/CameraLogic.cs" />
       </list>
     </option>
   </component>
@@ -192,6 +200,8 @@
       <workItem from="1680121502492" duration="44000" />
       <workItem from="1680158279608" duration="288000" />
       <workItem from="1680159769544" duration="2114000" />
+      <workItem from="1680187425929" duration="16000" />
+      <workItem from="1680194660153" duration="597000" />
     </task>
     <servers />
   </component>
@@ -202,7 +212,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -211,6 +227,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="ProgressCommit" />
+    <option name="LAST_COMMIT_MESSAGE" value="ProgressCommit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="461" y="169" key="SettingsEditor" timestamp="1679484747848">
@@ -221,10 +239,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="92" y="92" width="1736" height="866" key="VCS.FileHistoryDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1680079872778" />
-    <state x="92" y="92" width="1736" height="866" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1680074412960">
+    <state x="92" y="92" width="1736" height="866" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1680172081829">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="92" y="92" width="1736" height="866" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1680074412960" />
+    <state x="92" y="92" width="1736" height="866" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1680172081829" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1679566287968">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

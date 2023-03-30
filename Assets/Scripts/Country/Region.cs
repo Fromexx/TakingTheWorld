@@ -13,7 +13,9 @@ namespace Country
         [field: SerializeField] public float CurrentMoney { get; private set; }
         [field: SerializeField] public List<RegionBorder> Borders { get; private set; }
 
-        [SerializeField] private int _currentCountryBallCount;
+        [SerializeField] private CameraLogic.CameraLogic _cameraLogic;
+
+        private int _currentCountryBallCount;
         private Country _country;
         private TuneLevel _tuneLevel;
         private Region _playerRegion;
@@ -202,6 +204,15 @@ namespace Country
 
             foreach (var region in GeneralAsset.Instance.RegionsForAttack) region.StartIncreaseCountryBallCountCoroutine();
 
+            var regionsTransform = new List<Transform>();
+
+            foreach (var region in GeneralAsset.Instance.RegionsForAttack)
+            {
+                regionsTransform.Add(region.transform);
+            }
+
+            _cameraLogic.TranslateCameraToCenterOfObjects(regionsTransform);
+            
             GeneralAsset.Instance.AttackStarted = true;
         }
 
