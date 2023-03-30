@@ -1,11 +1,12 @@
-﻿using Country;
+﻿using System;
+using Country;
 
 namespace Assets
 {
+    [Serializable]
     public class ProgressRegion
     {
         public Region Region;
-        public int CountryBallTuneLevel;
-        public int MoneyTuneLevel;
+        public int Id;
     }
 }

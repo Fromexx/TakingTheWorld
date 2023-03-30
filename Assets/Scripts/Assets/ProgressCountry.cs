@@ -1,11 +1,12 @@
-﻿using System.Collections.Generic;
-using Country;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Assets
 {
+    [Serializable]
     public class ProgressCountry
     {
         public Country.Country Country;
-        public List<ProgressRegion> Regions;
+        public int Id;
     }
 }
