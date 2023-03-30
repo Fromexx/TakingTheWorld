@@ -111,13 +111,13 @@ namespace Country
             
             if (!IsPlayerCountry)
             {
-                float money = GeneralAsset.Instance.EnemyRegionForAttackCount * 100 * invaderRegion.CurrentMoney;
-                Economy.Economy.IncreaseMoney(money);
-
                 foreach (var region in GeneralAsset.Instance.PlayerRegionsForAttack) region.Init();
             }
             else if (IsPlayerCountry)
             {
+                float money = GeneralAsset.Instance.EnemyRegionForAttackCount * 100 * invaderRegion.CurrentMoney;
+                Economy.Economy.IncreaseMoney(money);
+            
                 foreach (var region in GeneralAsset.Instance.EnemyRegionsForAttack) region.Init();
             }
             
