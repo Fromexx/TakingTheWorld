@@ -7,6 +7,6 @@ namespace Assets
     public class ProgressCountry
     {
         public Country.Country Country;
-        public int Id;
+        public List<int> OwnRegionsId;
     }
 }

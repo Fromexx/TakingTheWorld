@@ -13,6 +13,9 @@
         <e p="Prefabs" t="Include">
           <e p="CountryBalls" t="Include" />
         </e>
+        <e p="Resources" t="Include">
+          <e p="Countries" t="Include" />
+        </e>
         <e p="Scenes" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Assets" t="Include">
