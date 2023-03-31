@@ -19,15 +19,15 @@ public class SettingsValues : MonoBehaviour
 
     private void Update()
     {
-        if (LastMusicUnMuted != IsMusicUnMuted)
+        if (LastMusicUnMuted != IsMusicUnMuted && OnMusicMutedChanged != null)
             OnMusicMutedChanged(!IsMusicUnMuted);
         LastMusicUnMuted = IsMusicUnMuted;
 
-        if (LastVibrationUnMuted != IsVibrationMuted)
+        if (LastVibrationUnMuted != IsVibrationMuted && OnVibrationMutedChanged != null)
             OnVibrationMutedChanged(!IsVibrationMuted);
         LastVibrationUnMuted= IsVibrationMuted;
 
-        if (LastVoicesUnMuted != IsVoicesUnMuted)
+        if (LastVoicesUnMuted != IsVoicesUnMuted && OnVoicesMutedChanged != null)
             OnVoicesMutedChanged(!IsVoicesUnMuted);
         LastVoicesUnMuted= IsVoicesUnMuted;
         

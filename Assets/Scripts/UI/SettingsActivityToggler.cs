@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class SettingsActivityToggler : MonoBehaviour
 {
+    public delegate void GameStopChanged(bool IsStopped);
+    public event GameStopChanged OnGameStopChanged;
     public void ToggleActive()
     {
-        gameObject.SetActive(!gameObject.active);
+        gameObject.SetActive(!gameObject.activeSelf);
+        if (OnGameStopChanged != null)
+            OnGameStopChanged(gameObject.activeSelf);
     }
 }
