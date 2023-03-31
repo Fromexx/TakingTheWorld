@@ -15,8 +15,6 @@ public class BackgroundMusic : MonoBehaviour
         audioSorce.Play();
         audioSorce.loop = true;
         settings.OnMusicMutedChanged += OnMutedChanged;
-
-        
     }
 
     public void OnMutedChanged(bool IsMuted)

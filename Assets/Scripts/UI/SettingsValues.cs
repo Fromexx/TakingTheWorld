@@ -19,17 +19,17 @@ public class SettingsValues : MonoBehaviour
 
     private void Update()
     {
-        if (LastMusicUnMuted != IsMusicUnMuted && OnMusicMutedChanged != null)
-            OnMusicMutedChanged(!IsMusicUnMuted);
+        if (LastMusicUnMuted != IsMusicUnMuted)
+            OnMusicMutedChanged?.Invoke(!IsMusicUnMuted);
         LastMusicUnMuted = IsMusicUnMuted;
 
-        if (LastVibrationUnMuted != IsVibrationMuted && OnVibrationMutedChanged != null)
-            OnVibrationMutedChanged(!IsVibrationMuted);
+        if (LastVibrationUnMuted != IsVibrationMuted)
+            OnVibrationMutedChanged?.Invoke(!IsVibrationMuted);
         LastVibrationUnMuted= IsVibrationMuted;
 
-        if (LastVoicesUnMuted != IsVoicesUnMuted && OnVoicesMutedChanged != null)
-            OnVoicesMutedChanged(!IsVoicesUnMuted);
-        LastVoicesUnMuted= IsVoicesUnMuted;
+        if (LastVoicesUnMuted != IsVoicesUnMuted)
+            OnVoicesMutedChanged?.Invoke(!IsVoicesUnMuted);
+        LastVoicesUnMuted = IsVoicesUnMuted;
         
     }
 }
