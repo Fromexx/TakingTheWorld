@@ -20,12 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09e4658a-ee63-4078-abfc-977d12232f9d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/ISaveableCountry.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/ISaveableCountry.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/ISaveableRegion.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/ISaveableRegion.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MainCounrtyBalls/Russia.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MainCounrtyBalls/Russia.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Assets/GeneralAsset.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/GeneralAsset.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Country/MainCountryBall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Country/MainCountryBall.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Assets/ProgressCountry.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/ProgressCountry.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Assets/ProgressRegion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/ProgressRegion.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Country/Country.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Country/Country.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +48,7 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/ISaveableRegion.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5A41D6B7-1898-42EC-A409-FD0B1C3E3DCF/0/System.Collections.Generic.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraLogic/CameraMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sounds/BackgroundMusic.cs" root0="FORCE_HIGHLIGHTING" />
@@ -68,6 +74,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Country/RegionTuneView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Assets/ProgressRegion.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/ISaveableCountry.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sounds/SoldierVoicesPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E8A406DA-9985-49AF-9A26-80936C7DA25A/f4/e663bdc3/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark02.cs" root0="FORCE_HIGHLIGHTING" />
@@ -78,8 +85,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/ArtificialIntelligence/IIAttack.cs" />
-        <option value="$PROJECT_DIR$/Assets/Country/CountryContainer.cs" />
         <option value="$PROJECT_DIR$/Assets/Country/SelectCountry.cs" />
         <option value="$PROJECT_DIR$/Assets/Country/Region.cs" />
         <option value="$PROJECT_DIR$/Assets/Country/RegionBorder.cs" />
@@ -112,22 +117,25 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraLogic/CameraZoom.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Assets/CountryList.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Assets/CountryRegionsList.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Assets/ProgressRegion.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Assets/ProgressCountry.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Assets/ProgressAsset.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraLogic/CameraLogic.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Country/RegionTuneView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAttack.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Country/Country.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Economy/TuneLevel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Country/CountryBall.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sounds/BackgroundMusic.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/General&amp;Other/ScreenResolution.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Assets/GeneralAsset.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Country/MainCountryBall.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/ISaveable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/ISaveableRegion.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/ISaveableCountry.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Assets/ProgressRegion.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Country/Country.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Assets/ProgressCountry.cs" />
       </list>
     </option>
   </component>
@@ -210,7 +218,8 @@
       <workItem from="1680307703171" duration="590000" />
       <workItem from="1680327592043" duration="97000" />
       <workItem from="1680352782825" duration="708000" />
-      <workItem from="1680354251823" duration="2771000" />
+      <workItem from="1680354251823" duration="3026000" />
+      <workItem from="1680359657790" duration="2706000" />
     </task>
     <servers />
   </component>
@@ -240,14 +249,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="ProgressCommit" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="770" y="226" key="RiderGenerateDialog" timestamp="1680360781874">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="770" y="226" key="RiderGenerateDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1680360781874" />
     <state x="461" y="169" key="SettingsEditor" timestamp="1679484747848">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="169" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1679484747848" />
-    <state x="92" y="92" width="1736" height="866" key="VCS.FileHistoryDialog" timestamp="1680345710327">
+    <state x="92" y="92" width="1736" height="866" key="VCS.FileHistoryDialog" timestamp="1680361099066">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="92" y="92" width="1736" height="866" key="VCS.FileHistoryDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1680345710327" />
+    <state x="92" y="92" width="1736" height="866" key="VCS.FileHistoryDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1680361099066" />
     <state x="92" y="92" width="1736" height="866" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1680172081829">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

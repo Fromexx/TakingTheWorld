@@ -6,7 +6,8 @@ namespace Assets
     [Serializable]
     public class ProgressRegion
     {
-        public Region Region;
-        public int Id;
+        public byte Id;
+        public byte CountryBallLevel;
+        public byte MoneyLevel;
     }
 }

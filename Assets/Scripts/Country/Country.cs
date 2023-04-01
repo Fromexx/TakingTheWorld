@@ -2,18 +2,20 @@
 using System.Collections.Generic;
 using System.Linq;
 using Assets;
+using Interfaces;
 using UnityEngine;
 
 namespace Country
 {
-    public class Country : MonoBehaviour
+    public class Country : MonoBehaviour, ISaveableCountry
     {
         public event Action RegionsSets;
         public event Action UnionRegionsSets;
         
         [field: SerializeField] public GameObject CountryBallPrefab { get; private set; }
+        [field: SerializeField] public byte Id { get; private set; }
         [field: SerializeField] public bool IsPlayerCountry;
-        
+
         [SerializeField] private List<Region> _regions;
         
         private Region _ourRegionForAttack;
@@ -190,6 +192,16 @@ namespace Country
         private void EnableRegionBorders(List<RegionBorder> borders)
         {
             foreach (var border in borders) border.InitWithRegion(borders, _regions);
+        }
+
+        public void Import(ProgressCountry progressCountry)
+        {
+            
+        }
+
+        public ProgressCountry Export()
+        {
+            return null;
         }
     }
 }

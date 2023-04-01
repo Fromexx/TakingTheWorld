@@ -51,6 +51,10 @@
             <e p="KeyboardInput.cs" t="Include" />
             <e p="ScreenResolution.cs" t="Include" />
           </e>
+          <e p="Interfaces" t="Include">
+            <e p="ISaveableCountry.cs" t="Include" />
+            <e p="ISaveableRegion.cs" t="Include" />
+          </e>
           <e p="Player" t="Include">
             <e p="Player.cs" t="Include" />
             <e p="PlayerAttack.cs" t="Include" />

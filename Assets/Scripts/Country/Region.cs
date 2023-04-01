@@ -3,32 +3,36 @@ using System.Collections;
 using System.Collections.Generic;
 using Assets;
 using Economy;
+using Interfaces;
 using Player;
 using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Country
 {
-    public class Region : MonoBehaviour
+    public class Region : MonoBehaviour, ISaveableRegion
     {
         public float CurrentMoney { get; private set; }
         [field: SerializeField] public MainCountryBall MainCountryBall { get; private set; }
+        [field: SerializeField] public byte Id { get; private set; }
 
-        [SerializeField] public List<RegionBorder> Borders;
-        
-        [SerializeField] private int _currentCountryBallCount;
+        public List<RegionBorder> Borders;
+
+        private int _currentCountryBallCount;
         private Country _country;
         private TuneLevel _tuneLevel;
         private Region _playerRegion;
         private Country _playerCountry;
         private float _timeBetweenAttack;
         private Transform _mainCountryBallTransform;
+        private byte _countryBallLevel;
+        private byte _moneyLevel;
 
         private void Awake()
         {
             try
             {
-                _tuneLevel = new TuneLevel(1, 1);
+                _tuneLevel = new TuneLevel(_countryBallLevel, _moneyLevel);
                 _currentCountryBallCount = _tuneLevel.GetCountryBallTuneCount();
                 CurrentMoney = _tuneLevel.GetMoneyTune();
 
@@ -335,6 +339,24 @@ namespace Country
             _country.SelectRegionForAttack(GeneralAsset.Instance.PlayerCountry.tag, Borders);
             
             _country.RegionsSets += OnRegionsSets;
+        }
+
+        public void Import(ProgressRegion progressRegion)
+        {
+            _countryBallLevel = progressRegion.CountryBallLevel;
+            _moneyLevel = progressRegion.MoneyLevel;
+        }
+
+        public ProgressRegion Export()
+        {
+            ProgressRegion progressRegion = new ProgressRegion
+            {
+                Id = Id,
+                CountryBallLevel = (byte) _tuneLevel.CurrentCountryBallLevel,
+                MoneyLevel = (byte) _tuneLevel.CurrentMoneyLevel
+            };
+
+            return progressRegion;
         }
     }
 }
