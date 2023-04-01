@@ -49,6 +49,7 @@
           </e>
           <e p="General&amp;Other" t="Include">
             <e p="KeyboardInput.cs" t="Include" />
+            <e p="ScreenResolution.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
             <e p="Player.cs" t="Include" />

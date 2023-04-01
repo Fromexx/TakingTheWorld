@@ -328,6 +328,7 @@ namespace Country
                 return;
             }
             
+            GeneralAsset.Instance.RegionTuneView.OnClose();
             GeneralAsset.Instance.RegionsForAttack = new List<Region>();
             GeneralAsset.Instance.PlayerRegionsForAttack = new List<Region>();
             GeneralAsset.Instance.EnemyRegionsForAttack = new List<Region>();
