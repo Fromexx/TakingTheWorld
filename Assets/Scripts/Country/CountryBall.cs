@@ -22,6 +22,7 @@ namespace Country
         {
             if (_atTargetPosition)
             {
+                print(_enemyRegion);
                 _enemyRegion.ProtectRegion(_ownCountry, _ownRegion, _countryBallNumber == _countryBallCount);
                 Destroy(gameObject);
             }

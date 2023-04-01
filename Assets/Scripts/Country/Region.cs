@@ -86,7 +86,7 @@ namespace Country
             
             if (ownCountry == enemyCountryComponent)
             {
-                IncrementCurrentCountryBallCount();
+                IncrementCurrentCountryBallCount(true);
                 return;
             }
 
@@ -189,9 +189,9 @@ namespace Country
             StartCoroutine(IncreaseCountryBallCount());
         }
 
-        private void IncrementCurrentCountryBallCount()
+        private void IncrementCurrentCountryBallCount(bool isCountryBallFromAnotherRegion = false)
         {
-            if (_currentCountryBallCount >= _tuneLevel.GetCountryBallTuneCount()) return;
+            if (!isCountryBallFromAnotherRegion && _currentCountryBallCount >= _tuneLevel.GetCountryBallTuneCount()) return;
             
             _currentCountryBallCount += 1;
             _mainCountryBall.Init(_currentCountryBallCount);
