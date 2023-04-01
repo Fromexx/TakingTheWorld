@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -327,6 +327,9 @@ Transform:
   - {fileID: 253358926929311861}
   - {fileID: 511178099694372535}
   - {fileID: 8336853242628391529}
+  - {fileID: 3029342905778516017}
+  - {fileID: 226658470782815065}
+  - {fileID: 223132667049466840}
   m_Father: {fileID: 543450652901788449}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -372,6 +375,9 @@ MonoBehaviour:
   - {fileID: 6528646301942341167}
   - {fileID: 6700064071017649966}
   - {fileID: 8336853242628391530}
+  - {fileID: 8208135985730072655}
+  - {fileID: 7772525672324455729}
+  - {fileID: 1846898603358335094}
 --- !u!1001 &23476685
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -796,7 +802,7 @@ Transform:
   m_Children:
   - {fileID: 5880073220230169115}
   m_Father: {fileID: 543450652901788449}
-  m_RootOrder: 30
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &46229722
 MonoBehaviour:
@@ -1075,7 +1081,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1111097082138909757, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1111097082138909757, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_LocalScale.x
@@ -4508,80 +4514,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cdef5cfa1ec4228b8c932bafd297b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &267304698
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 267304699}
-  - component: {fileID: 267304702}
-  - component: {fileID: 267304701}
-  - component: {fileID: 267304700}
-  m_Layer: 0
-  m_Name: "\u0428\u0432\u0435\u0446\u0438\u044F"
-  m_TagString: Shvechia
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &267304699
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 267304698}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 223132667049466840}
-  m_Father: {fileID: 543450652901788449}
-  m_RootOrder: 28
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &267304700
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 267304698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 313b800d49db481aa0caf9c720679ae6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &267304701
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 267304698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fd42d11d0d0413882a14f9c25f76f45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &267304702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 267304698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 366ba726262a4dbcb005ff61a93f4d27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <CountryBallPrefab>k__BackingField: {fileID: 1152370418640866025, guid: 3a2828d6014b4e841b28438c050ef30d, type: 3}
-  IsPlayerCountry: 0
-  _regions:
-  - {fileID: 1846898603358335094}
 --- !u!1 &272228098
 GameObject:
   m_ObjectHideFlags: 0
@@ -5302,15 +5234,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1474896819243266544, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1474896819243266544, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.099999994
+      value: 0.10000001
       objectReference: {fileID: 0}
     - target: {fileID: 1474896819243266544, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.09999999
+      value: 0.09999997
       objectReference: {fileID: 0}
     - target: {fileID: 1474896819243266544, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
       propertyPath: m_LocalScale.z
@@ -5318,15 +5250,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1474896819243266544, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.00101
+      value: -0.0010099963
       objectReference: {fileID: 0}
     - target: {fileID: 1474896819243266544, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.00074
+      value: -0.0007399998
       objectReference: {fileID: 0}
     - target: {fileID: 1474896819243266544, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0003
+      value: 0.00029999993
       objectReference: {fileID: 0}
     - target: {fileID: 1474896819243266544, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7806,11 +7738,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 339417482155626579, guid: 3a2828d6014b4e841b28438c050ef30d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.00094
+      value: -0.00415
       objectReference: {fileID: 0}
     - target: {fileID: 339417482155626579, guid: 3a2828d6014b4e841b28438c050ef30d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.000351
+      value: 0.00035
       objectReference: {fileID: 0}
     - target: {fileID: 339417482155626579, guid: 3a2828d6014b4e841b28438c050ef30d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8170,7 +8102,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1111097082138909757, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1111097082138909757, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_LocalScale.x
@@ -8328,7 +8260,7 @@ GameObject:
   - component: {fileID: 526525723}
   - component: {fileID: 526525722}
   m_Layer: 0
-  m_Name: "\u041A\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043D"
+  m_Name: "\u043A\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043D"
   m_TagString: Kazakhstan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8345,6 +8277,10 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 7143600823428405629}
+  - {fileID: 5841968695285568022}
+  - {fileID: 5592033481864526332}
+  - {fileID: 1505196911887693396}
   - {fileID: 7891071871879085686}
   m_Father: {fileID: 543450652901788449}
   m_RootOrder: 1
@@ -8388,6 +8324,10 @@ MonoBehaviour:
   <CountryBallPrefab>k__BackingField: {fileID: 7410065262240902575, guid: b9562e5bc2a0ad944a9eb339210fa45a, type: 3}
   IsPlayerCountry: 0
   _regions:
+  - {fileID: 5841968695285568023}
+  - {fileID: 7343763302573270524}
+  - {fileID: 7611362416441887285}
+  - {fileID: 7389501684424127619}
   - {fileID: 7891071871879085687}
 --- !u!1001 &555436066
 PrefabInstance:
@@ -8590,9 +8530,12 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 8720192260523497262}
+  - {fileID: 6250686205722985526}
   - {fileID: 7649076902239557384}
+  - {fileID: 635054244474277321}
   m_Father: {fileID: 543450652901788449}
-  m_RootOrder: 17
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &569277464
 MonoBehaviour:
@@ -8634,6 +8577,9 @@ MonoBehaviour:
   IsPlayerCountry: 0
   _regions:
   - {fileID: 7649076902239557385}
+  - {fileID: 8720192260523497263}
+  - {fileID: 6250686205722985527}
+  - {fileID: 7796569858824876015}
 --- !u!1001 &570080934
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11968,7 +11914,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1111097082138909757, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1111097082138909757, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_LocalScale.x
@@ -13022,6 +12968,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5686589872102824305}
+  - {fileID: 8619761469266599968}
+  - {fileID: 4264563209900583259}
   m_Father: {fileID: 543450652901788449}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13065,6 +13013,8 @@ MonoBehaviour:
   IsPlayerCountry: 0
   _regions:
   - {fileID: 6656732116759325996}
+  - {fileID: 8619761469266599969}
+  - {fileID: 4513799440969492848}
 --- !u!1 &813123892
 GameObject:
   m_ObjectHideFlags: 0
@@ -13138,80 +13088,6 @@ MonoBehaviour:
   <CountryBallPrefab>k__BackingField: {fileID: 0}
   IsPlayerCountry: 0
   _regions: []
---- !u!1 &817445338
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 817445339}
-  - component: {fileID: 817445342}
-  - component: {fileID: 817445341}
-  - component: {fileID: 817445340}
-  m_Layer: 0
-  m_Name: "\u041D\u043E\u0440\u0432\u0435\u0433\u0438\u044F"
-  m_TagString: Norvegia
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &817445339
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 817445338}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 3029342905778516017}
-  m_Father: {fileID: 543450652901788449}
-  m_RootOrder: 20
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &817445340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 817445338}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 313b800d49db481aa0caf9c720679ae6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &817445341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 817445338}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fd42d11d0d0413882a14f9c25f76f45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &817445342
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 817445338}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 366ba726262a4dbcb005ff61a93f4d27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <CountryBallPrefab>k__BackingField: {fileID: 0}
-  IsPlayerCountry: 0
-  _regions:
-  - {fileID: 8208135985730072655}
 --- !u!1001 &823843670
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13640,80 +13516,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 2
---- !u!1 &833859236
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 833859237}
-  - component: {fileID: 833859240}
-  - component: {fileID: 833859239}
-  - component: {fileID: 833859238}
-  m_Layer: 0
-  m_Name: "\u0424\u0438\u043D\u043B\u044F\u043D\u0434\u0438\u044F"
-  m_TagString: Finlandia
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &833859237
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 833859236}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 226658470782815065}
-  m_Father: {fileID: 543450652901788449}
-  m_RootOrder: 27
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &833859238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 833859236}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 313b800d49db481aa0caf9c720679ae6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &833859239
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 833859236}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fd42d11d0d0413882a14f9c25f76f45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &833859240
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 833859236}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 366ba726262a4dbcb005ff61a93f4d27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <CountryBallPrefab>k__BackingField: {fileID: 0}
-  IsPlayerCountry: 0
-  _regions:
-  - {fileID: 7772525672324455729}
 --- !u!1001 &840316636
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14106,80 +13908,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1111097082138909757, guid: c82fdec0333741e48a320760ce428490, type: 3}
   m_PrefabInstance: {fileID: 841752447}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &856296593
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 856296594}
-  - component: {fileID: 856296597}
-  - component: {fileID: 856296596}
-  - component: {fileID: 856296595}
-  m_Layer: 0
-  m_Name: "\u0413\u0432\u0430\u0442\u0435\u043C\u0430\u043B\u0430"
-  m_TagString: Gvatemela
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &856296594
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 856296593}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 8720192260523497262}
-  m_Father: {fileID: 543450652901788449}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &856296595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 856296593}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 313b800d49db481aa0caf9c720679ae6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &856296596
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 856296593}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fd42d11d0d0413882a14f9c25f76f45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &856296597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 856296593}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 366ba726262a4dbcb005ff61a93f4d27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <CountryBallPrefab>k__BackingField: {fileID: 0}
-  IsPlayerCountry: 0
-  _regions:
-  - {fileID: 8720192260523497263}
 --- !u!1 &859708523
 GameObject:
   m_ObjectHideFlags: 0
@@ -14397,80 +14125,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1111097082138909757, guid: c82fdec0333741e48a320760ce428490, type: 3}
   m_PrefabInstance: {fileID: 866874609}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &877533673
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 877533674}
-  - component: {fileID: 877533677}
-  - component: {fileID: 877533676}
-  - component: {fileID: 877533675}
-  m_Layer: 0
-  m_Name: "\u0413\u043E\u043D\u0434\u0443\u0440\u0430\u0441"
-  m_TagString: Gondyras
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &877533674
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 877533673}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 6250686205722985526}
-  m_Father: {fileID: 543450652901788449}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &877533675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 877533673}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 313b800d49db481aa0caf9c720679ae6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &877533676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 877533673}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fd42d11d0d0413882a14f9c25f76f45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &877533677
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 877533673}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 366ba726262a4dbcb005ff61a93f4d27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <CountryBallPrefab>k__BackingField: {fileID: 0}
-  IsPlayerCountry: 0
-  _regions:
-  - {fileID: 6250686205722985527}
 --- !u!1 &878362756
 GameObject:
   m_ObjectHideFlags: 0
@@ -14503,7 +14157,7 @@ Transform:
   m_Children:
   - {fileID: 3861146637704487677}
   m_Father: {fileID: 543450652901788449}
-  m_RootOrder: 26
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &878362758
 MonoBehaviour:
@@ -15215,7 +14869,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1111097082138909757, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1111097082138909757, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_LocalScale.x
@@ -16393,7 +16047,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1111097082138909757, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1111097082138909757, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_LocalScale.x
@@ -18788,80 +18442,6 @@ MonoBehaviour:
   - {fileID: 7547490595583334332}
   - {fileID: 8809740456863650326}
   - {fileID: 8401763686864016756}
---- !u!1 &1084916284
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1084916285}
-  - component: {fileID: 1084916288}
-  - component: {fileID: 1084916287}
-  - component: {fileID: 1084916286}
-  m_Layer: 0
-  m_Name: "\u0422\u0443\u0440\u043A\u043C\u0435\u043D\u0438\u044F"
-  m_TagString: Tyrkmenia
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1084916285
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1084916284}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1505196911887693396}
-  m_Father: {fileID: 543450652901788449}
-  m_RootOrder: 24
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1084916286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1084916284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 313b800d49db481aa0caf9c720679ae6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1084916287
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1084916284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fd42d11d0d0413882a14f9c25f76f45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1084916288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1084916284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 366ba726262a4dbcb005ff61a93f4d27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <CountryBallPrefab>k__BackingField: {fileID: 0}
-  IsPlayerCountry: 0
-  _regions:
-  - {fileID: 7389501684424127619}
 --- !u!4 &1097157100
 Transform:
   m_ObjectHideFlags: 0
@@ -20078,80 +19658,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &1210372279
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1210372280}
-  - component: {fileID: 1210372283}
-  - component: {fileID: 1210372282}
-  - component: {fileID: 1210372281}
-  m_Layer: 0
-  m_Name: "\u0418\u0440\u0430\u043D"
-  m_TagString: Iran
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1210372280
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1210372279}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 8619761469266599968}
-  m_Father: {fileID: 543450652901788449}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1210372281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1210372279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 313b800d49db481aa0caf9c720679ae6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1210372282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1210372279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fd42d11d0d0413882a14f9c25f76f45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1210372283
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1210372279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 366ba726262a4dbcb005ff61a93f4d27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <CountryBallPrefab>k__BackingField: {fileID: 0}
-  IsPlayerCountry: 0
-  _regions:
-  - {fileID: 8619761469266599969}
 --- !u!1001 &1210389269
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20644,7 +20150,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1111097082138909757, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1111097082138909757, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_LocalScale.x
@@ -21723,154 +21229,6 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   m_IsOn: 1
---- !u!1 &1319492309
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1319492310}
-  - component: {fileID: 1319492313}
-  - component: {fileID: 1319492312}
-  - component: {fileID: 1319492311}
-  m_Layer: 0
-  m_Name: "\u041A\u0438\u0440\u0433\u0438\u0437\u0438\u044F"
-  m_TagString: Kirgizia
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1319492310
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1319492309}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 5841968695285568022}
-  m_Father: {fileID: 543450652901788449}
-  m_RootOrder: 16
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1319492311
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1319492309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 313b800d49db481aa0caf9c720679ae6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1319492312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1319492309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fd42d11d0d0413882a14f9c25f76f45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1319492313
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1319492309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 366ba726262a4dbcb005ff61a93f4d27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <CountryBallPrefab>k__BackingField: {fileID: 0}
-  IsPlayerCountry: 0
-  _regions:
-  - {fileID: 5841968695285568023}
---- !u!1 &1320792475
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1320792476}
-  - component: {fileID: 1320792479}
-  - component: {fileID: 1320792478}
-  - component: {fileID: 1320792477}
-  m_Layer: 0
-  m_Name: "\u0423\u0437\u0431\u0435\u043A\u0438\u0441\u0442\u0430\u043D"
-  m_TagString: Ysbekistan
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1320792476
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1320792475}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 7143600823428405629}
-  m_Father: {fileID: 543450652901788449}
-  m_RootOrder: 25
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1320792477
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1320792475}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 313b800d49db481aa0caf9c720679ae6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1320792478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1320792475}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fd42d11d0d0413882a14f9c25f76f45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1320792479
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1320792475}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 366ba726262a4dbcb005ff61a93f4d27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <CountryBallPrefab>k__BackingField: {fileID: 0}
-  IsPlayerCountry: 0
-  _regions:
-  - {fileID: 7343763302573270524}
 --- !u!1 &1321727480
 GameObject:
   m_ObjectHideFlags: 0
@@ -22912,7 +22270,7 @@ Transform:
   m_Children:
   - {fileID: 1574965196738742081}
   m_Father: {fileID: 543450652901788449}
-  m_RootOrder: 29
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1402639254
 MonoBehaviour:
@@ -24530,7 +23888,7 @@ Transform:
   - {fileID: 5714662645193511241}
   - {fileID: 1888975125142967200}
   m_Father: {fileID: 543450652901788449}
-  m_RootOrder: 22
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1527110583
 MonoBehaviour:
@@ -24647,80 +24005,6 @@ MonoBehaviour:
   <CountryBallPrefab>k__BackingField: {fileID: 0}
   IsPlayerCountry: 0
   _regions: []
---- !u!1 &1544415343
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1544415344}
-  - component: {fileID: 1544415347}
-  - component: {fileID: 1544415346}
-  - component: {fileID: 1544415345}
-  m_Layer: 0
-  m_Name: "\u0422\u0430\u0434\u0436\u0438\u043A\u0438\u0441\u0442\u0430\u043D"
-  m_TagString: Tadgikistan
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1544415344
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1544415343}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 5592033481864526332}
-  m_Father: {fileID: 543450652901788449}
-  m_RootOrder: 23
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1544415345
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1544415343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 313b800d49db481aa0caf9c720679ae6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1544415346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1544415343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fd42d11d0d0413882a14f9c25f76f45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1544415347
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1544415343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 366ba726262a4dbcb005ff61a93f4d27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <CountryBallPrefab>k__BackingField: {fileID: 0}
-  IsPlayerCountry: 0
-  _regions:
-  - {fileID: 7611362416441887285}
 --- !u!4 &1544618284 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1474896819243266544, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
@@ -24968,24 +24252,24 @@ MonoBehaviour:
   - {fileID: 1132268549}
   - {fileID: 1788244458}
   - {fileID: 1507019169}
-  - {fileID: 856296597}
-  - {fileID: 877533677}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1942569238}
-  - {fileID: 1210372283}
+  - {fileID: 0}
   - {fileID: 2138126167}
-  - {fileID: 1319492313}
+  - {fileID: 0}
   - {fileID: 569277466}
   - {fileID: 1782281878}
-  - {fileID: 1988775738}
-  - {fileID: 817445342}
-  - {fileID: 1721675674}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1527110585}
-  - {fileID: 1544415347}
-  - {fileID: 1084916288}
-  - {fileID: 1320792479}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 878362760}
-  - {fileID: 833859240}
-  - {fileID: 267304702}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1402639256}
   - {fileID: 46229724}
   UnionRegions: []
@@ -26370,80 +25654,6 @@ MonoBehaviour:
   <CountryBallPrefab>k__BackingField: {fileID: 0}
   IsPlayerCountry: 0
   _regions: []
---- !u!1 &1721675670
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1721675671}
-  - component: {fileID: 1721675674}
-  - component: {fileID: 1721675673}
-  - component: {fileID: 1721675672}
-  m_Layer: 0
-  m_Name: "\u041F\u0430\u043A\u0438\u0441\u0442\u0430\u043D"
-  m_TagString: Pakistan
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1721675671
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1721675670}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 4264563209900583259}
-  m_Father: {fileID: 543450652901788449}
-  m_RootOrder: 21
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1721675672
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1721675670}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 313b800d49db481aa0caf9c720679ae6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1721675673
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1721675670}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fd42d11d0d0413882a14f9c25f76f45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1721675674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1721675670}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 366ba726262a4dbcb005ff61a93f4d27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <CountryBallPrefab>k__BackingField: {fileID: 0}
-  IsPlayerCountry: 0
-  _regions:
-  - {fileID: 4513799440969492848}
 --- !u!1001 &1731008943
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26688,7 +25898,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1111097082138909757, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1111097082138909757, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_LocalScale.x
@@ -26797,7 +26007,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1111097082138909757, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1111097082138909757, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_LocalScale.x
@@ -27783,7 +26993,7 @@ Transform:
   m_Children:
   - {fileID: 2952582540777684811}
   m_Father: {fileID: 543450652901788449}
-  m_RootOrder: 18
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1782281876
 MonoBehaviour:
@@ -29910,7 +29120,7 @@ Transform:
   m_Children:
   - {fileID: 725050829384686297}
   m_Father: {fileID: 543450652901788449}
-  m_RootOrder: 13
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1942569236
 MonoBehaviour:
@@ -30563,80 +29773,6 @@ MonoBehaviour:
   <CountryBallPrefab>k__BackingField: {fileID: 0}
   IsPlayerCountry: 0
   _regions: []
---- !u!1 &1988775734
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1988775735}
-  - component: {fileID: 1988775738}
-  - component: {fileID: 1988775737}
-  - component: {fileID: 1988775736}
-  m_Layer: 0
-  m_Name: "\u041D\u0438\u043A\u0430\u0440\u0430\u0433\u0443\u0430"
-  m_TagString: Nikaragya
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1988775735
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1988775734}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 635054244474277321}
-  m_Father: {fileID: 543450652901788449}
-  m_RootOrder: 19
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1988775736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1988775734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 313b800d49db481aa0caf9c720679ae6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1988775737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1988775734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fd42d11d0d0413882a14f9c25f76f45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1988775738
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1988775734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 366ba726262a4dbcb005ff61a93f4d27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <CountryBallPrefab>k__BackingField: {fileID: 0}
-  IsPlayerCountry: 0
-  _regions:
-  - {fileID: 7796569858824876015}
 --- !u!1 &1996878175
 GameObject:
   m_ObjectHideFlags: 0
@@ -33665,7 +32801,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1111097082138909757, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1111097082138909757, guid: c82fdec0333741e48a320760ce428490, type: 3}
       propertyPath: m_LocalScale.x
@@ -33769,7 +32905,7 @@ Transform:
   m_Children:
   - {fileID: 6473397988163999407}
   m_Father: {fileID: 543450652901788449}
-  m_RootOrder: 15
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2138126165
 MonoBehaviour:
@@ -34290,8 +33426,8 @@ Transform:
   - {fileID: 478058181}
   - {fileID: 1498709393}
   - {fileID: 1551850411}
-  m_Father: {fileID: 267304699}
-  m_RootOrder: 0
+  m_Father: {fileID: 10566227}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &226658470782815065
 Transform:
@@ -34307,8 +33443,8 @@ Transform:
   - {fileID: 1911469690}
   - {fileID: 2099530218}
   - {fileID: 430302842}
-  m_Father: {fileID: 833859237}
-  m_RootOrder: 0
+  m_Father: {fileID: 10566227}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &226658471840531397
 Transform:
@@ -34821,24 +33957,12 @@ Transform:
   - {fileID: 1132268546}
   - {fileID: 1788244455}
   - {fileID: 1507019166}
-  - {fileID: 856296594}
-  - {fileID: 877533674}
   - {fileID: 1942569235}
-  - {fileID: 1210372280}
   - {fileID: 2138126164}
-  - {fileID: 1319492310}
   - {fileID: 569277463}
   - {fileID: 1782281875}
-  - {fileID: 1988775735}
-  - {fileID: 817445339}
-  - {fileID: 1721675671}
   - {fileID: 1527110582}
-  - {fileID: 1544415344}
-  - {fileID: 1084916285}
-  - {fileID: 1320792476}
   - {fileID: 878362757}
-  - {fileID: 833859237}
-  - {fileID: 267304699}
   - {fileID: 1402639253}
   - {fileID: 46229721}
   m_Father: {fileID: 0}
@@ -34892,8 +34016,8 @@ Transform:
   m_Children:
   - {fileID: 419550319}
   - {fileID: 1866939125}
-  m_Father: {fileID: 1988775735}
-  m_RootOrder: 0
+  m_Father: {fileID: 569277463}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &643128632940036563
 MeshFilter:
@@ -35832,8 +34956,8 @@ Transform:
   - {fileID: 1042722766}
   - {fileID: 1931589965}
   - {fileID: 1500025341}
-  m_Father: {fileID: 1084916285}
-  m_RootOrder: 0
+  m_Father: {fileID: 526525721}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1529539526127864337
 Transform:
@@ -38016,8 +37140,8 @@ Transform:
   - {fileID: 35721172}
   - {fileID: 1486547974}
   - {fileID: 2028388805}
-  m_Father: {fileID: 817445339}
-  m_RootOrder: 0
+  m_Father: {fileID: 10566227}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &3029342906939062445
 Transform:
@@ -39622,8 +38746,8 @@ Transform:
   - {fileID: 473827655}
   - {fileID: 714467751}
   - {fileID: 823843671}
-  m_Father: {fileID: 1721675671}
-  m_RootOrder: 0
+  m_Father: {fileID: 809451653}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4264563211093041607
 Transform:
@@ -41746,8 +40870,8 @@ Transform:
   - {fileID: 446450586}
   - {fileID: 1291877767}
   - {fileID: 878889992}
-  m_Father: {fileID: 1544415344}
-  m_RootOrder: 0
+  m_Father: {fileID: 526525721}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &5599586889872370613
 MeshRenderer:
@@ -42297,14 +41421,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2057315886372140235}
   m_LocalRotation: {x: -0.7071069, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -1.5838, y: 0.030799998, z: -1.4938}
+  m_LocalPosition: {x: -1.5838, y: 0.030799996, z: -1.4938}
   m_LocalScale: {x: 19.696266, y: 19.449516, z: 20.024906}
   m_Children:
   - {fileID: 1466166474}
   - {fileID: 1331974086}
   - {fileID: 422552174}
-  m_Father: {fileID: 1319492310}
-  m_RootOrder: 0
+  m_Father: {fileID: 526525721}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5841968695285568023
 MonoBehaviour:
@@ -42848,8 +41972,8 @@ Transform:
   m_Children:
   - {fileID: 1564993650}
   - {fileID: 673224019}
-  m_Father: {fileID: 877533674}
-  m_RootOrder: 0
+  m_Father: {fileID: 569277463}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6250686205722985527
 MonoBehaviour:
@@ -43980,6 +43104,7 @@ Transform:
   m_LocalPosition: {x: -0.9864587, y: 0.031412836, z: -2.2231245}
   m_LocalScale: {x: 98.35883, y: 97.12662, z: 100}
   m_Children:
+  - {fileID: 1544618284}
   - {fileID: 1251104698}
   - {fileID: 504908043}
   - {fileID: 1743499667}
@@ -43989,7 +43114,6 @@ Transform:
   - {fileID: 1747517301}
   - {fileID: 892378831}
   - {fileID: 2131377315}
-  - {fileID: 1544618284}
   m_Father: {fileID: 1079692721}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -45136,7 +44260,7 @@ Transform:
   - {fileID: 1016158583}
   - {fileID: 948503013}
   - {fileID: 1000198804}
-  m_Father: {fileID: 1320792476}
+  m_Father: {fileID: 526525721}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &7143600824585277921
@@ -47025,7 +46149,7 @@ Transform:
   - {fileID: 866874610}
   - {fileID: 1969579106}
   m_Father: {fileID: 569277463}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7649076902239557385
 MonoBehaviour:
@@ -48128,7 +47252,7 @@ Transform:
   - {fileID: 1508360695}
   - {fileID: 406630660}
   m_Father: {fileID: 526525721}
-  m_RootOrder: 0
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7891071871879085687
 MonoBehaviour:
@@ -50318,8 +49442,8 @@ Transform:
   - {fileID: 418453777}
   - {fileID: 1035022389}
   - {fileID: 1809359060}
-  m_Father: {fileID: 1210372280}
-  m_RootOrder: 0
+  m_Father: {fileID: 809451653}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8619761469266599969
 MonoBehaviour:
@@ -50494,7 +49618,7 @@ Transform:
   m_Children:
   - {fileID: 378962503}
   - {fileID: 1970887876}
-  m_Father: {fileID: 856296594}
+  m_Father: {fileID: 569277463}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8720192260523497263
