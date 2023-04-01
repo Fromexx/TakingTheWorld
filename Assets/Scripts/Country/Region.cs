@@ -25,8 +25,8 @@ namespace Country
         private Country _playerCountry;
         private float _timeBetweenAttack;
         private Transform _mainCountryBallTransform;
-        private byte _countryBallLevel;
-        private byte _moneyLevel;
+        private byte _countryBallLevel = 1;
+        private byte _moneyLevel = 1;
 
         private void Awake()
         {
