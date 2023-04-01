@@ -8,7 +8,11 @@
       <e p="Assets" t="Include">
         <e p="Materials" t="Include" />
         <e p="Models" t="Include">
-          <e p="Map" t="Include" />
+          <e p="CountryBalls" t="Include" />
+          <e p="Flags" t="Include" />
+          <e p="Map" t="Include">
+            <e p="Materials" t="Include" />
+          </e>
         </e>
         <e p="Prefabs" t="Include">
           <e p="CountryBalls" t="Include" />
@@ -53,6 +57,18 @@
             <e p="Player.cs" t="Include" />
             <e p="PlayerAttack.cs" t="Include" />
           </e>
+          <e p="Sounds" t="Include">
+            <e p="BackgroundMusic.cs" t="Include" />
+            <e p="SoldierVoicesPlayer.cs" t="Include" />
+          </e>
+          <e p="UI" t="Include">
+            <e p="SettingsActivityToggler.cs" t="Include" />
+            <e p="SettingsValues.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Sounds" t="Include">
+          <e p="BackgroundMusic" t="Include" />
+          <e p="SoldiersVoices" t="Include" />
         </e>
         <e p="Sprites" t="Include" />
         <e p="TextMesh Pro" t="Include">
