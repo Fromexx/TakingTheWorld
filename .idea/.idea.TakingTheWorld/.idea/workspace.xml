@@ -21,6 +21,13 @@
   <component name="ChangeListManager">
     <list default="true" id="09e4658a-ee63-4078-abfc-977d12232f9d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CountryBalls/Russia.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/CountryBalls/Russia.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Cube.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Cube.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Progress.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Progress.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Country/MainCountryBall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Country/MainCountryBall.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,15 +119,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Country/RegionTuneView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraLogic/InCameraDetector.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Assets/GeneralAsset.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Country/MainCountryBall.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraLogic/CameraZoom.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Assets/CountryList.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Assets/CountryRegionsList.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Assets/ProgressRegion.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Assets/ProgressCountry.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Assets/ProgressAsset.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraLogic/CameraLogic.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Country/MainCountryBall.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" />
       </list>
     </option>
   </component>
@@ -247,5 +254,24 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1679566287968" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Country/Region.cs</url>
+          <line>128</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" initialLine="127">
+            <startOffsets>
+              <option value="4198" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4217" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

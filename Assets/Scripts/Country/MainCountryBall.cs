@@ -9,7 +9,6 @@ namespace Country
     {
         private Player.Player _player;
         private Country _country;
-        private Region _region;
         private int _currentCountryBallCount;
         private TMP_Text _text;
 
@@ -22,7 +21,6 @@ namespace Country
 
                 countryTransform.TryGetComponent(out _player);
                 countryTransform.TryGetComponent(out _country);
-                regionTransform.TryGetComponent(out _region);
                 _text = GetComponentInChildren<TMP_Text>();
             }
             catch (Exception)

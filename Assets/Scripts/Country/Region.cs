@@ -9,9 +9,10 @@ namespace Country
 {
     public class Region : MonoBehaviour
     {
-        [field: SerializeField] public Transform MainCountryBall { get; private set; }
-        [field: SerializeField] public float CurrentMoney { get; private set; }
-        [field: SerializeField] public List<RegionBorder> Borders { get; private set; }
+        public float CurrentMoney { get; private set; }
+
+        [SerializeField] private Transform MainCountryBall;
+        [SerializeField] public List<RegionBorder> Borders;
 
         private int _currentCountryBallCount;
         private Country _country;
