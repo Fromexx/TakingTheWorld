@@ -4,7 +4,7 @@
     {
         public int CurrentCountryBallLevel { get; private set; }
         public int CurrentMoneyLevel { get; private set; }
-        public int MaxLevel => 5;
+        public int MaxLevel => 6;
 
         public TuneLevel(int countryBallTuneLevel, int moneyTuneLevel)
         {
@@ -24,11 +24,11 @@
         {
             return CurrentCountryBallLevel switch
             {
-                1 => 100,
-                2 => 200,
-                3 => 300,
-                4 => 400,
-                5 => 500,
+                2 => 500,
+                3 => 550,
+                4 => 600,
+                5 => 700,
+                6 => 750,
                 _ => -1
             };
         }
@@ -37,11 +37,11 @@
         {
             return CurrentMoneyLevel switch
             {
-                1 => 100,
-                2 => 200,
-                3 => 300,
-                4 => 400,
-                5 => 500,
+                2 => 500,
+                3 => 550,
+                4 => 600,
+                5 => 700,
+                6 => 750,
                 _ => -1
             };
         }
@@ -50,11 +50,12 @@
         {
             return CurrentCountryBallLevel switch
             {
-                1 => 15,
-                2 => 20,
-                3 => 25,
-                4 => 30,
-                5 => 35,
+                1 => 10,
+                2 => 15,
+                3 => 20,
+                4 => 25,
+                5 => 30,
+                6 => 35,
                 _ => -1
             };
         }
@@ -63,11 +64,12 @@
         {
             return CurrentMoneyLevel switch
             {
-                1 => 1.1f,
-                2 => 1.2f,
-                3 => 1.3f,
-                4 => 1.4f,
-                5 => 1.5f,
+                1 => 1f,
+                2 => 1.05f,
+                3 => 1.1f,
+                4 => 1.15f,
+                5 => 1.2f,
+                6 => 1.25f,
                 _ => -1
             };
         }

@@ -16,6 +16,7 @@ namespace Assets
         [field: SerializeField] public Country.Country PlayerCountry { get; private set; }
         [field: SerializeField] public RegionTuneView RegionTuneView { get; private set; }
         [field: SerializeField] public List<Country.Country> AllCountries;
+        [field: SerializeField] public float TimeBetweenAttack;
 
         [HideInInspector] public List<Region> UnionRegions;
         [HideInInspector] public int IterationCount;

@@ -1,10 +1,9 @@
 ﻿using Country;
-using Interfaces;
 using UnityEngine;
 
 namespace Player
 {
-    public class PlayerAttack : MonoBehaviour, IAttack
+    public class PlayerAttack : MonoBehaviour
     {
         public void Attack(Region ownRegion, Region enemyRegion)
         {

@@ -13,17 +13,9 @@ namespace Country
         [SerializeField] private TMP_Text _tuneMoney;
         [SerializeField] private string _startTuneCountryBallText;
         [SerializeField] private string _startTuneMoneyText;
-
-        private Button _countryBallButton;
-        private Button _moneyButton;
+        
         private Region _region;
         private bool _listenersAlreadyAdded;
-
-        private void Awake()
-        {
-            _tuneCountryBall.transform.parent.TryGetComponent(out _countryBallButton);
-            _tuneMoney.transform.parent.TryGetComponent(out _moneyButton);
-        }
 
         public void Render(TuneLevel tuneLevel, Region region)
         {

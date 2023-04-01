@@ -20,6 +20,7 @@ namespace Country
         private Region _playerRegion;
         private Country _playerCountry;
         private MainCountryBall _mainCountryBall;
+        private float _timeBetweenAttack;
 
         private void Awake()
         {
@@ -33,6 +34,8 @@ namespace Country
                 MainCountryBall.TryGetComponent(out _mainCountryBall);
 
                 _mainCountryBall.Init(_currentCountryBallCount);
+
+                _timeBetweenAttack = GeneralAsset.Instance.TimeBetweenAttack;
             }
             catch(Exception)
             {
@@ -48,6 +51,25 @@ namespace Country
             CurrentMoney = _tuneLevel.GetMoneyTune();
 
             _mainCountryBall.Init(_currentCountryBallCount);
+        }
+
+        public void StartCoroutineAttack() => StartCoroutine(Attack());
+        public void StopCoroutineAttack() => StopCoroutine(Attack());
+        
+        private IEnumerator Attack()
+        {
+            print("tkh");
+            
+            var playerRegions = GeneralAsset.Instance.PlayerRegionsForAttack;
+            
+            yield return new WaitForSeconds(_timeBetweenAttack);
+            
+            System.Random random = new System.Random();
+            var playerRegionIndex = random.Next(0, playerRegions.Count);
+            
+            AttackEnemyRegion(playerRegions[playerRegionIndex]);
+            
+            StartCoroutine(Attack());
         }
 
         public void AttackEnemyRegion(Region enemyRegion)
@@ -211,6 +233,9 @@ namespace Country
             }
             
             GeneralAsset.Instance.AttackStarted = true;
+
+            _country.TryGetComponent(out Enemy.Enemy enemy);
+            enemy.StartAttack();
         }
 
         private void OnRegionsSets()

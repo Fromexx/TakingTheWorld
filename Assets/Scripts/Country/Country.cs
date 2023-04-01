@@ -106,6 +106,9 @@ namespace Country
             print("Win!");
                 
             GeneralAsset.Instance.AttackStarted = false;
+
+            enemyCountry.TryGetComponent(out Enemy.Enemy enemy);
+            enemy.StopAttack();
             
             foreach (var country in GeneralAsset.Instance.AllCountries) country.gameObject.SetActive(true);
             
