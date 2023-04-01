@@ -32,6 +32,6 @@ namespace Assets
         [HideInInspector] public Country.Country PlayerCountry;
         [HideInInspector] public bool IsSelectPlayerRegion;
 
-        private void Awake() => _instance ??= this;
+        private void Awake() => _instance = this;
     }
 }

@@ -358,5 +358,18 @@ namespace Country
 
             return progressRegion;
         }
+
+        private void  OnDestroy()
+        {
+            try
+            {
+                foreach (var border in Borders) border.NotFoundUnionRegions -= OnOurUnionRegionsSets;
+                _country.UnionRegionsSets -= OnOurUnionRegionsSets;
+                foreach (var border in _playerRegion.Borders) border.NotFoundUnionRegions -= OnPlayerUnionRegionsSets;
+                _playerCountry.UnionRegionsSets -= OnPlayerUnionRegionsSets;
+                _country.RegionsSets -= OnRegionsSets;
+            }
+            catch (Exception e) { }
+        }
     }
 }
