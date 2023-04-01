@@ -1276,7 +1276,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1679129452}
   m_HandleRect: {fileID: 1679129451}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -9438,10 +9438,10 @@ RectTransform:
   m_Father: {fileID: 1794720574}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -336}
-  m_SizeDelta: {x: 0, y: 300}
+  m_AnchorMin: {x: 0, y: 0.75876564}
+  m_AnchorMax: {x: 1, y: 0.8741306}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: -9}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &809451652
 GameObject:
@@ -9654,7 +9654,7 @@ RectTransform:
   m_AnchorMin: {x: 0.050443765, y: 0.20666666}
   m_AnchorMax: {x: 0.2691678, y: 0.79333335}
   m_AnchoredPosition: {x: 0.22595215, y: 1.3800049}
-  m_SizeDelta: {x: 0.45908087, y: 2.759988}
+  m_SizeDelta: {x: 0.45908087, y: 3.0209515}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &831128949
 MonoBehaviour:
@@ -10918,7 +10918,7 @@ RectTransform:
   m_AnchorMin: {x: 0.050443765, y: 0.20666666}
   m_AnchorMax: {x: 0.29851785, y: 0.80666673}
   m_AnchoredPosition: {x: -0.49499512, y: -2}
-  m_SizeDelta: {x: -0.98196137, y: -1.240026}
+  m_SizeDelta: {x: -0.98196137, y: -0.97320473}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &905947785
 MonoBehaviour:
@@ -11844,8 +11844,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 130.6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -13583,10 +13583,10 @@ RectTransform:
   m_Father: {fileID: 1794720574}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMin: {x: 0, y: 0.88650453}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.0004015557}
-  m_SizeDelta: {x: 0, y: 300}
+  m_AnchoredPosition: {x: 0, y: 0.000030517578}
+  m_SizeDelta: {x: 0, y: -4}
   m_Pivot: {x: 0, y: 1}
 --- !u!1001 &1115705499
 PrefabInstance:
@@ -13923,7 +13923,7 @@ MonoBehaviour:
   m_Content: {fileID: 1103879659}
   m_Horizontal: 1
   m_Vertical: 1
-  m_MovementType: 1
+  m_MovementType: 2
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
