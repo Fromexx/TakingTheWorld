@@ -9,7 +9,6 @@ public class SettingsActivityToggler : MonoBehaviour
     public void ToggleActive()
     {
         gameObject.SetActive(!gameObject.activeSelf);
-        if (OnGameStopChanged != null)
-            OnGameStopChanged(gameObject.activeSelf);
+        OnGameStopChanged?.Invoke(gameObject.activeSelf);
     }
 }
