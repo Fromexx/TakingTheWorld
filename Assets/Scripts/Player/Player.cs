@@ -1,4 +1,5 @@
-﻿using Assets;
+﻿using System;
+using Assets;
 using Country;
 using UnityEngine;
 
@@ -6,6 +7,8 @@ namespace Player
 {
     public class Player : MonoBehaviour
     {
+        public event Action EnemyRegionSets;
+        
         private PlayerAttack _playerAttack;
         private Region _ownRegion;
         private Region _enemyRegion;
@@ -14,18 +17,10 @@ namespace Player
         {
             TryGetComponent(out _playerAttack);
         }
-        
-        public void Attack()
-        {
-            if (!GeneralAsset.Instance.AttackStarted) return;
-            
-            _playerAttack.Attack(_ownRegion, _enemyRegion);
-            
-            _ownRegion = null;
-            _enemyRegion = null;
-        }
 
         public void SetOwnRegionForAttack(Region ownRegion) => _ownRegion = ownRegion;
+
+        public void ResetOwnRegionForAttack() => _ownRegion = null;
 
         public bool IsOwnRegionStillOwn()
         {
@@ -37,10 +32,21 @@ namespace Player
         
         public void SetEnemyRegionForAttack(Region enemyRegion)
         {
-            if (_ownRegion == enemyRegion) return;
+            if (_ownRegion == enemyRegion || _ownRegion is null) return;
             
             _enemyRegion = enemyRegion;
+            EnemyRegionSets?.Invoke();
             Attack();
+        }
+        
+        private void Attack()
+        {
+            if (!GeneralAsset.Instance.AttackStarted) return;
+            
+            _playerAttack.Attack(_ownRegion, _enemyRegion);
+            
+            _ownRegion = null;
+            _enemyRegion = null;
         }
     }
 }

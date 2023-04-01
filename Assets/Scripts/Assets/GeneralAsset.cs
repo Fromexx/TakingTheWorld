@@ -30,6 +30,7 @@ namespace Assets
         [HideInInspector] public List<Region> EnemyRegionsForAttack;
         [HideInInspector] public bool IsSelectedCountry = true;
         [HideInInspector] public Country.Country PlayerCountry;
+        [HideInInspector] public bool IsSelectPlayerRegion;
 
         private void Awake() => _instance ??= this;
     }

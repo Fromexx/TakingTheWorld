@@ -1865,6 +1865,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Russia (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3739410267397467347, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3991380083691055768, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.01
@@ -1883,7 +1887,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7901730126827313591, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0066
+      value: -0.00872
       objectReference: {fileID: 0}
     - target: {fileID: 7901730126827313591, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -3984,6 +3988,10 @@ PrefabInstance:
     - target: {fileID: 2250729418276825930, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
       propertyPath: m_Name
       value: Russia (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3739410267397467347, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
@@ -7370,6 +7378,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Russia (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3739410267397467347, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3991380083691055768, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.01
@@ -7396,7 +7408,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7901730126827313591, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0027
+      value: -0.0057
       objectReference: {fileID: 0}
     - target: {fileID: 7901730126827313591, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -13781,6 +13793,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Russia (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 3739410267397467347, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3991380083691055768, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.01
@@ -13807,7 +13823,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7901730126827313591, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0044
+      value: -0.00694
       objectReference: {fileID: 0}
     - target: {fileID: 7901730126827313591, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -14342,6 +14358,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Russia (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3739410267397467347, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3991380083691055768, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.01
@@ -14368,7 +14388,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7901730126827313591, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0025
+      value: -0.00374
       objectReference: {fileID: 0}
     - target: {fileID: 7901730126827313591, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -17950,6 +17970,7 @@ MonoBehaviour:
   EnemyRegionsForAttack: []
   IsSelectedCountry: 1
   PlayerCountry: {fileID: 0}
+  IsSelectPlayerRegion: 0
 --- !u!4 &1553490266
 Transform:
   m_ObjectHideFlags: 0
@@ -22224,6 +22245,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Russia (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3739410267397467347, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3991380083691055768, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.01
@@ -22250,7 +22275,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7901730126827313591, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0026
+      value: -0.00608
       objectReference: {fileID: 0}
     - target: {fileID: 7901730126827313591, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -22433,6 +22458,10 @@ PrefabInstance:
     - target: {fileID: 2250729418276825930, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
       propertyPath: m_Name
       value: Russia (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3739410267397467347, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
@@ -29967,9 +29996,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Russia
       objectReference: {fileID: 0}
+    - target: {fileID: 3739410267397467347, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7901730126827313591, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0064
+      value: -0.00959
       objectReference: {fileID: 0}
     - target: {fileID: 7901730126827313591, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
       propertyPath: m_AnchoredPosition.y
