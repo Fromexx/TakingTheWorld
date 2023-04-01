@@ -13,8 +13,6 @@ namespace Country
         [field: SerializeField] public float CurrentMoney { get; private set; }
         [field: SerializeField] public List<RegionBorder> Borders { get; private set; }
 
-        [SerializeField] private CameraLogic.CameraLogic _cameraLogic;
-
         private int _currentCountryBallCount;
         private Country _country;
         private TuneLevel _tuneLevel;
@@ -210,8 +208,6 @@ namespace Country
             {
                 regionsTransform.Add(region.transform);
             }
-
-            _cameraLogic.TranslateCameraToCenterOfObjects(regionsTransform);
             
             GeneralAsset.Instance.AttackStarted = true;
         }

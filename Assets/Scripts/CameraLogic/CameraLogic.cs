@@ -19,30 +19,6 @@ namespace CameraLogic
         {
             CameraMovement();
         }
-        
-        public void TranslateCameraToCenterOfObjects(List<Transform> objects)
-        {
-            print("plh");
-            
-            foreach (var obj in objects)
-            {
-                print(obj);
-            }
-            
-            Instantiate(_cube, GetObjectsCenter(objects), Quaternion.identity);
-        }
-
-        private Vector3 GetObjectsCenter(List<Transform> objects)
-        {
-            var bounds = new Bounds(objects[0].position, Vector3.zero);
-
-            for (int i = 0; i < objects.Count; i++)
-            {
-                bounds.Encapsulate(objects[i].position);
-            }
-
-            return bounds.center;
-        }
 
         private void CameraMovement()
         {
