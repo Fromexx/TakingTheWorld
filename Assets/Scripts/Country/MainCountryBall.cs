@@ -99,5 +99,14 @@ namespace Country
                 _player.SetEnemyRegionForAttack(enemyRegion);
             }
         }
+        private void OnDestroy()
+        {
+            try
+            {
+                _player.EnemyRegionSets -= OnEnemyRegionSets;
+            }
+            catch { }
+        }
     }
+
 }
