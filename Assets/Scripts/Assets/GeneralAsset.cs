@@ -13,10 +13,12 @@ namespace Assets
         [field: SerializeField] public Camera Camera { get; private set; }
         [field: SerializeField] public float TimeBetweenCountryBallSpawn { get; private set; }
         [field: SerializeField] public float TimeBetweenIncreaseCountryBall { get; private set; }
-        [field: SerializeField] public Country.Country PlayerCountry { get; private set; }
         [field: SerializeField] public RegionTuneView RegionTuneView { get; private set; }
         [field: SerializeField] public List<Country.Country> AllCountries;
         [field: SerializeField] public float TimeBetweenAttack;
+        [field: SerializeField] public List<MainCountryBall> AllMainCountryBalls { get; private set; }
+        [field: SerializeField] public GameObject SelectCountryUI;
+        [field: SerializeField] public SoldierVoicesPlayer SoldierVoicesPlayer;
 
         [HideInInspector] public List<Region> UnionRegions;
         [HideInInspector] public int IterationCount;
@@ -26,6 +28,8 @@ namespace Assets
         [HideInInspector] public int EnemyRegionForAttackCount;
         [HideInInspector] public List<Region> PlayerRegionsForAttack;
         [HideInInspector] public List<Region> EnemyRegionsForAttack;
+        [HideInInspector] public bool IsSelectedCountry = true;
+        [HideInInspector] public Country.Country PlayerCountry;
 
         private void Awake() => _instance ??= this;
     }

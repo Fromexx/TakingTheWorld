@@ -16,10 +16,8 @@ namespace Country
         {
             try
             {
-                var regionTransform = transform.parent;
-                var countryTransform = regionTransform.parent;
-
-                countryTransform.TryGetComponent(out _player);
+                var countryTransform = transform.parent.parent;
+                
                 countryTransform.TryGetComponent(out _country);
                 _text = GetComponentInChildren<TMP_Text>();
             }
@@ -34,6 +32,10 @@ namespace Country
             UpdateText();
         }
 
+        public void Init(Country country) => _country = country;
+
+        public void InitPlayer(Player.Player player) => _player = player;
+
         private void UpdateText() => _text.text = _currentCountryBallCount.ToString();
         
         private void OnMouseDown()
@@ -42,18 +44,21 @@ namespace Country
             if (!_country.IsPlayerCountry) return;
             
             transform.parent.TryGetComponent(out Region ownRegion);
-            _player?.SetOwnRegionForAttack(ownRegion);
+            _player.SetOwnRegionForAttack(ownRegion);
         }
         
         private void OnMouseUp()
         {
+            if (_player is null) return;
+            if (!_player.IsOwnRegionStillOwn()) return;
+            
             Ray ray = GeneralAsset.Instance.Camera.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit, Int32.MaxValue))
             {
                 hit.collider.transform.parent.TryGetComponent(out Region enemyRegion);
                 if (enemyRegion is null) return;
-                _player?.SetEnemyRegionForAttack(enemyRegion);
+                _player.SetEnemyRegionForAttack(enemyRegion);
             }
         }
     }

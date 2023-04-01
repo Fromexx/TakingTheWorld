@@ -90,6 +90,19 @@ namespace Country
             var regionTag = invaderRegion.tag;
 
             capturedRegion.InitCountry(this);
+            capturedRegion.MainCountryBall.Init(this);
+
+            if (!IsPlayerCountry)
+            {
+                GeneralAsset.Instance.EnemyRegionsForAttack.Add(capturedRegion);
+                GeneralAsset.Instance.PlayerRegionsForAttack.Remove(capturedRegion);
+                capturedRegion.StartCoroutineAttack();
+            }
+            else if (IsPlayerCountry)
+            {
+                GeneralAsset.Instance.EnemyRegionsForAttack.Remove(capturedRegion);
+                GeneralAsset.Instance.PlayerRegionsForAttack.Add(capturedRegion);
+            }
 
             var isEnemyRegionRemained = GeneralAsset.Instance.RegionsForAttack.Any(regionForAttack => !regionForAttack.CompareTag(regionTag));
 
@@ -105,7 +118,7 @@ namespace Country
             print("Win!");
                 
             GeneralAsset.Instance.AttackStarted = false;
-
+            
             TryGetComponent(out Enemy.Enemy enemy);
             enemy.StopAttack();
             

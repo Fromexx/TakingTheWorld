@@ -2383,7 +2383,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 216337254}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 31218150432ad5542a4fecf29d0a19eb, type: 3}
@@ -2479,7 +2479,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 216337254}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a79349ed9900be149b3e29b322f53977, type: 3}
   m_Name: 
@@ -7589,6 +7589,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cdef5cfa1ec4228b8c932bafd297b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &676595209 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3416114912711785320, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
+  m_PrefabInstance: {fileID: 2035802316}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5281d1d428224bbb8b364b5ae6ec58be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &678186998
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12372,6 +12383,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1474896819243266544, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
   m_PrefabInstance: {fileID: 1142257083}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &989030715 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3416114912711785320, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
+  m_PrefabInstance: {fileID: 1142257083}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5281d1d428224bbb8b364b5ae6ec58be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &990603569
 GameObject:
   m_ObjectHideFlags: 0
@@ -12843,6 +12865,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1028213704 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3416114912711785320, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
+  m_PrefabInstance: {fileID: 317287025}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5281d1d428224bbb8b364b5ae6ec58be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1031706097
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13607,7 +13640,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1079692721}
   - component: {fileID: 1079692724}
-  - component: {fileID: 1079692723}
   - component: {fileID: 1079692722}
   m_Layer: 0
   m_Name: "\u0420\u043E\u0441\u0441\u0438\u044F"
@@ -13642,19 +13674,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1079692720}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f007a062a934718bc8f0a161838d2e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1079692723
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1079692720}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c041ac2a0c7841cd91ee6cdc5e13a67f, type: 3}
+  m_Script: {fileID: 11500000, guid: 2fd42d11d0d0413882a14f9c25f76f45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1079692724
@@ -13670,7 +13690,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <CountryBallPrefab>k__BackingField: {fileID: 7410065262240902575, guid: b9562e5bc2a0ad944a9eb339210fa45a, type: 3}
-  IsPlayerCountry: 1
+  IsPlayerCountry: 0
   _regions:
   - {fileID: 7547490595583334332}
   - {fileID: 8809740456863650326}
@@ -13680,6 +13700,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1474896819243266544, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
   m_PrefabInstance: {fileID: 2025974837}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1084160835 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3416114912711785320, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
+  m_PrefabInstance: {fileID: 2025974837}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5281d1d428224bbb8b364b5ae6ec58be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1099094401
 GameObject:
   m_ObjectHideFlags: 0
@@ -14924,6 +14955,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1474896819243266544, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
   m_PrefabInstance: {fileID: 670743669}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1211719298 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3416114912711785320, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
+  m_PrefabInstance: {fileID: 670743669}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5281d1d428224bbb8b364b5ae6ec58be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1218539187
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16975,6 +17017,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1474896819243266544, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
   m_PrefabInstance: {fileID: 1194766947}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1479162286 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3416114912711785320, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
+  m_PrefabInstance: {fileID: 1194766947}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5281d1d428224bbb8b364b5ae6ec58be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1486547973
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17718,6 +17771,140 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cdef5cfa1ec4228b8c932bafd297b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1515064686
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1515064687}
+  - component: {fileID: 1515064689}
+  - component: {fileID: 1515064688}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1515064687
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515064686}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1852712621}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -341.83, y: -0.0000019073}
+  m_SizeDelta: {x: 889.4944, y: 115.5009}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1515064688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515064686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Select your country!
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 150
+  m_fontSizeBase: 150
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: -670.0659, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1515064689
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515064686}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1521519087
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17825,6 +18012,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4cdef5cfa1ec4228b8c932bafd297b14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1526303350 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3416114912711785320, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
+  m_PrefabInstance: {fileID: 8784804763959679823}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5281d1d428224bbb8b364b5ae6ec58be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1527110581
@@ -18145,7 +18343,6 @@ MonoBehaviour:
   <Camera>k__BackingField: {fileID: 963194227}
   <TimeBetweenCountryBallSpawn>k__BackingField: 0.08
   <TimeBetweenIncreaseCountryBall>k__BackingField: 1
-  <PlayerCountry>k__BackingField: {fileID: 1079692724}
   <RegionTuneView>k__BackingField: {fileID: 1099094403}
   AllCountries:
   - {fileID: 1079692724}
@@ -18168,6 +18365,17 @@ MonoBehaviour:
   - {fileID: 878362760}
   - {fileID: 46229724}
   TimeBetweenAttack: 4
+  <AllMainCountryBalls>k__BackingField:
+  - {fileID: 1526303350}
+  - {fileID: 1028213704}
+  - {fileID: 676595209}
+  - {fileID: 1211719298}
+  - {fileID: 1084160835}
+  - {fileID: 1479162286}
+  - {fileID: 989030715}
+  - {fileID: 1698517338}
+  SelectCountryUI: {fileID: 1852712620}
+  SoldierVoicesPlayer: {fileID: 2038707301}
   UnionRegions: []
   IterationCount: 0
   AttackStarted: 0
@@ -18176,6 +18384,8 @@ MonoBehaviour:
   EnemyRegionForAttackCount: 0
   PlayerRegionsForAttack: []
   EnemyRegionsForAttack: []
+  IsSelectedCountry: 1
+  PlayerCountry: {fileID: 0}
 --- !u!4 &1553490266
 Transform:
   m_ObjectHideFlags: 0
@@ -18828,6 +19038,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1679129450}
   m_CullTransparentMesh: 1
+--- !u!114 &1698517338 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3416114912711785320, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
+  m_PrefabInstance: {fileID: 172197339}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5281d1d428224bbb8b364b5ae6ec58be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1731008943
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19760,6 +19981,7 @@ RectTransform:
   - {fileID: 476346743}
   - {fileID: 1469393360}
   - {fileID: 1811971830}
+  - {fileID: 1852712621}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20506,6 +20728,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8147e86839d1ca4d9703c8c327d6f02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1852712620
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1852712621}
+  m_Layer: 5
+  m_Name: SelectCountry
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1852712621
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1852712620}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1515064687}
+  m_Father: {fileID: 1769189727}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.000015259, y: 955}
+  m_SizeDelta: {x: 1573.1555, y: 209.571}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1853997265
 GameObject:
   m_ObjectHideFlags: 0
@@ -24919,10 +25177,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 0}
   Borders:
   - {fileID: 1498709394}
   - {fileID: 1551850412}
+  _currentCountryBallCount: 0
 --- !u!64 &1846898603358335095
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -26164,11 +26423,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 0}
   Borders:
   - {fileID: 473827656}
   - {fileID: 714467752}
   - {fileID: 823843672}
+  _currentCountryBallCount: 0
 --- !u!64 &4513799440969492849
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -26219,11 +26479,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 0}
   Borders:
   - {fileID: 326593324}
   - {fileID: 937379895}
   - {fileID: 295321594}
+  _currentCountryBallCount: 0
 --- !u!64 &4673429486539131416
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -26718,10 +26979,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 0}
   Borders:
   - {fileID: 1055335007}
   - {fileID: 221872206}
+  _currentCountryBallCount: 0
 --- !u!64 &5615218545689384990
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -26887,11 +27149,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 1084160834}
+  <MainCountryBall>k__BackingField: {fileID: 1084160835}
   Borders:
   - {fileID: 1466166475}
   - {fileID: 1331974087}
   - {fileID: 422552175}
+  _currentCountryBallCount: 0
 --- !u!64 &5841968695285568024
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27023,10 +27286,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 0}
   Borders:
   - {fileID: 1564993651}
   - {fileID: 673224020}
+  _currentCountryBallCount: 0
 --- !u!64 &6250686205722985528
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27173,12 +27437,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 0}
   Borders:
   - {fileID: 2090926488}
   - {fileID: 1183613070}
   - {fileID: 381802884}
   - {fileID: 774880452}
+  _currentCountryBallCount: 0
 --- !u!64 &6375658061067923414
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27270,10 +27535,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 0}
   Borders:
   - {fileID: 1755308073}
   - {fileID: 664021325}
+  _currentCountryBallCount: 0
 --- !u!64 &6408361118074212352
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27332,10 +27598,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 0}
   Borders:
   - {fileID: 716855056}
   - {fileID: 1210389271}
+  _currentCountryBallCount: 0
 --- !u!64 &6473397988163999409
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27419,8 +27686,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 0}
   Borders: []
+  _currentCountryBallCount: 0
 --- !u!64 &6493614302414052844
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27528,7 +27796,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 0}
   Borders:
   - {fileID: 2042984242}
   - {fileID: 1731008945}
@@ -27538,6 +27806,7 @@ MonoBehaviour:
   - {fileID: 1620307455}
   - {fileID: 294521727}
   - {fileID: 657464899}
+  _currentCountryBallCount: 0
 --- !u!64 &6528646301942341168
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27601,7 +27870,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 0}
   Borders:
   - {fileID: 2052053553}
   - {fileID: 30732657}
@@ -27609,6 +27878,7 @@ MonoBehaviour:
   - {fileID: 745665583}
   - {fileID: 247075669}
   - {fileID: 373140675}
+  _currentCountryBallCount: 0
 --- !u!64 &6656732116759325997
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27693,9 +27963,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 0}
   Borders:
   - {fileID: 107179143}
+  _currentCountryBallCount: 0
 --- !u!64 &6700064071017649967
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27746,11 +28017,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 0}
   Borders:
   - {fileID: 1234319946}
   - {fileID: 1935154453}
   - {fileID: 2016116509}
+  _currentCountryBallCount: 0
 --- !u!64 &6835267424748538895
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27822,8 +28094,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 0}
   Borders: []
+  _currentCountryBallCount: 0
 --- !u!64 &6932588198204671180
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27976,12 +28249,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 1211719297}
+  <MainCountryBall>k__BackingField: {fileID: 1211719298}
   Borders:
   - {fileID: 260466754}
   - {fileID: 1016158584}
   - {fileID: 948503014}
   - {fileID: 1000198805}
+  _currentCountryBallCount: 0
 --- !u!64 &7343763302573270525
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28045,11 +28319,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 989030714}
+  <MainCountryBall>k__BackingField: {fileID: 989030715}
   Borders:
   - {fileID: 1042722767}
   - {fileID: 1931589966}
   - {fileID: 1500025342}
+  _currentCountryBallCount: 0
 --- !u!64 &7389501684424127620
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28174,9 +28449,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 0}
   Borders:
   - {fileID: 1861547262}
+  _currentCountryBallCount: 0
 --- !u!64 &7458197862852650644
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28257,11 +28533,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 0}
   Borders:
   - {fileID: 165985935}
   - {fileID: 47338133}
   - {fileID: 726795046}
+  _currentCountryBallCount: 0
 --- !u!64 &7514543172318598056
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28325,12 +28602,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 0}
   Borders:
   - {fileID: 1293594030}
   - {fileID: 2113970826}
   - {fileID: 2105992367}
   - {fileID: 1794008909}
+  _currentCountryBallCount: 0
 --- !u!64 &7527415243180714324
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28391,11 +28669,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 7898759266929011391}
+  <MainCountryBall>k__BackingField: {fileID: 1526303350}
   Borders:
   - {fileID: 1467820167}
   - {fileID: 1768095325}
   - {fileID: 1940377274}
+  _currentCountryBallCount: 0
 --- !u!64 &7547490595583334333
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28479,11 +28758,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 0}
   Borders:
   - {fileID: 23476687}
   - {fileID: 174635046}
   - {fileID: 1949050251}
+  _currentCountryBallCount: 0
 --- !u!64 &7567529280366083520
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28542,12 +28822,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 1479162285}
+  <MainCountryBall>k__BackingField: {fileID: 1479162286}
   Borders:
   - {fileID: 224832103}
   - {fileID: 446450587}
   - {fileID: 1291877768}
   - {fileID: 878889993}
+  _currentCountryBallCount: 0
 --- !u!64 &7611362416441887286
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28614,10 +28895,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 0}
   Borders:
   - {fileID: 866874611}
   - {fileID: 1969579107}
+  _currentCountryBallCount: 0
 --- !u!64 &7649076902239557386
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28681,13 +28963,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 0}
   Borders:
   - {fileID: 182572176}
   - {fileID: 1271419341}
   - {fileID: 147942754}
   - {fileID: 1031706099}
   - {fileID: 1441824521}
+  _currentCountryBallCount: 0
 --- !u!64 &7670351643257547863
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28771,10 +29054,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 0}
   Borders:
   - {fileID: 1560514755}
   - {fileID: 377488849}
+  _currentCountryBallCount: 0
 --- !u!64 &7695075373102082949
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28858,11 +29142,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 0}
   Borders:
   - {fileID: 1911469691}
   - {fileID: 2099530219}
   - {fileID: 430302843}
+  _currentCountryBallCount: 0
 --- !u!64 &7772525672324455730
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28946,10 +29231,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 0}
   Borders:
   - {fileID: 419550320}
   - {fileID: 1866939126}
+  _currentCountryBallCount: 0
 --- !u!64 &7796569858824876016
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29013,10 +29299,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 0}
   Borders:
   - {fileID: 678187000}
   - {fileID: 726703125}
+  _currentCountryBallCount: 0
 --- !u!64 &7874264714075834992
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29079,13 +29366,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 406630660}
+  <MainCountryBall>k__BackingField: {fileID: 1698517338}
   Borders:
   - {fileID: 265814544}
   - {fileID: 1733921396}
   - {fileID: 385638691}
   - {fileID: 678754385}
   - {fileID: 1508360696}
+  _currentCountryBallCount: 0
 --- !u!64 &7891071871879085688
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29151,12 +29439,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 0}
   Borders:
   - {fileID: 943778521}
   - {fileID: 1618670992}
   - {fileID: 1871241862}
   - {fileID: 1263947815}
+  _currentCountryBallCount: 0
 --- !u!64 &8015425184545509002
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29289,11 +29578,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 0}
   Borders:
   - {fileID: 35721173}
   - {fileID: 1486547975}
   - {fileID: 2028388806}
+  _currentCountryBallCount: 0
 --- !u!64 &8208135985730072656
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29353,11 +29643,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 0}
   Borders:
   - {fileID: 1472182152}
   - {fileID: 841752449}
   - {fileID: 405749828}
+  _currentCountryBallCount: 0
 --- !u!64 &8270880471170555270
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29415,9 +29706,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 0}
   Borders:
   - {fileID: 1281563615}
+  _currentCountryBallCount: 0
 --- !u!64 &8336853242628391531
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29477,11 +29769,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 0}
   Borders:
   - {fileID: 311028925}
   - {fileID: 725403338}
   - {fileID: 957954824}
+  _currentCountryBallCount: 0
 --- !u!64 &8360929895794265084
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29532,13 +29825,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 602761864}
+  <MainCountryBall>k__BackingField: {fileID: 676595209}
   Borders:
   - {fileID: 2092496675}
   - {fileID: 243013786}
   - {fileID: 764197529}
   - {fileID: 1511033008}
   - {fileID: 1754152589}
+  _currentCountryBallCount: 0
 --- !u!64 &8401763686864016757
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29589,9 +29883,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 0}
   Borders:
   - {fileID: 1218539189}
+  _currentCountryBallCount: 0
 --- !u!64 &8444562340591929021
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29675,11 +29970,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 0}
   Borders:
   - {fileID: 2090701851}
   - {fileID: 1521519089}
   - {fileID: 698032930}
+  _currentCountryBallCount: 0
 --- !u!64 &8519284952772316847
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29804,11 +30100,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 0}
   Borders:
   - {fileID: 264101813}
   - {fileID: 1549332611}
   - {fileID: 840316638}
+  _currentCountryBallCount: 0
 --- !u!64 &8565611560966907332
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29872,11 +30169,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 0}
   Borders:
   - {fileID: 1898023484}
   - {fileID: 555436068}
   - {fileID: 760907447}
+  _currentCountryBallCount: 0
 --- !u!64 &8608445830810647090
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29938,13 +30236,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 0}
   Borders:
   - {fileID: 1001980426}
   - {fileID: 79228231}
   - {fileID: 418453778}
   - {fileID: 1035022390}
   - {fileID: 1809359061}
+  _currentCountryBallCount: 0
 --- !u!64 &8619761469266599970
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -30003,10 +30302,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 0}
   Borders:
   - {fileID: 378962504}
   - {fileID: 1970887877}
+  _currentCountryBallCount: 0
 --- !u!64 &8720192260523497264
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -30134,7 +30434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 1544618284}
+  <MainCountryBall>k__BackingField: {fileID: 1028213704}
   Borders:
   - {fileID: 1251104699}
   - {fileID: 504908044}
@@ -30145,6 +30445,7 @@ MonoBehaviour:
   - {fileID: 1747517302}
   - {fileID: 892378832}
   - {fileID: 2131377316}
+  _currentCountryBallCount: 0
 --- !u!64 &8809740456863650327
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -30208,11 +30509,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 0}
   Borders:
   - {fileID: 1962825435}
   - {fileID: 957640878}
   - {fileID: 273432195}
+  _currentCountryBallCount: 0
 --- !u!64 &8868206608991449391
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -30263,7 +30565,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3b8dd2d7d744819a2dc9263e331379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCountryBall: {fileID: 0}
+  <MainCountryBall>k__BackingField: {fileID: 0}
   Borders:
   - {fileID: 793297074}
   - {fileID: 331860218}
@@ -30272,6 +30574,7 @@ MonoBehaviour:
   - {fileID: 794461407}
   - {fileID: 372116552}
   - {fileID: 244221134}
+  _currentCountryBallCount: 0
 --- !u!64 &8972298840965246971
 MeshCollider:
   m_ObjectHideFlags: 0

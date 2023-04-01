@@ -1,5 +1,9 @@
-﻿namespace Economy
+﻿using System;
+using UnityEngine;
+
+namespace Economy
 {
+    [Serializable]
     public class TuneLevel
     {
         public int CurrentCountryBallLevel { get; private set; }

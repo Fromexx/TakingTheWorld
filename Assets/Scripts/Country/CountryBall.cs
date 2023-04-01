@@ -21,8 +21,9 @@ namespace Country
 
         private void Update()
         {
-            if (_atTargetPosition && GeneralAsset.Instance.AttackStarted)
+            if (_atTargetPosition)
             {
+                if (!GeneralAsset.Instance.AttackStarted) Destroy(gameObject);
                 _enemyRegion.ProtectRegion(_ownCountry, _ownRegion, _countryBallNumber == _countryBallCount);
                 Destroy(gameObject);
             }

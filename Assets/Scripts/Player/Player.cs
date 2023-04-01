@@ -27,6 +27,14 @@ namespace Player
 
         public void SetOwnRegionForAttack(Region ownRegion) => _ownRegion = ownRegion;
 
+        public bool IsOwnRegionStillOwn()
+        {
+            if (_ownRegion is null) return false;
+            
+            _ownRegion.transform.parent.TryGetComponent(out Country.Country country);
+            return country.IsPlayerCountry;
+        }
+        
         public void SetEnemyRegionForAttack(Region enemyRegion)
         {
             if (_ownRegion == enemyRegion) return;
