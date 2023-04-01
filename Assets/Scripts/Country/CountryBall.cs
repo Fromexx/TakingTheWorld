@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Assets;
+using UnityEngine;
 using Vector3 = UnityEngine.Vector3;
 
 namespace Country
@@ -20,9 +21,8 @@ namespace Country
 
         private void Update()
         {
-            if (_atTargetPosition)
+            if (_atTargetPosition && GeneralAsset.Instance.AttackStarted)
             {
-                print(_enemyRegion);
                 _enemyRegion.ProtectRegion(_ownCountry, _ownRegion, _countryBallNumber == _countryBallCount);
                 Destroy(gameObject);
             }

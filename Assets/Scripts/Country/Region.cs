@@ -164,6 +164,8 @@ namespace Country
 
             for (int i = 0; i < countryBallCountToSpawn; i++)
             {
+                if (_currentCountryBallCount == 1) break;
+                
                 _currentCountryBallCount -= 1;
                 _mainCountryBall.Init(_currentCountryBallCount);
 
@@ -299,13 +301,12 @@ namespace Country
         
         private void OnMouseDown()
         {
-            if (_country.IsPlayerCountry && !GeneralAsset.Instance.AttackStarted)
+            if (GeneralAsset.Instance.AttackStarted) return;
+            if (_country.IsPlayerCountry)
             {
                 GeneralAsset.Instance.RegionTuneView.Render(_tuneLevel, this);
                 return;
             }
-
-            if (GeneralAsset.Instance.AttackStarted) return;
 
             GeneralAsset.Instance.RegionsForAttack = new List<Region>();
             GeneralAsset.Instance.PlayerRegionsForAttack = new List<Region>();

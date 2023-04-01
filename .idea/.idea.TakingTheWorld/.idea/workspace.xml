@@ -23,6 +23,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Country/Country.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Country/Country.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Country/CountryBall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Country/CountryBall.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,11 +117,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Country/RegionTuneView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Economy/TuneLevel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Assets/GeneralAsset.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAttack.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Country/CountryBall.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Country/Country.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Country/CountryBall.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" />
       </list>
     </option>
   </component>
@@ -235,10 +236,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="169" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1679484747848" />
-    <state x="92" y="92" width="1736" height="866" key="VCS.FileHistoryDialog" timestamp="1680079872778">
+    <state x="92" y="92" width="1736" height="866" key="VCS.FileHistoryDialog" timestamp="1680345710327">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="92" y="92" width="1736" height="866" key="VCS.FileHistoryDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1680079872778" />
+    <state x="92" y="92" width="1736" height="866" key="VCS.FileHistoryDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1680345710327" />
     <state x="92" y="92" width="1736" height="866" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1680172081829">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

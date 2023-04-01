@@ -89,7 +89,6 @@ namespace Country
             _regions.Add(capturedRegion);
             var regionTag = invaderRegion.tag;
 
-            TryGetComponent(out Player.Player player);
             capturedRegion.InitCountry(this);
 
             var isEnemyRegionRemained = GeneralAsset.Instance.RegionsForAttack.Any(regionForAttack => !regionForAttack.CompareTag(regionTag));
