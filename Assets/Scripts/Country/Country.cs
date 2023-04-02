@@ -16,7 +16,7 @@ namespace Country
         [field: SerializeField] public bool IsPlayerCountry;
 
         [SerializeField] private List<Region> _regions;
-        [SerializeField] public byte Id { get; private set }
+        [SerializeField] public byte Id { get; private set; }
         [SerializeField] private List<byte> _ownRegionsId;
 
         private Region _ourRegionForAttack;
