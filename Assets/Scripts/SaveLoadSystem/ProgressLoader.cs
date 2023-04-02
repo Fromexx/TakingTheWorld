@@ -4,7 +4,7 @@ using Country;
 using System.Linq;
 using UnityEngine;
 
-public class Loader : MonoBehaviour
+public class ProgressLoader : MonoBehaviour
 {
     [SerializeField] private GameObject _world;
 

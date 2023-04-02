@@ -10,15 +10,15 @@ public class BackgroundMusic : MonoBehaviour
     public void Start()
     {
         audioSorce = GetComponent<AudioSource>();
-        OnMutedChanged(!settings.IsMusicUnMuted);
+        OnMutedChanged();
         audioSorce.Play();
         audioSorce.loop = true;
         settings.OnMusicMutedChanged += OnMutedChanged;
     }
 
-    private void OnMutedChanged(bool isMuted)
+    private void OnMutedChanged()
     {
-        if (isMuted) audioSorce.Stop();
+        if (settings.IsMusicUnMuted == false) audioSorce.Stop();
         else audioSorce.Play();
     }
 

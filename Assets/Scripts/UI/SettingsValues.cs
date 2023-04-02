@@ -4,29 +4,22 @@ public class SettingsValues : MonoBehaviour
 {
     public bool IsMusicUnMuted { get; set; } = true;
     private bool LastMusicUnMuted = true;
-    public delegate void MusicMutedChanged(bool IsMuted);
+    public delegate void MusicMutedChanged();
     public event MusicMutedChanged OnMusicMutedChanged;
-    public bool IsVibrationMuted { get; set; } = true;
-    private bool LastVibrationUnMuted = true;
-    public delegate void VibrationMutedChanged(bool IsMuted);
-    public event VibrationMutedChanged OnVibrationMutedChanged;
+
     public bool IsVoicesUnMuted { get; set; } = true;
     private bool LastVoicesUnMuted = true;
-    public delegate void VoicesMutedChanged(bool IsMuted);
+    public delegate void VoicesMutedChanged();
     public event VoicesMutedChanged OnVoicesMutedChanged;
 
     private void Update()
     {
         if (LastMusicUnMuted != IsMusicUnMuted)
-            OnMusicMutedChanged?.Invoke(!IsMusicUnMuted);
+            OnMusicMutedChanged?.Invoke();
         LastMusicUnMuted = IsMusicUnMuted;
 
-        if (LastVibrationUnMuted != IsVibrationMuted)
-            OnVibrationMutedChanged?.Invoke(!IsVibrationMuted);
-        LastVibrationUnMuted = IsVibrationMuted;
-
         if (LastVoicesUnMuted != IsVoicesUnMuted)
-            OnVoicesMutedChanged?.Invoke(!IsVoicesUnMuted);
+            OnVoicesMutedChanged?.Invoke();
         LastVoicesUnMuted = IsVoicesUnMuted;
 
     }

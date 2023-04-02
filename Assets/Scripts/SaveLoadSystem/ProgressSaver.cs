@@ -4,7 +4,7 @@ using Country;
 using System;
 using UnityEngine;
 
-public class Saver : MonoBehaviour
+public class ProgressSaver : MonoBehaviour
 {
     private DateTime _lastSave;
     [SerializeField] private GameObject _world;
