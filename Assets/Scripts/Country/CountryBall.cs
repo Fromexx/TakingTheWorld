@@ -23,7 +23,11 @@ namespace Country
         {
             if (_atTargetPosition)
             {
-                if (!GeneralAsset.Instance.AttackStarted) Destroy(gameObject);
+                if (!GeneralAsset.Instance.AttackStarted)
+                {
+                    Destroy(gameObject);
+                    return;
+                }
                 _enemyRegion.ProtectRegion(_ownCountry, _ownRegion, _countryBallNumber == _countryBallCount);
                 Destroy(gameObject);
             }

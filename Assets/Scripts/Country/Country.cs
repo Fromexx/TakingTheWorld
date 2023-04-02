@@ -119,7 +119,7 @@ namespace Country
         private void AttackFinish(Country enemyCountry, Region invaderRegion)
         {
             print("Win!");
-
+            
             GeneralAsset.Instance.AttackStarted = false;
 
             TryGetComponent(out Enemy.Enemy enemy);
