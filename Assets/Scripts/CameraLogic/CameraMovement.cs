@@ -12,10 +12,10 @@ namespace CameraLogic
         {
             var cameraPosition = transform.position;
 
-            if (cameraPosition.x >= _maxAxesValues.x && movementDirection.x > 0 
+            if (cameraPosition.x >= _maxAxesValues.x && movementDirection.x > 0
                 || cameraPosition.x <= _minAxesValues.x && movementDirection.x < 0) movementDirection.x = 0;
 
-            if (cameraPosition.z >= _maxAxesValues.y && movementDirection.y > 0 
+            if (cameraPosition.z >= _maxAxesValues.y && movementDirection.y > 0
                 || cameraPosition.z <= _minAxesValues.y && movementDirection.y < 0) movementDirection.y = 0;
 
             transform.Translate(movementDirection * (_speed * Time.deltaTime));

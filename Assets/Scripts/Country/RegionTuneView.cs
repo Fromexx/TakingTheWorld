@@ -1,8 +1,6 @@
-﻿using System;
-using Economy;
+﻿using Economy;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Country
 {
@@ -13,16 +11,16 @@ namespace Country
         [SerializeField] private TMP_Text _tuneMoney;
         [SerializeField] private string _startTuneCountryBallText;
         [SerializeField] private string _startTuneMoneyText;
-        
+
         private Region _region;
         private bool _listenersAlreadyAdded;
 
         public void Render(TuneLevel tuneLevel, Region region)
         {
             _region = region;
-            
+
             _regionTune.SetActive(true);
-            
+
             if (tuneLevel.CurrentCountryBallLevel == tuneLevel.MaxLevel) _tuneCountryBall.text = _startTuneCountryBallText + tuneLevel.GetCountryBallTuneCount() + "\nMax Level";
             else if (tuneLevel.CurrentCountryBallLevel != tuneLevel.MaxLevel) _tuneCountryBall.text = _startTuneCountryBallText + tuneLevel.GetCountryBallTuneCount();
 

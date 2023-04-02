@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace CameraLogic
 {
@@ -9,7 +8,7 @@ namespace CameraLogic
         [SerializeField] private float _minFov;
         [SerializeField] private float _defaultFov = 60;
         [SerializeField] private float _zoomDuration = 2;
-        
+
         private Camera _camera;
         private float _zoomMultiplier;
 
@@ -30,7 +29,7 @@ namespace CameraLogic
                 ZoomCamera(_maxFov);
             }
         }
-        
+
         void ZoomCamera(float target)
         {
             float angle = Mathf.Abs((_defaultFov / _zoomMultiplier) - _defaultFov);

@@ -2,10 +2,7 @@ using Assets;
 using Assets.Scripts.SaveLoadSystem;
 using Country;
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
 
 public class Saver : MonoBehaviour
 {
@@ -13,17 +10,17 @@ public class Saver : MonoBehaviour
     [SerializeField] private GameObject _world;
     void Start()
     {
-        _lastSave= DateTime.Now;   
+        _lastSave = DateTime.Now;
     }
 
     void Update()
     {
-        if(_lastSave.AddSeconds(10) < DateTime.Now)
+        if (_lastSave.AddSeconds(10) < DateTime.Now)
         {
             Save();
             Debug.Log("Game Saved");
-            _lastSave= DateTime.Now;
-        }   
+            _lastSave = DateTime.Now;
+        }
     }
 
     private void Save()
@@ -53,7 +50,7 @@ public class Saver : MonoBehaviour
         for (int regionIndex = 0; regionIndex < country.transform.childCount; regionIndex++)
         {
             var region = country.transform.GetChild(regionIndex);
-            saveProfile.Regions.Add(region.GetComponent<Region>().Export());    
+            saveProfile.Regions.Add(region.GetComponent<Region>().Export());
         }
     }
     private void OnApplicationQuit()

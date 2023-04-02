@@ -27,10 +27,10 @@ namespace Country
                 _enemyRegion.ProtectRegion(_ownCountry, _ownRegion, _countryBallNumber == _countryBallCount);
                 Destroy(gameObject);
             }
-            
-            if(_isInit) Move();
+
+            if (_isInit) Move();
         }
-        
+
         public void Init(Vector3 target, Region enemyRegion, Transform ownCountry, Region ownRegion, int countryBallCount, int countryBallNumber)
         {
             _isInit = true;

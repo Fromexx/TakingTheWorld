@@ -1,5 +1,4 @@
-﻿using Unity;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Assets.Scripts.SaveLoadSystem
 {
@@ -16,7 +15,7 @@ namespace Assets.Scripts.SaveLoadSystem
         public static ProgressAsset GetProgress()
         {
             string progressJson = PlayerPrefs.GetString(PROGRESS_KEY);
-            if(progressJson == null)
+            if (progressJson == null)
                 return null;
             var progress = JsonUtility.FromJson<ProgressAsset>(progressJson);
             return progress;

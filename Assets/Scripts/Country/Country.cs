@@ -1,8 +1,8 @@
-﻿using System;
+﻿using Assets;
+using Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using Assets;
-using Interfaces;
 using UnityEngine;
 
 namespace Country
@@ -11,12 +11,12 @@ namespace Country
     {
         public event Action RegionsSets;
         public event Action UnionRegionsSets;
-        
+
         [field: SerializeField] public GameObject CountryBallPrefab { get; private set; }
         [field: SerializeField] public bool IsPlayerCountry;
 
         [SerializeField] private List<Region> _regions;
-        [SerializeField] private byte _id;
+        [SerializeField] public byte Id { get; private set }
         [SerializeField] private List<byte> _ownRegionsId;
 
         private Region _ourRegionForAttack;
@@ -32,7 +32,7 @@ namespace Country
                 _regions[0].TryGetComponent(out Renderer renderer);
                 _material = renderer.material;
             }
-            catch(Exception)
+            catch (Exception)
             {
             }
         }
@@ -58,7 +58,7 @@ namespace Country
             {
                 Debug.Log("OurRegionForAttack or EnemyRegionForAttack already assigned! Code execution stopped!");
             }
-            
+
             _ourRegionForAttack = ourRegion;
             _enemyRegionForAttack = enemyRegion;
 
@@ -75,7 +75,7 @@ namespace Country
         {
             ourRegion = _ourRegionForAttack;
             enemyRegion = _enemyRegionForAttack;
-            
+
             _ourRegionForAttack = null;
             _enemyRegionForAttack = null;
         }
@@ -110,7 +110,7 @@ namespace Country
             var isEnemyRegionRemained = GeneralAsset.Instance.RegionsForAttack.Any(regionForAttack => !regionForAttack.CompareTag(regionTag));
 
             if (isEnemyRegionRemained) return;
-            
+
             AttackFinish(_enemyCountry, invaderRegion);
         }
 
@@ -119,14 +119,14 @@ namespace Country
         private void AttackFinish(Country enemyCountry, Region invaderRegion)
         {
             print("Win!");
-                
+
             GeneralAsset.Instance.AttackStarted = false;
-            
+
             TryGetComponent(out Enemy.Enemy enemy);
             enemy.StopAttack();
-            
+
             foreach (var country in GeneralAsset.Instance.AllCountries) country.gameObject.SetActive(true);
-            
+
             if (!IsPlayerCountry)
             {
                 foreach (var region in GeneralAsset.Instance.PlayerRegionsForAttack) region.Init();
@@ -135,10 +135,10 @@ namespace Country
             {
                 float money = GeneralAsset.Instance.EnemyRegionForAttackCount * 100 * invaderRegion.CurrentMoney;
                 Economy.Economy.IncreaseMoney(money);
-            
+
                 foreach (var region in GeneralAsset.Instance.EnemyRegionsForAttack) region.Init();
             }
-            
+
             foreach (var region in GeneralAsset.Instance.RegionsForAttack)
             {
                 region.StopAllRegionCoroutines();
@@ -152,7 +152,7 @@ namespace Country
         public void DisableNotInvolvedRegions(List<Region> regions)
         {
             var iteration = 0;
-            
+
             foreach (var countryRegion in _regions)
             {
                 foreach (var involvedRegion in regions)
@@ -181,7 +181,7 @@ namespace Country
         private void EnableAllRegionBorders(string enemyCountryTag, Region enemyRegion, Region ownRegion = null)
         {
             var borders = _regions.SelectMany(region => region.GetComponentsInChildren<RegionBorder>()).ToList();
-            
+
             foreach (var border in borders) border.Init(enemyCountryTag, enemyRegion, borders, _regions);
         }
 
@@ -204,7 +204,7 @@ namespace Country
         {
             return new ProgressCountry()
             {
-                Id = _id,
+                Id = Id,
                 OwnRegionsId = _ownRegionsId
             };
         }
