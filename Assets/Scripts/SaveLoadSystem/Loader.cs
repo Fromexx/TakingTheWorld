@@ -9,13 +9,18 @@ public class Loader : MonoBehaviour
 
     private void Awake()
     {
+        Debug.Log("Trying to load a game");
         Load();
+
     }
 
     private void Load()
     {
         ProgressAsset progressAsset = LocalStorage.GetProgress();
+        if (progressAsset == null)
+            return;
         ImportCountriesFrom(progressAsset);
+        Debug.Log("Game loaded");
     }
 
     private void ImportCountriesFrom(ProgressAsset progressAsset)
@@ -33,8 +38,8 @@ public class Loader : MonoBehaviour
     {
         for (int regionIndex = 0; regionIndex < country.transform.childCount; regionIndex++)
         {
-            var regionTransform = _world.transform.GetChild(regionIndex);
-            TryGetComponent(out Region region);
+            var regionTransform = country.transform.GetChild(regionIndex);
+            var region = regionTransform.GetComponent<Region>();
             region.Import(progressAsset.Regions[regionIndex]);
         }
     }

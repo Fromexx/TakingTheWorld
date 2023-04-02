@@ -18,9 +18,10 @@ public class Saver : MonoBehaviour
 
     void Update()
     {
-        if(_lastSave.AddSeconds(4) < DateTime.Now)
+        if(_lastSave.AddSeconds(10) < DateTime.Now)
         {
             Save();
+            Debug.Log("Game Saved");
             _lastSave= DateTime.Now;
         }   
     }
@@ -51,8 +52,13 @@ public class Saver : MonoBehaviour
     {
         for (int regionIndex = 0; regionIndex < country.transform.childCount; regionIndex++)
         {
-            var region = _world.transform.GetChild(regionIndex);
-            saveProfile.Regions.Add(region.GetComponent<Region>().Export());
+            var region = country.transform.GetChild(regionIndex);
+            saveProfile.Regions.Add(region.GetComponent<Region>().Export());    
         }
+    }
+    private void OnApplicationQuit()
+    {
+        Save();
+        Debug.Log("Game saved while closing");
     }
 }

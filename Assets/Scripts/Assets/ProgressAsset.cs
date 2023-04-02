@@ -5,7 +5,7 @@ namespace Assets
 {
     public class ProgressAsset
     {
-        public List<ProgressCountry> Countries;
-        public List<ProgressRegion> Regions;
+        public List<ProgressCountry> Countries = new List<ProgressCountry>();
+        public List<ProgressRegion> Regions = new List<ProgressRegion>();
     }
 }
