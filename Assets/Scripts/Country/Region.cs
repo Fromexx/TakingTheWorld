@@ -349,14 +349,12 @@ namespace Country
 
         public ProgressRegion Export()
         {
-            ProgressRegion progressRegion = new ProgressRegion
+            return new ProgressRegion
             {
                 Id = Id,
                 CountryBallLevel = (byte) _tuneLevel.CurrentCountryBallLevel,
                 MoneyLevel = (byte) _tuneLevel.CurrentMoneyLevel
             };
-
-            return progressRegion;
         }
 
         private void  OnDestroy()

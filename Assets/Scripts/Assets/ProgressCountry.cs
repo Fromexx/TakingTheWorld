@@ -7,6 +7,6 @@ namespace Assets
     public class ProgressCountry
     {
         public byte Id;
-        public List<byte> RegionsId;
+        public List<byte> OwnRegionsId;
     }
 }
