@@ -2385,7 +2385,7 @@ GameObject:
   - component: {fileID: 194785031}
   - component: {fileID: 194785030}
   m_Layer: 0
-  m_Name: LoadSystem
+  m_Name: SettingsSaveSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2400,11 +2400,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 194785029}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b3347deea093d942bd0ca73ddd2e0d2, type: 3}
+  m_Script: {fileID: 11500000, guid: 6dc0ec0b34be8584485628f71bbce5fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MusicToggle: {fileID: 1315362982}
-  VoiceToggle: {fileID: 1808220641}
+  settings: {fileID: 1833003349}
 --- !u!114 &194785031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2414,10 +2413,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 194785029}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 586f316a86348fb45867ee6a4c56ac91, type: 3}
+  m_Script: {fileID: 11500000, guid: 0b3347deea093d942bd0ca73ddd2e0d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _world: {fileID: 919132148913017243}
+  MusicToggle: {fileID: 1315362982}
+  VoiceToggle: {fileID: 1808220641}
 --- !u!4 &194785032
 Transform:
   m_ObjectHideFlags: 0
@@ -21016,12 +21016,12 @@ GameObject:
   - component: {fileID: 1773015236}
   - component: {fileID: 1773015234}
   m_Layer: 0
-  m_Name: SaveSystem
+  m_Name: ProgressSaveSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1773015234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21031,10 +21031,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1773015233}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6dc0ec0b34be8584485628f71bbce5fd, type: 3}
+  m_Script: {fileID: 11500000, guid: 586f316a86348fb45867ee6a4c56ac91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  settings: {fileID: 1833003349}
+  _world: {fileID: 919132148913017243}
 --- !u!4 &1773015235
 Transform:
   m_ObjectHideFlags: 0
