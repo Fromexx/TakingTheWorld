@@ -1,4 +1,5 @@
 using Assets;
+using Assets.Scripts.SaveLoadSystem;
 using Country;
 using System;
 using System.Collections;
@@ -10,20 +11,14 @@ public class Saver : MonoBehaviour
 {
     private DateTime _lastSave;
     [SerializeField] private GameObject _world;
-    [SerializeField] private YandexSDK _sdk;
     void Start()
     {
-        if(_sdk.user.id == null)
-            _sdk.Authenticate();
-        else
-        {
-            _lastSave= DateTime.Now;
-        }
+        _lastSave= DateTime.Now;   
     }
 
     void Update()
     {
-        if(_lastSave.AddSeconds(4) < DateTime.Now && _sdk.user.id != null)
+        if(_lastSave.AddSeconds(4) < DateTime.Now)
         {
             Save();
             _lastSave= DateTime.Now;
@@ -33,9 +28,7 @@ public class Saver : MonoBehaviour
     private void Save()
     {
         ProgressAsset SaveProfile = MakeSaveAsset();
-
-        string profilejson = JsonUtility.ToJson(SaveProfile);
-        _sdk.SaveUserData(profilejson);
+        LocalStorage.SaveProgress(SaveProfile);
     }
 
     private ProgressAsset MakeSaveAsset()
