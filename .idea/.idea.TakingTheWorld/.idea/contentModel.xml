@@ -61,16 +61,21 @@
             <e p="PlayerAttack.cs" t="Include" />
           </e>
           <e p="SaveLoadSystem" t="Include">
-            <e p="Loader.cs" t="Include" />
             <e p="LocalStorage.cs" t="Include" />
-            <e p="Saver.cs" t="Include" />
+            <e p="Models" t="Include">
+              <e p="SettingsData.cs" t="Include" />
+            </e>
+            <e p="ProgressLoader.cs" t="Include" />
+            <e p="ProgressSaver.cs" t="Include" />
+            <e p="SettingsLoader.cs" t="Include" />
+            <e p="SettingsSaver.cs" t="Include" />
           </e>
           <e p="Sounds" t="Include">
             <e p="BackgroundMusic.cs" t="Include" />
             <e p="SoldierVoicesPlayer.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
-            <e p="RestartGameButton.cs" t="Include" />
+            <e p="DeleteProgressButton.cs" t="Include" />
             <e p="SettingsActivityToggler.cs" t="Include" />
             <e p="SettingsValues.cs" t="Include" />
           </e>

@@ -1268,6 +1268,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 88237321}
   m_CullTransparentMesh: 1
+--- !u!114 &96855498 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7526774625875015817, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
+  m_PrefabInstance: {fileID: 317287025}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &98035034
 GameObject:
   m_ObjectHideFlags: 0
@@ -1966,6 +1977,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Russia (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3416114912711785320, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
+      propertyPath: _text
+      value: 
+      objectReference: {fileID: 358427791}
     - target: {fileID: 3739410267397467347, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -4445,6 +4460,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Russia (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3416114912711785320, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
+      propertyPath: _text
+      value: 
+      objectReference: {fileID: 96855498}
     - target: {fileID: 3739410267397467347, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -4667,6 +4686,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4cdef5cfa1ec4228b8c932bafd297b14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &358427791 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7526774625875015817, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
+  m_PrefabInstance: {fileID: 172197339}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &360463740
@@ -6602,6 +6632,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cdef5cfa1ec4228b8c932bafd297b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &514608058 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7526774625875015817, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
+  m_PrefabInstance: {fileID: 2035802316}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &526525720
 GameObject:
   m_ObjectHideFlags: 0
@@ -7187,6 +7228,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 626523617}
   m_CullTransparentMesh: 1
+--- !u!114 &642899793 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7526774625875015817, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
+  m_PrefabInstance: {fileID: 2025974837}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &657464897
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7472,6 +7524,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Russia (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3416114912711785320, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
+      propertyPath: _text
+      value: 
+      objectReference: {fileID: 723956110}
     - target: {fileID: 3739410267397467347, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -8266,6 +8322,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4cdef5cfa1ec4228b8c932bafd297b14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &723956110 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7526774625875015817, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
+  m_PrefabInstance: {fileID: 670743669}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &725403336
@@ -14000,6 +14067,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Russia (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 3416114912711785320, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
+      propertyPath: _text
+      value: 
+      objectReference: {fileID: 1897586676}
     - target: {fileID: 3739410267397467347, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -14038,6 +14109,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
+--- !u!114 &1146074568 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7526774625875015817, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
+  m_PrefabInstance: {fileID: 1194766947}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1165029504
 GameObject:
   m_ObjectHideFlags: 0
@@ -14565,6 +14647,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Russia (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3416114912711785320, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
+      propertyPath: _text
+      value: 
+      objectReference: {fileID: 1146074568}
     - target: {fileID: 3739410267397467347, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -19744,6 +19830,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cdef5cfa1ec4228b8c932bafd297b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1742965715 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7526774625875015817, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
+  m_PrefabInstance: {fileID: 8784804763959679823}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1743499666
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21935,6 +22032,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5281d1d428224bbb8b364b5ae6ec58be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1897586676 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7526774625875015817, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
+  m_PrefabInstance: {fileID: 1142257083}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1898023482
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23334,6 +23442,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Russia (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3416114912711785320, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
+      propertyPath: _text
+      value: 
+      objectReference: {fileID: 642899793}
     - target: {fileID: 3739410267397467347, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -23548,6 +23660,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Russia (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3416114912711785320, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
+      propertyPath: _text
+      value: 
+      objectReference: {fileID: 514608058}
     - target: {fileID: 3739410267397467347, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -26563,8 +26679,8 @@ Transform:
   m_LocalPosition: {x: -2.443235, y: 0.031798344, z: -0.9669528}
   m_LocalScale: {x: 98.35883, y: 97.12662, z: 100}
   m_Children:
-  - {fileID: 1218539188}
   - {fileID: 2094990731}
+  - {fileID: 1218539188}
   m_Father: {fileID: 1507019166}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -30942,6 +31058,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Russia
       objectReference: {fileID: 0}
+    - target: {fileID: 3416114912711785320, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
+      propertyPath: _text
+      value: 
+      objectReference: {fileID: 1742965715}
     - target: {fileID: 3739410267397467347, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
       propertyPath: m_IsActive
       value: 0
