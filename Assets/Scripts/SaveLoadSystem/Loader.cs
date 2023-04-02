@@ -1,6 +1,7 @@
 using Assets;
 using Assets.Scripts.SaveLoadSystem;
 using Country;
+using System.Linq;
 using UnityEngine;
 
 public class Loader : MonoBehaviour
@@ -29,7 +30,7 @@ public class Loader : MonoBehaviour
         {
             var countryTransform = _world.transform.GetChild(countryIndex);
             countryTransform.TryGetComponent(out Country.Country country);
-            country.Import(progressAsset.Countries[countryIndex]);
+            country.Import(progressAsset.Countries.First(c => c.Id == country.Id));
             ImportRegionsFrom(progressAsset, countryTransform);
         }
     }
@@ -40,7 +41,8 @@ public class Loader : MonoBehaviour
         {
             var regionTransform = country.transform.GetChild(regionIndex);
             var region = regionTransform.GetComponent<Region>();
-            region.Import(progressAsset.Regions[regionIndex]);
+            var regionId = region.Id;
+            region.Import(progressAsset.Regions.First(reg => reg.Id == regionId));
         }
     }
 }
