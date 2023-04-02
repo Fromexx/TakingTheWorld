@@ -164,9 +164,12 @@ namespace Country
                 ? _currentCountryBallCount
                 : needCountryBallCountToSpawn;
 
+            if (countryBallCountToSpawn == 0) countryBallCountToSpawn = _currentCountryBallCount;
+
             enemyRegion.StopIncreaseCountryBallCountCoroutine();
 
-            GeneralAsset.Instance.SoldierVoicesPlayer.Play();
+            if(_country.IsPlayerCountry)
+                GeneralAsset.Instance.SoldierVoicesPlayer.Play();
 
             for (int i = 0; i < countryBallCountToSpawn; i++)
             {
