@@ -13,11 +13,12 @@ namespace Country
         public event Action UnionRegionsSets;
         
         [field: SerializeField] public GameObject CountryBallPrefab { get; private set; }
-        [field: SerializeField] public byte Id { get; private set; }
         [field: SerializeField] public bool IsPlayerCountry;
 
         [SerializeField] private List<Region> _regions;
-        
+        [SerializeField] private byte _id;
+        [SerializeField] private List<byte> _ownRegionsId;
+
         private Region _ourRegionForAttack;
         private Region _enemyRegionForAttack;
         private List<Region> _unionRegions;
@@ -196,12 +197,16 @@ namespace Country
 
         public void Import(ProgressCountry progressCountry)
         {
-            
+            _ownRegionsId = progressCountry.OwnRegionsId;
         }
 
         public ProgressCountry Export()
         {
-            return null;
+            return new ProgressCountry()
+            {
+                Id = _id,
+                OwnRegionsId = _ownRegionsId
+            };
         }
     }
 }

@@ -64,6 +64,7 @@
             <e p="SoldierVoicesPlayer.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
+            <e p="RestartGameButton.cs" t="Include" />
             <e p="SettingsActivityToggler.cs" t="Include" />
             <e p="SettingsValues.cs" t="Include" />
           </e>
@@ -162,11 +163,20 @@
             <e p="EmojiOne.json" t="Include" />
           </e>
         </e>
+        <e p="YandexSDK" t="Include">
+          <e p="package.json" t="Include" />
+          <e p="Plugins" t="Include" />
+          <e p="Scripts" t="Include">
+            <e p="YandexGamesSDK.asmdef" t="Include" />
+            <e p="YandexSDK.cs" t="Include" />
+          </e>
+        </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="TakingTheWorld.sln" t="IncludeFlat" />
       <e p="Temp\Bin" t="ExcludeRecursive" />
+      <e p="YandexGamesSDK.csproj" t="IncludeRecursive" />
     </e>
   </component>
 </project>
