@@ -1,5 +1,5 @@
-﻿using System;
-using Assets;
+﻿using Assets;
+using System;
 using TMPro;
 using UnityEngine;
 
@@ -20,7 +20,7 @@ namespace Country
             try
             {
                 var countryTransform = transform.parent.parent;
-                
+
                 countryTransform.TryGetComponent(out _country);
             }
             catch (Exception)
@@ -83,7 +83,7 @@ namespace Country
 
             GeneralAsset.Instance.IsSelectPlayerRegion = false;
             _circle.SetActive(false);
-            
+
             Ray ray = GeneralAsset.Instance.Camera.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit, Int32.MaxValue))

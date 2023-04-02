@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SettingsValues : MonoBehaviour
@@ -25,11 +23,11 @@ public class SettingsValues : MonoBehaviour
 
         if (LastVibrationUnMuted != IsVibrationMuted)
             OnVibrationMutedChanged?.Invoke(!IsVibrationMuted);
-        LastVibrationUnMuted= IsVibrationMuted;
+        LastVibrationUnMuted = IsVibrationMuted;
 
         if (LastVoicesUnMuted != IsVoicesUnMuted)
             OnVoicesMutedChanged?.Invoke(!IsVoicesUnMuted);
         LastVoicesUnMuted = IsVoicesUnMuted;
-        
+
     }
 }

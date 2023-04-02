@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,7 +10,7 @@ public class SoldierVoicesPlayer : MonoBehaviour
 
     private void Awake()
     {
-        foreach(AudioSource source in voicePool)
+        foreach (AudioSource source in voicePool)
         {
             source.volume = Volume;
             source.playOnAwake = false;

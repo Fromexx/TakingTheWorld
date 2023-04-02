@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class KeyboardInput : MonoBehaviour
 {
@@ -14,7 +13,7 @@ public class KeyboardInput : MonoBehaviour
     {
         var horizontal = Input.GetAxis("Horizontal");
         var vertical = Input.GetAxis("Vertical");
-        
+
         MovementInputVector = new Vector2(horizontal, vertical);
         MovementInputVector.Normalize();
     }

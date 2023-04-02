@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace CameraLogic
 {
@@ -7,7 +6,7 @@ namespace CameraLogic
     {
         [SerializeField] private KeyboardInput _keyboardInput;
         [SerializeField] private GameObject _cube;
-        
+
         private CameraMovement _cameraMovement;
 
         private void Awake()

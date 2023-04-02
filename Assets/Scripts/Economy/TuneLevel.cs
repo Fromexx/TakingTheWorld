@@ -1,5 +1,4 @@
 ﻿using System;
-using UnityEngine;
 
 namespace Economy
 {
@@ -17,13 +16,13 @@ namespace Economy
         }
 
         public void UpCountryBallLevel() => CurrentCountryBallLevel++;
-        
+
         public void UpMoneyLevel() => CurrentMoneyLevel++;
 
         public void DownCountryBallLevel() => CurrentCountryBallLevel--;
 
         public void DownMoneyLevel() => CurrentMoneyLevel--;
-        
+
         public int GetCountryBallTuneCost()
         {
             return CurrentCountryBallLevel switch
@@ -36,7 +35,7 @@ namespace Economy
                 _ => -1
             };
         }
-        
+
         public int GetMoneyTuneCost()
         {
             return CurrentMoneyLevel switch
@@ -49,7 +48,7 @@ namespace Economy
                 _ => -1
             };
         }
-        
+
         public int GetCountryBallTuneCount()
         {
             return CurrentCountryBallLevel switch
@@ -63,7 +62,7 @@ namespace Economy
                 _ => -1
             };
         }
-        
+
         public float GetMoneyTune()
         {
             return CurrentMoneyLevel switch

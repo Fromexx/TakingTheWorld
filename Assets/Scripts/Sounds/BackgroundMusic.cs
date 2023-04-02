@@ -6,7 +6,7 @@ public class BackgroundMusic : MonoBehaviour
     [SerializeField] private float musicVolume;
     [SerializeField] private SettingsValues settings;
     private AudioSource audioSorce;
-    
+
     public void Start()
     {
         audioSorce = GetComponent<AudioSource>();
@@ -18,7 +18,7 @@ public class BackgroundMusic : MonoBehaviour
 
     private void OnMutedChanged(bool isMuted)
     {
-        if(isMuted) audioSorce.Stop();
+        if (isMuted) audioSorce.Stop();
         else audioSorce.Play();
     }
 
