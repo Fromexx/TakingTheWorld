@@ -6,6 +6,7 @@
     <e p="D:\Unity\TakingTheWorld" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Fonts" t="Include" />
         <e p="Materials" t="Include" />
         <e p="Models" t="Include">
           <e p="CountryBalls" t="Include" />
@@ -58,6 +59,11 @@
           <e p="Player" t="Include">
             <e p="Player.cs" t="Include" />
             <e p="PlayerAttack.cs" t="Include" />
+          </e>
+          <e p="SaveLoadSystem" t="Include">
+            <e p="Loader.cs" t="Include" />
+            <e p="LocalStorage.cs" t="Include" />
+            <e p="Saver.cs" t="Include" />
           </e>
           <e p="Sounds" t="Include">
             <e p="BackgroundMusic.cs" t="Include" />
@@ -163,20 +169,11 @@
             <e p="EmojiOne.json" t="Include" />
           </e>
         </e>
-        <e p="YandexSDK" t="Include">
-          <e p="package.json" t="Include" />
-          <e p="Plugins" t="Include" />
-          <e p="Scripts" t="Include">
-            <e p="YandexGamesSDK.asmdef" t="Include" />
-            <e p="YandexSDK.cs" t="Include" />
-          </e>
-        </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="TakingTheWorld.sln" t="IncludeFlat" />
       <e p="Temp\Bin" t="ExcludeRecursive" />
-      <e p="YandexGamesSDK.csproj" t="IncludeRecursive" />
     </e>
   </component>
 </project>

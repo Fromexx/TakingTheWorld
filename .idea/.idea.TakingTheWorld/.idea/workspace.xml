@@ -21,11 +21,15 @@
   <component name="ChangeListManager">
     <list default="true" id="09e4658a-ee63-4078-abfc-977d12232f9d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Assets/ProgressCountry.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/ProgressCountry.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Country/Country.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Country/Country.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveLoadSystem/Loader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SaveLoadSystem/Loader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Country/RegionTuneView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Country/RegionTuneView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/World_map.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/World_map.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/World_map.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/World_map.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +119,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Assets/CountryRegionsList.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Assets/ProgressAsset.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraLogic/CameraLogic.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Country/RegionTuneView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Economy/TuneLevel.cs" />
@@ -133,6 +136,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Country/Country.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SaveLoadSystem/Loader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Country/RegionTuneView.cs" />
       </list>
     </option>
   </component>
