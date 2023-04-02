@@ -1,8 +1,6 @@
-﻿using System;
-using Economy;
+﻿using Economy;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Country
 {
@@ -24,24 +22,28 @@ namespace Country
 
             if (tuneLevel.CurrentCountryBallLevel == tuneLevel.MaxLevel)
             {
-                _tuneCountryBallCost.text = "-1";
+                _tuneCountryBallCost.text = "MaxLevel";
                 _currentCountryBallCount.text = tuneLevel.GetCountryBallTuneCount().ToString();
             }
             else if (tuneLevel.CurrentCountryBallLevel != tuneLevel.MaxLevel)
             {
                 _currentCountryBallCount.text = tuneLevel.GetCountryBallTuneCount().ToString();
+                tuneLevel.UpCountryBallLevel();
                 _tuneCountryBallCost.text = tuneLevel.GetCountryBallTuneCost().ToString();
+                tuneLevel.DownCountryBallLevel();
             }
 
             if (tuneLevel.CurrentMoneyLevel == tuneLevel.MaxLevel)
             {
-                _tuneMoneyCost.text = "-1";
+                _tuneMoneyCost.text = "MaxLevel";
                 _currentMoney.text = tuneLevel.GetMoneyTune().ToString();
             }
             else if (tuneLevel.CurrentMoneyLevel != tuneLevel.MaxLevel)
             {
                 _currentMoney.text = tuneLevel.GetMoneyTune().ToString();
+                tuneLevel.UpMoneyLevel();
                 _tuneMoneyCost.text = tuneLevel.GetMoneyTuneCost().ToString();
+                tuneLevel.DownMoneyLevel();
             }
         }
 

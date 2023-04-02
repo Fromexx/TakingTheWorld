@@ -10,9 +10,9 @@ public class Loader : MonoBehaviour
 
     private void Awake()
     {
+        PlayerPrefs.DeleteAll();
         Debug.Log("Trying to load a game");
         Load();
-
     }
 
     private void Load()

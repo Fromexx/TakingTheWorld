@@ -73,7 +73,6 @@ namespace Country
         private void OnMouseExit()
         {
             if (_isAttackRegion) return;
-            print("tojhkto");
             _circle.SetActive(false);
         }
 

@@ -193,7 +193,6 @@ MonoBehaviour:
   - {fileID: 8208135985730072655}
   - {fileID: 7772525672324455729}
   - {fileID: 1846898603358335094}
-  _id: 0
   _ownRegionsId: 
 --- !u!1001 &23476685
 PrefabInstance:
@@ -583,7 +582,6 @@ MonoBehaviour:
   IsPlayerCountry: 0
   _regions:
   - {fileID: 6493614302414052843}
-  _id: 0
   _ownRegionsId: 
 --- !u!1001 &47338131
 PrefabInstance:
@@ -2374,7 +2372,6 @@ MonoBehaviour:
   IsPlayerCountry: 0
   _regions:
   - {fileID: 8270880471170555269}
-  _id: 0
   _ownRegionsId: 
 --- !u!1 &216337254
 GameObject:
@@ -3333,7 +3330,6 @@ MonoBehaviour:
   IsPlayerCountry: 0
   _regions:
   - {fileID: 7567529280366083519}
-  _id: 0
   _ownRegionsId: 
 --- !u!1001 &260466752
 PrefabInstance:
@@ -5400,7 +5396,6 @@ MonoBehaviour:
   IsPlayerCountry: 0
   _regions:
   - {fileID: 6932588198204671179}
-  _id: 0
   _ownRegionsId: 
 --- !u!1001 &381802882
 PrefabInstance:
@@ -5681,7 +5676,6 @@ MonoBehaviour:
   IsPlayerCountry: 0
   _regions:
   - {fileID: 8519284952772316846}
-  _id: 0
   _ownRegionsId: 
 --- !u!1001 &405749826
 PrefabInstance:
@@ -6972,7 +6966,6 @@ MonoBehaviour:
   - {fileID: 7611362416441887285}
   - {fileID: 7389501684424127619}
   - {fileID: 7891071871879085687}
-  _id: 0
   _ownRegionsId: 
 --- !u!1001 &555436066
 PrefabInstance:
@@ -7150,7 +7143,6 @@ MonoBehaviour:
   - {fileID: 8720192260523497263}
   - {fileID: 6250686205722985527}
   - {fileID: 7796569858824876015}
-  _id: 0
   _ownRegionsId: 
 --- !u!1001 &593945160
 PrefabInstance:
@@ -9872,7 +9864,6 @@ MonoBehaviour:
   - {fileID: 6656732116759325996}
   - {fileID: 8619761469266599969}
   - {fileID: 4513799440969492848}
-  _id: 0
   _ownRegionsId: 
 --- !u!1001 &823843670
 PrefabInstance:
@@ -10269,7 +10260,6 @@ MonoBehaviour:
   <CountryBallPrefab>k__BackingField: {fileID: 0}
   IsPlayerCountry: 0
   _regions: []
-  _id: 0
   _ownRegionsId: 
 --- !u!1001 &840316636
 PrefabInstance:
@@ -10768,7 +10758,6 @@ MonoBehaviour:
   IsPlayerCountry: 0
   _regions:
   - {fileID: 7527415243180714323}
-  _id: 0
   _ownRegionsId: 
 --- !u!1001 &878889991
 PrefabInstance:
@@ -14052,7 +14041,6 @@ MonoBehaviour:
   - {fileID: 7547490595583334332}
   - {fileID: 8809740456863650326}
   - {fileID: 8401763686864016756}
-  _id: 0
   _ownRegionsId: 
 --- !u!4 &1084160834 stripped
 Transform:
@@ -14337,7 +14325,6 @@ MonoBehaviour:
   - {fileID: 6408361118074212351}
   - {fileID: 6375658061067923413}
   - {fileID: 7695075373102082948}
-  _id: 0
   _ownRegionsId: 
 --- !u!1001 &1142257083
 PrefabInstance:
@@ -17946,7 +17933,6 @@ MonoBehaviour:
   - {fileID: 7670351643257547862}
   - {fileID: 8972298840965246970}
   - {fileID: 8444562340591929020}
-  _id: 0
   _ownRegionsId: 
 --- !u!1001 &1508360694
 PrefabInstance:
@@ -18483,7 +18469,6 @@ MonoBehaviour:
   - {fileID: 6835267424748538894}
   - {fileID: 7874264714075834991}
   - {fileID: 7458197862852650643}
-  _id: 0
   _ownRegionsId: 
 --- !u!1 &1541976275
 GameObject:
@@ -21108,7 +21093,6 @@ MonoBehaviour:
   IsPlayerCountry: 0
   _regions:
   - {fileID: 4673429486539131415}
-  _id: 0
   _ownRegionsId: 
 --- !u!1 &1788244454
 GameObject:
@@ -21175,7 +21159,6 @@ MonoBehaviour:
   - {fileID: 7514543172318598055}
   - {fileID: 8608445830810647089}
   - {fileID: 8015425184545509001}
-  _id: 0
   _ownRegionsId: 
 --- !u!1001 &1793961698
 PrefabInstance:
@@ -21909,7 +21892,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1852712621
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22285,7 +22268,6 @@ MonoBehaviour:
   IsPlayerCountry: 0
   _regions:
   - {fileID: 8565611560966907331}
-  _id: 0
   _ownRegionsId: 
 --- !u!1001 &1871241860
 PrefabInstance:
@@ -25654,7 +25636,6 @@ MonoBehaviour:
   IsPlayerCountry: 0
   _regions:
   - {fileID: 6473397988163999408}
-  _id: 0
   _ownRegionsId: 
 --- !u!1 &2143446842
 GameObject:
