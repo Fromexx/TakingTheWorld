@@ -198,6 +198,7 @@ namespace Country
         public void Import(ProgressCountry progressCountry)
         {
             _ownRegionsId = progressCountry.OwnRegionsId;
+            IsPlayerCountry = Convert.ToBoolean(progressCountry.IsPlayerCountry);
         }
 
         public ProgressCountry Export()
@@ -205,6 +206,7 @@ namespace Country
             return new ProgressCountry()
             {
                 Id = Id,
+                IsPlayerCountry = Convert.ToByte(IsPlayerCountry),
                 OwnRegionsId = _ownRegionsId
             };
         }

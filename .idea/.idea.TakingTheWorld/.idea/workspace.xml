@@ -21,6 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="09e4658a-ee63-4078-abfc-977d12232f9d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Assets/ProgressCountry.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/ProgressCountry.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Country/Country.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Country/Country.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +40,7 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveLoadSystem/Models/SettingsData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/ISaveableRegion.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5A41D6B7-1898-42EC-A409-FD0B1C3E3DCF/0/System.Collections.Generic.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraLogic/CameraMovement.cs" root0="FORCE_HIGHLIGHTING" />
@@ -59,7 +62,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/General&amp;Other/KeyboardInput.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Country/RegionBorder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Economy/EconomyView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveLoadSystem/ProgressSaver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Assets/GeneralAsset.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveLoadSystem/ProgressLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E8A406DA-9985-49AF-9A26-80936C7DA25A/0e/13d1b9bc/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraLogic/CameraZoom.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Country/RegionTuneView.cs" root0="FORCE_HIGHLIGHTING" />
@@ -78,7 +83,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Country/Region.cs" />
         <option value="$PROJECT_DIR$/Assets/Country/RegionBorder.cs" />
         <option value="$PROJECT_DIR$/Assets/Player/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Country/SelectRegion.cs" />
@@ -120,15 +124,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/ISaveableRegion.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/ISaveableCountry.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Assets/ProgressRegion.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Assets/ProgressCountry.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SaveLoadSystem/Loader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Economy/TuneLevel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Country/RegionTuneView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Country/MainCountryBall.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Country/Country.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Country/CountryBall.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SaveLoadSystem/Models/SettingsData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Assets/ProgressCountry.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Country/Country.cs" />
       </list>
     </option>
   </component>
@@ -216,7 +221,7 @@
       <workItem from="1680420259010" duration="70000" />
       <workItem from="1680420411525" duration="2126000" />
       <workItem from="1680453522150" duration="490000" />
-      <workItem from="1680563290902" duration="589000" />
+      <workItem from="1680563290902" duration="1228000" />
     </task>
     <task id="LOCAL-00001" summary="RegionTuneView">
       <created>1680437450812</created>
