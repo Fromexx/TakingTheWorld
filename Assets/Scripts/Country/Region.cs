@@ -27,6 +27,7 @@ namespace Country
         private Transform _mainCountryBallTransform;
         private byte _countryBallLevel = 1;
         private byte _moneyLevel = 1;
+        private Coroutine _attackCoroutine;
 
         private void Awake()
         {
@@ -60,12 +61,15 @@ namespace Country
         }
 
         public void StartCoroutineAttack() => StartCoroutine(Attack());
+
         public void StopCoroutineAttack() => StopCoroutine(Attack());
 
         private IEnumerator Attack()
         {
             yield return new WaitForSeconds(_timeBetweenAttack);
 
+            if (_country.IsPlayerCountry) yield break;
+            
             var playerRegions = GeneralAsset.Instance.PlayerRegionsForAttack;
 
             System.Random random = new System.Random();

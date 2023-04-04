@@ -105,6 +105,8 @@ namespace Country
             {
                 GeneralAsset.Instance.EnemyRegionsForAttack.Remove(capturedRegion);
                 GeneralAsset.Instance.PlayerRegionsForAttack.Add(capturedRegion);
+                print(capturedRegion);
+                capturedRegion.StopCoroutineAttack();
             }
 
             var isEnemyRegionRemained = GeneralAsset.Instance.RegionsForAttack.Any(regionForAttack => !regionForAttack.CompareTag(regionTag));
@@ -123,7 +125,7 @@ namespace Country
             GeneralAsset.Instance.AttackStarted = false;
 
             TryGetComponent(out Enemy.Enemy enemy);
-            enemy.StopAttack();
+            enemy?.StopAttack();
 
             foreach (var country in GeneralAsset.Instance.AllCountries) country.gameObject.SetActive(true);
 

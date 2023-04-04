@@ -10,7 +10,6 @@ public class ProgressLoader : MonoBehaviour
 
     private void Awake()
     {
-        PlayerPrefs.DeleteAll();
         Debug.Log("Trying to load a game");
         Load();
     }
