@@ -19,7 +19,6 @@ namespace Country
 
         [SerializeField] private List<Region> _regions;
         [SerializeField] private List<byte> _ownRegionsId;
-        [SerializeField] private GameObject _world;
 
         private Region _ourRegionForAttack;
         private Region _enemyRegionForAttack;
@@ -216,7 +215,7 @@ namespace Country
 
         public void AddOwnRegions()
         {
-            foreach (var country in _world.GetComponentsInChildren<Country>())
+            foreach (var country in transform.parent.GetComponentsInChildren<Country>())
             {
                 var regionCount = country.transform.childCount;
                 
