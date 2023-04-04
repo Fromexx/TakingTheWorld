@@ -3,6 +3,7 @@ using Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Country
@@ -14,10 +15,11 @@ namespace Country
 
         [field: SerializeField] public GameObject CountryBallPrefab { get; private set; }
         [field: SerializeField] public bool IsPlayerCountry;
+        [field: SerializeField] public byte Id { get; private set; }
 
         [SerializeField] private List<Region> _regions;
-        [SerializeField] public byte Id { get; private set; }
         [SerializeField] private List<byte> _ownRegionsId;
+        [SerializeField] private GameObject _world;
 
         private Region _ourRegionForAttack;
         private Region _enemyRegionForAttack;
@@ -71,6 +73,12 @@ namespace Country
             UnionRegionsSets?.Invoke();
         }
 
+        public Renderer GetRenderer()
+        {
+            _regions[0].TryGetComponent(out Renderer renderer);
+            return renderer;
+        }
+
         public void GetRegionsForAttack(out Region ourRegion, out Region enemyRegion)
         {
             ourRegion = _ourRegionForAttack;
@@ -114,6 +122,15 @@ namespace Country
             if (isEnemyRegionRemained) return;
 
             AttackFinish(_enemyCountry, invaderRegion);
+        }
+
+        private void AddRegion(Region region, Country givingCountry)
+        {
+            var renderer = givingCountry.GetRenderer();
+            renderer.material = _material;
+            region.tag = tag;
+            region.transform.SetParent(transform);
+            _regions.Add(region);
         }
 
         public void RemoveRegion(Region region) => _regions.Remove(region);
@@ -197,10 +214,26 @@ namespace Country
             foreach (var border in borders) border.InitWithRegion(borders, _regions);
         }
 
+        public void AddOwnRegions()
+        {
+            foreach (var country in _world.GetComponentsInChildren<Country>())
+            {
+                var regionCount = country.transform.childCount;
+                
+                for (int regionIndex = 0; regionIndex < regionCount; regionIndex++)
+                {
+                    var regionTransform = country.transform.GetChild(regionIndex);
+                    regionTransform.TryGetComponent(out Region region);
+                    if (_ownRegionsId.Contains(region.Id)) AddRegion(region, country);
+                }
+            }
+        }
+
         public void Import(ProgressCountry progressCountry)
         {
             _ownRegionsId = progressCountry.OwnRegionsId;
             IsPlayerCountry = Convert.ToBoolean(progressCountry.IsPlayerCountry);
+            AddOwnRegions();
         }
 
         public ProgressCountry Export()

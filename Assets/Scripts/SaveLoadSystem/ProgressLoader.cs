@@ -20,6 +20,7 @@ public class ProgressLoader : MonoBehaviour
         if (progressAsset == null)
             return;
         ImportCountriesFrom(progressAsset);
+        foreach (var country in _world.GetComponentsInChildren<Country.Country>()) country.AddOwnRegions();
         Debug.Log("Game loaded");
     }
 
