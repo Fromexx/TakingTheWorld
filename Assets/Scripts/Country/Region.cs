@@ -198,6 +198,8 @@ namespace Country
         private IEnumerator IncreaseCountryBallCount()
         {
             yield return new WaitForSeconds(GeneralAsset.Instance.TimeBetweenIncreaseCountryBall);
+            
+            print("tkhot");
 
             IncrementCurrentCountryBallCount();
 
@@ -316,18 +318,7 @@ namespace Country
         {
             if (GeneralAsset.Instance.IsSelectedCountry)
             {
-                _country.IsPlayerCountry = true;
-                GeneralAsset.Instance.PlayerCountry = _country;
-                _country.AddComponent<PlayerAttack>();
-                var player = _country.AddComponent<Player.Player>();
-
-                _country.TryGetComponent(out Enemy.Enemy enemy);
-                Destroy(enemy);
-
-                foreach (var mainCountryBall in GeneralAsset.Instance.AllMainCountryBalls) mainCountryBall.InitPlayer(player);
-
-                GeneralAsset.Instance.SelectCountryUI.SetActive(false);
-                GeneralAsset.Instance.IsSelectedCountry = false;
+                _country.ConvertToPlayerCountry();
 
                 return;
             }

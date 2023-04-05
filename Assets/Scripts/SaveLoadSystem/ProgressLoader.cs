@@ -30,6 +30,7 @@ public class ProgressLoader : MonoBehaviour
         {
             var countryTransform = _world.transform.GetChild(countryIndex);
             countryTransform.TryGetComponent(out Country.Country country);
+            if (progressAsset.Countries.Count == 0) return;
             country.Import(progressAsset.Countries.First(c => c.Id == country.Id));
             ImportRegionsFrom(progressAsset, countryTransform);
         }

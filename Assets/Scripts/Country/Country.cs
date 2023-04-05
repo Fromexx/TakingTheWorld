@@ -3,6 +3,7 @@ using Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Player;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -36,6 +37,22 @@ namespace Country
             catch (Exception)
             {
             }
+        }
+
+        public void ConvertToPlayerCountry()
+        {
+            IsPlayerCountry = true;
+            GeneralAsset.Instance.PlayerCountry = this;
+            gameObject.AddComponent<PlayerAttack>();
+            var player = gameObject.AddComponent<Player.Player>();
+
+            TryGetComponent(out Enemy.Enemy enemy);
+            Destroy(enemy);
+
+            foreach (var mainCountryBall in GeneralAsset.Instance.AllMainCountryBalls) mainCountryBall.InitPlayer(player);
+
+            GeneralAsset.Instance.SelectCountryUI.SetActive(false);
+            GeneralAsset.Instance.IsSelectedCountry = false;
         }
 
         public void SelectRegionsForAttack(string enemyCountryTag, Region enemyRegion = null)
@@ -72,12 +89,6 @@ namespace Country
             UnionRegionsSets?.Invoke();
         }
 
-        public Renderer GetRenderer()
-        {
-            _regions[0].TryGetComponent(out Renderer renderer);
-            return renderer;
-        }
-
         public void GetRegionsForAttack(out Region ourRegion, out Region enemyRegion)
         {
             ourRegion = _ourRegionForAttack;
@@ -96,9 +107,11 @@ namespace Country
             capturedRegion.transform.parent.TryGetComponent(out _enemyCountry);
             capturedRegion.tag = tag;
             capturedRegion.transform.SetParent(transform);
-            _regions.Add(capturedRegion);
             var regionTag = invaderRegion.tag;
 
+            _regions.Add(capturedRegion);
+            _ownRegionsId.Add(capturedRegion.Id);
+            
             capturedRegion.InitCountry(this);
             capturedRegion.MainCountryBall.Init(this);
 
@@ -125,14 +138,20 @@ namespace Country
 
         private void AddRegion(Region region, Country givingCountry)
         {
-            var renderer = givingCountry.GetRenderer();
+            region.TryGetComponent(out MeshRenderer renderer);
             renderer.material = _material;
             region.tag = tag;
             region.transform.SetParent(transform);
+            
             _regions.Add(region);
+            givingCountry.RemoveRegion(region);
         }
 
-        public void RemoveRegion(Region region) => _regions.Remove(region);
+        public void RemoveRegion(Region region)
+        {
+            _regions.Remove(region);
+            _ownRegionsId.Remove(region.Id);
+        }
 
         private void AttackFinish(Country enemyCountry, Region invaderRegion)
         {
@@ -223,7 +242,13 @@ namespace Country
                 {
                     var regionTransform = country.transform.GetChild(regionIndex);
                     regionTransform.TryGetComponent(out Region region);
-                    if (_ownRegionsId.Contains(region.Id)) AddRegion(region, country);
+                    if (_ownRegionsId.Contains(region.Id))
+                    {
+                        print(region);
+                        AddRegion(region, country);
+                        regionCount--;
+                        regionIndex--;
+                    }
                 }
             }
         }
@@ -231,8 +256,7 @@ namespace Country
         public void Import(ProgressCountry progressCountry)
         {
             _ownRegionsId = progressCountry.OwnRegionsId;
-            IsPlayerCountry = Convert.ToBoolean(progressCountry.IsPlayerCountry);
-            AddOwnRegions();
+            if(Convert.ToBoolean(progressCountry.IsPlayerCountry)) ConvertToPlayerCountry();
         }
 
         public ProgressCountry Export()
