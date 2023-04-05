@@ -22,8 +22,8 @@
     <list default="true" id="09e4658a-ee63-4078-abfc-977d12232f9d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Country/Country.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Country/Country.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Country/MainCountryBall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Country/MainCountryBall.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveLoadSystem/ProgressLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SaveLoadSystem/ProgressLoader.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +73,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/ISaveableCountry.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sounds/SoldierVoicesPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/DeleteProgressButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E8A406DA-9985-49AF-9A26-80936C7DA25A/f4/e663bdc3/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark02.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5A41D6B7-1898-42EC-A409-FD0B1C3E3DCF/86/61ce4553/List`1.cs" root0="SKIP_HIGHLIGHTING" />
@@ -126,15 +127,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/SaveLoadSystem/Loader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Economy/TuneLevel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Country/RegionTuneView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Country/MainCountryBall.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Country/CountryBall.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SaveLoadSystem/Models/SettingsData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Assets/ProgressCountry.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SaveLoadSystem/ProgressLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Country/MainCountryBall.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SaveLoadSystem/ProgressSaver.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Country/Country.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" />
       </list>
     </option>
   </component>

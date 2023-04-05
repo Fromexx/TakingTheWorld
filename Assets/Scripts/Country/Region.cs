@@ -17,6 +17,7 @@ namespace Country
         [field: SerializeField] public byte Id { get; private set; }
 
         public List<RegionBorder> Borders;
+        private bool _inWar;
 
         private int _currentCountryBallCount;
         private Country _country;
@@ -82,6 +83,8 @@ namespace Country
 
         public void AttackEnemyRegion(Region enemyRegion)
         {
+            _inWar = true;
+            enemyRegion._inWar = true;
             StopIncreaseCountryBallCountCoroutine();
             enemyRegion.StopIncreaseCountryBallCountCoroutine();
             StartCoroutine(SpawnCountryBall(enemyRegion));
@@ -168,7 +171,8 @@ namespace Country
                 ? _currentCountryBallCount
                 : needCountryBallCountToSpawn;
 
-            if (countryBallCountToSpawn == 0) countryBallCountToSpawn = _currentCountryBallCount;
+            print(countryBallCountToSpawn);
+            if (countryBallCountToSpawn <= 0) countryBallCountToSpawn = _currentCountryBallCount;
 
             enemyRegion.StopIncreaseCountryBallCountCoroutine();
 
@@ -192,14 +196,15 @@ namespace Country
                 yield return new WaitForSeconds(GeneralAsset.Instance.TimeBetweenCountryBallSpawn);
             }
 
+            _inWar = false;
+            enemyRegion._inWar = false;
             StartIncreaseCountryBallCountCoroutine();
         }
 
         private IEnumerator IncreaseCountryBallCount()
         {
             yield return new WaitForSeconds(GeneralAsset.Instance.TimeBetweenIncreaseCountryBall);
-            
-            print("tkhot");
+            if (_inWar) yield break;
 
             IncrementCurrentCountryBallCount();
 

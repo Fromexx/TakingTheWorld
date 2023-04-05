@@ -42,6 +42,8 @@ namespace Country
         }
 
         public void InitPlayer(Player.Player player) => _player = player;
+        
+        public void DisableCircle() => _circle.SetActive(false);
 
         private void UpdateText() => _text.text = _currentCountryBallCount.ToString();
 

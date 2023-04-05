@@ -55,11 +55,6 @@ namespace Country
             GeneralAsset.Instance.IsSelectedCountry = false;
         }
 
-        public void SelectRegionsForAttack(string enemyCountryTag, Region enemyRegion = null)
-        {
-            EnableAllRegionBorders(enemyCountryTag, enemyRegion);
-        }
-
         public void SelectRegionForAttack(string enemyRegionTag, List<RegionBorder> borders)
         {
             EnableRegionBordersForFindEnemyRegion(enemyRegionTag, borders);
@@ -178,6 +173,7 @@ namespace Country
 
             foreach (var region in GeneralAsset.Instance.RegionsForAttack)
             {
+                region.MainCountryBall.DisableCircle();
                 region.StopAllRegionCoroutines();
                 region.RecoverCountryBall();
             }
@@ -244,7 +240,6 @@ namespace Country
                     regionTransform.TryGetComponent(out Region region);
                     if (_ownRegionsId.Contains(region.Id))
                     {
-                        print(region);
                         AddRegion(region, country);
                         regionCount--;
                         regionIndex--;
