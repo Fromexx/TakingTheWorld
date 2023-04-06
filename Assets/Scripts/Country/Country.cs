@@ -26,7 +26,7 @@ namespace Country
         private List<Region> _unionRegions;
         private Material _material;
         private Country _enemyCountry;
-
+        
         private void Awake()
         {
             try
@@ -67,10 +67,7 @@ namespace Country
 
         public void SetAttackRegions(Region ourRegion, Region enemyRegion)
         {
-            if (_ourRegionForAttack != null || _enemyRegionForAttack != null)
-            {
-                Debug.Log("OurRegionForAttack or EnemyRegionForAttack already assigned! Code execution stopped!");
-            }
+            if (_ourRegionForAttack != null || _enemyRegionForAttack != null) return;
 
             _ourRegionForAttack = ourRegion;
             _enemyRegionForAttack = enemyRegion;
@@ -120,7 +117,6 @@ namespace Country
             {
                 GeneralAsset.Instance.EnemyRegionsForAttack.Remove(capturedRegion);
                 GeneralAsset.Instance.PlayerRegionsForAttack.Add(capturedRegion);
-                print(capturedRegion);
                 capturedRegion.StopCoroutineAttack();
             }
 
@@ -210,14 +206,7 @@ namespace Country
         {
             foreach (var region in _regions) region.gameObject.SetActive(true);
         }
-
-        private void EnableAllRegionBorders(string enemyCountryTag, Region enemyRegion, Region ownRegion = null)
-        {
-            var borders = _regions.SelectMany(region => region.GetComponentsInChildren<RegionBorder>()).ToList();
-
-            foreach (var border in borders) border.Init(enemyCountryTag, enemyRegion, borders, _regions);
-        }
-
+        
         private void EnableRegionBordersForFindEnemyRegion(string enemyTag, List<RegionBorder> borders)
         {
             foreach (var border in borders) border.InitWithOurRegion(enemyTag, borders, _regions);

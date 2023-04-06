@@ -50,7 +50,11 @@ namespace Country
             }
         }
 
-        public void InitCountry(Country country) => _country = country;
+        public void InitCountry(Country country)
+        {
+            print($"Init: {_country}-{name}");
+            _country = country;
+        }
 
         public void Init()
         {
@@ -171,7 +175,6 @@ namespace Country
                 ? _currentCountryBallCount
                 : needCountryBallCountToSpawn;
 
-            print(countryBallCountToSpawn);
             if (countryBallCountToSpawn <= 0) countryBallCountToSpawn = _currentCountryBallCount;
 
             enemyRegion.StopIncreaseCountryBallCountCoroutine();
@@ -234,11 +237,11 @@ namespace Country
         private void AttackPrepare()
         {
             foreach (var border in Borders) border.gameObject.SetActive(false);
-
+            
             foreach (var country in GeneralAsset.Instance.AllCountries)
             {
                 if (country == _country || country == GeneralAsset.Instance.PlayerCountry) continue;
-
+                
                 country.gameObject.SetActive(false);
             }
 
@@ -280,6 +283,7 @@ namespace Country
 
         private void OnOurUnionRegionsSets()
         {
+            foreach (var border in Borders) border.NotFoundUnionRegions -= OnOurUnionRegionsSets;
             _country.UnionRegionsSets -= OnOurUnionRegionsSets;
 
             var unionRegions = _country.GetUnionRegions();
@@ -304,8 +308,9 @@ namespace Country
 
         private void OnPlayerUnionRegionsSets()
         {
-            _country.UnionRegionsSets -= OnOurUnionRegionsSets;
-
+            foreach (var border in _playerRegion.Borders) border.NotFoundUnionRegions -= OnPlayerUnionRegionsSets;
+            _playerCountry.UnionRegionsSets -= OnPlayerUnionRegionsSets;
+            
             var unionRegions = _playerCountry.GetUnionRegions();
             if (!(unionRegions is null))
             {
@@ -324,7 +329,6 @@ namespace Country
             if (GeneralAsset.Instance.IsSelectedCountry)
             {
                 _country.ConvertToPlayerCountry();
-
                 return;
             }
 
@@ -334,7 +338,7 @@ namespace Country
                 GeneralAsset.Instance.RegionTuneView.Render(_tuneLevel, this);
                 return;
             }
-
+            
             GeneralAsset.Instance.RegionTuneView.OnClose();
             GeneralAsset.Instance.RegionsForAttack = new List<Region>();
             GeneralAsset.Instance.PlayerRegionsForAttack = new List<Region>();

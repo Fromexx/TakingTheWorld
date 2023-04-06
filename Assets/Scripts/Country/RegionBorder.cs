@@ -26,20 +26,6 @@ namespace Country
             parent.TryGetComponent(out _ourRegion);
         }
 
-        public void Init(string enemyCountryTag, Region enemyRegion, List<RegionBorder> borders, List<Region> regions)
-        {
-            _enemyCountryTag = enemyCountryTag;
-            _enemyRegion = enemyRegion;
-            _borders = borders;
-            _regions = regions;
-
-            GeneralAsset.Instance.IterationCount = 0;
-            _isFindEnemyRegion = false;
-            _isFindUnionRegions = false;
-
-            gameObject.SetActive(true);
-        }
-
         public void InitWithOurRegion(string enemyCountryTag, List<RegionBorder> borders, List<Region> regions)
         {
             _isFindEnemyRegion = true;
@@ -114,7 +100,7 @@ namespace Country
         private void SelectUnionRegion(Collider other)
         {
             if (!_isFindUnionRegions || !other.TryGetComponent(out Region region) || GeneralAsset.Instance.VerifedColliders.Contains(other)) return;
-
+            
             GeneralAsset.Instance.IterationCount++;
             GeneralAsset.Instance.VerifedColliders.Add(other);
 
@@ -142,8 +128,7 @@ namespace Country
             DisableBorders();
             _country.SetUnionRegions(GeneralAsset.Instance.UnionRegions);
         }
-
-        private bool IterationCountEqualsRegionsCount() => GeneralAsset.Instance.IterationCount == _regions.Count - 1;
+        
         private bool IterationCountEqualsBordersCount() => GeneralAsset.Instance.IterationCount == _borders.Count;
 
 

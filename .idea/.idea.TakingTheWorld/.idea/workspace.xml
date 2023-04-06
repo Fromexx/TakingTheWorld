@@ -22,8 +22,8 @@
     <list default="true" id="09e4658a-ee63-4078-abfc-977d12232f9d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Country/Country.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Country/Country.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Country/MainCountryBall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Country/MainCountryBall.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Country/RegionBorder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Country/RegionBorder.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +108,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Country/CountryContainer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Economy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Economy/EconomyView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Country/RegionBorder.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraLogic/InCameraDetector.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraLogic/CameraZoom.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Assets/CountryList.cs" />
@@ -136,6 +135,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/SaveLoadSystem/ProgressSaver.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Country/Country.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Country/RegionBorder.cs" />
       </list>
     </option>
   </component>
@@ -225,6 +225,7 @@
       <workItem from="1680453522150" duration="490000" />
       <workItem from="1680563290902" duration="5225000" />
       <workItem from="1680650305770" duration="5502000" />
+      <workItem from="1680736232551" duration="3323000" />
     </task>
     <task id="LOCAL-00001" summary="RegionTuneView">
       <created>1680437450812</created>
