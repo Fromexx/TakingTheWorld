@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6404390386520294451}
   - component: {fileID: 686355623275511897}
   - component: {fileID: 2455680638159621360}
+  - component: {fileID: -451684283394451544}
   m_Layer: 0
   m_Name: Ukraine
   m_TagString: MainCountryBall
@@ -129,6 +130,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: {fileID: 8567769539059418761}
   _circle: {fileID: 4123974306272284473}
+--- !u!114 &-451684283394451544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314991266159096188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe7f30b3f187d9e4eb208b533cf6bb29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7307033734015103814
 GameObject:
   m_ObjectHideFlags: 0

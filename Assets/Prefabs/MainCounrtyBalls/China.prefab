@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2009764145174224891}
   - component: {fileID: 5858549520495081705}
   - component: {fileID: 2394009293612488223}
+  - component: {fileID: -8765794342165975450}
   m_Layer: 0
   m_Name: China
   m_TagString: MainCountryBall
@@ -129,6 +130,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: {fileID: 8618439659823598610}
   _circle: {fileID: 904509955453063435}
+--- !u!114 &-8765794342165975450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107672314078888344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe7f30b3f187d9e4eb208b533cf6bb29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9203371771967447062
 GameObject:
   m_ObjectHideFlags: 0

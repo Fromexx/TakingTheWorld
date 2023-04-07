@@ -184,6 +184,7 @@ GameObject:
   - component: {fileID: 7953205929513821184}
   - component: {fileID: 4544170378974394171}
   - component: {fileID: 4043707694218445360}
+  - component: {fileID: -2942726998197718821}
   m_Layer: 0
   m_Name: mex
   m_TagString: MainCountryBall
@@ -299,6 +300,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: {fileID: 5321429071158862138}
   _circle: {fileID: 555357023142012632}
+--- !u!114 &-2942726998197718821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031539693494472332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe7f30b3f187d9e4eb208b533cf6bb29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8269144023429886612
 PrefabInstance:
   m_ObjectHideFlags: 0

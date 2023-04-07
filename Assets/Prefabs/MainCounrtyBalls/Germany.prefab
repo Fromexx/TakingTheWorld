@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7153946108736907566}
   - component: {fileID: 5161307785223256571}
   - component: {fileID: 609754473214766277}
+  - component: {fileID: -1751202807211273822}
   m_Layer: 0
   m_Name: Germany
   m_TagString: MainCountryBall
@@ -129,6 +130,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: {fileID: 6222758211418239111}
   _circle: {fileID: 112519983023527779}
+--- !u!114 &-1751202807211273822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3550524397679366787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe7f30b3f187d9e4eb208b533cf6bb29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4990769840398382791
 GameObject:
   m_ObjectHideFlags: 0

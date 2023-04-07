@@ -28,6 +28,7 @@ namespace Assets.Scripts.CameraLogic
         {
             if (Input.GetMouseButtonDown((int)MouseButton.Left))
             {
+                
                 _startSwipeMousePosition = GetCurrentMousePosition();
                 _cameraPositionBeforeSwipe = _currentCameraPosition;
                 _cameraBorderCorrection = Vector3.zero;
