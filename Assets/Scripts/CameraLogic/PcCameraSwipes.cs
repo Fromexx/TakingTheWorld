@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 namespace Assets.Scripts.CameraLogic
 {
@@ -11,8 +9,21 @@ namespace Assets.Scripts.CameraLogic
         private Vector3 _currentCameraPosition;
         private Vector3 _cameraPositionBeforeSwipe;
         private Vector3 _startSwipeMousePosition;
-        private float _sensitivity = 0.15f;
+        private readonly float _sensitivity = 0.15f;
         private Vector3 _cameraBorderCorrection;
+        private bool _isSwiping = false;
+
+        private ICamera _camera;
+
+        public void AttachCamera(ICamera camera)
+        {
+            _camera = camera;
+        }
+
+        public void DetachCamera()
+        {
+            _camera = null;
+        }
 
         public PcCameraSwipes()
         {
@@ -28,7 +39,9 @@ namespace Assets.Scripts.CameraLogic
         {
             if (Input.GetMouseButtonDown((int)MouseButton.Left))
             {
-                
+                if (CanMakeSwipe() == false)
+                    return;
+                _isSwiping = true;
                 _startSwipeMousePosition = GetCurrentMousePosition();
                 _cameraPositionBeforeSwipe = _currentCameraPosition;
                 _cameraBorderCorrection = Vector3.zero;
@@ -36,11 +49,13 @@ namespace Assets.Scripts.CameraLogic
 
             if (Input.GetMouseButtonUp((int)MouseButton.Left))
             {
-                _cameraPositionBeforeSwipe = _cameraPositionBeforeSwipe + GetSwipeDelta();
+                if (_isSwiping)
+                    _cameraPositionBeforeSwipe += GetSwipeDelta();
                 _cameraBorderCorrection = Vector3.zero;
+                _isSwiping = false;
             }
 
-            if (Input.GetMouseButton((int)MouseButton.Left))
+            if (Input.GetMouseButton((int)MouseButton.Left) && _isSwiping)
                 _currentCameraPosition = _cameraPositionBeforeSwipe + GetSwipeDelta();
             else
                 _currentCameraPosition = _cameraPositionBeforeSwipe;
@@ -60,6 +75,11 @@ namespace Assets.Scripts.CameraLogic
                 );
         }
 
+        private bool CanMakeSwipe()
+        {
+            var objectUnderMouse = _camera.MakeRaycastToMousePosition();
+            return objectUnderMouse.GetComponent<NotSwipeableAttribute>() == null;
+        }
         private void PutCameraInBounds(float minimumCoord, float maximumCoord, ref float borderCorrection, ref float cameraPosition)
         {
             if (minimumCoord > maximumCoord)
