@@ -100,7 +100,7 @@ namespace Country
         private void SelectUnionRegion(Collider other)
         {
             if (!_isFindUnionRegions || !other.TryGetComponent(out Region region) || GeneralAsset.Instance.VerifedColliders.Contains(other)) return;
-            
+
             GeneralAsset.Instance.IterationCount++;
             GeneralAsset.Instance.VerifedColliders.Add(other);
 
@@ -128,7 +128,7 @@ namespace Country
             DisableBorders();
             _country.SetUnionRegions(GeneralAsset.Instance.UnionRegions);
         }
-        
+
         private bool IterationCountEqualsBordersCount() => GeneralAsset.Instance.IterationCount == _borders.Count;
 
 

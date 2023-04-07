@@ -42,7 +42,7 @@ namespace Country
         }
 
         public void InitPlayer(Player.Player player) => _player = player;
-        
+
         public void DisableCircle() => _circle.SetActive(false);
 
         private void UpdateText() => _text.text = _currentCountryBallCount.ToString();
@@ -89,7 +89,7 @@ namespace Country
         private void OnMouseUp()
         {
             var instance = GeneralAsset.Instance;
-            
+
             if (instance.IsSettingsWindowOpen || _player is null || !_player.IsOwnRegionStillOwn() || !instance.AttackStarted) return;
 
             GeneralAsset.Instance.IsSelectPlayerRegion = false;

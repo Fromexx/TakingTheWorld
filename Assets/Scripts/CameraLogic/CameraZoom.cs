@@ -16,6 +16,7 @@ namespace CameraLogic
         {
             TryGetComponent(out _camera);
             _zoomMultiplier = _defaultFov / _minFov;
+
         }
 
         void Update()

@@ -39,7 +39,7 @@ namespace Assets.Scripts.SaveLoadSystem
         public static SettingsData LoadSettings()
         {
             SettingsData settings = new SettingsData();
-            if(PlayerPrefs.HasKey(MUSIC_MUTED_KEY))
+            if (PlayerPrefs.HasKey(MUSIC_MUTED_KEY))
                 settings.MusicMuted = PlayerPrefs.GetInt(MUSIC_MUTED_KEY) == 1;
             if (PlayerPrefs.HasKey(VOICES_MUTED_KEY))
                 settings.VoicesMuted = PlayerPrefs.GetInt(VOICES_MUTED_KEY) == 1;

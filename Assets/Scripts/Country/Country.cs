@@ -1,10 +1,9 @@
 ﻿using Assets;
 using Interfaces;
+using Player;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Player;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Country
@@ -26,7 +25,7 @@ namespace Country
         private List<Region> _unionRegions;
         private Material _material;
         private Country _enemyCountry;
-        
+
         private void Awake()
         {
             try
@@ -103,7 +102,7 @@ namespace Country
 
             _regions.Add(capturedRegion);
             _ownRegionsId.Add(capturedRegion.Id);
-            
+
             capturedRegion.InitCountry(this);
             capturedRegion.MainCountryBall.Init(this);
 
@@ -133,7 +132,7 @@ namespace Country
             renderer.material = _material;
             region.tag = tag;
             region.transform.SetParent(transform);
-            
+
             _regions.Add(region);
             givingCountry.RemoveRegion(region);
         }
@@ -147,7 +146,7 @@ namespace Country
         private void AttackFinish(Country enemyCountry, Region invaderRegion)
         {
             print("Win!");
-            
+
             GeneralAsset.Instance.AttackStarted = false;
 
             TryGetComponent(out Enemy.Enemy enemy);
@@ -206,7 +205,7 @@ namespace Country
         {
             foreach (var region in _regions) region.gameObject.SetActive(true);
         }
-        
+
         private void EnableRegionBordersForFindEnemyRegion(string enemyTag, List<RegionBorder> borders)
         {
             foreach (var border in borders) border.InitWithOurRegion(enemyTag, borders, _regions);
@@ -222,7 +221,7 @@ namespace Country
             foreach (var country in transform.parent.GetComponentsInChildren<Country>())
             {
                 var regionCount = country.transform.childCount;
-                
+
                 for (int regionIndex = 0; regionIndex < regionCount; regionIndex++)
                 {
                     var regionTransform = country.transform.GetChild(regionIndex);
@@ -240,7 +239,7 @@ namespace Country
         public void Import(ProgressCountry progressCountry)
         {
             _ownRegionsId = progressCountry.OwnRegionsId;
-            if(Convert.ToBoolean(progressCountry.IsPlayerCountry)) ConvertToPlayerCountry();
+            if (Convert.ToBoolean(progressCountry.IsPlayerCountry)) ConvertToPlayerCountry();
         }
 
         public ProgressCountry Export()

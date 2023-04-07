@@ -1,8 +1,6 @@
 using Assets.Scripts.SaveLoadSystem;
 using Assets.Scripts.SaveLoadSystem.Models;
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SettingsSaver : MonoBehaviour
@@ -16,7 +14,7 @@ public class SettingsSaver : MonoBehaviour
         settings.OnMusicMutedChanged += SaveSettings;
         settings.OnVoicesMutedChanged += SaveSettings;
     }
-    
+
     public void SaveSettings()
     {
         SettingsData settingsData = new SettingsData
@@ -30,7 +28,7 @@ public class SettingsSaver : MonoBehaviour
 
     private void Update()
     {
-        if(_lastSave.AddSeconds(13) < DateTime.UtcNow)
+        if (_lastSave.AddSeconds(13) < DateTime.UtcNow)
         {
             SaveSettings();
             _lastSave = DateTime.UtcNow;

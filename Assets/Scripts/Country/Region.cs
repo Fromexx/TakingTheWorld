@@ -4,7 +4,6 @@ using Interfaces;
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using CameraLogic;
 using UnityEngine;
 
 namespace Country
@@ -73,7 +72,7 @@ namespace Country
             yield return new WaitForSeconds(_timeBetweenAttack);
 
             if (_country.IsPlayerCountry) yield break;
-            
+
             var playerRegions = GeneralAsset.Instance.PlayerRegionsForAttack;
 
             System.Random random = new System.Random();
@@ -178,7 +177,7 @@ namespace Country
 
             enemyRegion.StopIncreaseCountryBallCountCoroutine();
 
-            if(_country.IsPlayerCountry)
+            if (_country.IsPlayerCountry)
                 GeneralAsset.Instance.SoldierVoicesPlayer.Play();
 
             for (int i = 0; i < countryBallCountToSpawn; i++)
@@ -236,11 +235,11 @@ namespace Country
         private void AttackPrepare()
         {
             var instance = GeneralAsset.Instance;
-            
+
             foreach (var country in instance.AllCountries)
             {
                 if (country == _country || country == instance.PlayerCountry) continue;
-                
+
                 country.gameObject.SetActive(false);
             }
 
@@ -302,7 +301,7 @@ namespace Country
         {
             foreach (var border in _playerRegion.Borders) border.NotFoundUnionRegions -= OnPlayerUnionRegionsSets;
             _playerCountry.UnionRegionsSets -= OnPlayerUnionRegionsSets;
-            
+
             var unionRegions = _playerCountry.GetUnionRegions();
             if (!(unionRegions is null))
             {
@@ -336,7 +335,7 @@ namespace Country
                 instance.RegionTuneView.Render(_tuneLevel, this, true);
                 return;
             }
-            
+
             instance.RegionTuneView.OnClose();
             instance.RegionsForAttack = new List<Region>();
             instance.PlayerRegionsForAttack = new List<Region>();
