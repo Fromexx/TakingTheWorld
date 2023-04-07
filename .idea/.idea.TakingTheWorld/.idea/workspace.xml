@@ -20,10 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09e4658a-ee63-4078-abfc-977d12232f9d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CameraLogic/RegionTuneClickBlocker.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CameraLogic/RegionTuneClickBlocker.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Country/Country.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Country/Country.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MainCounrtyBalls/canada (2).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MainCounrtyBalls/canada (2).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/map.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/map.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Assets/GeneralAsset.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/GeneralAsset.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Country/MainCountryBall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Country/MainCountryBall.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Country/RegionBorder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Country/RegionBorder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Country/RegionTuneView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Country/RegionTuneView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SettingsActivityToggler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SettingsActivityToggler.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,13 +51,17 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveLoadSystem/Models/SettingsData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/ISaveableRegion.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5A41D6B7-1898-42EC-A409-FD0B1C3E3DCF/0/System.Collections.Generic.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/SettingsActivityToggler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/SettingsValues.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraLogic/CameraMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sounds/BackgroundMusic.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraLogic/RegionTuneClickBlocker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraLogic/CameraLogic.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E8A406DA-9985-49AF-9A26-80936C7DA25A/3b/93593085/Camera.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Assets/ProgressCountry.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///RegionTuneView.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerAttack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/General&amp;Other/ScreenResolution.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Country/Country.cs" root0="FORCE_HIGHLIGHTING" />
@@ -72,6 +83,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Assets/ProgressRegion.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/ISaveableCountry.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///RegionTuneView.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sounds/SoldierVoicesPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/DeleteProgressButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E8A406DA-9985-49AF-9A26-80936C7DA25A/f4/e663bdc3/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
@@ -85,11 +97,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Country/SelectRegion.cs" />
-        <option value="$PROJECT_DIR$/Assets/Country/Country.cs" />
-        <option value="$PROJECT_DIR$/Assets/Player/PlayerAttack.cs" />
-        <option value="$PROJECT_DIR$/Assets/Enemy/EnemyAttack.cs" />
-        <option value="$PROJECT_DIR$/Assets/Enemy/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CubeTestr.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/FieldSingleton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/GeneralAssets.cs" />
@@ -118,24 +125,29 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sounds/BackgroundMusic.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/General&amp;Other/ScreenResolution.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Assets/GeneralAsset.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/ISaveable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/ISaveableRegion.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/ISaveableCountry.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Assets/ProgressRegion.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SaveLoadSystem/Loader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Economy/TuneLevel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Country/RegionTuneView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Country/CountryBall.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SaveLoadSystem/Models/SettingsData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Assets/ProgressCountry.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SaveLoadSystem/ProgressLoader.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Country/MainCountryBall.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SaveLoadSystem/ProgressSaver.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Country/Country.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Country/RegionBorder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/ClickToEmpty.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Country/MainCountryBall.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/SettingsActivityToggler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/ClickToTuneWindow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CameraLogic/CameraFollow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Assets/GeneralAsset.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Country/RegionTuneView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CameraLogic/RegionTuneClickBlocker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" />
       </list>
     </option>
   </component>
@@ -226,6 +238,7 @@
       <workItem from="1680563290902" duration="5225000" />
       <workItem from="1680650305770" duration="5502000" />
       <workItem from="1680736232551" duration="3323000" />
+      <workItem from="1680823266934" duration="6585000" />
     </task>
     <task id="LOCAL-00001" summary="RegionTuneView">
       <created>1680437450812</created>
@@ -288,10 +301,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1680437469300" />
-    <state x="92" y="92" width="1736" height="866" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1680437839231">
+    <state x="92" y="92" width="1736" height="866" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1680825020367">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="92" y="92" width="1736" height="866" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1680437839231" />
+    <state x="92" y="92" width="1736" height="866" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1680825020367" />
     <state x="760" y="386" key="git4idea.rebase.GitRebaseDialog" timestamp="1680420455272">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

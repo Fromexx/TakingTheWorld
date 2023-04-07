@@ -1,11 +1,10 @@
 ﻿using Assets;
 using Economy;
 using Interfaces;
-using Player;
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
+using CameraLogic;
 using UnityEngine;
 
 namespace Country
@@ -134,7 +133,7 @@ namespace Country
             _currentCountryBallCount = _tuneLevel.GetCountryBallTuneCount();
             MainCountryBall.Init(_currentCountryBallCount);
 
-            GeneralAsset.Instance.RegionTuneView.Render(_tuneLevel, this);
+            GeneralAsset.Instance.RegionTuneView.Render(_tuneLevel, this, false);
         }
 
         public void TuneMoney()
@@ -152,7 +151,7 @@ namespace Country
 
             CurrentMoney = _tuneLevel.GetMoneyTune();
 
-            GeneralAsset.Instance.RegionTuneView.Render(_tuneLevel, this);
+            GeneralAsset.Instance.RegionTuneView.Render(_tuneLevel, this, false);
         }
 
         public void RecoverCountryBall()
@@ -236,28 +235,21 @@ namespace Country
 
         private void AttackPrepare()
         {
-            foreach (var border in Borders) border.gameObject.SetActive(false);
+            var instance = GeneralAsset.Instance;
             
-            foreach (var country in GeneralAsset.Instance.AllCountries)
+            foreach (var country in instance.AllCountries)
             {
-                if (country == _country || country == GeneralAsset.Instance.PlayerCountry) continue;
+                if (country == _country || country == instance.PlayerCountry) continue;
                 
                 country.gameObject.SetActive(false);
             }
 
-            _country.DisableNotInvolvedRegions(GeneralAsset.Instance.RegionsForAttack);
-            GeneralAsset.Instance.PlayerCountry.DisableNotInvolvedRegions(GeneralAsset.Instance.RegionsForAttack);
+            _country.DisableNotInvolvedRegions(instance.RegionsForAttack);
+            instance.PlayerCountry.DisableNotInvolvedRegions(instance.RegionsForAttack);
 
-            foreach (var region in GeneralAsset.Instance.RegionsForAttack) region.StartIncreaseCountryBallCountCoroutine();
+            foreach (var region in instance.RegionsForAttack) region.StartIncreaseCountryBallCountCoroutine();
 
-            var regionsTransform = new List<Transform>();
-
-            foreach (var region in GeneralAsset.Instance.RegionsForAttack)
-            {
-                regionsTransform.Add(region.transform);
-            }
-
-            GeneralAsset.Instance.AttackStarted = true;
+            instance.AttackStarted = true;
 
             _country.TryGetComponent(out Enemy.Enemy enemy);
             enemy.StartAttack();
@@ -326,24 +318,30 @@ namespace Country
 
         private void OnMouseDown()
         {
-            if (GeneralAsset.Instance.IsSelectedCountry)
+            var instance = GeneralAsset.Instance;
+
+            if (instance.IsSettingsWindowOpen || instance.AttackStarted) return;
+            if (instance.IsSelectedCountry)
             {
                 _country.ConvertToPlayerCountry();
                 return;
             }
-
-            if (GeneralAsset.Instance.AttackStarted) return;
+            if (instance.IsClickedAtRegionTune)
+            {
+                instance.IsClickedAtRegionTune = false;
+                return;
+            }
             if (_country.IsPlayerCountry)
             {
-                GeneralAsset.Instance.RegionTuneView.Render(_tuneLevel, this);
+                instance.RegionTuneView.Render(_tuneLevel, this, true);
                 return;
             }
             
-            GeneralAsset.Instance.RegionTuneView.OnClose();
-            GeneralAsset.Instance.RegionsForAttack = new List<Region>();
-            GeneralAsset.Instance.PlayerRegionsForAttack = new List<Region>();
-            GeneralAsset.Instance.EnemyRegionsForAttack = new List<Region>();
-            _country.SelectRegionForAttack(GeneralAsset.Instance.PlayerCountry.tag, Borders);
+            instance.RegionTuneView.OnClose();
+            instance.RegionsForAttack = new List<Region>();
+            instance.PlayerRegionsForAttack = new List<Region>();
+            instance.EnemyRegionsForAttack = new List<Region>();
+            _country.SelectRegionForAttack(instance.PlayerCountry.tag, Borders);
 
             _country.RegionsSets += OnRegionsSets;
         }

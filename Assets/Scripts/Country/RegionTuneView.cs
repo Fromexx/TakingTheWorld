@@ -1,4 +1,5 @@
-﻿using Economy;
+﻿using System;
+using Economy;
 using TMPro;
 using UnityEngine;
 
@@ -6,16 +7,21 @@ namespace Country
 {
     public class RegionTuneView : MonoBehaviour
     {
+        public event Action RegionTuneEnabling;
+        public event Action RegionTuneDisabling;
+        
         [SerializeField] private GameObject _regionTune;
         [SerializeField] private TMP_Text _tuneCountryBallCost;
         [SerializeField] private TMP_Text _tuneMoneyCost;
         [SerializeField] private TMP_Text _currentCountryBallCount;
         [SerializeField] private TMP_Text _currentMoney;
-        
+
         private Region _region;
 
-        public void Render(TuneLevel tuneLevel, Region region)
+        public void Render(TuneLevel tuneLevel, Region region, bool callFromRegionClick)
         {
+            if (callFromRegionClick) RegionTuneEnabling?.Invoke();
+                
             _region = region;
             
             _regionTune.SetActive(true);
@@ -49,9 +55,10 @@ namespace Country
 
         public void OnClose()
         {
+            RegionTuneDisabling?.Invoke();
             _regionTune.SetActive(false);
         }
-
+        
         public void OnCountryBallTuneClick()
         {
             _region.TuneCountryBallCount();

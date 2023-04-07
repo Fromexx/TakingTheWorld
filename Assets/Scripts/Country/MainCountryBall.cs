@@ -55,9 +55,17 @@ namespace Country
 
         private void OnMouseDown()
         {
-            if (_player is null || !_country.IsPlayerCountry || !GeneralAsset.Instance.AttackStarted) return;
+            var instance = GeneralAsset.Instance;
 
-            GeneralAsset.Instance.IsSelectPlayerRegion = true;
+            if (instance.IsClickedAtRegionTune)
+            {
+                instance.IsClickedAtRegionTune = false;
+                return;
+            }
+
+            if (instance.IsSettingsWindowOpen || _player is null || !_country.IsPlayerCountry || !instance.AttackStarted) return;
+
+            instance.IsSelectPlayerRegion = true;
             _circle.SetActive(true);
             _isAttackRegion = true;
 
@@ -80,7 +88,9 @@ namespace Country
 
         private void OnMouseUp()
         {
-            if (_player is null || !_player.IsOwnRegionStillOwn() || !GeneralAsset.Instance.AttackStarted) return;
+            var instance = GeneralAsset.Instance;
+            
+            if (instance.IsSettingsWindowOpen || _player is null || !_player.IsOwnRegionStillOwn() || !instance.AttackStarted) return;
 
             GeneralAsset.Instance.IsSelectPlayerRegion = false;
             _circle.SetActive(false);

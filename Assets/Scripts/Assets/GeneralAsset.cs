@@ -1,5 +1,6 @@
 ﻿using Country;
 using System.Collections.Generic;
+using CameraLogic;
 using UnityEngine;
 
 namespace Assets
@@ -31,6 +32,8 @@ namespace Assets
         [HideInInspector] public bool IsSelectedCountry = true;
         [HideInInspector] public Country.Country PlayerCountry;
         [HideInInspector] public bool IsSelectPlayerRegion;
+        [HideInInspector] public bool IsSettingsWindowOpen;
+        [HideInInspector] public bool IsClickedAtRegionTune;
 
         private void Awake() => _instance = this;
     }
