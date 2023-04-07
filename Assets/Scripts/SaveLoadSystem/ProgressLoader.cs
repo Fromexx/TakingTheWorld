@@ -1,4 +1,5 @@
 using Assets;
+using Assets.Scripts.Country.Region;
 using Assets.Scripts.SaveLoadSystem;
 using Country;
 using System.Linq;
@@ -20,7 +21,7 @@ public class ProgressLoader : MonoBehaviour
         if (progressAsset == null)
             return;
         ImportCountriesFrom(progressAsset);
-        foreach (var country in _world.GetComponentsInChildren<Country.Country>()) country.AddOwnRegions();
+        foreach (var country in _world.GetComponentsInChildren<Assets.Scripts.Country.Country>()) country.AddOwnRegions();
         Debug.Log("Game loaded");
     }
 
@@ -29,7 +30,7 @@ public class ProgressLoader : MonoBehaviour
         for (int countryIndex = 0; countryIndex < _world.transform.childCount; countryIndex++)
         {
             var countryTransform = _world.transform.GetChild(countryIndex);
-            countryTransform.TryGetComponent(out Country.Country country);
+            countryTransform.TryGetComponent(out Assets.Scripts.Country.Country country);
             if (progressAsset.Countries.Count == 0) return;
             country.Import(progressAsset.Countries.First(c => c.Id == country.Id));
             ImportRegionsFrom(progressAsset, countryTransform);

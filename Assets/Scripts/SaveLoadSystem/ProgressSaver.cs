@@ -1,4 +1,5 @@
 using Assets;
+using Assets.Scripts.Country.Region;
 using Assets.Scripts.SaveLoadSystem;
 using Country;
 using System;
@@ -41,7 +42,7 @@ public class ProgressSaver : MonoBehaviour
         for (int countryIndex = 0; countryIndex < _world.transform.childCount; countryIndex++)
         {
             var country = _world.transform.GetChild(countryIndex);
-            saveProfile.Countries.Add(country.GetComponent<Country.Country>().Export());
+            saveProfile.Countries.Add(country.GetComponent<Assets.Scripts.Country.Country>().Export());
             ExportRegionsTo(saveProfile, country);
         }
     }

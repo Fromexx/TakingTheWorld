@@ -1,4 +1,5 @@
 ﻿using Assets;
+using Assets.Scripts.Country.Region;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,7 +11,7 @@ namespace Country
         public event Action NotFoundUnionRegions;
 
         private string _enemyCountryTag = "";
-        private Country _country;
+        private Assets.Scripts.Country.Country _country;
         private Region _enemyRegion;
         private bool _isFindUnionRegions;
         private Region _ourRegion;

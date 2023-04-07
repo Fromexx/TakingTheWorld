@@ -1,4 +1,6 @@
 ﻿using Assets;
+using Assets.Scripts.Country.Region;
+using Country;
 using Interfaces;
 using Player;
 using System;
@@ -6,7 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace Country
+namespace Assets.Scripts.Country
 {
     public class Country : MonoBehaviour, ISaveableCountry
     {
@@ -17,12 +19,12 @@ namespace Country
         [field: SerializeField] public bool IsPlayerCountry;
         [field: SerializeField] public byte Id { get; private set; }
 
-        [SerializeField] private List<Region> _regions;
+        [SerializeField] private List<Region.Region> _regions;
         [SerializeField] private List<byte> _ownRegionsId;
 
-        private Region _ourRegionForAttack;
-        private Region _enemyRegionForAttack;
-        private List<Region> _unionRegions;
+        private Region.Region _ourRegionForAttack;
+        private Region.Region _enemyRegionForAttack;
+        private List<Region.Region> _unionRegions;
         private Material _material;
         private Country _enemyCountry;
 
@@ -64,7 +66,7 @@ namespace Country
             EnableRegionBorders(borders);
         }
 
-        public void SetAttackRegions(Region ourRegion, Region enemyRegion)
+        public void SetAttackRegions(Region.Region ourRegion, Region.Region enemyRegion)
         {
             if (_ourRegionForAttack != null || _enemyRegionForAttack != null) return;
 
@@ -74,13 +76,13 @@ namespace Country
             RegionsSets?.Invoke();
         }
 
-        public void SetUnionRegions(List<Region> regions)
+        public void SetUnionRegions(List<Region.Region> regions)
         {
             _unionRegions = regions;
             UnionRegionsSets?.Invoke();
         }
 
-        public void GetRegionsForAttack(out Region ourRegion, out Region enemyRegion)
+        public void GetRegionsForAttack(out Region.Region ourRegion, out Region.Region enemyRegion)
         {
             ourRegion = _ourRegionForAttack;
             enemyRegion = _enemyRegionForAttack;
@@ -89,9 +91,9 @@ namespace Country
             _enemyRegionForAttack = null;
         }
 
-        public List<Region> GetUnionRegions() => _unionRegions;
+        public List<Region.Region> GetUnionRegions() => _unionRegions;
 
-        public void AddRegion(Region capturedRegion, Region invaderRegion)
+        public void AddRegion(Region.Region capturedRegion, Region.Region invaderRegion)
         {
             capturedRegion.TryGetComponent(out Renderer renderer);
             renderer.material = _material;
@@ -126,7 +128,7 @@ namespace Country
             AttackFinish(_enemyCountry, invaderRegion);
         }
 
-        private void AddRegion(Region region, Country givingCountry)
+        private void AddRegion(Region.Region region, Country givingCountry)
         {
             region.TryGetComponent(out MeshRenderer renderer);
             renderer.material = _material;
@@ -137,13 +139,13 @@ namespace Country
             givingCountry.RemoveRegion(region);
         }
 
-        public void RemoveRegion(Region region)
+        public void RemoveRegion(Region.Region region)
         {
             _regions.Remove(region);
             _ownRegionsId.Remove(region.Id);
         }
 
-        private void AttackFinish(Country enemyCountry, Region invaderRegion)
+        private void AttackFinish(Country enemyCountry, Region.Region invaderRegion)
         {
             print("Win!");
 
@@ -177,7 +179,7 @@ namespace Country
             enemyCountry.EnableAllRegions();
         }
 
-        public void DisableNotInvolvedRegions(List<Region> regions)
+        public void DisableNotInvolvedRegions(List<Region.Region> regions)
         {
             var iteration = 0;
 
@@ -225,7 +227,7 @@ namespace Country
                 for (int regionIndex = 0; regionIndex < regionCount; regionIndex++)
                 {
                     var regionTransform = country.transform.GetChild(regionIndex);
-                    regionTransform.TryGetComponent(out Region region);
+                    regionTransform.TryGetComponent(out Region.Region region);
                     if (_ownRegionsId.Contains(region.Id))
                     {
                         AddRegion(region, country);

@@ -1,4 +1,5 @@
 ﻿using Assets;
+using Assets.Scripts.Country.Region;
 using Country;
 using System;
 using UnityEngine;
@@ -26,7 +27,7 @@ namespace Player
         {
             if (_ownRegion is null) return false;
 
-            _ownRegion.transform.parent.TryGetComponent(out Country.Country country);
+            _ownRegion.transform.parent.TryGetComponent(out Assets.Scripts.Country.Country country);
             return country.IsPlayerCountry;
         }
 

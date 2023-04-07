@@ -5,7 +5,7 @@ namespace Enemy
 {
     public class Enemy : MonoBehaviour
     {
-        private Country.Country _countryForAttack;
+        private Assets.Scripts.Country.Country _countryForAttack;
 
         public void StartAttack()
         {

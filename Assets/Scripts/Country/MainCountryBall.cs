@@ -1,4 +1,5 @@
 ﻿using Assets;
+using Assets.Scripts.Country.Region;
 using System;
 using TMPro;
 using UnityEngine;
@@ -11,7 +12,7 @@ namespace Country
         [SerializeField] private GameObject _circle;
 
         private Player.Player _player;
-        private Country _country;
+        private Assets.Scripts.Country.Country _country;
         private int _currentCountryBallCount;
         private bool _isAttackRegion;
 
@@ -34,7 +35,7 @@ namespace Country
             UpdateText();
         }
 
-        public void Init(Country country)
+        public void Init(Assets.Scripts.Country.Country country)
         {
             _country = country;
             _circle.SetActive(false);

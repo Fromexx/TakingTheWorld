@@ -1,4 +1,6 @@
-﻿using Country;
+﻿using Assets.Scripts.Country;
+using Assets.Scripts.Country.Region;
+using Country;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,7 +16,7 @@ namespace Assets
         [field: SerializeField] public float TimeBetweenCountryBallSpawn { get; private set; }
         [field: SerializeField] public float TimeBetweenIncreaseCountryBall { get; private set; }
         [field: SerializeField] public RegionTuneView RegionTuneView { get; private set; }
-        [field: SerializeField] public List<Country.Country> AllCountries;
+        [field: SerializeField] public List<Assets.Scripts.Country.Country> AllCountries;
         [field: SerializeField] public float TimeBetweenAttack;
         [field: SerializeField] public List<MainCountryBall> AllMainCountryBalls { get; private set; }
         [field: SerializeField] public GameObject SelectCountryUI;
@@ -29,7 +31,7 @@ namespace Assets
         [HideInInspector] public List<Region> PlayerRegionsForAttack;
         [HideInInspector] public List<Region> EnemyRegionsForAttack;
         [HideInInspector] public bool IsSelectedCountry = true;
-        [HideInInspector] public Country.Country PlayerCountry;
+        [HideInInspector] public Assets.Scripts.Country.Country PlayerCountry;
         [HideInInspector] public bool IsSelectPlayerRegion;
         [HideInInspector] public bool IsSettingsWindowOpen;
         [HideInInspector] public bool IsClickedAtRegionTune;

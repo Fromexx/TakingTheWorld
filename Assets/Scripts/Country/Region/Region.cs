@@ -1,4 +1,4 @@
-﻿using Assets;
+﻿using Country;
 using Economy;
 using Interfaces;
 using System;
@@ -6,7 +6,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Country
+namespace Assets.Scripts.Country.Region
 {
     public class Region : MonoBehaviour, ISaveableRegion
     {
@@ -18,7 +18,7 @@ namespace Country
         private bool _inWar;
 
         private int _currentCountryBallCount;
-        private Country _country;
+        private Assets.Scripts.Country.Country _country;
         private TuneLevel _tuneLevel;
         private Region _playerRegion;
         private Country _playerCountry;
@@ -315,36 +315,6 @@ namespace Country
             AttackPrepare();
         }
 
-        private void OnMouseDown()
-        {
-            var instance = GeneralAsset.Instance;
-
-            if (instance.IsSettingsWindowOpen || instance.AttackStarted) return;
-            if (instance.IsSelectedCountry)
-            {
-                _country.ConvertToPlayerCountry();
-                return;
-            }
-            if (instance.IsClickedAtRegionTune)
-            {
-                instance.IsClickedAtRegionTune = false;
-                return;
-            }
-            if (_country.IsPlayerCountry)
-            {
-                instance.RegionTuneView.Render(_tuneLevel, this, true);
-                return;
-            }
-
-            instance.RegionTuneView.OnClose();
-            instance.RegionsForAttack = new List<Region>();
-            instance.PlayerRegionsForAttack = new List<Region>();
-            instance.EnemyRegionsForAttack = new List<Region>();
-            _country.SelectRegionForAttack(instance.PlayerCountry.tag, Borders);
-
-            _country.RegionsSets += OnRegionsSets;
-        }
-
         public void Import(ProgressRegion progressRegion)
         {
             _countryBallLevel = progressRegion.CountryBallLevel;
@@ -372,6 +342,36 @@ namespace Country
                 _country.RegionsSets -= OnRegionsSets;
             }
             catch (Exception e) { }
+        }
+
+        public void OnMouseClick()
+        {
+            var instance = GeneralAsset.Instance;
+
+            if (instance.IsSettingsWindowOpen || instance.AttackStarted) return;
+            if (instance.IsSelectedCountry)
+            {
+                _country.ConvertToPlayerCountry();
+                return;
+            }
+            if (instance.IsClickedAtRegionTune)
+            {
+                instance.IsClickedAtRegionTune = false;
+                return;
+            }
+            if (_country.IsPlayerCountry)
+            {
+                instance.RegionTuneView.Render(_tuneLevel, this, true);
+                return;
+            }
+
+            instance.RegionTuneView.OnClose();
+            instance.RegionsForAttack = new List<Region>();
+            instance.PlayerRegionsForAttack = new List<Region>();
+            instance.EnemyRegionsForAttack = new List<Region>();
+            _country.SelectRegionForAttack(instance.PlayerCountry.tag, Borders);
+
+            _country.RegionsSets += OnRegionsSets;
         }
     }
 }
