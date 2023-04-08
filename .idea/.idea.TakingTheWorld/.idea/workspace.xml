@@ -20,17 +20,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09e4658a-ee63-4078-abfc-977d12232f9d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CameraLogic/RegionTuneClickBlocker.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CameraLogic/RegionTuneClickBlocker.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MainCounrtyBalls/canada (2).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MainCounrtyBalls/canada (2).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/CountryBalls/1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/CountryBalls/1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/CountryBalls/2 1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/CountryBalls/2 1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/CountryBalls/2 10.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/CountryBalls/2 10.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/CountryBalls/2 11.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/CountryBalls/2 11.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/CountryBalls/2 2.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/CountryBalls/2 2.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/CountryBalls/2 3.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/CountryBalls/2 3.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/CountryBalls/2 4.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/CountryBalls/2 4.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/CountryBalls/2 6.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/CountryBalls/2 6.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/CountryBalls/2 7.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/CountryBalls/2 7.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/CountryBalls/2 8.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/CountryBalls/2 8.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/CountryBalls/2 9.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/CountryBalls/2 9.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/CountryBalls/2.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/CountryBalls/2.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/CountryBalls/5.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/CountryBalls/5.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/CountryBalls/baliv.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/CountryBalls/baliv.blend.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Flags/2000px-Flag_of_Italy.svg_.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Flags/2000px-Flag_of_Italy.svg_.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CountryBalls/China.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/CountryBalls/China.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CountryBalls/Germany.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/CountryBalls/Germany.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CountryBalls/Shvechiya.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/CountryBalls/Shvechiya.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CountryBalls/Ukraine.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/CountryBalls/Ukraine.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CountryBalls/canada.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/CountryBalls/canada.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CountryBalls/columbia — копия.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/CountryBalls/columbia — копия.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CountryBalls/mex.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/CountryBalls/mex.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CountryBalls/pery.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/CountryBalls/pery.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CountryBalls/usaa.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/CountryBalls/usaa.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MainCounrtyBalls/Russia.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MainCounrtyBalls/Russia.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/map.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/map.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Assets/GeneralAsset.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/GeneralAsset.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Country/MainCountryBall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Country/MainCountryBall.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Country/RegionTuneView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Country/RegionTuneView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SettingsActivityToggler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SettingsActivityToggler.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,20 +88,20 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/SettingsValues.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraLogic/CameraMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sounds/BackgroundMusic.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraLogic/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraLogic/RegionTuneClickBlocker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraLogic/CameraLogic.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E8A406DA-9985-49AF-9A26-80936C7DA25A/3b/93593085/Camera.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Assets/ProgressCountry.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///RegionTuneView.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerAttack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/General&amp;Other/ScreenResolution.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Country/Country.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraLogic/AndroidCameraSwipes.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Economy/Economy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Economy/TuneLevel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveLoadSystem/LocalStorage.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Country/CountryBall.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E8A406DA-9985-49AF-9A26-80936C7DA25A/67/cf46ce06/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/General&amp;Other/KeyboardInput.cs" root0="FORCE_HIGHLIGHTING" />
@@ -83,7 +116,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Assets/ProgressRegion.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/ISaveableCountry.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///RegionTuneView.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sounds/SoldierVoicesPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/DeleteProgressButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E8A406DA-9985-49AF-9A26-80936C7DA25A/f4/e663bdc3/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
@@ -91,6 +123,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5A41D6B7-1898-42EC-A409-FD0B1C3E3DCF/86/61ce4553/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Country/MainCountryBall.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveLoadSystem/SettingsSaver.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Country/Region/RegionClickHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Assets/ProgressAsset.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/map.unity" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -239,6 +272,8 @@
       <workItem from="1680650305770" duration="5502000" />
       <workItem from="1680736232551" duration="3323000" />
       <workItem from="1680823266934" duration="6585000" />
+      <workItem from="1680933213735" duration="5722000" />
+      <workItem from="1680956183764" duration="594000" />
     </task>
     <task id="LOCAL-00001" summary="RegionTuneView">
       <created>1680437450812</created>
