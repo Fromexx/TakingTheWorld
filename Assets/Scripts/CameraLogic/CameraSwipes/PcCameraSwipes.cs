@@ -1,42 +1,28 @@
-﻿using System;
-using Unity.VisualScripting;
+﻿using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 namespace Assets.Scripts.CameraLogic
 {
-    public class PcCameraSwipes : ICameraMovementController
+    public class PcCameraSwipes : CameraSwipes.CameraSwipes, ICameraMovementController
     {
         private Vector3 _currentCameraPosition;
         private Vector3 _cameraPositionBeforeSwipe;
         private Vector3 _startSwipeMousePosition;
         private readonly float _sensitivity = 0.271f;
-        private Vector3 _cameraBorderCorrection;
+        
         private bool _isSwiping = false;
-
-        private ICamera _camera;
-
-        public void AttachCamera(ICamera camera)
-        {
-            _camera = camera;
-        }
-
-        public void DetachCamera()
-        {
-            _camera = null;
-        }
 
         public PcCameraSwipes()
         {
             _cameraPositionBeforeSwipe = CameraConstants.INITIAL_CAMERA_POSITION;
             _cameraBorderCorrection = Vector3.zero;
         }
-        public Vector3 GetCameraPosition()
+        public override Vector3 GetCameraPosition()
         {
             return _currentCameraPosition;
         }
 
-        public void UpdateCameraPosition()
+        public override void UpdateCameraPosition()
         {
             if (Input.GetMouseButtonDown((int)MouseButton.Left))
             {
@@ -78,30 +64,13 @@ namespace Assets.Scripts.CameraLogic
 
         private bool CanMakeSwipe()
         {
-            var objectUnderMouse = _camera.MakeRaycastToMousePosition();
+            var objectUnderMouse = _camera.MakeRaycastToMousePosition(Input.mousePosition);
             Debug.Log(objectUnderMouse);
             return objectUnderMouse == null || objectUnderMouse.GetComponent<NotSwipeableAttribute>() == null;
         }
-        private void PutCameraInBounds(float minimumCoord, float maximumCoord, ref float borderCorrection, ref float cameraPosition)
-        {
-            if (minimumCoord > maximumCoord)
-                throw new ArgumentException($"Минимальное положение камеры не может быть больше максимального\nМаксимальное: {maximumCoord}\nМинимальное: {minimumCoord}");
 
-            if(cameraPosition < minimumCoord)
-            {
-                borderCorrection += minimumCoord - cameraPosition;
-                cameraPosition = minimumCoord;
-            }
-
-            if(cameraPosition > maximumCoord)
-            {
-                borderCorrection += maximumCoord - cameraPosition;
-                cameraPosition = maximumCoord;
-            }
-        }
-
-        private Vector3 GetSwipeDelta() => 
-            (-1) *(GetCurrentMousePosition() - _startSwipeMousePosition) * _sensitivity + _cameraBorderCorrection;
+        private Vector3 GetSwipeDelta() =>
+            (-1) * (GetCurrentMousePosition() - _startSwipeMousePosition) * _sensitivity + _cameraBorderCorrection;
 
         private Vector3 GetCurrentMousePosition()
         {

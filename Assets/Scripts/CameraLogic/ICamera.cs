@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Assets.Scripts.CameraLogic
 {
     public interface ICamera
     {
-        public GameObject MakeRaycastToMousePosition();
+        public GameObject MakeRaycastToMousePosition(Vector3 mousePosition);
     }
 }

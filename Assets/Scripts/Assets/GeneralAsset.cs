@@ -1,5 +1,4 @@
-﻿using Assets.Scripts.Country;
-using Assets.Scripts.Country.Region;
+﻿using Assets.Scripts.Country.Region;
 using Country;
 using System.Collections.Generic;
 using UnityEngine;
