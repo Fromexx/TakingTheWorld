@@ -1,6 +1,7 @@
 ﻿using System;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace Assets.Scripts.CameraLogic
 {
@@ -9,7 +10,7 @@ namespace Assets.Scripts.CameraLogic
         private Vector3 _currentCameraPosition;
         private Vector3 _cameraPositionBeforeSwipe;
         private Vector3 _startSwipeMousePosition;
-        private readonly float _sensitivity = 0.15f;
+        private readonly float _sensitivity = 0.271f;
         private Vector3 _cameraBorderCorrection;
         private bool _isSwiping = false;
 
@@ -78,7 +79,8 @@ namespace Assets.Scripts.CameraLogic
         private bool CanMakeSwipe()
         {
             var objectUnderMouse = _camera.MakeRaycastToMousePosition();
-            return objectUnderMouse.GetComponent<NotSwipeableAttribute>() == null;
+            Debug.Log(objectUnderMouse);
+            return objectUnderMouse == null || objectUnderMouse.GetComponent<NotSwipeableAttribute>() == null;
         }
         private void PutCameraInBounds(float minimumCoord, float maximumCoord, ref float borderCorrection, ref float cameraPosition)
         {

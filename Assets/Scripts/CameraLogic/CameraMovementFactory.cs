@@ -7,7 +7,7 @@ namespace Assets.Scripts.CameraLogic
         public static ICameraMovementController Create() =>
             Application.platform switch
             {
-                RuntimePlatform.Android => new AndroidCameraSwipes(),
+                RuntimePlatform.Android => new PcCameraSwipes(),
                 RuntimePlatform.WindowsEditor => new PcCameraSwipes(),
                 _ => new PcCameraSwipes()
             };
