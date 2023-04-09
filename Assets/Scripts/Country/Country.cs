@@ -19,6 +19,7 @@ namespace Assets.Scripts.Country
 
         [SerializeField] private List<Region.Region> _regions;
         [SerializeField] private List<byte> _ownRegionsId;
+        [SerializeField] private GameObject _mainCountryBallPrefab;
 
         private Region.Region _ourRegionForAttack;
         private Region.Region _enemyRegionForAttack;
@@ -106,6 +107,8 @@ namespace Assets.Scripts.Country
             capturedRegion.transform.SetParent(transform);
             var regionTag = invaderRegion.tag;
 
+            SetCountryBall(capturedRegion);
+            
             _regions.Add(capturedRegion);
             _ownRegionsId.Add(capturedRegion.Id);
 
@@ -130,6 +133,25 @@ namespace Assets.Scripts.Country
             if (isEnemyRegionRemained) return;
 
             AttackFinish(_enemyCountry, invaderRegion);
+        }
+
+        private void SetCountryBall(Region.Region capturedRegion)
+        {
+            var capturedRegionMainCountryBallTransform = capturedRegion.MainCountryBall.transform;
+            var position = capturedRegionMainCountryBallTransform.localPosition;
+            var rotation = capturedRegionMainCountryBallTransform.localRotation;
+            var scale = capturedRegionMainCountryBallTransform.localScale;
+            
+            capturedRegion.MainCountryBall.DestroyMainCountryBall();
+
+            var mainCountryBall = Instantiate(_mainCountryBallPrefab).transform;
+            mainCountryBall.SetParent(capturedRegion.transform);
+            mainCountryBall.TryGetComponent(out MainCountryBall mainCountryBallComponent);
+            capturedRegion.SetMainCountryBall(mainCountryBallComponent);
+            
+            mainCountryBall.localPosition = position;
+            mainCountryBall.localRotation = rotation;
+            mainCountryBall.localScale = scale;
         }
 
         private void AddRegion(Region.Region region, Country givingCountry)

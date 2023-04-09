@@ -196,6 +196,7 @@ MonoBehaviour:
   - {fileID: 7772525672324455729}
   - {fileID: 1846898603358335094}
   _ownRegionsId: 131415161718
+  _mainCountryBallPrefab: {fileID: 332881011434138551, guid: 7edc6cf9024c522448ecfd7ede55e6a3, type: 3}
 --- !u!1001 &30732655
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1968,6 +1969,7 @@ MonoBehaviour:
   _regions:
   - {fileID: 8270880471170555269}
   _ownRegionsId: 10
+  _mainCountryBallPrefab: {fileID: 670559673323704010, guid: e8359e91bc2501345afadf06b033b9d0, type: 3}
 --- !u!1001 &191842611
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4543,6 +4545,7 @@ MonoBehaviour:
   _regions:
   - {fileID: 6932588198204671179}
   _ownRegionsId: 12
+  _mainCountryBallPrefab: {fileID: 1399658782655955996, guid: d1f673aee68fa794fac3c8c22f913bc8, type: 3}
 --- !u!1001 &381802882
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4824,6 +4827,7 @@ MonoBehaviour:
   _regions:
   - {fileID: 8519284952772316846}
   _ownRegionsId: 11
+  _mainCountryBallPrefab: {fileID: 8559942195381838504, guid: fd1864c60906c8c4bb1e760cb0da556e, type: 3}
 --- !u!1001 &405749826
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5916,6 +5920,7 @@ MonoBehaviour:
   - {fileID: 7389501684424127619}
   - {fileID: 7891071871879085687}
   _ownRegionsId: 0405060708
+  _mainCountryBallPrefab: {fileID: 8092793571689811782, guid: 1d86b0eabf263ce4db3227e45632bad5, type: 3}
 --- !u!1001 &546628076
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6197,6 +6202,7 @@ MonoBehaviour:
   _regions:
   - {fileID: 7649076902239557385}
   _ownRegionsId: 24
+  _mainCountryBallPrefab: {fileID: 2031539693494472332, guid: c703a1665dea9c04db8ed1b54a09f2d4, type: 3}
 --- !u!1001 &593945160
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9030,6 +9036,7 @@ MonoBehaviour:
   - {fileID: 8619761469266599969}
   - {fileID: 4513799440969492848}
   _ownRegionsId: 0c0d0e
+  _mainCountryBallPrefab: {fileID: 3550524397679366787, guid: 2e42826a3d07d5b44ac6af384cb5dfc5, type: 3}
 --- !u!1001 &823843670
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9368,6 +9375,7 @@ MonoBehaviour:
   - {fileID: 7874264714075834991}
   - {fileID: 7458197862852650643}
   _ownRegionsId: 2627
+  _mainCountryBallPrefab: {fileID: 7393120932907596735, guid: bbcbeff62bdb57b4ea2ebbbc769c602a, type: 3}
 --- !u!1001 &840316636
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9942,6 +9950,7 @@ MonoBehaviour:
   _regions:
   - {fileID: 7527415243180714323}
   _ownRegionsId: 29
+  _mainCountryBallPrefab: {fileID: 314991266159096188, guid: 7bb61c61f4cf4864f86360629d154c6c, type: 3}
 --- !u!1001 &878889991
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12746,6 +12755,7 @@ MonoBehaviour:
   - {fileID: 8809740456863650326}
   - {fileID: 8401763686864016756}
   _ownRegionsId: 010203
+  _mainCountryBallPrefab: {fileID: 2250729418276825930, guid: f26ceb90b831de44f9bac33dd8fbd371, type: 3}
 --- !u!1 &1099094401
 GameObject:
   m_ObjectHideFlags: 0
@@ -13041,6 +13051,7 @@ MonoBehaviour:
   - {fileID: 6375658061067923413}
   - {fileID: 7695075373102082948}
   _ownRegionsId: 191a1b
+  _mainCountryBallPrefab: {fileID: 5852809326892506754, guid: a76affd444af4094dbf71008a94da18b, type: 3}
 --- !u!1001 &1149219053
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16963,6 +16974,7 @@ MonoBehaviour:
   - {fileID: 8972298840965246970}
   - {fileID: 8444562340591929020}
   _ownRegionsId: 1f2021
+  _mainCountryBallPrefab: {fileID: 1107672314078888344, guid: 03f601f89cfe3ec498a8cabdd5524140, type: 3}
 --- !u!1001 &1508360694
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17500,6 +17512,7 @@ MonoBehaviour:
   - {fileID: 7874264714075834991}
   - {fileID: 7458197862852650643}
   _ownRegionsId: 28
+  _mainCountryBallPrefab: {fileID: 1539692357128081669, guid: a370ce524056113448bef3300b83d12c, type: 3}
 --- !u!1 &1541976275
 GameObject:
   m_ObjectHideFlags: 0
@@ -20199,6 +20212,7 @@ MonoBehaviour:
   _regions:
   - {fileID: 4673429486539131415}
   _ownRegionsId: 25
+  _mainCountryBallPrefab: {fileID: 5180660020214390115, guid: 1b17e6e60ee21654088702ff59d3bc37, type: 3}
 --- !u!1 &1788244454
 GameObject:
   m_ObjectHideFlags: 0
@@ -20266,6 +20280,7 @@ MonoBehaviour:
   - {fileID: 8608445830810647089}
   - {fileID: 8015425184545509001}
   _ownRegionsId: 1c1d1e
+  _mainCountryBallPrefab: {fileID: 302644746369556966, guid: 552b068b150a9d44f91558adb8add506, type: 3}
 --- !u!1001 &1793961698
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21225,6 +21240,7 @@ MonoBehaviour:
   _regions:
   - {fileID: 8565611560966907331}
   _ownRegionsId: 0f
+  _mainCountryBallPrefab: {fileID: 4946443398078289727, guid: 299340d93b245b94ab964224ff3b82df, type: 3}
 --- !u!1001 &1871241860
 PrefabInstance:
   m_ObjectHideFlags: 0

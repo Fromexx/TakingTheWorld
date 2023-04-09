@@ -20,34 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09e4658a-ee63-4078-abfc-977d12232f9d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SelectedCountryColor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SelectedCountryColor.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CountryBalls/Kazahstan.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/CountryBalls/Kazahstan.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CountryBalls/Russia.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/CountryBalls/Russia.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MainCounrtyBalls/Belarus.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MainCounrtyBalls/Belarus.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MainCounrtyBalls/China.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MainCounrtyBalls/China.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MainCounrtyBalls/Egipt.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MainCounrtyBalls/Egipt.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MainCounrtyBalls/Germany.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MainCounrtyBalls/Germany.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MainCounrtyBalls/Kazahstan.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MainCounrtyBalls/Kazahstan.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MainCounrtyBalls/Livia.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MainCounrtyBalls/Livia.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MainCounrtyBalls/Maly.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MainCounrtyBalls/Maly.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MainCounrtyBalls/Mongolia.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MainCounrtyBalls/Mongolia.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MainCounrtyBalls/Shvechiya (1).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MainCounrtyBalls/Shvechiya (1).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MainCounrtyBalls/Ukraine.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MainCounrtyBalls/Ukraine.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MainCounrtyBalls/canada (2).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MainCounrtyBalls/canada (2).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MainCounrtyBalls/columbia.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MainCounrtyBalls/columbia.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MainCounrtyBalls/mex.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MainCounrtyBalls/mex.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MainCounrtyBalls/pery.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MainCounrtyBalls/pery.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MainCounrtyBalls/usaa.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MainCounrtyBalls/usaa.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/map.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/map.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Assets/GeneralAsset.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/GeneralAsset.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Country/Country.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Country/Country.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Country/CountryBall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Country/CountryBall.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Country/MainCountryBall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Country/MainCountryBall.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,9 +137,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/SelectedCountryColor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Assets/GeneralAsset.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Country/Country.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Country/CountryBall.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Country/MainCountryBall.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Country/Country.cs" />
       </list>
     </option>
   </component>
@@ -259,7 +234,7 @@
       <workItem from="1680933213735" duration="5722000" />
       <workItem from="1680956183764" duration="779000" />
       <workItem from="1681042808843" duration="342000" />
-      <workItem from="1681046093642" duration="2224000" />
+      <workItem from="1681046093642" duration="3886000" />
     </task>
     <task id="LOCAL-00001" summary="RegionTuneView">
       <created>1680437450812</created>
@@ -322,18 +297,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="169" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1680567812645" />
-    <state x="92" y="92" width="1736" height="866" key="VCS.FileHistoryDialog" timestamp="1680653481975">
+    <state x="92" y="92" width="1736" height="866" key="VCS.FileHistoryDialog" timestamp="1681048618709">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="92" y="92" width="1736" height="866" key="VCS.FileHistoryDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1680653481975" />
+    <state x="92" y="92" width="1736" height="866" key="VCS.FileHistoryDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1681048618709" />
     <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1680957456059">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1680957456059" />
-    <state x="92" y="92" width="1736" height="866" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1680825020367">
+    <state x="92" y="92" width="1736" height="866" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1681048618709">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="92" y="92" width="1736" height="866" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1680825020367" />
+    <state x="92" y="92" width="1736" height="866" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1681048618709" />
     <state x="760" y="386" key="git4idea.rebase.GitRebaseDialog" timestamp="1680420455272">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

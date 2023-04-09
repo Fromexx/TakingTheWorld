@@ -18,7 +18,7 @@ namespace Assets.Scripts.Country.Region
         private bool _inWar;
 
         private int _currentCountryBallCount;
-        private Assets.Scripts.Country.Country _country;
+        private Country _country;
         private TuneLevel _tuneLevel;
         private Region _playerRegion;
         private Country _playerCountry;
@@ -66,6 +66,12 @@ namespace Assets.Scripts.Country.Region
         public void StartCoroutineAttack() => StartCoroutine(Attack());
 
         public void StopCoroutineAttack() => StopCoroutine(Attack());
+
+        public void SetMainCountryBall(MainCountryBall mainCountryBall)
+        {
+            MainCountryBall = mainCountryBall;
+            MainCountryBall.TryGetComponent(out _mainCountryBallTransform);
+        }
 
         private IEnumerator Attack()
         {

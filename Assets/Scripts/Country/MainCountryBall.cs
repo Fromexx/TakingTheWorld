@@ -46,6 +46,8 @@ namespace Country
 
         public void DisableCircle() => _circle.SetActive(false);
 
+        public void DestroyMainCountryBall() => Destroy(gameObject);
+
         private void UpdateText() => _text.text = _currentCountryBallCount.ToString();
 
         private void OnEnemyRegionSets()
@@ -111,6 +113,7 @@ namespace Country
                 _player.SetEnemyRegionForAttack(enemyRegion);
             }
         }
+
         private void OnDestroy()
         {
             try
