@@ -26,19 +26,35 @@ public class CameraController : MonoBehaviour, ICamera
         transform.position = actualPosition;
     }
 
-    public GameObject MakeRaycastToMousePosition()
+    public GameObject MakeRaycastToMousePosition(Vector3 mousePosition)
+    {
+        var uiObject = UIRaycast(mousePosition);
+        if (uiObject != null)
+            return uiObject;
+
+       var gameObject = GameRaycast(mousePosition);
+       return gameObject;
+    }
+
+    private GameObject UIRaycast(Vector3 mousePosition)
     {
         var eventData = new PointerEventData(EventSystem.current);
-        eventData.position = Input.mousePosition;
+        eventData.position = mousePosition;
         var result = new List<RaycastResult>();
+
         _canvasRaycaster.Raycast(eventData, result);
-        Debug.Log(result.ToArray().ToString());
+
         if (result.Count > 0)
             return result[0].gameObject;
-        Ray ray = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
+        return null;
+    }
+
+    private GameObject GameRaycast(Vector3 mousePosition)
+    {
+        Ray ray = GetComponent<Camera>().ScreenPointToRay(mousePosition);
 
         RaycastHit hit;
-        if(Physics.Raycast(ray, out hit))
+        if (Physics.Raycast(ray, out hit))
         {
             return hit.transform.gameObject;
         }

@@ -1,5 +1,4 @@
 ﻿using Assets.Scripts.Country.Region;
-using Country;
 using UnityEngine;
 
 namespace Player

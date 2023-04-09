@@ -1,6 +1,5 @@
 ﻿using Assets.Scripts.CameraLogic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 namespace Assets.Scripts.Country.Region
 {
@@ -21,7 +20,7 @@ namespace Assets.Scripts.Country.Region
 
         private void OnMouseDown()
         {
-            if (_camera.MakeRaycastToMousePosition().layer == 5)
+            if (_camera.MakeRaycastToMousePosition(Input.mousePosition).layer == 5)
                 return;
 
             _startMousePosition = Input.mousePosition;
