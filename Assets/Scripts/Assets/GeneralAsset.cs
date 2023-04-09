@@ -1,6 +1,7 @@
 ﻿using Assets.Scripts.Country.Region;
 using Country;
 using System.Collections.Generic;
+using UI;
 using UnityEngine;
 
 namespace Assets
@@ -20,6 +21,7 @@ namespace Assets
         [field: SerializeField] public List<MainCountryBall> AllMainCountryBalls { get; private set; }
         [field: SerializeField] public GameObject SelectCountryUI;
         [field: SerializeField] public SoldierVoicesPlayer SoldierVoicesPlayer;
+        [field: SerializeField] public SelectedCountryColor SelectedCountryColor;
 
         [HideInInspector] public List<Region> UnionRegions;
         [HideInInspector] public int IterationCount;

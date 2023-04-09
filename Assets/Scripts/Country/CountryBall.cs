@@ -58,7 +58,7 @@ namespace Country
             if (other.CompareTag(MainCountryBallTag))
             {
                 other.transform.parent.TryGetComponent(out Region region);
-
+                
                 if (region == _enemyRegion)
                 {
                     _atTargetPosition = true;

@@ -40,18 +40,24 @@ namespace Assets.Scripts.Country
 
         public void ConvertToPlayerCountry()
         {
+            var instance = GeneralAsset.Instance;
+            
             IsPlayerCountry = true;
-            GeneralAsset.Instance.PlayerCountry = this;
+            instance.PlayerCountry = this;
             gameObject.AddComponent<PlayerAttack>();
             var player = gameObject.AddComponent<Player.Player>();
 
             TryGetComponent(out Enemy.Enemy enemy);
             Destroy(enemy);
 
-            foreach (var mainCountryBall in GeneralAsset.Instance.AllMainCountryBalls) mainCountryBall.InitPlayer(player);
+            foreach (var mainCountryBall in instance.AllMainCountryBalls) mainCountryBall.InitPlayer(player);
 
-            GeneralAsset.Instance.SelectCountryUI.SetActive(false);
-            GeneralAsset.Instance.IsSelectedCountry = false;
+            instance.SelectCountryUI.SetActive(false);
+            instance.IsSelectedCountry = false;
+            
+            instance.SelectedCountryColor.EnableGameObject();
+            _regions[0].TryGetComponent(out Renderer renderer);
+            instance.SelectedCountryColor.SetSelectedCountryColor(renderer.material.color);
         }
 
         public void SelectRegionForAttack(string enemyRegionTag, List<RegionBorder> borders)

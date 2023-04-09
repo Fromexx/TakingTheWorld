@@ -88,6 +88,7 @@
           </e>
           <e p="UI" t="Include">
             <e p="DeleteProgressButton.cs" t="Include" />
+            <e p="SelectedCountryColor.cs" t="Include" />
             <e p="SettingsActivityToggler.cs" t="Include" />
             <e p="SettingsValues.cs" t="Include" />
           </e>
