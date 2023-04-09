@@ -12657,7 +12657,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.25568244}
-  m_AnchoredPosition: {x: 0, y: -119.000015}
+  m_AnchoredPosition: {x: 0, y: -119}
   m_SizeDelta: {x: 0, y: -0.00012207}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1099094403
@@ -17816,7 +17816,6 @@ MonoBehaviour:
   AllCountries:
   - {fileID: 1079692724}
   - {fileID: 526525724}
-  - {fileID: 0}
   - {fileID: 809451656}
   - {fileID: 1869140649}
   - {fileID: 185161698}
@@ -17826,23 +17825,48 @@ MonoBehaviour:
   - {fileID: 1132268549}
   - {fileID: 1788244458}
   - {fileID: 1507019169}
-  - {fileID: 0}
   - {fileID: 569277466}
   - {fileID: 1782281878}
   - {fileID: 832392774}
   - {fileID: 1527110585}
   - {fileID: 878362760}
-  - {fileID: 0}
   TimeBetweenAttack: 4
   <AllMainCountryBalls>k__BackingField:
   - {fileID: 1526303350}
   - {fileID: 1028213704}
   - {fileID: 676595209}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1607907998}
+  - {fileID: 1439286908}
+  - {fileID: 1416863527}
+  - {fileID: 1894057198}
+  - {fileID: 6922007306708814551}
+  - {fileID: 1557344113}
+  - {fileID: 1149219055}
+  - {fileID: 744670719}
+  - {fileID: 1255546113}
+  - {fileID: 526457013}
+  - {fileID: 6979077124569287001}
+  - {fileID: 267160949}
+  - {fileID: 819843484050341890}
+  - {fileID: 1549657967}
+  - {fileID: 757265438}
+  - {fileID: 1767259712}
+  - {fileID: 1348154166}
+  - {fileID: 1708492069}
+  - {fileID: 730518090}
+  - {fileID: 142489468}
+  - {fileID: 2462208738447038937}
+  - {fileID: 742463657}
+  - {fileID: 191842613}
+  - {fileID: 1897448680}
+  - {fileID: 1284428645}
+  - {fileID: 2094990732}
+  - {fileID: 1722621760662460111}
+  - {fileID: 1942218843}
+  - {fileID: 1406315297}
+  - {fileID: 1549921650}
+  - {fileID: 1892749037}
+  - {fileID: 4963963340632726736}
   SelectCountryUI: {fileID: 1852712620}
   SoldierVoicesPlayer: {fileID: 2038707301}
   UnionRegions: []

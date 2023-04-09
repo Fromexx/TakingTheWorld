@@ -28,17 +28,18 @@
             <e p="ProgressRegion.cs" t="Include" />
           </e>
           <e p="CameraLogic" t="Include">
-            <e p="AndroidCameraSwipes.cs" t="Include" />
             <e p="CameraConstants.cs" t="Include" />
             <e p="CameraController.cs" t="Include" />
-            <e p="CameraLogic.cs" t="Include" />
-            <e p="CameraMovement.cs" t="Include" />
-            <e p="CameraMovementController.cs" t="Include" />
-            <e p="CameraMovementFactory.cs" t="Include" />
+            <e p="CameraSwipes" t="Include">
+              <e p="AndroidCameraSwipes.cs" t="Include" />
+              <e p="CameraMovementFactory.cs" t="Include" />
+              <e p="CameraSwipes.cs" t="Include" />
+              <e p="ICameraMovementController.cs" t="Include" />
+              <e p="NotSwipeableAttribute.cs" t="Include" />
+              <e p="PcCameraSwipes.cs" t="Include" />
+            </e>
             <e p="CameraZoom.cs" t="Include" />
-            <e p="NotSwipeableAttribute.cs" t="Include" />
-            <e p="PcCameraSwipes.cs" t="Include" />
-            <e p="RegionTuneClickBlocker.cs" t="Include" />
+            <e p="ICamera.cs" t="Include" />
           </e>
           <e p="Country" t="Include">
             <e p="Country.cs" t="Include" />
