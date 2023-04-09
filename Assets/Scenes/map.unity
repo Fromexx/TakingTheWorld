@@ -29903,9 +29903,7 @@ MonoBehaviour:
   - {fileID: 750170715}
   - {fileID: 959086592}
   - {fileID: 67514697}
-  - {fileID: 0}
   - {fileID: 892378832}
-  - {fileID: 0}
 --- !u!64 &8809740456863650327
 MeshCollider:
   m_ObjectHideFlags: 0
