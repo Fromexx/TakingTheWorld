@@ -1,3 +1,4 @@
+using System;
 using Assets;
 using Assets.Scripts.Country.Region;
 using Assets.Scripts.SaveLoadSystem;
@@ -31,7 +32,15 @@ public class ProgressLoader : MonoBehaviour
             var countryTransform = _world.transform.GetChild(countryIndex);
             countryTransform.TryGetComponent(out Assets.Scripts.Country.Country country);
             if (progressAsset.Countries.Count == 0) return;
-            country.Import(progressAsset.Countries.First(c => c.Id == country.Id));
+            try
+            {
+                country.Import(progressAsset.Countries.First(c => c.Id == country.Id));
+            }
+            catch (InvalidOperationException)
+            {
+                Destroy(country.gameObject);
+                return;
+            }
             ImportRegionsFrom(progressAsset, countryTransform);
         }
     }

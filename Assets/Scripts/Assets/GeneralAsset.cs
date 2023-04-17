@@ -22,6 +22,7 @@ namespace Assets
         [field: SerializeField] public GameObject SelectCountryUI;
         [field: SerializeField] public SoldierVoicesPlayer SoldierVoicesPlayer;
         [field: SerializeField] public SelectedCountryColor SelectedCountryColor;
+        [field: SerializeField] public GameObject PlayerLostMenu { get; private set; }
 
         [HideInInspector] public List<Region> UnionRegions;
         [HideInInspector] public int IterationCount;

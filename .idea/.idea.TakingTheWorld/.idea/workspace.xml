@@ -21,8 +21,14 @@
   <component name="ChangeListManager">
     <list default="true" id="09e4658a-ee63-4078-abfc-977d12232f9d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/map.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/map.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Assets/GeneralAsset.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/GeneralAsset.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraLogic/CameraSwipes/NotSwipeableAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraLogic/CameraSwipes/NotSwipeableAttribute.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Country/Country.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Country/Country.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Country/MainCountryBall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Country/MainCountryBall.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveLoadSystem/ProgressLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SaveLoadSystem/ProgressLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +69,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E8A406DA-9985-49AF-9A26-80936C7DA25A/67/cf46ce06/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/General&amp;Other/KeyboardInput.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Country/RegionBorder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraLogic/CameraSwipes/NotSwipeableAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Economy/EconomyView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveLoadSystem/ProgressSaver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Assets/GeneralAsset.cs" root0="FORCE_HIGHLIGHTING" />
@@ -84,13 +91,10 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Country/Region/RegionClickHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Assets/ProgressAsset.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/map.unity" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///MainCountryBall.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/FieldSingleton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/GeneralAssets.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/GeneralAsset.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Country/SelectRegion.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Country/CountryBall/CountryBall.cs" />
@@ -125,8 +129,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SaveLoadSystem/Models/SettingsData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Assets/ProgressCountry.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SaveLoadSystem/ProgressLoader.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SaveLoadSystem/ProgressSaver.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Country/RegionBorder.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ClickToEmpty.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/SettingsActivityToggler.cs" />
@@ -136,10 +138,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraLogic/RegionTuneClickBlocker.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Country/Region.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/SelectedCountryColor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Assets/GeneralAsset.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Country/CountryBall.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Country/MainCountryBall.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CameraLogic/CameraSwipes/NotSwipeableAttribute.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Assets/GeneralAsset.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Country/Region/Region.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SaveLoadSystem/ProgressSaver.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Country/Country.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SaveLoadSystem/ProgressLoader.cs" />
       </list>
     </option>
   </component>
@@ -234,7 +240,8 @@
       <workItem from="1680933213735" duration="5722000" />
       <workItem from="1680956183764" duration="779000" />
       <workItem from="1681042808843" duration="342000" />
-      <workItem from="1681046093642" duration="3886000" />
+      <workItem from="1681046093642" duration="5042000" />
+      <workItem from="1681638510129" duration="3568000" />
     </task>
     <task id="LOCAL-00001" summary="RegionTuneView">
       <created>1680437450812</created>

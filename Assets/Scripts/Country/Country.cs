@@ -137,11 +137,15 @@ namespace Assets.Scripts.Country
 
         private void SetCountryBall(Region.Region capturedRegion)
         {
+            var instance = GeneralAsset.Instance;
+            
             var capturedRegionMainCountryBallTransform = capturedRegion.MainCountryBall.transform;
             var position = capturedRegionMainCountryBallTransform.localPosition;
             var rotation = capturedRegionMainCountryBallTransform.localRotation;
             var scale = capturedRegionMainCountryBallTransform.localScale;
-            
+
+            instance.AllMainCountryBalls.Remove(capturedRegion.MainCountryBall);
+
             capturedRegion.MainCountryBall.DestroyMainCountryBall();
 
             var mainCountryBall = Instantiate(_mainCountryBallPrefab).transform;
@@ -149,6 +153,8 @@ namespace Assets.Scripts.Country
             mainCountryBall.TryGetComponent(out MainCountryBall mainCountryBallComponent);
             capturedRegion.SetMainCountryBall(mainCountryBallComponent);
             
+            instance.AllMainCountryBalls.Add(mainCountryBallComponent);
+
             mainCountryBall.localPosition = position;
             mainCountryBall.localRotation = rotation;
             mainCountryBall.localScale = scale;
@@ -163,6 +169,7 @@ namespace Assets.Scripts.Country
 
             _regions.Add(region);
             givingCountry.RemoveRegion(region);
+            SetCountryBall(region);
         }
 
         public void RemoveRegion(Region.Region region)
@@ -173,28 +180,41 @@ namespace Assets.Scripts.Country
 
         private void AttackFinish(Country enemyCountry, Region.Region invaderRegion)
         {
-            print("Win!");
+            var instance = GeneralAsset.Instance;
 
-            GeneralAsset.Instance.AttackStarted = false;
-
+            if (enemyCountry._regions.Count == 0)
+            {
+                if (enemyCountry.IsPlayerCountry)
+                {
+                    instance.PlayerLostMenu.SetActive(true);
+                }
+                else
+                {
+                    instance.AllCountries.Remove(enemyCountry);
+                    Destroy(enemyCountry.gameObject);
+                }
+            }
+            
+            instance.AttackStarted = false;
+            
             TryGetComponent(out Enemy.Enemy enemy);
             enemy?.StopAttack();
 
-            foreach (var country in GeneralAsset.Instance.AllCountries) country.gameObject.SetActive(true);
+            foreach (var country in instance.AllCountries) country.gameObject.SetActive(true);
 
             if (!IsPlayerCountry)
             {
-                foreach (var region in GeneralAsset.Instance.PlayerRegionsForAttack) region.Init();
+                foreach (var region in instance.PlayerRegionsForAttack) region.Init();
             }
             else if (IsPlayerCountry)
             {
-                float money = GeneralAsset.Instance.EnemyRegionForAttackCount * 100 * invaderRegion.CurrentMoney;
+                float money = instance.EnemyRegionForAttackCount * 100 * invaderRegion.CurrentMoney;
                 Economy.Economy.IncreaseMoney(money);
 
-                foreach (var region in GeneralAsset.Instance.EnemyRegionsForAttack) region.Init();
+                foreach (var region in instance.EnemyRegionsForAttack) region.Init();
             }
 
-            foreach (var region in GeneralAsset.Instance.RegionsForAttack)
+            foreach (var region in instance.RegionsForAttack)
             {
                 region.MainCountryBall.DisableCircle();
                 region.StopAllRegionCoroutines();
