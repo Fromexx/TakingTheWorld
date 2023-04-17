@@ -39,7 +39,7 @@ public class ProgressLoader : MonoBehaviour
             catch (InvalidOperationException)
             {
                 Destroy(country.gameObject);
-                return;
+                continue;
             }
             ImportRegionsFrom(progressAsset, countryTransform);
         }
