@@ -242,11 +242,20 @@ namespace Assets.Scripts.Country.Region
         {
             var instance = GeneralAsset.Instance;
 
-            foreach (var country in instance.AllCountries)
+            for (int i = 0; i < instance.AllCountries.Count; i++)
             {
+                var country = instance.AllCountries[i];
+                
                 if (country == _country || country == instance.PlayerCountry) continue;
 
-                country.gameObject.SetActive(false);
+                try
+                {
+                    country.gameObject.SetActive(false);
+                }
+                catch (MissingReferenceException)
+                {
+                    instance.AllCountries.RemoveAt(i);
+                }
             }
 
             _country.DisableNotInvolvedRegions(instance.RegionsForAttack);

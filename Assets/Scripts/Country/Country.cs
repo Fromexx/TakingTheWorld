@@ -184,8 +184,11 @@ namespace Assets.Scripts.Country
 
             if (enemyCountry._regions.Count == 0)
             {
+                print("0");
+                
                 if (enemyCountry.IsPlayerCountry)
                 {
+                    print("Player");
                     instance.PlayerLostMenu.SetActive(true);
                 }
                 else
