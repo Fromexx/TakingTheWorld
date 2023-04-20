@@ -188,12 +188,12 @@ MonoBehaviour:
   <CountryBallPrefab>k__BackingField: {fileID: 1152370418640866025, guid: 3a2828d6014b4e841b28438c050ef30d, type: 3}
   IsPlayerCountry: 0
   <Id>k__BackingField: 9
-  _regions:
+  Regions:
+  - {fileID: 7772525672324455729}
   - {fileID: 6528646301942341167}
   - {fileID: 6700064071017649966}
   - {fileID: 8336853242628391530}
   - {fileID: 8208135985730072655}
-  - {fileID: 7772525672324455729}
   - {fileID: 1846898603358335094}
   _ownRegionsId: 131415161718
   _mainCountryBallPrefab: {fileID: 332881011434138551, guid: 7edc6cf9024c522448ecfd7ede55e6a3, type: 3}
@@ -1966,7 +1966,7 @@ MonoBehaviour:
   <CountryBallPrefab>k__BackingField: {fileID: 1437551210688610683, guid: 53087f0e551812f4998c9e959f57fa54, type: 3}
   IsPlayerCountry: 0
   <Id>k__BackingField: 6
-  _regions:
+  Regions:
   - {fileID: 8270880471170555269}
   _ownRegionsId: 10
   _mainCountryBallPrefab: {fileID: 670559673323704010, guid: e8359e91bc2501345afadf06b033b9d0, type: 3}
@@ -4542,7 +4542,7 @@ MonoBehaviour:
   <CountryBallPrefab>k__BackingField: {fileID: 7609274803433394208, guid: 27f49b899e5e6484c94e0e370b75bc64, type: 3}
   IsPlayerCountry: 0
   <Id>k__BackingField: 8
-  _regions:
+  Regions:
   - {fileID: 6932588198204671179}
   _ownRegionsId: 12
   _mainCountryBallPrefab: {fileID: 1399658782655955996, guid: d1f673aee68fa794fac3c8c22f913bc8, type: 3}
@@ -4824,7 +4824,7 @@ MonoBehaviour:
   <CountryBallPrefab>k__BackingField: {fileID: 8428395228076149175, guid: 31227b7d8bd307d43a4e3178473c9c2e, type: 3}
   IsPlayerCountry: 0
   <Id>k__BackingField: 7
-  _regions:
+  Regions:
   - {fileID: 8519284952772316846}
   _ownRegionsId: 11
   _mainCountryBallPrefab: {fileID: 8559942195381838504, guid: fd1864c60906c8c4bb1e760cb0da556e, type: 3}
@@ -5913,9 +5913,9 @@ MonoBehaviour:
   <CountryBallPrefab>k__BackingField: {fileID: 2146117808898806087, guid: 86ec75339d0f19040b43c6fd815f0baf, type: 3}
   IsPlayerCountry: 0
   <Id>k__BackingField: 2
-  _regions:
-  - {fileID: 5841968695285568023}
+  Regions:
   - {fileID: 7343763302573270524}
+  - {fileID: 5841968695285568023}
   - {fileID: 7611362416441887285}
   - {fileID: 7389501684424127619}
   - {fileID: 7891071871879085687}
@@ -6199,7 +6199,7 @@ MonoBehaviour:
   <CountryBallPrefab>k__BackingField: {fileID: 4379688273268224493, guid: c818d4528c2dbdb4e8cea34b90795db6, type: 3}
   IsPlayerCountry: 0
   <Id>k__BackingField: 14
-  _regions:
+  Regions:
   - {fileID: 7649076902239557385}
   _ownRegionsId: 24
   _mainCountryBallPrefab: {fileID: 2031539693494472332, guid: c703a1665dea9c04db8ed1b54a09f2d4, type: 3}
@@ -9031,7 +9031,7 @@ MonoBehaviour:
   <CountryBallPrefab>k__BackingField: {fileID: 3506599284946272880, guid: c1aecde7dac839f47a30d88bc3250511, type: 3}
   IsPlayerCountry: 0
   <Id>k__BackingField: 4
-  _regions:
+  Regions:
   - {fileID: 6656732116759325996}
   - {fileID: 8619761469266599969}
   - {fileID: 4513799440969492848}
@@ -9371,7 +9371,7 @@ MonoBehaviour:
   <CountryBallPrefab>k__BackingField: {fileID: 4964793816793994789, guid: 2c9c9de11dfb73a4ab357b30bfc0c500, type: 3}
   IsPlayerCountry: 0
   <Id>k__BackingField: 16
-  _regions:
+  Regions:
   - {fileID: 7874264714075834991}
   - {fileID: 7458197862852650643}
   _ownRegionsId: 2627
@@ -10094,7 +10094,7 @@ MonoBehaviour:
   <CountryBallPrefab>k__BackingField: {fileID: 4664771234298279396, guid: 2e573f468f497de4795105876ed7e882, type: 3}
   IsPlayerCountry: 0
   <Id>k__BackingField: 18
-  _regions:
+  Regions:
   - {fileID: 7527415243180714323}
   _ownRegionsId: 29
   _mainCountryBallPrefab: {fileID: 314991266159096188, guid: 7bb61c61f4cf4864f86360629d154c6c, type: 3}
@@ -13036,7 +13036,7 @@ MonoBehaviour:
   <CountryBallPrefab>k__BackingField: {fileID: 7410065262240902575, guid: b9562e5bc2a0ad944a9eb339210fa45a, type: 3}
   IsPlayerCountry: 0
   <Id>k__BackingField: 1
-  _regions:
+  Regions:
   - {fileID: 7547490595583334332}
   - {fileID: 8809740456863650326}
   - {fileID: 8401763686864016756}
@@ -13332,7 +13332,7 @@ MonoBehaviour:
   <CountryBallPrefab>k__BackingField: {fileID: 8444476642742005597, guid: 128f16f1455ed1745b201a980015feb8, type: 3}
   IsPlayerCountry: 0
   <Id>k__BackingField: 10
-  _regions:
+  Regions:
   - {fileID: 6408361118074212351}
   - {fileID: 6375658061067923413}
   - {fileID: 7695075373102082948}
@@ -17402,7 +17402,7 @@ MonoBehaviour:
   <CountryBallPrefab>k__BackingField: {fileID: 4052064596683560585, guid: 213f424730163f04197a763ba3076cd0, type: 3}
   IsPlayerCountry: 0
   <Id>k__BackingField: 12
-  _regions:
+  Regions:
   - {fileID: 7670351643257547862}
   - {fileID: 8972298840965246970}
   - {fileID: 8444562340591929020}
@@ -17940,10 +17940,8 @@ MonoBehaviour:
   <CountryBallPrefab>k__BackingField: {fileID: 8061597613479384196, guid: 6727cb29d902aab4fbaa81b67c4b20c9, type: 3}
   IsPlayerCountry: 0
   <Id>k__BackingField: 17
-  _regions:
+  Regions:
   - {fileID: 6835267424748538894}
-  - {fileID: 7874264714075834991}
-  - {fileID: 7458197862852650643}
   _ownRegionsId: 28
   _mainCountryBallPrefab: {fileID: 1539692357128081669, guid: a370ce524056113448bef3300b83d12c, type: 3}
 --- !u!1 &1541976275
@@ -18578,6 +18576,7 @@ MonoBehaviour:
   SoldierVoicesPlayer: {fileID: 2038707301}
   SelectedCountryColor: {fileID: 610981235}
   <PlayerLostMenu>k__BackingField: {fileID: 903068437}
+  <AttackPlayerChance>k__BackingField: 0
   UnionRegions: []
   IterationCount: 0
   AttackStarted: 0
@@ -20644,7 +20643,7 @@ MonoBehaviour:
   <CountryBallPrefab>k__BackingField: {fileID: 5346212871942259275, guid: ad1ae0382f3947f4c8dbf8077f6ad86e, type: 3}
   IsPlayerCountry: 0
   <Id>k__BackingField: 15
-  _regions:
+  Regions:
   - {fileID: 4673429486539131415}
   _ownRegionsId: 25
   _mainCountryBallPrefab: {fileID: 5180660020214390115, guid: 1b17e6e60ee21654088702ff59d3bc37, type: 3}
@@ -20710,7 +20709,7 @@ MonoBehaviour:
   <CountryBallPrefab>k__BackingField: {fileID: 6191464774607620408, guid: c44fcacfa1351e54d8dfbe0175a3d24d, type: 3}
   IsPlayerCountry: 0
   <Id>k__BackingField: 11
-  _regions:
+  Regions:
   - {fileID: 7514543172318598055}
   - {fileID: 8608445830810647089}
   - {fileID: 8015425184545509001}
@@ -21672,7 +21671,7 @@ MonoBehaviour:
   <CountryBallPrefab>k__BackingField: {fileID: 5006987980289421470, guid: 09097fcce542652448f2f6bc59bf1be9, type: 3}
   IsPlayerCountry: 0
   <Id>k__BackingField: 5
-  _regions:
+  Regions:
   - {fileID: 8565611560966907331}
   _ownRegionsId: 0f
   _mainCountryBallPrefab: {fileID: 4946443398078289727, guid: 299340d93b245b94ab964224ff3b82df, type: 3}
@@ -25859,6 +25858,7 @@ MonoBehaviour:
   Borders:
   - {fileID: 1498709394}
   - {fileID: 1551850412}
+  _timeBetweenAttack: 0
 --- !u!64 &1846898603358335095
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27150,6 +27150,7 @@ MonoBehaviour:
   - {fileID: 473827656}
   - {fileID: 714467752}
   - {fileID: 823843672}
+  _timeBetweenAttack: 0
 --- !u!64 &4513799440969492849
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27206,6 +27207,7 @@ MonoBehaviour:
   - {fileID: 326593324}
   - {fileID: 937379895}
   - {fileID: 295321594}
+  _timeBetweenAttack: 0
 --- !u!64 &4673429486539131416
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27825,6 +27827,7 @@ MonoBehaviour:
   - {fileID: 1466166475}
   - {fileID: 1331974087}
   - {fileID: 422552175}
+  _timeBetweenAttack: 100
 --- !u!64 &5841968695285568024
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28019,6 +28022,7 @@ MonoBehaviour:
   - {fileID: 1183613070}
   - {fileID: 381802884}
   - {fileID: 774880452}
+  _timeBetweenAttack: 0
 --- !u!64 &6375658061067923414
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28115,6 +28119,7 @@ MonoBehaviour:
   Borders:
   - {fileID: 1755308073}
   - {fileID: 664021325}
+  _timeBetweenAttack: 0
 --- !u!64 &6408361118074212352
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28236,6 +28241,7 @@ MonoBehaviour:
   - {fileID: 1620307455}
   - {fileID: 294521727}
   - {fileID: 657464899}
+  _timeBetweenAttack: 0
 --- !u!64 &6528646301942341168
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28309,6 +28315,7 @@ MonoBehaviour:
   - {fileID: 745665583}
   - {fileID: 247075669}
   - {fileID: 373140675}
+  _timeBetweenAttack: 0
 --- !u!64 &6656732116759325997
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28423,6 +28430,7 @@ MonoBehaviour:
   <Id>k__BackingField: 21
   Borders:
   - {fileID: 107179143}
+  _timeBetweenAttack: 0
 --- !u!64 &6700064071017649967
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28491,6 +28499,7 @@ MonoBehaviour:
   - {fileID: 1234319946}
   - {fileID: 1935154453}
   - {fileID: 2016116509}
+  _timeBetweenAttack: 0
 --- !u!64 &6835267424748538895
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28641,6 +28650,7 @@ MonoBehaviour:
   - {fileID: 922019290}
   - {fileID: 177531614}
   - {fileID: 1793961700}
+  _timeBetweenAttack: 0
 --- !u!64 &6932588198204671180
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28860,6 +28870,7 @@ MonoBehaviour:
   - {fileID: 1016158584}
   - {fileID: 948503014}
   - {fileID: 1000198805}
+  _timeBetweenAttack: 4
 --- !u!64 &7343763302573270525
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28942,6 +28953,7 @@ MonoBehaviour:
   - {fileID: 1042722767}
   - {fileID: 1931589966}
   - {fileID: 1500025342}
+  _timeBetweenAttack: 100
 --- !u!64 &7389501684424127620
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29041,6 +29053,7 @@ MonoBehaviour:
   <Id>k__BackingField: 39
   Borders:
   - {fileID: 1861547262}
+  _timeBetweenAttack: 0
 --- !u!64 &7458197862852650644
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29141,6 +29154,7 @@ MonoBehaviour:
   - {fileID: 165985935}
   - {fileID: 47338133}
   - {fileID: 726795046}
+  _timeBetweenAttack: 0
 --- !u!64 &7514543172318598056
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29212,6 +29226,7 @@ MonoBehaviour:
   - {fileID: 2113970826}
   - {fileID: 2105992367}
   - {fileID: 1794008909}
+  _timeBetweenAttack: 0
 --- !u!64 &7527415243180714324
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29288,6 +29303,7 @@ MonoBehaviour:
   Borders:
   - {fileID: 1467820167}
   - {fileID: 1940377274}
+  _timeBetweenAttack: 0
 --- !u!64 &7547490595583334333
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29345,6 +29361,7 @@ MonoBehaviour:
   - {fileID: 446450587}
   - {fileID: 1291877768}
   - {fileID: 878889993}
+  _timeBetweenAttack: 100
 --- !u!64 &7611362416441887286
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29417,6 +29434,7 @@ MonoBehaviour:
   Borders:
   - {fileID: 866874611}
   - {fileID: 1969579107}
+  _timeBetweenAttack: 0
 --- !u!64 &7649076902239557386
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29489,6 +29507,7 @@ MonoBehaviour:
   - {fileID: 147942754}
   - {fileID: 1031706099}
   - {fileID: 1441824521}
+  _timeBetweenAttack: 0
 --- !u!64 &7670351643257547863
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29589,6 +29608,7 @@ MonoBehaviour:
   Borders:
   - {fileID: 1560514755}
   - {fileID: 377488849}
+  _timeBetweenAttack: 0
 --- !u!64 &7695075373102082949
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29678,6 +29698,7 @@ MonoBehaviour:
   - {fileID: 1911469691}
   - {fileID: 2099530219}
   - {fileID: 430302843}
+  _timeBetweenAttack: 0
 --- !u!64 &7772525672324455730
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29747,6 +29768,7 @@ MonoBehaviour:
   Borders:
   - {fileID: 678187000}
   - {fileID: 726703125}
+  _timeBetweenAttack: 0
 --- !u!64 &7874264714075834992
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29829,6 +29851,7 @@ MonoBehaviour:
   - {fileID: 385638691}
   - {fileID: 678754385}
   - {fileID: 1508360696}
+  _timeBetweenAttack: 2
 --- !u!64 &7891071871879085688
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29902,6 +29925,7 @@ MonoBehaviour:
   - {fileID: 1618670992}
   - {fileID: 1871241862}
   - {fileID: 1263947815}
+  _timeBetweenAttack: 0
 --- !u!64 &8015425184545509002
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -30032,6 +30056,7 @@ MonoBehaviour:
   - {fileID: 35721173}
   - {fileID: 1486547975}
   - {fileID: 2028388806}
+  _timeBetweenAttack: 0
 --- !u!64 &8208135985730072656
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -30098,6 +30123,7 @@ MonoBehaviour:
   - {fileID: 1472182152}
   - {fileID: 841752449}
   - {fileID: 405749828}
+  _timeBetweenAttack: 0
 --- !u!64 &8270880471170555270
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -30160,6 +30186,7 @@ MonoBehaviour:
   <Id>k__BackingField: 22
   Borders:
   - {fileID: 1281563615}
+  _timeBetweenAttack: 0
 --- !u!64 &8336853242628391531
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -30218,6 +30245,7 @@ MonoBehaviour:
   - {fileID: 764197529}
   - {fileID: 1511033008}
   - {fileID: 1754152589}
+  _timeBetweenAttack: 0
 --- !u!64 &8401763686864016757
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -30273,6 +30301,7 @@ MonoBehaviour:
   Borders:
   - {fileID: 1218539189}
   - {fileID: 546628078}
+  _timeBetweenAttack: 0
 --- !u!64 &8444562340591929021
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -30362,6 +30391,7 @@ MonoBehaviour:
   - {fileID: 2090701851}
   - {fileID: 1521519089}
   - {fileID: 698032930}
+  _timeBetweenAttack: 0
 --- !u!64 &8519284952772316847
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -30492,6 +30522,7 @@ MonoBehaviour:
   - {fileID: 264101813}
   - {fileID: 1549332611}
   - {fileID: 840316638}
+  _timeBetweenAttack: 0
 --- !u!64 &8565611560966907332
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -30562,6 +30593,7 @@ MonoBehaviour:
   - {fileID: 1898023484}
   - {fileID: 555436068}
   - {fileID: 760907447}
+  _timeBetweenAttack: 0
 --- !u!64 &8608445830810647090
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -30642,6 +30674,7 @@ MonoBehaviour:
   - {fileID: 418453778}
   - {fileID: 1035022390}
   - {fileID: 1809359061}
+  _timeBetweenAttack: 0
 --- !u!64 &8619761469266599970
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -30788,6 +30821,7 @@ MonoBehaviour:
   - {fileID: 959086592}
   - {fileID: 67514697}
   - {fileID: 892378832}
+  _timeBetweenAttack: 0
 --- !u!64 &8809740456863650327
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -30848,6 +30882,7 @@ MonoBehaviour:
   - {fileID: 794461407}
   - {fileID: 372116552}
   - {fileID: 244221134}
+  _timeBetweenAttack: 0
 --- !u!64 &8972298840965246971
 MeshCollider:
   m_ObjectHideFlags: 0

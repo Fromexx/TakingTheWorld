@@ -15,14 +15,15 @@ namespace Assets.Scripts.Country.Region
         [field: SerializeField] public byte Id { get; private set; }
 
         public List<RegionBorder> Borders;
-        private bool _inWar;
 
+        [SerializeField] private float _timeBetweenAttack;
+        
+        private bool _inWar;
         private int _currentCountryBallCount;
         private Country _country;
         private TuneLevel _tuneLevel;
         private Region _playerRegion;
         private Country _playerCountry;
-        private float _timeBetweenAttack;
         private Transform _mainCountryBallTransform;
         private byte _countryBallLevel = 1;
         private byte _moneyLevel = 1;
@@ -40,8 +41,6 @@ namespace Assets.Scripts.Country.Region
                 MainCountryBall.TryGetComponent(out _mainCountryBallTransform);
 
                 MainCountryBall.Init(_currentCountryBallCount);
-
-                _timeBetweenAttack = GeneralAsset.Instance.TimeBetweenAttack;
             }
             catch (Exception)
             {
@@ -77,16 +76,37 @@ namespace Assets.Scripts.Country.Region
         {
             yield return new WaitForSeconds(_timeBetweenAttack);
 
+            var instance = GeneralAsset.Instance;
+
             if (_country.IsPlayerCountry) yield break;
 
-            var playerRegions = GeneralAsset.Instance.PlayerRegionsForAttack;
+            var randomValue = UnityEngine.Random.value;
+            var random = new System.Random();
 
-            System.Random random = new System.Random();
-            var playerRegionIndex = random.Next(0, playerRegions.Count);
-
-            AttackEnemyRegion(playerRegions[playerRegionIndex]);
-
+            if (IsPlayerStillHaveStrongRegions() || randomValue > 1 - instance.AttackPlayerChance)
+            {
+                var playerRegions = instance.PlayerRegionsForAttack;
+            
+                var playerRegionIndex = random.Next(0, playerRegions.Count);
+            
+                AttackEnemyRegion(playerRegions[playerRegionIndex]);
+            }
+            else
+            {
+                var ourRegionIndex = random.Next(0, _country.Regions.Count);
+            
+                AttackEnemyRegion(_country.Regions[ourRegionIndex]);
+            }
+            
             StartCoroutine(Attack());
+        }
+
+        private bool IsPlayerStillHaveStrongRegions()
+        {
+            foreach (var region in GeneralAsset.Instance.PlayerRegionsForAttack)
+                if (region._currentCountryBallCount > 5)
+                    return true;
+            return false;
         }
 
         public void AttackEnemyRegion(Region enemyRegion)

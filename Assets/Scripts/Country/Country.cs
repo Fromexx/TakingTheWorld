@@ -16,8 +16,8 @@ namespace Assets.Scripts.Country
         [field: SerializeField] public GameObject CountryBallPrefab { get; private set; }
         [field: SerializeField] public bool IsPlayerCountry;
         [field: SerializeField] public byte Id { get; private set; }
-
-        [SerializeField] private List<Region.Region> _regions;
+        [field: SerializeField] public List<Region.Region> Regions;
+        
         [SerializeField] private List<byte> _ownRegionsId;
         [SerializeField] private GameObject _mainCountryBallPrefab;
 
@@ -31,7 +31,7 @@ namespace Assets.Scripts.Country
         {
             try
             {
-                _regions[0].TryGetComponent(out Renderer renderer);
+                Regions[0].TryGetComponent(out Renderer renderer);
                 _material = renderer.material;
             }
             catch (Exception)
@@ -57,7 +57,7 @@ namespace Assets.Scripts.Country
             instance.IsSelectedCountry = false;
             
             instance.SelectedCountryColor.EnableGameObject();
-            _regions[0].TryGetComponent(out Renderer renderer);
+            Regions[0].TryGetComponent(out Renderer renderer);
             instance.SelectedCountryColor.SetSelectedCountryColor(renderer.material.color);
         }
 
@@ -109,7 +109,7 @@ namespace Assets.Scripts.Country
 
             SetCountryBall(capturedRegion);
             
-            _regions.Add(capturedRegion);
+            Regions.Add(capturedRegion);
             _ownRegionsId.Add(capturedRegion.Id);
 
             capturedRegion.InitCountry(this);
@@ -167,14 +167,14 @@ namespace Assets.Scripts.Country
             region.tag = tag;
             region.transform.SetParent(transform);
 
-            _regions.Add(region);
+            Regions.Add(region);
             givingCountry.RemoveRegion(region);
             SetCountryBall(region);
         }
 
         public void RemoveRegion(Region.Region region)
         {
-            _regions.Remove(region);
+            Regions.Remove(region);
             _ownRegionsId.Remove(region.Id);
         }
 
@@ -182,7 +182,7 @@ namespace Assets.Scripts.Country
         {
             var instance = GeneralAsset.Instance;
 
-            if (enemyCountry._regions.Count == 0)
+            if (enemyCountry.Regions.Count == 0)
             {
                 print("0");
                 
@@ -232,7 +232,7 @@ namespace Assets.Scripts.Country
         {
             var iteration = 0;
 
-            foreach (var countryRegion in _regions)
+            foreach (var countryRegion in Regions)
             {
                 foreach (var involvedRegion in regions)
                 {
@@ -254,17 +254,17 @@ namespace Assets.Scripts.Country
 
         private void EnableAllRegions()
         {
-            foreach (var region in _regions) region.gameObject.SetActive(true);
+            foreach (var region in Regions) region.gameObject.SetActive(true);
         }
 
         private void EnableRegionBordersForFindEnemyRegion(string enemyTag, List<RegionBorder> borders)
         {
-            foreach (var border in borders) border.InitWithOurRegion(enemyTag, borders, _regions);
+            foreach (var border in borders) border.InitWithOurRegion(enemyTag, borders, Regions);
         }
 
         private void EnableRegionBorders(List<RegionBorder> borders)
         {
-            foreach (var border in borders) border.InitWithRegion(borders, _regions);
+            foreach (var border in borders) border.InitWithRegion(borders, Regions);
         }
 
         public void AddOwnRegions()

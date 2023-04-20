@@ -23,7 +23,8 @@ namespace Assets
         [field: SerializeField] public SoldierVoicesPlayer SoldierVoicesPlayer;
         [field: SerializeField] public SelectedCountryColor SelectedCountryColor;
         [field: SerializeField] public GameObject PlayerLostMenu { get; private set; }
-
+        [field: SerializeField] public float AttackPlayerChance { get; private set; }
+        
         [HideInInspector] public List<Region> UnionRegions;
         [HideInInspector] public int IterationCount;
         [HideInInspector] public bool AttackStarted;
