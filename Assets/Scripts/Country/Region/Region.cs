@@ -15,8 +15,6 @@ namespace Assets.Scripts.Country.Region
         [field: SerializeField] public byte Id { get; private set; }
 
         public List<RegionBorder> Borders;
-
-        [SerializeField] private float _timeBetweenAttack;
         
         private bool _inWar;
         private int _currentCountryBallCount;
@@ -74,7 +72,7 @@ namespace Assets.Scripts.Country.Region
 
         private IEnumerator Attack()
         {
-            yield return new WaitForSeconds(_timeBetweenAttack);
+            yield return new WaitForSeconds(GeneralAsset.Instance.TimeBetweenAttack);
 
             var instance = GeneralAsset.Instance;
 

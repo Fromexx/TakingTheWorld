@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af3dec1f-915a-4cee-8626-c129e93612d7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TakingTheWorld/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Assets/GeneralAsset.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/GeneralAsset.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Country/Country.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Country/Country.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Country/Region/Region.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Country/Region/Region.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -138,9 +137,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraLogic/CameraSwipes/NotSwipeableAttribute.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SaveLoadSystem/ProgressSaver.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SaveLoadSystem/ProgressLoader.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Country/Region/Region.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Assets/GeneralAsset.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Country/Country.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Country/Region/Region.cs" />
       </list>
     </option>
   </component>
@@ -178,7 +177,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="09e4658a-ee63-4078-abfc-977d12232f9d" name="Default Changelist" comment="" />
+      <changelist id="af3dec1f-915a-4cee-8626-c129e93612d7" name="Default Changelist" comment="" />
       <created>1678972147417</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -237,6 +236,7 @@
       <workItem from="1681042808843" duration="342000" />
       <workItem from="1681046093642" duration="5042000" />
       <workItem from="1681638510129" duration="3568000" />
+      <workItem from="1682035812796" duration="371000" />
     </task>
     <task id="LOCAL-00001" summary="RegionTuneView">
       <created>1680437450812</created>
